@@ -87,10 +87,10 @@ output: html_document
 **Harmonization comment**:  
 **R script**:  
 {r, echo=TRUE}
-#This is where the R-script will be written
+#This is where the R-script will be written  
 
 
-```  
+
 
 # Demographics
 
@@ -107,7 +107,7 @@ output: html_document
 {r, echo=TRUE}
 #This is where the R-script will be written
 
-```  
+
 
 ### **Variable label**: Proportion of men in 2011  
 **Variable name**: socenv_proportion_men_2011    
@@ -122,12 +122,27 @@ output: html_document
 {r, echo=TRUE}
 #This is where the R-script will be written
 
-```  
+
 
 ### **Variable label**: Proportion of women in 2006  
 **Variable name**: socenv_proportion_women_2006    
 **Variable description**: Proportion of women in the residential area in 2006.  
-**Variable type**: decimal
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+
+
+### **Variable label**: Proportion of women in 2011    
+**Variable name**: socenv_proportion_women_2011    
+**Variable description**: Proportion of women in the residential area in 2011.  
+**Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
@@ -137,12 +152,221 @@ output: html_document
 {r, echo=TRUE}
 #This is where the R-script will be written
 
-```  
 
-### **Variable label**: Proportion of women in 2011  
-**Variable name**: socenv_proportion_women_2011    
-**Variable description**: Proportion of women in the residential area in 2011.  
-**Variable type**: decimal
+### **Variable label**: Proportion of residents aged 65 or older in 2006   
+**Variable name**: socenv_proportion_65_older_2006   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of residents aged 65 or older in 2007   
+**Variable name**: socenv_proportion_65_older_2007   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2007.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of residents aged 65 or older in 2011   
+**Variable name**: socenv_proportion_65_older_2011   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of unmaried residents in 2008   
+**Variable name**: socenv_proportion_unmaried_2008   
+**Variable description**: Proportion of unmaried residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of unmaried residents in 2011   
+**Variable name**: socenv_proportion_unmaried_2011   
+**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of maried residents in 2006   
+**Variable name**: socenv_proportion_maried_2006   
+**Variable description**: Proportion of maried residents in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of maried residents in 2008   
+**Variable name**: socenv_proportion_maried_2008   
+**Variable description**: Proportion of maried residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of maried residents in 2011   
+**Variable name**: socenv_proportion_maried_2011   
+**Variable description**: Proportion of maried residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of divorced residents in 2006   
+**Variable name**: socenv_proportion_divorced_2006   
+**Variable description**: Proportion of divorced residents in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of divorced residents in 2008   
+**Variable name**: socenv_proportion_divorced_2008   
+**Variable description**: Proportion of divorced residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of divorced residents in 2011   
+**Variable name**: socenv_proportion_divorced_2011   
+**Variable description**: Proportion of divorced residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of widowed residents in 2006   
+**Variable name**: socenv_proportion_widowed_2006   
+**Variable description**: Proportion of widowed residents in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of widowed residents in 2008     
+**Variable name**: socenv_proportion_widowed_2008   
+**Variable description**: Proportion of widowed residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Proportion of widowed residents in 2011    
+**Variable name**: socenv_proportion_widowed_2011   
+**Variable description**: Proportion of widowed residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Average household size in 2006   
+**Variable name**: socenv_average_household_size_2006   
+**Variable description**: Average household size in residential area in 2006.  
+**Variable type**: integer 
 **Variable unit**:   
 **Category coding**:   
 
