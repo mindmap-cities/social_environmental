@@ -13,3 +13,141 @@ output: html_document
 8. [Immigrants and ethnic minority groups] #(Immigrants and ethnic minority groups)  
 9. [Crime] #(Crime)  
 10. [Social cohesion] (#Social cohesion)  
+
+# Urbanization grade
+
+### **Variable label**: Urbanization grade in 2006  
+**Variable name**: socenv_urbanization_grade_2006    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2006.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+### **Variable label**: Urbanization grade in 2007 
+**Variable name**: socenv_urbanization_grade_2007    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2007.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Urbanization grade in 2009 
+**Variable name**: socenv_urbanization_grade_2009    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2009.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Urbanization grade in 2011 
+**Variable name**: socenv_urbanization_grade_2011    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Urbanization grade in 2014
+**Variable name**: socenv_urbanization_grade_2014    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2014.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+```  
+
+# Demographics
+
+### **Variable label**: Proportion of men in 2006  
+**Variable name**: socenv_proportion_men_2006    
+**Variable description**: Proportion of men in the residential area in 2006.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Proportion of men in 2011  
+**Variable name**: socenv_proportion_men_2011    
+**Variable description**: Proportion of men in the residential area in 2011.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Proportion of women in 2006  
+**Variable name**: socenv_proportion_women_2006    
+**Variable description**: Proportion of women in the residential area in 2006.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Proportion of women in 2011  
+**Variable name**: socenv_proportion_women_2011    
+**Variable description**: Proportion of women in the residential area in 2011.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
