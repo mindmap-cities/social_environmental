@@ -375,3 +375,109 @@ output: html_document
 **R script**:  
 {r, echo=TRUE}
 #This is where the R-script will be written
+
+
+
+### **Variable label**: Average household size in 2009   
+**Variable name**: socenv_average_household_size_2009   
+**Variable description**: Average household size in residential area in 2009.  
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Average household size in 2011   
+**Variable name**: socenv_average_household_size_2011   
+**Variable description**: Average household size in residential area in 2011.  
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Average household size in 2014   
+**Variable name**: socenv_average_household_size_2014   
+**Variable description**: Average household size in residential area in 2014.  
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Average household size in 2015      
+**Variable name**: socenv_average_household_size_2015     
+**Variable description**: Average household size in residential area in 2015.    
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Average household size in 2016      
+**Variable name**: socenv_average_household_size_2016     
+**Variable description**: Average household size in residential area in 2016.    
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+# Housing
+
+
+### **Variable label**: Average value of dwellings in 1000 euro's in 2006    
+**Variable name**: socenv_average_value_dwellings_2006
+**Variable description**: Average value of dwellings in 1000 euro's in residential area in 2006.    
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euro's in 2011    
+**Variable name**: socenv_average_value_dwellings_2011
+**Variable description**: Average value of dwellings in 1000 euro's in residential area in 2011.    
+**Variable type**: integer 
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
