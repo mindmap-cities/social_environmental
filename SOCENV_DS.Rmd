@@ -9,15 +9,15 @@ title: "Social environmental (i.e. geospatial) DataSchema"
 output: html_document
 ---
 # Table of Contents
-1. [Urbanization grade] #(Urbanzation grade)  
-2. [Demographics] #(Demographics)  
-3. [Housing] #(Housing)  
-4. [Income] #(Income)  
-5. [Unemployment rate] #(Unemployment rate)  
-6. [Social security] #(Social security)  
-7. [Educational level] #(Educational level)  
-8. [Immigrants and ethnic minority groups] #(Immigrants and ethnic minority groups)  
-9. [Crime] #(Crime)  
+1. [Urbanization grade](#Urbanzation grade)  
+2. [Demographics](#Demographics)  
+3. [Housing](#Housing)  
+4. [Income](#Income)  
+5. [Unemployment rate](#Unemployment rate)  
+6. [Social security](#Social security)  
+7. [Educational level](#Educational level)  
+8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)  
+9. [Crime](#Crime)  
   
 
 # Urbanization grade
