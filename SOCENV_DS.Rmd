@@ -369,7 +369,7 @@ output: html_document
 
 
 ### **Variable label**: Average household size in 2006   
-**Variable name**: socenv_average_household_size_2006   
+**Variable name**: socenv_average_hh_size_2006   
 **Variable description**: Average household size in residential area in 2006.  
 **Variable type**: integer   
 **Variable unit**:   
@@ -384,7 +384,7 @@ output: html_document
 
 
 ### **Variable label**: Average household size in 2009   
-**Variable name**: socenv_average_household_size_2009   
+**Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
 **Variable type**: integer   
 **Variable unit**:   
@@ -399,7 +399,7 @@ output: html_document
 
 
 ### **Variable label**: Average household size in 2011   
-**Variable name**: socenv_average_household_size_2011   
+**Variable name**: socenv_average_hh_size_2011   
 **Variable description**: Average household size in residential area in 2011.  
 **Variable type**: integer   
 **Variable unit**:   
@@ -414,7 +414,7 @@ output: html_document
 
 
 ### **Variable label**: Average household size in 2014   
-**Variable name**: socenv_average_household_size_2014   
+**Variable name**: socenv_average_hh_size_2014   
 **Variable description**: Average household size in residential area in 2014.  
 **Variable type**: integer   
 **Variable unit**:   
@@ -429,7 +429,7 @@ output: html_document
 
 
 ### **Variable label**: Average household size in 2015      
-**Variable name**: socenv_average_household_size_2015     
+**Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -444,7 +444,7 @@ output: html_document
 
 
 ### **Variable label**: Average household size in 2016      
-**Variable name**: socenv_average_household_size_2016      
+**Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -462,7 +462,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of dwellings in 1000 euros in 2006    
-**Variable name**: socenv_average_value_dwellings_2006  
+**Variable name**: socenv_avv_dwellings_2006  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2006.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -477,7 +477,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of dwellings in 1000 euros in 2011    
-**Variable name**: socenv_average_value_dwellings_2011  
+**Variable name**: socenv_avv_dwellings_2011  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2011.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -492,7 +492,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2006 (detached houses)   
-**Variable name**: socenv_average_value_detached_houses_m2_2006  
+**Variable name**: socenv_avv_dethouses_m2_2006  
 **Variable description**: Average value of a plot in euros (detached houses) in the residential area in 2006.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -507,7 +507,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2006 (row houses)   
-**Variable name**: socenv_average_value_row_houses_m2_2006  
+**Variable name**: socenv_avv_rowhouses_m2_2006  
 **Variable description**: Average value of a plot in euros (row houses) in the residential area in 2006.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -522,7 +522,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2006 (multi dwellings)   
-**Variable name**: socenv_average_value_multi_dwelling_m2_2006  
+**Variable name**: socenv_avv_multidwelling_m2_2006  
 **Variable description**: Average value of a plot in euros (multi dwellings) in the residential area in 2006.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -537,7 +537,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
-**Variable name**: socenv_average_value_dwelling_m2_2007  
+**Variable name**: socenv_avv_dwelling_m2_2007  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -552,7 +552,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
-**Variable name**: socenv_average_value_dwelling_m2_2011  
+**Variable name**: socenv_avv_dwelling_m2_2011  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -567,7 +567,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
-**Variable name**: socenv_average_value_dwelling_m2_2013  
+**Variable name**: socenv_avv_dwelling_m2_2013  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -582,7 +582,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2014 (dwellings)  
-**Variable name**: socenv_average_value_dwelling_m2_2014  
+**Variable name**: socenv_avv_dwelling_m2_2014  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -597,7 +597,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
-**Variable name**: socenv_average_value_dwelling_m2_2015  
+**Variable name**: socenv_avv_dwelling_m2_2015  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -612,7 +612,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (detached houses)   
-**Variable name**: socenv_average_value_detached_houses_m2_2011  
+**Variable name**: socenv_avv_dethouses_m2_2011  
 **Variable description**: Average value of a plot in euros (detached houses) in the residential area in 2011.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -627,7 +627,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (row houses)   
-**Variable name**: socenv_average_value_row_houses_m2_2011  
+**Variable name**: socenv_avv_rowhouses_m2_2011  
 **Variable description**: Average value of a plot in euros (row houses) in the residential area in 2011.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -642,7 +642,7 @@ output: html_document
 
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (multi dwellings)   
-**Variable name**: socenv_average_value_multi_dwelling_m2_2011  
+**Variable name**: socenv_avv_multidwelling_m2_2011  
 **Variable description**: Average value of a plot in euros (multi dwellings) in the residential area in 2011.    
 **Variable type**: integer   
 **Variable unit**:   
@@ -656,7 +656,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2011   
-**Variable name**: socenv_proportion_unoccupied_dwellings_2011
+**Variable name**: socenv_prop_unocc_dwellings_2011
 **Variable description**: Proportion of unoccupied dwellings in residential area in 2011.    
 **Variable type**: decimal   
 **Variable unit**:   
@@ -671,7 +671,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2012   
-**Variable name**: socenv_proportion_unoccupied_dwellings_2012
+**Variable name**: socenv_prop_unocc_dwellings_2012
 **Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
 **Variable unit**:   
@@ -686,7 +686,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_proportion_unoccupied_dwellings_2012
+**Variable name**: socenv_prop_unocc_dwellings_2012
 **Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
 **Variable unit**:   
@@ -704,7 +704,7 @@ output: html_document
 
 
 ### **Variable label**: Average income in 1000 euros in 2005  
-**Variable name**: socenv_average_income_residents_2005  
+**Variable name**: socenv_av_income_residents_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
 **Variable type**: integer     
 **Variable unit**:   
@@ -793,7 +793,7 @@ output: html_document
 
 
 ### **Variable label**: Average income in 1000 euros in 2011   
-**Variable name**: socenv_average_income_residents_2011
+**Variable name**: socenv_av_inc_residents_2011
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
 **Variable type**: integer     
 **Variable unit**:   
@@ -898,7 +898,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of income recipients in 2005
-**Variable name**: socenv_average_income_recipients_2005  
+**Variable name**: socenv_av_inc_recipients_2005  
 **Variable description**: Proportion of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -913,7 +913,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of income recipients in 2011  
-**Variable name**: socenv_average_income_recipients_2011  
+**Variable name**: socenv_av_inc_recipients_2011  
 **Variable description**: Proportion of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -946,7 +946,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unemployed residents in 2007    
-**Variable name**: socenv_proportion_unemployment_2007    
+**Variable name**: socenv_prop_unemployment_2007    
 **Variable description**: Proportion of unemployed residents in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -961,7 +961,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unemployed residents in 2011    
-**Variable name**: socenv_proportion_unemployment_2011    
+**Variable name**: socenv_prop_unemployment_2011    
 **Variable description**: Proportion of unemployed residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1070,7 +1070,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents with disability benefit in 2010  
-**Variable name**: socenv_proportion_disability_benefit_2010   
+**Variable name**: socenv_prop_disabilityben_2010   
 **Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1085,7 +1085,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents with unemployment benefit in 2010  
-**Variable name**: socenv_proportion_unemployment_benefit_2010   
+**Variable name**: socenv_prop_unemploymentben_2010   
 **Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1143,26 +1143,11 @@ output: html_document
 #This is where the R-script will be written
 
 
-### **Variable label**: Proportion of social security beneficiaries in 2016    
-**Variable name**: socenv_proportion_social_beneficiaries_2016  
-**Variable description**: Proportion of social security beneficiaries in residential area in 2016.    
-**Variable type**: decimal     
-**Variable unit**:   
-**Category coding**:   
-
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
-{r, echo=TRUE}
-#This is where the R-script will be written
-
-
-
 # Educational level  
 
 
 ### **Variable label**: Proportion of low educated residents in 2011  
-**Variable name**: socenv_proportion_low_education_2011  
+**Variable name**: socenv_prop_low_education_2011  
 **Variable description**: Proportion of low educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1177,7 +1162,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of intermediate educated residents in 2011  
-**Variable name**: socenv_proportion_intermediate_education_2011  
+**Variable name**: socenv_prop_intermediate_education_2011  
 **Variable description**: Proportion of intermediate educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1192,7 +1177,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of high educated residents in 2011  
-**Variable name**: socenv_proportion_high_education_2011  
+**Variable name**: socenv_prop_high_education_2011  
 **Variable description**: Proportion of high educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1207,7 +1192,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of non-educated residents in 2011  
-**Variable name**: socenv_proportion_no_education_2011  
+**Variable name**: socenv_prop_no_education_2011  
 **Variable description**: Proportion of non-educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1222,7 +1207,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents whose educational level was not indicated in 2011
-**Variable name**: socenv_proportion_education_not_indicated_2011  
+**Variable name**: socenv_prop_education_not_indicated_2011  
 **Variable description**: Proportion of residents in residential area whose educational level was not indicated in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1238,7 +1223,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of low educated residents in 2014 
-**Variable name**: socenv_proportion_low_education_2014  
+**Variable name**: socenv_prop_low_education_2014  
 **Variable description**: Proportion of low educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1253,7 +1238,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of intermediate educated residents in 2014  
-**Variable name**: socenv_proportion_intermediate_education_2014  
+**Variable name**: socenv_prop_intermediate_education_2014  
 **Variable description**: Proportion of intermediate educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1268,7 +1253,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of high educated residents in 2014  
-**Variable name**: socenv_proportion_high_education_2014  
+**Variable name**: socenv_prop_high_education_2014  
 **Variable description**: Proportion of high educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1286,7 +1271,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of western immigrants in 2006  
-**Variable name**: socenv_proportion_western_immigrants_2006  
+**Variable name**: socenv_prop_west_imgs_2006  
 **Variable description**: Proportion of western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1301,7 +1286,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of non-western immigrants in 2006  
-**Variable name**: socenv_proportion_non_western_immigrants_2006  
+**Variable name**: socenv_prop_non_west_imgs_2006    
 **Variable description**: Proportion of non-western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1316,7 +1301,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of western immigrants in 2011  
-**Variable name**: socenv_proportion_western_immigrants_2011  
+**Variable name**: socenv_prop_west_imgs_2011  
 **Variable description**: Proportion of western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1331,7 +1316,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of non-western immigrants in 2011  
-**Variable name**: socenv_proportion_non_western_immigrants_2011  
+**Variable name**: socenv_prop_non_west_imgs_2011  
 **Variable description**: Proportion of non-western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1347,7 +1332,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
-**Variable name**: socenv_proportion_ethnicity_moroccan_2006  
+**Variable name**: socenv_prop_eth_moroccan_2006  
 **Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1362,7 +1347,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2006  
-**Variable name**: socenv_proportion_ethnicity_antilles_aruba_2006  
+**Variable name**: socenv_prop_eth_antil_aruba_2006  
 **Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1377,7 +1362,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
-**Variable name**: socenv_proportion_ethnicity_surinamese_2006  
+**Variable name**: socenv_prop_eth_sur_2006  
 **Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1392,7 +1377,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Turkish origin in 2006  
-**Variable name**: socenv_proportion_ethnicity_turkey_2006  
+**Variable name**: socenv_prop_eth_turkey_2006  
 **Variable description**: Proportion of immigrants of Turkish origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1407,7 +1392,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of other origin in 2006  
-**Variable name**: socenv_proportion_ethnicity_other_2006  
+**Variable name**: socenv_prop_eth_other_2006  
 **Variable description**: Proportion of immigrants of other origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1422,7 +1407,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
-**Variable name**: socenv_proportion_ethnicity_moroccan_2011  
+**Variable name**: socenv_prop_eth_moroccan_2011  
 **Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1437,7 +1422,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2011  
-**Variable name**: socenv_proportion_ethnicity_antilles_aruba_2011  
+**Variable name**: socenv_prop_eth_antil_aruba_2011  
 **Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1452,7 +1437,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
-**Variable name**: socenv_proportion_ethnicity_surinamese_2011  
+**Variable name**: socenv_prop_eth_sur_2011  
 **Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1467,7 +1452,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of Turkish origin in 2011  
-**Variable name**: socenv_proportion_ethnicity_turkey_2011  
+**Variable name**: socenv_prop_eth_turkey_2011  
 **Variable description**: Proportion of immigrants of Turkish origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1482,7 +1467,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants of other origin in 2011  
-**Variable name**: socenv_proportion_ethnicity_other_2011  
+**Variable name**: socenv_prop_eth_other_2011  
 **Variable description**: Proportion of immigrants of other origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1497,7 +1482,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners and stateless persons in 2011  
-**Variable name**: socenv_proportion_foreigners_stateless_persons_2011  
+**Variable name**: socenv_prop_stateless_2011  
 **Variable description**: Proportion of stateless foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1512,7 +1497,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners from Europe in 2011  
-**Variable name**: socenv_proportion_foreigners_europe_2011  
+**Variable name**: socenv_prop_europe_2011  
 **Variable description**: Proportion of European foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1527,7 +1512,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners from Africa in 2011  
-**Variable name**: socenv_proportion_foreigners_africa_2011  
+**Variable name**: socenv_prop_africa_2011  
 **Variable description**: Proportion of African foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1542,7 +1527,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners from America in 2011  
-**Variable name**: socenv_proportion_foreigners_america_2011  
+**Variable name**: socenv_prop_america_2011  
 **Variable description**: Proportion of American foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1557,7 +1542,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners from Asia in 2011  
-**Variable name**: socenv_proportion_foreigners_asia_2011  
+**Variable name**: socenv_prop_asia_2011  
 **Variable description**: Proportion of Asian foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1572,7 +1557,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners from Oceania in 2011  
-**Variable name**: socenv_proportion_foreigners_oceania_2011  
+**Variable name**: socenv_prop_oceania_2011  
 **Variable description**: Proportion of foreigners from Oceania in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1587,7 +1572,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of stateless persons in 2011  
-**Variable name**: socenv_proportion_stateless_persons_2011  
+**Variable name**: socenv_prop_stateless_2011  
 **Variable description**: Proportion of stateless persons in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1601,7 +1586,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners in 2007  
-**Variable name**: socenv_proportion_foreigners_2007  
+**Variable name**: socenv_prop_foreigners_2007  
 **Variable description**: Proportion of foreigners in residential area in 2007.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1616,7 +1601,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners in 2011  
-**Variable name**: socenv_proportion_foreigners_2011  
+**Variable name**: socenv_prop_foreigners_2011  
 **Variable description**: Proportion of foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1631,7 +1616,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents with a migration background in 2011  
-**Variable name**: socenv_proportion_residents_with_migration_background_2011  
+**Variable name**: socenv_prop_migration_backg_2011  
 **Variable description**: Proportion of residents with a migration background in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1646,7 +1631,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of foreigners in 2016  
-**Variable name**: socenv_proportion_foreigners_2016  
+**Variable name**: socenv_prop_foreigners_2016  
 **Variable description**: Proportion of foreigners in residential area in 2016.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1661,7 +1646,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents with a migration background in 2016  
-**Variable name**: socenv_proportion_residents_with_migration_background_2016    
+**Variable name**: socenv_prop_migration_backg_2016    
 **Variable description**: Proportion of residents with a migration background in residential area in 2016.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1676,7 +1661,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants and Norwegian-born immigrant parents in 2011  
-**Variable name**: socenv_prop_immigrants_norwegian_born_2011_total  
+**Variable name**: socenv_prop_imgs_nw_2011_total  
 **Variable description**: Proportion of immigrants and Norwegian-born immigrant parents in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1691,7 +1676,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of immigrants in 2011  
-**Variable name**: socenv_prop_immigrants_2011_total  
+**Variable name**: socenv_prop_imgs_2011_total  
 **Variable description**: Proportion of immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1706,7 +1691,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Norwegian-born immigrant parents in 2011  
-**Variable name**: socenv_prop_norwegian_born_immigr_parents_total_2011
+**Variable name**: socenv_prop_nw_imgspr_total_2011
 **Variable description**: Proportion of Norwegian-born immigrant parents in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1721,7 +1706,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Lithuanians in 2011  
-**Variable name**: socenv_proportion_ethnicity_lithuanians_2011  
+**Variable name**: socenv_prop_eth_lithuanians_2011  
 **Variable description**: Proportion of Lithuanians in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1736,7 +1721,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Russians in 2011  
-**Variable name**: socenv_proportion_ethnicity_russians_2011  
+**Variable name**: socenv_prop_eth_russians_2011  
 **Variable description**: Proportion of Russians in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1751,7 +1736,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Poles in 2011  
-**Variable name**: socenv_proportion_ethnicity_poles_2011  
+**Variable name**: socenv_prop_eth_poles_2011  
 **Variable description**: Proportion of Poles in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1766,7 +1751,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Belorussians in 2011  
-**Variable name**: socenv_proportion_ethnicity_belorussians_2011  
+**Variable name**: socenv_prop_eth_belorussians_2011  
 **Variable description**: Proportion of Belorussians in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1781,7 +1766,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Ukrainians in 2011  
-**Variable name**: socenv_proportion_ethnicity_ukrainians_2011  
+**Variable name**: socenv_prop_eth_ukrainians_2011  
 **Variable description**: Proportion of Ukrainians in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1796,7 +1781,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Jews in 2011  
-**Variable name**: socenv_proportion_ethnicity_jews_2011  
+**Variable name**: socenv_prop_eth_jews_2011  
 **Variable description**: Proportion of Jews in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1811,7 +1796,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Tatars in 2011  
-**Variable name**: socenv_proportion_ethnicity_tatars_2011  
+**Variable name**: socenv_prop_eth_tatars_2011  
 **Variable description**: Proportion of Tatars in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1826,7 +1811,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Germans in 2011  
-**Variable name**: socenv_proportion_ethnicity_germans_2011  
+**Variable name**: socenv_prop_eth_germans_2011  
 **Variable description**: Proportion of Germans in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1841,7 +1826,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Romany in 2011  
-**Variable name**: socenv_proportion_ethnicity_romany_2011  
+**Variable name**: socenv_prop_eth_romany_2011  
 **Variable description**: Proportion of Romany in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1856,7 +1841,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Latvians in 2011  
-**Variable name**: socenv_proportion_ethnicity_latvians_2011  
+**Variable name**: socenv_prop_eth_latvians_2011  
 **Variable description**: Proportion of Latvians in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1871,7 +1856,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of Armenians in 2011  
-**Variable name**: socenv_proportion_ethnicity_armenians_2011  
+**Variable name**: socenv_prop_eth_armenians_2011  
 **Variable description**: Proportion of Armenians in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1886,7 +1871,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents of other origins in 2011  
-**Variable name**: socenv_proportion_ethnicity_others_2011
+**Variable name**: socenv_prop_eth_others_2011
 **Variable description**: Proportion of residents of other origins in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1901,7 +1886,7 @@ output: html_document
 
 
 ### **Variable label**: Proportion of residents whose origin is not indicated in 2011  
-**Variable name**: socenv_proportion_ethnicity_not_indicated_2011  
+**Variable name**: socenv_prop_eth_not_ind_2011  
 **Variable description**: Proportion of residents whose origin is not indicated in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1919,7 +1904,7 @@ output: html_document
 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2007  
-**Variable name**: socenv_number_criminal_offenses_per_1000_residents_2007    
+**Variable name**: socenv_crimoff_2007    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.       
 **Variable type**: integer    
 **Variable unit**:   
@@ -1934,7 +1919,7 @@ output: html_document
 
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2007  
-**Variable name**: socenv_number_violent_crimes_offenses_per_1000_residents_2007    
+**Variable name**: socenv_violentcrim_2007    
 **Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.       
 **Variable type**: integer      
 **Variable unit**:   
@@ -1949,7 +1934,7 @@ output: html_document
 
 
 ### **Variable label**: Number of thefts per 1000 residents in 2007  
-**Variable name**: socenv_number_thefts_per_1000_residents_2007    
+**Variable name**: socenv_thefts_2007    
 **Variable description**: Number of thefts per 1000 residents in residential area in 2007.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -1964,7 +1949,7 @@ output: html_document
 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
-**Variable name**: socenv_number_criminal_offenses_per_1000_residents_2011    
+**Variable name**: socenv_crimoff_2011    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011.       
 **Variable type**: integer     
 **Variable unit**:   
@@ -1979,7 +1964,7 @@ output: html_document
 
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2011  
-**Variable name**: socenv_number_vandalism_public_order_per_1000_residents_2011   
+**Variable name**: socenv_vandalism_po_2011   
 **Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2011.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -1994,7 +1979,7 @@ output: html_document
 
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2011    
-**Variable name**: socenv_number_violent_crimes_sexual_offenses_per_1000_residents_2011    
+**Variable name**: socenv_violentcrim_sexoff_2011    
 **Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2011.         
 **Variable type**: integer      
 **Variable unit**:   
@@ -2009,7 +1994,7 @@ output: html_document
 
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2011    
-**Variable name**: socenv_number_violent_crimes_per_1000_residents_2011    
+**Variable name**: socenv_violentcrim_2011    
 **Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2024,7 +2009,7 @@ output: html_document
 
 
 ### **Variable label**: Number of thefts per 1000 residents in 2011    
-**Variable name**: socenv_number_thefts_per_1000_residents_2011    
+**Variable name**: socenv_thefts_2011    
 **Variable description**: Number of thefts per 1000 residents in residential area in 2011.       
 **Variable type**: integer     
 **Variable unit**:   
@@ -2039,7 +2024,7 @@ output: html_document
 
 
 ### **Variable label**: Number of vandalism per 1000 residents in 2011   
-**Variable name**: socenv_number_vandalism_per_1000_residents_2011    
+**Variable name**: socenv_vandalism_2011    
 **Variable description**: Number of vandalism per 1000 residents in residential area in 2011.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2054,7 +2039,7 @@ output: html_document
 
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2011    
-**Variable name**: socenv_number_public_order_per_1000_residents_2011    
+**Variable name**: socenv_po_2011    
 **Variable description**: Number of public disorder per 1000 residents in residential area in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2069,7 +2054,7 @@ output: html_document
 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
-**Variable name**: socenv_number_criminal_offenses_per_1000_residents_2014    
+**Variable name**: socenv_crimoff_2014    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2084,7 +2069,7 @@ output: html_document
 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2015    
-**Variable name**: socenv_number_criminal_offenses_per_1000_residents_2015    
+**Variable name**: socenv_crimoff_2015    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2099,7 +2084,7 @@ output: html_document
 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2016    
-**Variable name**: socenv_number_criminal_offenses_per_1000_residents_2016    
+**Variable name**: socenv_crimoff_2016    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2114,7 +2099,7 @@ output: html_document
 
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2016    
-**Variable name**: socenv_number_vandalism_public_order_per_1000_residents_2016   
+**Variable name**: socenv_vandalism_po_2016   
 **Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2016.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2129,7 +2114,7 @@ output: html_document
 
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2016  
-**Variable name**: socenv_number_violent_crimes_sexual_offenses_per_1000_residents_2016   
+**Variable name**: socenv_violentcrim_sexoff_2016   
 **Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2016.        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2144,7 +2129,7 @@ output: html_document
 
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2016    
-**Variable name**: socenv_number_violent_crimes_per_1000_residents_2016   
+**Variable name**: socenv_violentcrim_2016   
 **Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2159,7 +2144,7 @@ output: html_document
 
 
 ### **Variable label**: Number of thefts per 1000 residents in 2016  
-**Variable name**: socenv_number_thefts_per_1000_residents_2016    
+**Variable name**: socenv_thefts_2016    
 **Variable description**: Number of thefts per 1000 residents in residential area in 2016.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2174,7 +2159,7 @@ output: html_document
 
 
 ### **Variable label**: Number of vandalism per 1000 residents in 2016    
-**Variable name**: socenv_number_vandalism_per_1000_residents_2016    
+**Variable name**: socenv_vandalism_2016    
 **Variable description**: Number of vandalism per 1000 residents in residential area in 2016.          
 **Variable type**: integer     
 **Variable unit**:   
@@ -2189,7 +2174,7 @@ output: html_document
 
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2016    
-**Variable name**: socenv_number_public_order_per_1000_residents_2016    
+**Variable name**: socenv_po_2016    
 **Variable description**: Number of public disorder per 1000 residents in residential area in 2016.        
 **Variable type**: integer      
 **Variable unit**:   
