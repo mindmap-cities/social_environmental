@@ -615,7 +615,7 @@ output: html_document
 
 
 ### **Variable label**: Average income in 1000 euros in 2005  
-**Variable name**: socenv_av_inc_residents_2005  
+**Variable name**: socenv_av_inc1000_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
 **Variable type**: integer     
 **Variable unit**:   
@@ -630,7 +630,7 @@ output: html_document
 
 
 ### **Variable label**: Average income in 1000 euros in 2006  
-**Variable name**: socenv_av_inc_residents_2006 
+**Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
 **Variable type**: integer     
 **Variable unit**:   
@@ -645,7 +645,7 @@ output: html_document
 
 
 ### **Variable label**: Average income in 1000 euros in 2011   
-**Variable name**: socenv_av_inc_residents_2011 
+**Variable name**: socenv_av_inc1000_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
 **Variable type**: integer     
 **Variable unit**:   
