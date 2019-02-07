@@ -1,0 +1,1662 @@
+---
+title: "Social environmental (i.e. geospatial) HAPIEE_RU"
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(epiDisplay)
+library(dplyr)
+library(data.table)
+# Connecting with Opal data server
+## Login to server and assign study data
+#Load Opal R library
+library(opal)
+# Create an opal object with the login information
+erasmus_opal <- opal.login()
+#Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
+#HAPIEE_W1 
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list(''))
+HAPIEE_W1<- opal.execute(erasmus_opal,'HAPIEE_W1')
+#HAPIEE_W2 
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables = list(''))
+HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_W2')
+```
+## Select country-specific sample
+```{r,echo=FALSE}
+HAPIEE_W1 <- subset(HAPIEE_W1, HAPIEE_W1$country==2)
+HAPIEE_W2 <- subset(HAPIEE_W2, HAPIEE_W2$country==2)
+```
+## Assign participant id as first column of your harmonized dataframes
+```{r, echo=FALSE}
+socenv_HAPIEE_RU_0 <- data.frame(id = HAPIEE_W1$id )
+socenv_HAPIEE_RU_1 <- data.frame(id = HAPIEE_W2$id )
+```
+## When you are done with your work, logout of Opal server
+```{r, echo=FALSE}
+opal.logout(erasmus_opal) 
+```
+---
+# Table of Contents
+1. [Urbanization grade](#Urbanization grade)  
+2. [Demographics](#Demographics)  
+3. [Housing](#Housing)  
+4. [Income](#Income)  
+5. [Unemployment](#Unemployment)  
+6. [Social security](#Social security)  
+7. [Educational level](#Educational level)  
+8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)  
+9. [Crime](#Crime)  
+  
+
+# Urbanization grade
+
+### **Variable label**: Urbanization grade in 2006  
+**Variable name**: socenv_urbanization_grade_2006    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2006.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+### **Variable label**: Urbanization grade in 2007 
+**Variable name**: socenv_urbanization_grade_2007    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2007.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Urbanization grade in 2009 
+**Variable name**: socenv_urbanization_grade_2009    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2009.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Urbanization grade in 2011 
+**Variable name**: socenv_urbanization_grade_2011    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}
+#This is where the R-script will be written
+
+```  
+
+### **Variable label**: Urbanization grade in 2014
+**Variable name**: socenv_urbanization_grade_2014    
+**Variable description**: Population density of the residential area (number of residents per km2) in 2014.  
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+
+# Demographics
+
+### **Variable label**: Proportion of men in 2006  
+**Variable name**: socenv_proportion_men_2006    
+**Variable description**: Proportion of men in the residential area in 2006.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of men in 2011  
+**Variable name**: socenv_proportion_men_2011    
+**Variable description**: Proportion of men in the residential area in 2011.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of women in 2006  
+**Variable name**: socenv_proportion_women_2006    
+**Variable description**: Proportion of women in the residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of women in 2011    
+**Variable name**: socenv_proportion_women_2011    
+**Variable description**: Proportion of women in the residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of residents aged 65 or older in 2006   
+**Variable name**: socenv_proportion_65_older_2006   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of residents aged 65 or older in 2007   
+**Variable name**: socenv_proportion_65_older_2007   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2007.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of residents aged 65 or older in 2011   
+**Variable name**: socenv_proportion_65_older_2011   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unmaried residents in 2008   
+**Variable name**: socenv_proportion_unmaried_2008   
+**Variable description**: Proportion of unmaried residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unmaried residents in 2011   
+**Variable name**: socenv_proportion_unmaried_2011   
+**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of maried residents in 2006   
+**Variable name**: socenv_proportion_maried_2006   
+**Variable description**: Proportion of maried residents in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of maried residents in 2008   
+**Variable name**: socenv_proportion_maried_2008   
+**Variable description**: Proportion of maried residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of maried residents in 2011   
+**Variable name**: socenv_proportion_maried_2011   
+**Variable description**: Proportion of maried residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of divorced residents in 2006   
+**Variable name**: socenv_proportion_divorced_2006   
+**Variable description**: Proportion of divorced residents in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of divorced residents in 2008   
+**Variable name**: socenv_proportion_divorced_2008   
+**Variable description**: Proportion of divorced residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of divorced residents in 2011   
+**Variable name**: socenv_proportion_divorced_2011   
+**Variable description**: Proportion of divorced residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of widowed residents in 2006   
+**Variable name**: socenv_proportion_widowed_2006   
+**Variable description**: Proportion of widowed residents in residential area in 2006.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of widowed residents in 2008     
+**Variable name**: socenv_proportion_widowed_2008   
+**Variable description**: Proportion of widowed residents in residential area in 2008.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of widowed residents in 2011    
+**Variable name**: socenv_proportion_widowed_2011   
+**Variable description**: Proportion of widowed residents in residential area in 2011.  
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household size in 2006   
+**Variable name**: socenv_average_hh_size_2006   
+**Variable description**: Average household size in residential area in 2006.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household size in 2009   
+**Variable name**: socenv_average_hh_size_2009   
+**Variable description**: Average household size in residential area in 2009.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household size in 2011   
+**Variable name**: socenv_average_hh_size_2011   
+**Variable description**: Average household size in residential area in 2011.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household size in 2014   
+**Variable name**: socenv_average_hh_size_2014   
+**Variable description**: Average household size in residential area in 2014.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household size in 2015      
+**Variable name**: socenv_average_hh_size_2015     
+**Variable description**: Average household size in residential area in 2015.    
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household size in 2016      
+**Variable name**: socenv_average_hh_size_2016      
+**Variable description**: Average household size in residential area in 2016.    
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+# Housing
+
+### **Variable label**: Average value of dwellings in 1000 euros in 2006    
+**Variable name**: socenv_avv_dwellings_2006  
+**Variable description**: Average value of dwellings in 1000 euros in residential area in 2006.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average value of dwellings in 1000 euros in 2011    
+**Variable name**: socenv_avv_dwellings_2011  
+**Variable description**: Average value of dwellings in 1000 euros in residential area in 2011.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_2007  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007.    
+**Variable type**: integer   
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
+**Variable name**: socenv_avv_dwelling_m2_2011  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011.    
+**Variable type**: integer   
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
+**Variable name**: socenv_avv_dwelling_m2_2013  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013.    
+**Variable type**: integer   
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average value of a plot (m2) in euros in 2014 (dwellings)  
+**Variable name**: socenv_avv_dwelling_m2_2014  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014.    
+**Variable type**: integer   
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
+**Variable name**: socenv_avv_dwelling_m2_2015   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
+**Variable type**: integer   
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unoccupied dwellings in 2011   
+**Variable name**: socenv_prop_unocc_dwellings_2011
+**Variable description**: Proportion of unoccupied dwellings in residential area in 2011.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unoccupied dwellings in 2012   
+**Variable name**: socenv_prop_unocc_dwellings_2012
+**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unoccupied dwellings in 2014   
+**Variable name**: socenv_prop_unocc_dwellings_2012
+**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+# Income
+
+### **Variable label**: Average income in 1000 euros in 2005  
+**Variable name**: socenv_av_inc1000_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2006  
+**Variable name**: socenv_av_inc1000_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2011   
+**Variable name**: socenv_av_inc1000_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2006  
+**Variable name**: socenv_av_inc_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006.    
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2007  
+**Variable name**: socenv_av_inc_2007
+**Variable description**: Average income in euros of residents in residential area in 2007.    
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2011  
+**Variable name**: socenv_av_inc_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011.    
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2013  
+**Variable name**: socenv_av_inc_2013  
+**Variable description**: Average income in euros of residents in residential area in 2013.    
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2014  
+**Variable name**: socenv_av_inc_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014.    
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2015  
+**Variable name**: socenv_av_inc_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015.    
+**Variable type**: integer     
+**Variable unit**: euros     
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2016  
+**Variable name**: socenv_av_inc_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016.    
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of income recipients in 2005
+**Variable name**: socenv_av_inc_recipients_2005  
+**Variable description**: Proportion of income recipients in residential area in 2005.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of income recipients in 2011  
+**Variable name**: socenv_av_inc_recipients_2011  
+**Variable description**: Proportion of income recipients in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+# Unemployment
+
+### **Variable label**: Proportion of unemployed residents in 2006  
+**Variable name**: socenv_prop_unemployment_2006  
+**Variable description**: Proportion of unemployed residents in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unemployed residents in 2007    
+**Variable name**: socenv_prop_unemployment_2007    
+**Variable description**: Proportion of unemployed residents in residential area in 2007.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unemployed residents in 2011    
+**Variable name**: socenv_prop_unemployment_2011    
+**Variable description**: Proportion of unemployed residents in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unemployed residents in 2014  
+**Variable name**: socenv_prop_unemployment_2014  
+**Variable description**: Proportion of unemployed residents in residential area in 2014.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of unemployed residents in 2015  
+**Variable name**: socenv_prop_unemployment_2015  
+**Variable description**: Proportion of unemployed residents in residential area in 2015.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+# Social security
+
+### **Variable label**: Proportion of social security beneficiaries in 2006  
+**Variable name**: socenv_proportion_socsecben_2006   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of social security beneficiaries in 2007    
+**Variable name**: socenv_proportion_socsecben_2007   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2007.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of social security beneficiaries in 2010  
+**Variable name**: socenv_proportion_socsecben_2010   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of social security beneficiaries in 2011  
+**Variable name**: socenv_proportion_socsecben_2011   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of social security beneficiaries in 2015  
+**Variable name**: socenv_proportion_socsecben_2015   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2015.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of social security beneficiaries in 2016  
+**Variable name**: socenv_proportion_socsecben_2016   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2016.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of residents with disability benefit in 2010  
+**Variable name**: socenv_proportion_disben_2010   
+**Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of residents with unemployment benefit in 2010  
+**Variable name**: socenv_proportion_unemplben_2010   
+**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+# Educational level  
+
+### **Variable label**: Proportion of low educated residents in 2011  
+**Variable name**: socenv_prop_low_education_2011  
+**Variable description**: Proportion of low educated residents in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of low educated residents in 2014 
+**Variable name**: socenv_prop_low_education_2014  
+**Variable description**: Proportion of low educated residents in residential area in 2014.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of intermediate educated residents in 2011  
+**Variable name**: socenv_prop_itm_education_2011  
+**Variable description**: Proportion of intermediate educated residents in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of intermediate educated residents in 2014  
+**Variable name**: socenv_prop_itm_education_2014  
+**Variable description**: Proportion of intermediate educated residents in residential area in 2014.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of high educated residents in 2011  
+**Variable name**: socenv_prop_high_education_2011  
+**Variable description**: Proportion of high educated residents in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of high educated residents in 2014  
+**Variable name**: socenv_prop_high_education_2014  
+**Variable description**: Proportion of high educated residents in residential area in 2014.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+# Immigrants and ethnic minority groups
+
+### **Variable label**: Proportion of immigrants in 2011  
+**Variable name**: socenv_prop_immigrants_2011
+**Variable description**: Proportion of immigrants in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of western immigrants in 2006  
+**Variable name**: socenv_prop_west_imgs_2006  
+**Variable description**: Proportion of western immigrants in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of western immigrants in 2011  
+**Variable name**: socenv_prop_west_imgs_2011  
+**Variable description**: Proportion of western immigrants in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of non-western immigrants in 2006  
+**Variable name**: socenv_prop_nonwest_imgs_2006  
+**Variable description**: Proportion of non-western immigrants in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of non-western immigrants in 2011  
+**Variable name**: socenv_prop_nonwest_imgs_2011  
+**Variable description**: Proportion of non-western immigrants in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
+**Variable name**: socenv_prop_moroccan_2006  
+**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
+**Variable name**: socenv_prop_moroccan_2011  
+**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2006  
+**Variable name**: socenv_prop_antaru_2006  
+**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2011  
+**Variable name**: socenv_prop_antaru_2011  
+**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
+**Variable name**: socenv_prop_surinamese_2006  
+**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
+**Variable name**: socenv_prop_surinamese_2011  
+**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Turkish origin in 2006  
+**Variable name**: socenv_prop_turkey_2006  
+**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of Turkish origin in 2011  
+**Variable name**: socenv_prop_turkey_2011  
+**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of other origin in 2006  
+**Variable name**: socenv_prop_other_2006  
+**Variable description**: Proportion of immigrants of other origin in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of immigrants of other origin in 2011  
+**Variable name**: socenv_prop_other_2011  
+**Variable description**: Proportion of immigrants of other origin in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of foreigners in 2007  
+**Variable name**: socenv_prop_foreigners_2007  
+**Variable description**: Proportion of foreigners in residential area in 2007.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Proportion of foreigners in 2011  
+**Variable name**: socenv_prop_foreigners_2011  
+**Variable description**: Proportion of foreigners in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+# Crime  
+
+### **Variable label**: Number of criminal offenses per 1000 residents in 2007  
+**Variable name**: socenv_crimoff_2007    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
+**Variable name**: socenv_crimoff_2011    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011.       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
+**Variable name**: socenv_crimoff_2014    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of criminal offenses per 1000 residents in 2015    
+**Variable name**: socenv_crimoff_2015    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of criminal offenses per 1000 residents in 2016    
+**Variable name**: socenv_crimoff_2016    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of violent crimes per 1000 residents in 2007  
+**Variable name**: socenv_violentcrim_2007    
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of violent crimes per 1000 residents in 2011    
+**Variable name**: socenv_violentcrim_2011    
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of violent crimes per 1000 residents in 2016    
+**Variable name**: socenv_violentcrim_2016   
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of thefts per 1000 residents in 2007  
+**Variable name**: socenv_thefts_2007    
+**Variable description**: Number of thefts per 1000 residents in residential area in 2007.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of thefts per 1000 residents in 2011    
+**Variable name**: socenv_thefts_2011    
+**Variable description**: Number of thefts per 1000 residents in residential area in 2011.       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of thefts per 1000 residents in 2016  
+**Variable name**: socenv_thefts_2016    
+**Variable description**: Number of thefts per 1000 residents in residential area in 2016.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2011  
+**Variable name**: socenv_vandalism_po_2011   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2011.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2016    
+**Variable name**: socenv_vandalism_po_2016   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2016.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2011    
+**Variable name**: socenv_violentcrim_sexoff_2011    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2011.         
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2016  
+**Variable name**: socenv_violentcrim_sexoff_2016   
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2016.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of vandalism per 1000 residents in 2011   
+**Variable name**: socenv_vandalism_2011    
+**Variable description**: Number of vandalism per 1000 residents in residential area in 2011.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of vandalism per 1000 residents in 2016    
+**Variable name**: socenv_vandalism_2016    
+**Variable description**: Number of vandalism per 1000 residents in residential area in 2016.          
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of public disorder per 1000 residents in 2011    
+**Variable name**: socenv_po_2011    
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Number of public disorder per 1000 residents in 2016    
+**Variable name**: socenv_po_2016    
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
