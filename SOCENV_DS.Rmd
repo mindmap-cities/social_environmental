@@ -204,8 +204,8 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unmaried residents in 2008   
-**Variable name**: socenv_proportion_unmaried_2008   
-**Variable description**: Proportion of unmaried residents in residential area in 2008.  
+**Variable name**: socenv_proportion_unmarried_2008   
+**Variable description**: Proportion of unmarried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -219,8 +219,8 @@ output: html_document
 
 
 ### **Variable label**: Proportion of unmaried residents in 2011   
-**Variable name**: socenv_proportion_unmaried_2011   
-**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+**Variable name**: socenv_proportion_unmarried_2011   
+**Variable description**: Proportion of unmarried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -234,8 +234,8 @@ output: html_document
 
 
 ### **Variable label**: Proportion of maried residents in 2006   
-**Variable name**: socenv_proportion_maried_2006   
-**Variable description**: Proportion of maried residents in residential area in 2006.  
+**Variable name**: socenv_proportion_married_2006   
+**Variable description**: Proportion of married residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -249,8 +249,8 @@ output: html_document
 
 
 ### **Variable label**: Proportion of maried residents in 2008   
-**Variable name**: socenv_proportion_maried_2008   
-**Variable description**: Proportion of maried residents in residential area in 2008.  
+**Variable name**: socenv_proportion_married_2008   
+**Variable description**: Proportion of married residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -264,8 +264,8 @@ output: html_document
 
 
 ### **Variable label**: Proportion of maried residents in 2011   
-**Variable name**: socenv_proportion_maried_2011   
-**Variable description**: Proportion of maried residents in residential area in 2011.  
+**Variable name**: socenv_proportion_married_2011   
+**Variable description**: Proportion of married residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -1198,9 +1198,9 @@ output: html_document
 
 
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2006  
+### **Variable label**: Proportion of immigrants of Antillean and Aruban origin in 2006  
 **Variable name**: socenv_prop_antaru_2006  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2006.      
+**Variable description**: Proportion of immigrants of Antillean and Aruban origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1213,9 +1213,9 @@ output: html_document
 
 
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2011  
+### **Variable label**: Proportion of immigrants of Antillean and Aruban origin in 2011  
 **Variable name**: socenv_prop_antaru_2011  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2011.      
+**Variable description**: Proportion of immigrants of Antillean and Aruban origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
