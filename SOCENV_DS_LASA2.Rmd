@@ -42,7 +42,7 @@ opal.logout(erasmus_opal)
 5. [Unemployment](#Unemployment)  
 6. [Social security](#Social security)  
 7. [Educational level](#Educational level)  
-8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)  
+8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
 9. [Crime](#Crime)  
   
 
@@ -55,12 +55,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2006$socenv_urbanization_grade_2006<-as.integer(LASA2F_socioenviro$URBANIZATION_GRADE_2006)
 ```  
 
 ### **Variable label**: Urbanization grade in 2007 
@@ -70,8 +70,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -85,8 +86,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2009. 
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -100,12 +102,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
-```{r, echo=TRUE}
-#This is where the R-script will be written
-
+```{r, echo=TRUE}  
+socenv_LASA2_2011$socenv_urbanization_grade_2011<-as.integer(LASA2H_socioenviro$URBANIZATION_GRADE_2011)
 ```  
 
 ### **Variable label**: Urbanization grade in 2014
@@ -115,8 +117,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2014.   
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -134,11 +137,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_men_2006<-as.decimal(LASA2F_socioenviro$PROPORTION_MEN_2006) 
 
 ```    
 
@@ -149,11 +153,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_proportion_men_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_MEN_2011) 
 
 ```    
 
@@ -164,11 +169,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_women_2006<-as.decimal(LASA2F_socioenviro$PROPORTION_WOMEN_2006)  
 
 ```    
 
@@ -179,11 +185,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_proportion_women_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_WOMEN_2011)  
 
 ```    
 
@@ -194,11 +201,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_65_older_2006<-as.decimal(LASA2F_socioenviro$PROPORTION_65_OLDER_2006) 
 
 ```    
 
@@ -209,8 +217,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  impossible
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -224,12 +233,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_proportion_65_older_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_65_OLDER_2011) 
 ```    
 
 ### **Variable label**: Proportion of unmaried residents in 2008   
@@ -239,11 +248,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_unmaried_2008<-as.decimal(LASA2F_socioenviro$PROPORTION_UNMARIED_2008) 
 
 ```    
 
@@ -254,12 +264,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_proportion_unmaried_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_UNMARIED_2011) 
 ```    
 
 ### **Variable label**: Proportion of maried residents in 2006   
@@ -269,8 +279,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Impossible
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2006. 
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -284,11 +295,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_maried_2008<-as.decimal(LASA2F_socioenviro$PROPORTION_MARIED_2008) 
 
 ```    
 
@@ -299,11 +311,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_proportion_maried_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_MARIED_2011) 
 
 ```    
 
@@ -314,11 +327,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Impossible
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
+
 
 ```    
 
@@ -329,11 +344,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_divorced_2008<-as.decimal(LASA2F_socioenviro$PROPORTION_DIVORCED_2008)  
 
 ```    
 
@@ -344,11 +360,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_proportion_divorced_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_DIVORCED_2011)  
 
 ```    
 
@@ -359,8 +376,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -374,11 +392,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_widowed_2008<-as.decimal(LASA2F_socioenviro$PROPORTION_WIDOWED_2008)  
 
 ```    
 
@@ -389,11 +408,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_proportion_widowed_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_WIDOWED_2011)  
 
 ```    
 
@@ -404,11 +424,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_average_hh_size_2006<-as.integer(LASA2F_socioenviro$AVERAGE_HOUSEHOLD_SIZE_2006) 
 
 ```    
 
@@ -419,8 +440,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2009.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -434,11 +456,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_average_hh_size_2011<-as.integer(LASA2H_socioenviro$AVERAGE_HOUSEHOLD_SIZE_2011)   
 
 ```    
 
@@ -449,9 +472,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2014.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -464,9 +487,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2015.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -479,9 +502,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2016. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -497,11 +520,12 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_avv_dwellings_2006<-as.integer(LASA2F_socioenviro$AVERAGE_VALUE_DWELLINGS_2006) 
 
 ```    
 
@@ -512,11 +536,12 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_avv_dwellings_2011<-as.integer(LASA2H_socioenviro$AVERAGE_VALUE_DWELLINGS_2011)  
 
 ```    
 
@@ -527,8 +552,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -542,9 +568,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are not available.  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -557,9 +583,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -572,9 +598,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are not available.  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -587,9 +613,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -602,9 +628,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2012, not in 2011. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -617,17 +643,18 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Complete
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_prop_unocc_dwellings_2012<-as.decimal(LASA2H_socioenviro$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
 
 ```    
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_prop_unocc_dwellings_2012
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+**Variable name**: socenv_prop_unocc_dwellings_2014
+**Variable description**: Proportion of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -649,11 +676,12 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_av_inc1000_2005<-as.integer(LASA2F_socioenviro$AVERAGE_INCOME_RESIDENTS_2005) 
 
 ```    
 
@@ -664,8 +692,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  Impossible
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2005 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -679,12 +708,12 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_av_inc1000_2011<-as.integer(LASA2H_socioenviro$AVERAGE_INCOME_RESIDENTS_2011) 
 ```    
 
 ### **Variable label**: Average income in euros in 2006  
@@ -694,8 +723,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -709,8 +739,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -724,9 +755,10 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -739,8 +771,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -754,8 +787,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -769,8 +803,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros     
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -784,13 +819,528 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
 ```    
+
+
+
+### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
+**Variable name**: socenv_av_inc1000dich_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2005) by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
+**R script**:  
+```{r, echo=TRUE} 
+socenv_LASA2_2006$socenv_av_inc1000dich_2005 < ifelse(LASA2F_socioenviro$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
+**Variable name**: socenv_av_inc1000dich_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
+**Variable name**: socenv_av_inc1000dich_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
+**R script**:  
+```{r, echo=TRUE} 
+socenv_LASA2_2011$socenv_av_inc1000dich_2011 < ifelse(LASA2H_socioenviro$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
+
+```        
+
+### **Variable label**: Average income in euros in 2006 (dichotomized)  
+**Variable name**: socenv_av_incdich_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```     
+
+### **Variable label**: Average income in euros in 2007 (dichotomized)   
+**Variable name**: socenv_av_incdich_2007
+**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2011 (dichotomized)  
+**Variable name**: socenv_av_incdich_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```     
+
+### **Variable label**: Average income in euros in 2013 (dichotomized)  
+**Variable name**: socenv_av_incdich_2013
+**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```     
+
+### **Variable label**: Average income in euros in 2014 (dichotomized) 
+**Variable name**: socenv_av_incdich_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:  
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2015 (dichotomized) 
+**Variable name**: socenv_av_incdich_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2016 (dichotomized)  
+**Variable name**: socenv_av_inc_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable type**: integer     
+**Variable unit**:     
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```     
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
+**Variable type**: integer     
+**Variable unit**: in euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
+**Variable type**: integer     
+**Variable unit**: in euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
+**Variable type**: integer     
+**Variable unit**: in euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+
+
+
+### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2005) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2005 in the Netherlands: y=12.3206 and o=2.42953. Here, this variable is linked to LASA participants at wave 2006.
+**R script**:  
+```{r, echo=TRUE} 
+
+socenv_LASA2_2006$socenv_av_inc1000Z_2005 <- ((LASA2F_socioenviro$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
+
+```       
+
+### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
+**Variable name**: socenv_av_inc1000Z_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
+**Variable name**: socenv_av_inc1000Z_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2011 in the Netherlands: y=22.1272 and o=4.99632. Here, this variable is linked to LASA participants at wave 2011. 
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_LASA2_2011$socenv_av_inc1000Z_2011 <- ((LASA2H_socioenviro$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+
+```    
+
+### **Variable label**: Average income in euros in 2006 (Z standardized)  
+**Variable name**: socenv_av_incZ_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: 
+**Harmonization comment**: 
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+ 
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2007 (Z standardized) 
+**Variable name**: socenv_av_incZ_2007
+**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2011 (Z standardized)  
+**Variable name**: socenv_av_incZ_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:    
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2013 (Z standardized)  
+**Variable name**: socenv_av_incZ_2013
+**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2014 (Z standardized) 
+**Variable name**: socenv_av_incZ_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
+**Variable type**: integer     
+**Variable unit**:  
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2015 (Z standardized) 
+**Variable name**: socenv_av_incZ_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2016 (Z standardized)  
+**Variable name**: socenv_av_incZ_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
+**Variable type**: integer     
+**Variable unit**:     
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA 
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for LASA  
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+
 
 ### **Variable label**: Proportion of income recipients in 2005
 **Variable name**: socenv_av_inc_recipients_2005  
@@ -799,12 +1349,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2006$socenv_av_inc_recipients_2005<-as.decimal(LASA2F_socioenviro$PROPORTION_INCOME_RECIPIENTS_2005) 
 ```    
 
 ### **Variable label**: Proportion of income recipients in 2011  
@@ -814,12 +1364,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_av_inc_recipients_2011<-as.decimal(LASA2H_socioenviro$PROPORTION_INCOME_RECIPIENTS_2011) 
 ```    
 
 # Unemployment
@@ -831,8 +1381,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -846,9 +1397,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -861,9 +1412,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -876,9 +1427,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -891,9 +1442,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -908,11 +1459,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2006$socenv_proportion_socsecben_2006<-as.decimal(LASA2F_socioenviro$PROPORTION_SOCSECBEN_2006)  
 
 ```    
 
@@ -923,8 +1475,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Impossible
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -938,12 +1491,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_proportion_socsecben_2010<-as.decimal(LASA2H_socioenviro$PROPORTION_SOCSECBEN_2010)  
 ```    
 
 ### **Variable label**: Proportion of social security beneficiaries in 2011  
@@ -953,9 +1506,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Impossible
 **Harmonization comment**:  
-**R script**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2011. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -968,9 +1521,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Impossible
 **Harmonization comment**:  
-**R script**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2015.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -983,12 +1536,27 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  Impossible
 **Harmonization comment**:  
-**R script**:  
+For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2016. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
+```    
+
+### **Variable label**: Proportion of residents with disability benefit in 2006  
+**Variable name**: socenv_proportion_disben_2006   
+**Variable description**: Proportion of residents with a disability benefit in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_proportion_disben_2006<-as.decimal(LASA2F_socioenviro$PROPORTION_DISABILITY_BENEFIT_2006)  
 ```    
 
 ### **Variable label**: Proportion of residents with disability benefit in 2010  
@@ -998,12 +1566,28 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_proportion_disben_2010<-as.decimal(LASA2H_socioenviro$PROPORTION_DISABILITY_BENEFIT_2010)  
+```    
 
+
+### **Variable label**: Proportion of residents with unemployment benefit in 2006 
+**Variable name**: socenv_proportion_unemplben_2006   
+**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_proportion_unemplben_2006<-as.decimal(LASA2F_socioenviro$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
 ```    
 
 ### **Variable label**: Proportion of residents with unemployment benefit in 2010  
@@ -1013,12 +1597,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  complete
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_proportion_unemplben_2010<-as.decimal(LASA2H_socioenviro$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
 ```    
 
 # Educational level  
@@ -1030,8 +1614,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1045,11 +1630,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**:
+For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_LASA2_2011$socenv_prop_low_education_2014<-as.decimal(LASA2H_socioenviro$PROPORTION_LOW_EDUCATION_2014) 
 
 ```    
 
@@ -1060,8 +1646,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1075,12 +1662,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Complete 
 **Harmonization comment**:  
+For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_prop_itm_education_2014<-as.decimal(LASA2H_socioenviro$PROPORTION_INTERMEDIATE_EDUCATION_2014)
 ```    
 
 ### **Variable label**: Proportion of high educated residents in 2011  
@@ -1090,8 +1677,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1105,12 +1693,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Complete 
 **Harmonization comment**:  
+For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_prop_high_education_2014<-as.decimal(LASA2H_socioenviro$PROPORTION_HIGH_EDUCATION_2014)
 ```    
 
 # Immigrants and ethnic minority groups
@@ -1122,8 +1710,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1137,9 +1726,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1152,9 +1741,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1167,9 +1756,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1182,9 +1771,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1197,9 +1786,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1212,9 +1801,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1227,9 +1816,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1242,9 +1831,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1257,9 +1846,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1272,9 +1861,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1287,9 +1876,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1302,9 +1891,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1317,9 +1906,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1332,9 +1921,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1347,9 +1936,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1362,9 +1951,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1379,8 +1968,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  Impossible
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1394,12 +1984,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_crimoff_2011<-as.integer(LASA2H_socioenviro$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011)
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
@@ -1409,8 +1999,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  Impossible
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1424,9 +2015,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  Impossible
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2011, not in 2015.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1439,9 +2031,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  Impossible
+**Harmonization comment**:
+For LASA, these data are available for neighbourhoods in 2011, not in 2016.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1454,8 +2047,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1469,9 +2063,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1484,9 +2079,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1499,8 +2095,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1514,8 +2111,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1529,9 +2127,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For LASA, these data are not available.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1544,12 +2143,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_LASA2_2011$socenv_vandalism_po_2011<-as.integer(LASA2H_socioenviro$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
 ```    
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2016    
@@ -1559,8 +2158,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
+For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1574,13 +2174,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For LASA, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_LASA2_2011$socenv_violentcrim_sexoff_2011<-as.integer(LASA2H_socioenviro$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011)
+```     
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2016  
 **Variable name**: socenv_violentcrim_sexoff_2016   
@@ -1589,9 +2189,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For LASA, these data are available for neighbourhoods in 2011, not in 2016.
+**R script**:    
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1604,8 +2205,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1619,9 +2221,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
-**R script**:  
+For LASA, these data are not available.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1634,8 +2237,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1649,11 +2253,379 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: Impossible 
 **Harmonization comment**:  
+For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
 ```    
+
+
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2004   
+**Variable description**: City indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2006   
+**Variable description**: City indicator in 2006       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_city_2006<-as.integer(LASA2_Fwave_Area_Identifiers$city)
+
+```  
+
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2009   
+**Variable description**: City indicator in 2009        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2011   
+**Variable description**: City indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2011$socenv_city_2011<-as.integer(LASA2_Hwave_Area_Identifiers$city)
+
+``` 
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2014   
+**Variable description**: City indicator in 2014        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2006   
+**Variable description**: Municipality indicator in 2006        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_municipality_2006<-as.integer(LASA2_Fwave_Area_Identifiers$city)
+
+```  
+
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2011   
+**Variable description**: Municipality indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2011$socenv_municipality_2011<-as.integer(LASA2_Hwave_Area_Identifiers$city)
+
+```  
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2016   
+**Variable description**: Municipality indicator in 2016        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2004
+**Variable description**: Neighbourhood indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2006
+**Variable description**: Neighbourhood indicator in 2006        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_neighbourhood_2006<-as.integer(LASA2_Fwave_Area_Identifiers$neighbourhood)
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood  
+**Variable name**: socenv_neighbourhood_2009   
+**Variable description**: Neighbourhood indicator in 2009       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2011
+**Variable description**: Neighbourhood indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2011$socenv_neighbourhood_2011<-as.integer(LASA2_Hwave_Area_Identifiers$neighbourhood)
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2014
+**Variable description**: Neighbourhood indicator in 2014       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2004
+**Variable description**: 4-digit postal code (PC4) indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2006
+**Variable description**: 4-digit postal code (PC4) indicator in 2006        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_PC4_2006<-as.integer(LASA2_Fwave_Area_Identifiers$PC4)
+
+```  
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2011
+**Variable description**: 4-digit postal code (PC4) indicator in 2011      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2011$socenv_PC4_2011<-as.integer(LASA2_Hwave_Area_Identifiers$PC4)
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2014
+**Variable description**: 4-digit postal code (PC4) indicator in 2014     
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2004
+**Variable description**: 6-digit postal code (PC6) indicator in 2004       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2006
+**Variable description**: 6-digit postal code (PC6) indicator in 2006       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2006$socenv_PC6_2006<-as.integer(LASA2_Fwave_Area_Identifiers$PC6)
+
+```  
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2011
+**Variable description**: 6-digit postal code (PC6) indicator in 2011      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_LASA2_2011$socenv_PC6_2011<-as.integer(LASA2_Hwave_Area_Identifiers$PC6)
+
+```  
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2014
+**Variable description**: 6-digit postal code (PC6) indicator in 2014      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+For LASA, the indicator variables start with 22.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code 
+**Variable name**: socenv_PC5_2009
+**Variable description**: 5-digit postal code (PC5) indicator in 2009        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
 

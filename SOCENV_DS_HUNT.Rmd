@@ -12,20 +12,20 @@ library(dplyr)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the HUNT table(s) to your RStudio environment
 # HUNT1
-opal.assign.table.tibble(erasmus_opal, 'HUNT1', 'HUNT.HUNT1',variables = list(''))
-HUNT1 <- opal.execute(erasmus_opal,'HUNT1')
+opal.assign.table.tibble(erasmus_opal, 'HUNT3_socioenviro', 'HUNT.HUNT3_socioenviro',variables = list('URBANIZATION_GRADE_2006'))
+HUNT3_socioenviro <- opal.execute(erasmus_opal,'HUNT3_socioenviro')
 # HUNT2
-opal.assign.table.tibble(erasmus_opal, 'HUNT2', 'HUNT.HUNT2', variables=list('')) 
-HUNT2<- opal.execute(erasmus_opal,'HUNT2')
+#opal.assign.table.tibble(erasmus_opal, 'HUNT2', 'HUNT.HUNT2', variables=list('')) 
+#HUNT2<- opal.execute(erasmus_opal,'HUNT2')
 # HUNT3
-opal.assign.table.tibble(erasmus_opal, 'HUNT3', 'HUNT.HUNT3',variables=list('')) 
-HUNT3 <- opal.execute(erasmus_opal,'HUNT3')
+#opal.assign.table.tibble(erasmus_opal, 'HUNT3', 'HUNT.HUNT3',variables=list('')) 
+#HUNT3 <- opal.execute(erasmus_opal,'HUNT3')
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
-socenv_HUNT_0 <- data.frame(id = HUNT1$id)
-socenv_HUNT_1 <- data.frame(id = HUNT2$id)
-socenv_HUNT_2 <- data.frame(id = HUNT3$id)
+socenv_HUNT_2006 <- data.frame(id = HUNT3-socioenviro$id)
+socenv_HUNT_2011 <- data.frame(id = HUNT3-socioenviro$id)
+#socenv_HUNT_2 <- data.frame(id = HUNT3$id)
 ```
 ## When you are done with your work, logout of Opal server
 ```{r, echo=FALSE}
@@ -40,7 +40,7 @@ opal.logout(erasmus_opal)
 5. [Unemployment](#Unemployment)  
 6. [Social security](#Social security)  
 7. [Educational level](#Educational level)  
-8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)  
+8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
 9. [Crime](#Crime)  
   
 
@@ -53,12 +53,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:complete 
+**Harmonization comment**: 
+"For HUNT, urbanization grade data are available for municipalities in 2006 and 2011. These data were already available in the original data source. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report."
+
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2006$socenv_urbanization_grade_2006<-as.integer(HUNT3-socioenviro$URBANIZATION_GRADE_2006)
 ```  
 
 ### **Variable label**: Urbanization grade in 2007 
@@ -68,8 +69,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: 
+"For HUNT, urbanization grade data are available for municipalities in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -83,8 +85,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**:
+"For HUNT, urbanization grade data are available for municipalities in 2006 and 2011, not in 2009.
 **R script**:  
 ```{r, echo=TRUE}
 #This is where the R-script will be written
@@ -98,12 +101,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**:
+For HUNT, urbanization grade data are available for municipalities in 2006 and 2011. These data were already available in the original data sources. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
-
+socenv_HUNT_2011$socenv_urbanization_grade_2011<-as.integer(HUNT3-socioenviro$URBANIZATION_GRADE_2011)
 ```  
 
 ### **Variable label**: Urbanization grade in 2014
@@ -113,8 +116,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**:
+For HUNT, urbanization grade data are available for municipalities in 2006 and 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -132,11 +136,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2006$socenv_proportion_men_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_MEN_2006)
 
 ```    
 
@@ -147,12 +152,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_proportion_men_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_MEN_2011) 
 ```    
 
 ### **Variable label**: Proportion of women in 2006  
@@ -162,11 +167,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2006$socenv_proportion_women_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_WOMEN_2006) 
 
 ```    
 
@@ -177,11 +183,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_proportion_women_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_WOMEN_2011) 
 
 ```    
 
@@ -192,11 +199,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable was calculated by: summing age groups ≥ 65 years in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2006$socenv_proportion_65_older_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_65_OLDER_2006) 
 
 ```    
 
@@ -207,8 +215,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -222,12 +231,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable was calculated by: summing age groups ≥ 65 years in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_proportion_65_older_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_65_OLDER_2011)
 ```    
 
 ### **Variable label**: Proportion of unmaried residents in 2008   
@@ -237,8 +246,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, this variable is not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -252,12 +262,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**:
+For HUNT, this variable is not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
-
 ```    
 
 ### **Variable label**: Proportion of maried residents in 2006   
@@ -267,12 +277,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was calculated by: number of married residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2006$socenv_proportion_maried_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_MARIED_2006) 
 ```    
 
 ### **Variable label**: Proportion of maried residents in 2008   
@@ -282,8 +292,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**:
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2008.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -297,12 +308,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was calculated by: number of married residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_proportion_maried_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_MARIED_2011) 
 ```    
 
 ### **Variable label**: Proportion of divorced residents in 2006   
@@ -313,11 +324,11 @@ opal.logout(erasmus_opal)
 **Category coding**:   
 
 **Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was calculated by: number of divorced residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2006$socenv_proportion_divorced_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_DIVORCED_2006) 
 ```    
 
 ### **Variable label**: Proportion of divorced residents in 2008   
@@ -327,8 +338,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2008.
+ 
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -342,13 +355,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was calculated by: number of divorced residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2011$socenv_proportion_divorced_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_DIVORCED_2011) 
+```
 
 ### **Variable label**: Proportion of widowed residents in 2006   
 **Variable name**: socenv_proportion_widowed_2006   
@@ -357,13 +370,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was calculated by: number of widowed residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2006$socenv_proportion_widowed_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_DIVORCED_2006) 
+```
 
 ### **Variable label**: Proportion of widowed residents in 2008     
 **Variable name**: socenv_proportion_widowed_2008   
@@ -372,8 +385,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2008.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -387,13 +401,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was calculated by: number of widowed residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2011$socenv_proportion_widowed_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_DIVORCED_2011) 
+```   
 
 ### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_2006   
@@ -402,12 +416,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2006$socenv_average_hh_size_2006<-as.integer(HUNT3-socioenviro$AVERAGE_HOUSEHOLD_SIZE_2006) 
 ```    
 
 ### **Variable label**: Average household size in 2009   
@@ -417,8 +431,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2009.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -432,13 +447,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalties in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2011$socenv_average_hh_size_2011<-as.integer(HUNT3-socioenviro$AVERAGE_HOUSEHOLD_SIZE_2011) 
+```     
 
 ### **Variable label**: Average household size in 2014   
 **Variable name**: socenv_average_hh_size_2014   
@@ -447,9 +462,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2014.
+**R script**: 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -462,8 +478,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2015.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -477,9 +494,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data are available for municipalties in 2006 and 2011, not in 2009.
+**R script**: 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -495,9 +513,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -510,9 +528,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -525,9 +543,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -540,9 +558,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -555,9 +573,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -570,9 +588,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -585,9 +603,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data were not available.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -600,13 +618,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete 
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data are available for municipalities in 2011. This variable was calculated  by: 100 - (number of occupied dwellings in the area / total number of dwellings in the area). This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2011$socenv_prop_unocc_dwellings_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_UNOCCUPIED_DWELLINGS_2011) 
+```     
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2012   
 **Variable name**: socenv_prop_unocc_dwellings_2012
@@ -615,8 +632,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible 
 **Harmonization comment**:  
+For HUNT, these data are available for municipalities in 2011, not in 2012.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -624,14 +642,15 @@ opal.logout(erasmus_opal)
 ```    
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_prop_unocc_dwellings_2012
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+**Variable name**: socenv_prop_unocc_dwellings_2014
+**Variable description**: Proportion of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2011, not in 2014.  
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -647,8 +666,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2005.   
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -662,11 +682,12 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete 
 **Harmonization comment**:  
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable includes the average gross year income in 1000 euros of residents in municipalities (Currency conversion according to European Central Bank in 2006: 1.00NOK=0.080472 euros (not: 0.0961356)). This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2006$socenv_av_inc1000_2006<-as.integer(((HUNT3-socioenviro$AVERAGE_INCOME_2006/0.0961356)*0.080472)/1000) 
 
 ```    
 
@@ -677,12 +698,12 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable includes the average gross year income in 1000 euros of residents in municipalities (Currency conversion according to European Central Bank in 2011: 1.00NOK=0.077934 euros (not: 0.0961356)). This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_av_inc1000_2011<-as.integer(((HUNT3-socioenviro$AVERAGE_INCOME_2011/0.091356)*0.077934)/1000) 
 ```    
 
 ### **Variable label**: Average income in euros in 2006  
@@ -692,13 +713,14 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable includes the average gross year income in 1000 euros of residents in municipalities (Currency conversion according to European Central Bank in 2006: 1.00NOK=0.080472 euros (not: 0.0961356)). This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2006$socenv_av_inc_2006<-as.integer((HUNT3-socioenviro$AVERAGE_INCOME_2006/0.0961356)*0.080472) 
 
-```    
+```       
 
 ### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
@@ -707,8 +729,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -722,13 +745,13 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable includes the average gross year income in 1000 euros of residents in municipalities (Currency conversion according to European Central Bank in 2011: 1.00NOK=0.077934 euros (not: 0.0961356)). This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2011$socenv_av_inc_2011<-as.integer((HUNT3-socioenviro$AVERAGE_INCOME_2011/0.0961356)*0.077934) 
+```      
 
 ### **Variable label**: Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
@@ -737,8 +760,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2013.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -752,8 +776,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -767,8 +792,9 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros     
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2015. 
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -782,13 +808,542 @@ opal.logout(erasmus_opal)
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2016. 
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+
+### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
+**Variable name**: socenv_av_inc1000dich_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
+**Variable name**: socenv_av_inc1000dich_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**: 
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2006) by comparing it with the country-specific net mean household income (OECD-data) in 2004 (€21962) (262396 NOK; currency conversion according to the European Central Bank in 2004: 1NOK=0.083697 Euros).
+**R script**:  
+```{r, echo=TRUE} 
+
+socenv_HUNT_2006$socenv_av_inc1000dich_2006 < ifelse((((HUNT3_socioenviro$AVERAGE_INCOME_2006/0.0961356)*0.080472)/1000) >= 21.962, 1, 0)
+
+```   
+
+### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
+**Variable name**: socenv_av_inc1000dich_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€27757) (356161 NOK; currency conversion according to the European Central Bank in 2011: 1NOK=0.077934).
+**R script**:  
+```{r, echo=TRUE} 
+
+socenv_HUNT_2011$socenv_av_inc1000dich_2011 < ifelse((((HUNT3_socioenviro$AVERAGE_INCOME_2011/0.0961356)*0.077934)/1000) >= 27.757, 1, 0)
+
+```     
+
+### **Variable label**: Average income in euros in 2006 (dichotomized)  
+**Variable name**: socenv_av_incdich_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income of residents in the neighbourhood (see variable socenv_av_inc_2006) by comparing it with the country-specific net mean household income (OECD-data) in 2004 (€21962) (262396 NOK; Currency conversion according to the European Central Bank in 2004: 1NOK=0.083697 Euros; Currency conversion according to the European Central Bank in 2006: 1NOK= 0.080472).
+**R script**:  
+```{r, echo=TRUE} 
+
+socenv_HUNT_2006$socenv_av_incdich_2006 < ifelse(((HUNT3_socioenviro$AVERAGE_INCOME_2006/0.0961356)*0.080472) >= 21962, 1, 0)
+
+```     
+
+### **Variable label**: Average income in euros in 2007 (dichotomized)
+**Variable name**: socenv_av_incdich_2007
+**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```     
+
+### **Variable label**: Average income in euros in 2011 (dichotomized)  
+**Variable name**: socenv_av_incdich_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income of residents in the neighbourhood (see variable socenv_av_inc_2011) by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€27757) (356161 NOK; currency conversion according to the European Central Bank in 2011: 1NOK=0.077934).
+**R script**:  
+```{r, echo=TRUE} 
+
+socenv_HUNT_2011$socenv_av_incdich_2011 < ifelse(((HUNT3_socioenviro$AVERAGE_INCOME_2011/0.0961356)*0.077934) >= 27757, 1, 0)
+
+```      
+
+### **Variable label**: Average income in euros in 2013 (dichotomized)  
+**Variable name**: socenv_av_incdich_2013
+**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```       
+
+### **Variable label**: Average income in euros in 2014 (dichotomized) 
+**Variable name**: socenv_av_incdich_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:  
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```    
+
+### **Variable label**: Average income in euros in 2015 (dichotomized) 
+**Variable name**: socenv_av_incdich_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```    
+
+### **Variable label**: Average income in euros in 2016 (dichotomized)  
+**Variable name**: socenv_av_inc_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable type**: integer     
+**Variable unit**:     
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```      
+
+
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
+**Variable type**: integer     
+**Variable unit**: in euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT  
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
 ```    
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
+**Variable type**: integer     
+**Variable unit**: in euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT   
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
+**Variable type**: integer     
+**Variable unit**: in euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT  
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT   
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+
+
+
+### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT.
+**R script**:  
+```{r, echo=TRUE} 
+
+
+
+```       
+
+### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
+**Variable name**: socenv_av_inc1000Z_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: 
+We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2006) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on municipality-level data from Statistics Norway, we calculated y and o in 2006 in Norway: y=21.3724 and o=2.346074.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_HUNT_2006$socenv_av_inc1000Z_2006 <- (((((HUNT3-socioenviro$AVERAGE_INCOME_2006/0.0961356)*0.080472)/1000)-21.3724)/2.346074)
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
+**Variable name**: socenv_av_inc1000Z_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on municipality-level data from Statistics Norway, we calculated y and o in 2011 in Norway: y=27.02842 and o=3.228479.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_HUNT_2011$socenv_av_inc1000Z_2011 <- 
+(((((HUNT3-socioenviro$AVERAGE_INCOME_2011/0.0961356)*0.077934)/1000)-27.02842)/3.228479)
+
+```    
+
+### **Variable label**: Average income in euros in 2006 (Z standardized)  
+**Variable name**: socenv_av_incZ_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: 
+**Harmonization comment**: 
+
+**Harmonization status**: complete
+**Harmonization comment**: 
+We standardized average gross year income of residents in the neighbourhood (see variable socenv_av_inc_2006) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on municipality-level data from Statistics Norway, we calculated y and o in 2006 in Norway: y=21372.40 and o=2346.074.
+**R script**:  
+ 
+```{r, echo=TRUE}  
+
+socenv_HUNT_2006$socenv_av_incZ_2006 <- ((((HUNT3-socioenviro$AVERAGE_INCOME_2006/0.0961356)*0.080472)-21372.40)/2346.074)
+
+```    
+
+### **Variable label**: Average income in euros in 2007 (Z standardized) 
+**Variable name**: socenv_av_incZ_2007
+**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For HUNT, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2011 (Z standardized)  
+**Variable name**: socenv_av_incZ_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
+**Variable type**: integer     
+**Variable unit**: euros    
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on municipality-level data from Statistics Norway, we calculated y and o in 2011 in Norway: y=27028.42 and o=3228.479.
+**R script**: 
+```{r, echo=TRUE}  
+
+socenv_HUNT_2011$socenv_av_incZ_2011 <- 
+((((HUNT3-socioenviro$AVERAGE_INCOME_2011/0.0961356)*0.077934)-27028.42)/3228.479)
+
+```    
+
+
+
+### **Variable label**: Average income in euros in 2013 (Z standardized)  
+**Variable name**: socenv_av_incZ_2013
+**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For HUNT, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2014 (Z standardized) 
+**Variable name**: socenv_av_incZ_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
+**Variable type**: integer     
+**Variable unit**:  
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For HUNT, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2015 (Z standardized) 
+**Variable name**: socenv_av_incZ_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For HUNT, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average income in euros in 2016 (Z standardized)  
+**Variable name**: socenv_av_incZ_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
+**Variable type**: integer     
+**Variable unit**:     
+**Category coding**:   
+
+**Harmonization status**: Impossible 
+**Harmonization comment**: 
+For HUNT, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
+
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: These data are not available for HUNT 
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```  
+
 
 ### **Variable label**: Proportion of income recipients in 2005
 **Variable name**: socenv_av_inc_recipients_2005  
@@ -797,8 +1352,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**: 
+For HUNT, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -812,8 +1368,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -829,12 +1386,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable includes the proportion of unemployed residents aged 15-74 years in the municipality. This variable was already available in the original data source. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2006$socenv_prop_unemployment_2006<-as.decimal(HUNT3-socioenviro$UNEMPLOYMENT_RATE_2006) 
 ```    
 
 ### **Variable label**: Proportion of unemployed residents in 2007    
@@ -844,8 +1401,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -859,12 +1417,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006 and 2011. This variable includes the proportion of unemployed residents aged 15-74 years in the municipality. This variable was already available in the original data source. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
+**R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_prop_unemployment_2011<-as.decimal(HUNT3-socioenviro$UNEMPLOYMENT_RATE_2011) 
 ```    
 
 ### **Variable label**: Proportion of unemployed residents in 2014  
@@ -874,9 +1432,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2014.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -889,9 +1448,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2006 and 2011, not in 2015.
+**R script**:    
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -906,12 +1466,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006, 2011 and 2016. This variable was calculated by: total number of recipients of social assistance in the municipality / total number of residents in the municipality * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2006$socenv_proportion_socsecben_2006<-as.decimal(HUNT3-socioenviro$PROPORTION_SOCSECBEN_2006) 
 ```    
 
 ### **Variable label**: Proportion of social security beneficiaries in 2007    
@@ -921,8 +1481,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006, 2011 and 2016, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -936,8 +1497,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006, 2011 and 2016, not in 2010.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -951,13 +1513,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006, 2011 and 2016. This variable was calculated by: total number of recipients of social assistance in the municipality / total number of residents in the municipality * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2011$socenv_proportion_socsecben_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_SOCSECBEN_2011) 
+```     
 
 ### **Variable label**: Proportion of social security beneficiaries in 2015  
 **Variable name**: socenv_proportion_socsecben_2015   
@@ -966,8 +1528,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006, 2011 and 2016, not in 2015.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -981,13 +1544,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for municipalities in 2006, 2011 and 2016. This variable was calculated by: total number of recipients of social assistance in the municipality / total number of residents in the municipality * 100. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2016$socenv_proportion_socsecben_2016<-as.decimal(HUNT3-socioenviro$PROPORTION_SOCSECBEN_2016) 
+```        
 
 ### **Variable label**: Proportion of residents with disability benefit in 2010  
 **Variable name**: socenv_proportion_disben_2010   
@@ -996,8 +1559,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
+For HUNT, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1011,9 +1575,10 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
-**R script**:  
+For HUNT, these data are not available.
+**R script**:   
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1028,12 +1593,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2011. This variable includes the proportion of residents aged 16 years or older with low educational level (primary education) in the municipality. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_prop_low_education_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_LOW_EDUCATION_2011) 
 ```    
 
 ### **Variable label**: Proportion of low educated residents in 2014 
@@ -1043,8 +1608,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1058,12 +1624,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2011. This variable includes the proportion of residents aged 16 years or older with intermediate educational level (upper secondary education) in the municipality. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_prop_itm_education_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_INTERMEDIATE_EDUCATION_2011) 
 ```    
 
 ### **Variable label**: Proportion of intermediate educated residents in 2014  
@@ -1073,8 +1639,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1089,11 +1656,12 @@ opal.logout(erasmus_opal)
 **Category coding**:   
 
 **Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2011. This variable includes the proportion of residents aged 16 years or older with high educational level (tertiary education + tertiary vocational education) in the municipality. This variable has been linked to cohort respondents using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
+
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_prop_high_education_2011<-as.decimal(HUNT3-socioenviro$PROPORTION_HIGH_EDUCATION_2011) 
 ```    
 
 ### **Variable label**: Proportion of high educated residents in 2014  
@@ -1103,8 +1671,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**:
+For HUNT, these data are available for municipalities in 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1120,8 +1689,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1135,9 +1705,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1150,9 +1720,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1165,9 +1735,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1180,9 +1750,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1195,9 +1765,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1210,9 +1780,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1225,9 +1795,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1240,9 +1810,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1255,9 +1825,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1270,9 +1840,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1285,9 +1855,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1300,9 +1870,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1315,9 +1885,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1330,9 +1900,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1345,9 +1915,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1360,9 +1930,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible. 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1377,8 +1947,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete  
+**Harmonization comment**:
+For HUNT, these data are available for the county in 2011 and 2016, not in 2007. 
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1392,12 +1963,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
+socenv_HUNT_2011$socenv_crimoff_2011<-as.integer(HUNT3-socioenviro$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011) 
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
@@ -1407,8 +1978,8 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: For HUNT, these data are available for the county in 2011 and 2016, not in 2014.  
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1422,8 +1993,8 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: For HUNT, these data are available for the county in 2011 and 2016, not in 2014.   
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1437,13 +2008,13 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
+socenv_HUNT_2016$socenv_crimoff_2016<-as.integer(HUNT3-socioenviro$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2016) 
+```        
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2007  
 **Variable name**: socenv_violentcrim_2007    
@@ -1452,8 +2023,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
+For HUNT, these data are available for the county in 2011 and 2016, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1467,11 +2039,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_violentcrim_2011<-as.integer(HUNT3-socioenviro$NUMBER_VIOLENT_CRIMES_PER_1000_RESIDENTS_2011) 
 
 ```    
 
@@ -1482,13 +2055,14 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2016$socenv_violentcrim_2016<-as.integer(HUNT3-socioenviro$NUMBER_VIOLENT_CRIMES_PER_1000_RESIDENTS_2016) 
 
-```    
+```   
 
 ### **Variable label**: Number of thefts per 1000 residents in 2007  
 **Variable name**: socenv_thefts_2007    
@@ -1497,8 +2071,9 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible
 **Harmonization comment**:  
+For HUNT, these data are available for the county in 2011 and 2016 not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -1512,11 +2087,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_thefts_2011<-as.integer(HUNT3-socioenviro$NUMBER_THEFTS_PER_1000_RESIDENTS_2011) 
 
 ```    
 
@@ -1527,13 +2103,14 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2016$socenv_thefts_2016<-as.integer(HUNT3-socioenviro$NUMBER_THEFTS_PER_1000_RESIDENTS_2016) 
 
-```    
+```  
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2011  
 **Variable name**: socenv_vandalism_po_2011   
@@ -1542,13 +2119,14 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_vandalism_po_2011<-as.integer(HUNT3-socioenviro$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011) 
 
-```    
+```  
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2016    
 **Variable name**: socenv_vandalism_po_2016   
@@ -1557,11 +2135,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2016$socenv_vandalism_po_2016<-as.integer(HUNT3-socioenviro$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2016) 
 
 ```    
 
@@ -1572,11 +2151,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_violentcrim_sexoff_2011<-as.integer(HUNT3-socioenviro$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011) 
 
 ```    
 
@@ -1587,11 +2167,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2016$socenv_violentcrim_sexoff_2016<-as.integer(HUNT3-socioenviro$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2016) 
 
 ```    
 
@@ -1602,11 +2183,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_vandalism_2011<-as.integer(HUNT3-socioenviro$NUMBER_VANDALISM_PER_1000_RESIDENTS_2011) 
 
 ```    
 
@@ -1617,11 +2199,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2016$socenv_vandalism_2016<-as.integer(HUNT3-socioenviro$NUMBER_VANDALISM_PER_1000_RESIDENTS_2016) 
 
 ```    
 
@@ -1632,11 +2215,12 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HUNT_2011$socenv_po_2011<-as.integer(HUNT3-socioenviro$NUMBER_PUBLIC_ORDER_PER_1000_RESIDENTS_2011) 
 
 ```    
 
@@ -1647,11 +2231,389 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For HUNT, these data are available for the county in 2011 and 2016. This variable was already available in the original data source. References to the original data sources are listed in the WP7 deliverable report. 
+**R script**:   
+```{r, echo=TRUE}  
+socenv_HUNT_2016$socenv_po_2016<-as.integer(HUNT3-socioenviro$NUMBER_PUBLIC_ORDER_PER_1000_RESIDENTS_2016) 
+
+```    
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2004   
+**Variable description**: City indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
 
-```    
+
+```  
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2006   
+**Variable description**: City indicator in 2006       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2009   
+**Variable description**: City indicator in 2009        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2011   
+**Variable description**: City indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2014   
+**Variable description**: City indicator in 2014        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2006   
+**Variable description**: Municipality indicator in 2006        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  For HUNT, the indicator variables start with 44.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_HUNT_2006$socenv_municipality_2006<-as.integer(HUNT3-socioenviro$municipality)
+
+```  
+
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2011   
+**Variable description**: Municipality indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  For HUNT, the indicator variables start with 44.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_HUNT_2011$socenv_municipality_2011<-as.integer(HUNT3-socioenviro$municipality)
+
+```  
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2016   
+**Variable description**: Municipality indicator in 2016        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: For HUNT, the indicator variables start with 44. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_HUNT_2016$socenv_municipality_2016<-as.integer(HUNT3-socioenviro$municipality)
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2004
+**Variable description**: Neighbourhood indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2006
+**Variable description**: Neighbourhood indicator in 2006        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+
+### **Variable label**: Area indicator: neighbourhood  
+**Variable name**: socenv_neighbourhood_2009   
+**Variable description**: Neighbourhood indicator in 2009        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2011
+**Variable description**: Neighbourhood indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2014
+**Variable description**: Neighbourhood indicator in 2014       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2004
+**Variable description**: 4-digit postal code (PC4) indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2006
+**Variable description**: 4-digit postal code (PC4) indicator in 2006        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2011
+**Variable description**: 4-digit postal code (PC4) indicator in 2011      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2011
+**Variable description**: 4-digit postal code (PC4) indicator in 2014     
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2004
+**Variable description**: 6-digit postal code (PC6) indicator in 2004       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2006
+**Variable description**: 6-digit postal code (PC6) indicator in 2006       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2011
+**Variable description**: 6-digit postal code (PC6) indicator in 2011      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2014
+**Variable description**: 6-digit postal code (PC6) indicator in 2014      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+### **Variable label**: Area indicator: 5-digit postal code 
+**Variable name**: socenv_PC5_2009 
+**Variable description**: 5-digit postal code (PC5) indicator in 2009        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
