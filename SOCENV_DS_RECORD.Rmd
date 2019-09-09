@@ -12,14 +12,19 @@ library(dplyr)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the RECORD table(s) to your RStudio environment
 # RECORD wave 1, part 1
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1', 'RECORD.RECORD_w1_1', variables = list(' '))
+opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1', 'RECORD.RECORD_w1_1', variables = list("Inc_St500", "Inc_St1000", "Inc_St2000"))
 RECORD_w1_1 <- opal.execute(erasmus_opal,'RECORD_w1_1')
-# RECORD wave 1, part 2
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_2', 'RECORD.RECORD_w1_2', variables = list('' )) 
-RECORD_w1_2<- opal.execute(erasmus_opal,'RECORD_w1_2')
+opal.assign.table.tibble(erasmus_opal, 'RECORD_W1_SocioEnviro', 'RECORD.RECORD_W1_SocioEnviro', variables = list ("URBANIZATION_GRADE_2009"))
+RECORD_w1_1 <- opal.execute(erasmus_opal,'RECORD_W1_SocioEnviro')
+opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_-_Area_identifiers_in_RECORD_W1', 'RECORD.190521_MINDMAP_-_Area_identifiers_in_RECORD_W1', variables = list ("city", "neighbourhood","pc5"))
+RECORD_w1_1 <- opal.execute(erasmus_opal,'190521_MINDMAP_-_Area_identifiers_in_RECORD_W1')
+
 # RECORD wave 2
-opal.assign.table.tibble(erasmus_opal, 'RECORD_w2', 'RECORD.RECORD_W2',variables=list('')) 
-RECORD_w2 <- opal.execute(erasmus_opal,'RECORD_w2')
+opal.assign.table.tibble(erasmus_opal, 'RECORD_W2_SocioEnviro', 'RECORD.RECORD_W2_SocioEnviro', variables = list ("URBANIZATION_GRADE_2009","AVERAGE_HOUSEHOLD_SIZE_2014","PROPORTION_UNOCCUPIED_DWELLINGS_2014","UNEMPLOYMENT_RATE_2014"))
+RECORD_w2 <- opal.execute(erasmus_opal,'RECORD_W2_SocioEnviro')
+opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_-_Area_identifiers_in_RECORD_W2', 'RECORD.190521_MINDMAP_-_Area_identifiers_in_RECORD_W2', variables = list ("neighbourhood", "pc5"))
+RECORD_w2 <- opal.execute(erasmus_opal,'190521_MINDMAP_-_Area_identifiers_in_RECORD_W2')
+
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
@@ -63,7 +68,7 @@ For RECORD, these data are available for neighbourhoods in 2009 and 2014, not in
 ```  
 
 ### **Variable label**: Urbanization grade in 2007 
-**Variable name**: socenv_urbanization_grade_2007    
+**Variable name**: socenv_urbanization_grade_0    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2007.  
 **Variable type**: integer
 **Variable unit**:   
@@ -71,10 +76,11 @@ For RECORD, these data are available for neighbourhoods in 2009 and 2014, not in
 
 **Harmonization status**: impossible 
 **Harmonization comment**:  
-For RECORD, these data are available for neighbourhoods in 2009 and 2014, not in 2007.
+For RECORD, this variable is available for neighbourhoods in 2009. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents at wave 2007 and 2011 using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
+socenv_RECORD_0$socenv_urbanization_grade_0 <-as.integer(RECORD_w1_1$URBANIZATION_GRADE_2009) 
 
 ```  
 
@@ -85,29 +91,27 @@ For RECORD, these data are available for neighbourhoods in 2009 and 2014, not in
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete 
-**Harmonization comment**:  For RECORD, these data are available for neighbourhoods in 2009 and 2014. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
+**Harmonization status**: impossible
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_2009_W1$socenv_urbanization_grade_2009<-as.integer(RECORD_W1_SocioEnviro$URBANIZATION_GRADE_2009) 
-
-socenv_RECORD_2009_W2$socenv_urbanization_grade_2009<-as.integer(RECORD_W2_SocioEnviro$URBANIZATION_GRADE_2009) 
 
 ```  
 
 ### **Variable label**: Urbanization grade in 2011 
-**Variable name**: socenv_urbanization_grade_2011    
+**Variable name**: socenv_urbanization_grade_1    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
 **Variable type**: integer
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible 
+**Harmonization status**: complete
 **Harmonization comment**: 
-For RECORD, these data are available for neighbourhoods in 2009 and 2014, not in 2006.
+For RECORD, this variable is available for neighbourhoods in 2009. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents at wave 2007 and 2011 using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
+socenv_RECORD_1$socenv_urbanization_grade_1 <-as.integer(RECORD_w2$URBANIZATION_GRADE_2009)
 
 ```  
 
@@ -118,13 +122,11 @@ For RECORD, these data are available for neighbourhoods in 2009 and 2014, not in
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete 
-**Harmonization comment**:  For RECORD, these data are available for neighbourhoods in 2009 and 2014. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
+**Harmonization status**: impossible
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_2014_W1$socenv_urbanization_grade_2014<-as.integer(RECORD_W1_SocioEnviro$URBANIZATION_GRADE_2014) 
 
-socenv_RECORD_2014_W2$socenv_urbanization_grade_2014<-as.integer(RECORD_W2_SocioEnviro$URBANIZATION_GRADE_2014) 
 ```    
 
 
@@ -468,7 +470,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 ```    
 
 ### **Variable label**: Average household size in 2014   
-**Variable name**: socenv_average_hh_size_2014   
+**Variable name**: socenv_average_hh_size_1   
 **Variable description**: Average household size in residential area in 2014.  
 **Variable type**: integer   
 **Variable unit**:   
@@ -479,9 +481,8 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 For RECORD, these data are available for neighbourhoods in 2014. This variable was calculated by: total number of residents in area / total number of households in area * 100. This variable has been linked cohort respondents using their 5-digit postal code.References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_2014_W1$socenv_average_hh_size_2014<-as.integer(RECORD_W1_SocioEnviro$AVERAGE_HOUSEHOLD_SIZE_2014) 
+socenv_RECORD_1$socenv_average_hh_size_1 <-as.integer(RECORD_w2$AVERAGE_HOUSEHOLD_SIZE_2014)
 
-socenv_RECORD_2014_W2$socenv_average_hh_size_2014<-as.integer(RECORD_W2_SocioEnviro$AVERAGE_HOUSEHOLD_SIZE_2014) 
 ```    
 
 ### **Variable label**: Average household size in 2015      
@@ -542,7 +543,7 @@ Related data is available in RECORD (mean rank of price of sold dwellings in dif
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For RECORD, these data are not available.
 **R script**:  
@@ -553,12 +554,11 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
 **Variable name**: socenv_avv_dwelling_m2_2007  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For RECORD, these data are not available.  
 **R script**:  
@@ -569,12 +569,11 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2011  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For RECORD, these data are not available.
 **R script**:  
@@ -585,12 +584,11 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2013  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For RECORD, these data are not available.
 **R script**:  
@@ -605,8 +603,7 @@ For RECORD, these data are not available.
 **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
-
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For RECORD, these data are not available.
 **R script**:  
@@ -617,12 +614,12 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2015   
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.
 **Variable type**: integer   
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For RECORD, these data are not available. 
 **R script**:  
@@ -638,7 +635,7 @@ For RECORD, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
 For RECORD, these data are available for neighbourhoods in 2014, not in 2011. 
 **R script**:  
@@ -654,7 +651,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
 For RECORD, these data are available for neighbourhoods in 2014, not in 2011.  
 **R script**:  
@@ -664,7 +661,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 ```    
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_prop_unocc_dwellings_2014
+**Variable name**: socenv_prop_unocc_dwellings_1
 **Variable description**: Proportion of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
 **Variable unit**:   
@@ -672,12 +669,10 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 
 **Harmonization status**: complete 
 **Harmonization comment**:  
-For RECORD, these data are available for neighbourhoods in 2014. This variable was caluclated by: total number of unoccupied dwellings in the area / total number of dwellings in the area * 100. This variable has been linked to cohort respondents using their 5-digit postal code. References of all data sources are listed in the WP7 deliverable report.
+For RECORD, these data are available for neighbourhoods in 2014. This variable was caluclated by: total number of unoccupied dwellings in the area / total number of dwellings in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_2014_W1$socenv_prop_unocc_dwellings_2014<-as.decimal(RECORD_W1_SocioEnviro$PROPORTION_UNOCCUPIED_DWELLINGS_2014) 
-
-socenv_RECORD_2014_W2$socenv_prop_unocc_dwellings_2014<-as.decimal(RECORD_W2_SocioEnviro$PROPORTION_UNOCCUPIED_DWELLINGS_2014)  
+socenv_RECORD_1$socenv_prop_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION_UNOCCUPIED_DWELLINGS_2014)
 
 ```    
 
@@ -949,7 +944,7 @@ For RECORD, these data are not available.
 **Variable name**: socenv_av_incdich_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
-**Variable unit**: euros    
+**Variable unit**:      
 **Category coding**:   
 
 **Code** | **Category Label**  
@@ -1047,53 +1042,53 @@ For RECORD, these data are not available.
 
 
  ### **Variable label**: Average household income in euros in 2006
-**Variable name**: socenv_av_hhinc_500m_2006  
+**Variable name**: socenv_av_hhinc_500m_0  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**: in euros   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**: complete
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_2009_W1$socenv_av_hhinc_500m_2006<-as.integer(RECORD_W1_1$Inc_St500)
+socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.integer(RECORD_W1_1$Inc_St500)
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006
-**Variable name**: socenv_av_hhinc_1000m_2006  
+**Variable name**: socenv_av_hhinc_1000m_0  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**: in euros   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**: complete
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_2009_W1$socenv_av_hhinc_1000m_2006<-as.integer(RECORD_W1_1$Inc_St1000)
+socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.integer(RECORD_W1_1$Inc_St1000)
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006
-**Variable name**: socenv_av_hhinc_2000m_2006  
+**Variable name**: socenv_av_hhinc_2000m_0  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**: in euros   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**: complete
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_2009_W1$socenv_av_hhinc_2000m_2006<-as.integer(RECORD_W1_1$Inc_St2000)
+socenv_RECORD_0$socenv_av_hhinc_2000m_0 <-as.integer(RECORD_W1_1$Inc_St2000)
 
 ```     
 
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
-**Variable name**: socenv_av_hhincdich_500m_2006  
+**Variable name**: socenv_av_hhincdich_500m_0  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
 **Variable unit**:   
@@ -1105,18 +1100,17 @@ socenv_RECORD_2009_W1$socenv_av_hhinc_2000m_2006<-as.integer(RECORD_W1_1$Inc_St2
 1 | Greater than country-specific net mean household income   
 
 **Harmonization status**: complete
-**Harmonization comment**: We dichotomized average household income in 500 meter street network buffer around participants (see variable socenv_av_hhinc_500m_2006) by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
+**Harmonization comment**: We dichotomized average household income in 500 meter street network buffer around participants by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
 **R script**:   
 ```{r, echo=TRUE}  
-socenv_RECORD_2009_W1$socenv_av_hhincdich_500m_2006 <
-ifelse (RECORD_W1_1$Inc_St500 >= 21536, 1, 0)
+socenv_RECORD_0$socenv_av_hhincdich_500m_0 < ifelse (RECORD_W1_1$Inc_St500 >= 21536, 1, 0)
 
 ```  
 
 
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
-**Variable name**: socenv_av_hhincdich_1000m_2006  
+**Variable name**: socenv_av_hhincdich_1000m_0  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
 **Variable unit**:   
@@ -1128,16 +1122,15 @@ ifelse (RECORD_W1_1$Inc_St500 >= 21536, 1, 0)
 1 | Greater than country-specific net mean household income   
 
 **Harmonization status**: complete
-**Harmonization comment**: We dichotomized average household income in 1000 meter street network buffer around participants (see variable socenv_av_hhinc_1000m_2006) by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
+**Harmonization comment**: We dichotomized average household income in 1000 meter street network buffer around participants by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
 **R script**:   
 ```{r, echo=TRUE}  
-socenv_RECORD_2009_W1$socenv_av_hhincdich_1000m_2006 <
-ifelse (RECORD_W1_1$Inc_St1000 >= 21536, 1, 0)
+socenv_RECORD_0$socenv_av_hhincdich_1000m_0 < ifelse (RECORD_W1_1$Inc_St1000 >= 21536, 1, 0)
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
-**Variable name**: socenv_av_hhincdich_2000m_2006  
+**Variable name**: socenv_av_hhincdich_2000m_0  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
 **Variable unit**:   
@@ -1149,11 +1142,10 @@ ifelse (RECORD_W1_1$Inc_St1000 >= 21536, 1, 0)
 1 | Greater than country-specific net mean household income   
 
 **Harmonization status**: complete
-**Harmonization comment**: We dichotomized average household income in 2000 meter street network buffer around participants (see variable socenv_av_hhinc_2000m_2006) by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
+**Harmonization comment**: We dichotomized average household income in 2000 meter street network buffer around participants by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
 **R script**:   
 ```{r, echo=TRUE}  
-socenv_RECORD_2009_W1$socenv_av_hhincdich_2000m_2006 <
-ifelse (RECORD_W1_1$Inc_St2000 >= 21536, 1, 0)
+socenv_RECORD_0$socenv_av_hhincdich_2000m_0 < ifelse (RECORD_W1_1$Inc_St2000 >= 21536, 1, 0)
 
 ```    
 
@@ -1248,7 +1240,7 @@ These data are not available for RECORD.
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
 **Variable type**: integer     
-**Variable unit**: euros    
+**Variable unit**:     
 **Category coding**:   
 
 **Harmonization status**: impossible  
@@ -1455,7 +1447,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 ```    
 
 ### **Variable label**: Proportion of unemployed residents in 2014  
-**Variable name**: socenv_prop_unemployment_2014  
+**Variable name**: socenv_prop_unemployment_1  
 **Variable description**: Proportion of unemployed residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1463,12 +1455,11 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 
 **Harmonization status**:  complete
 **Harmonization comment**:
-For RECORD, these data are available for neighbourhoods in 2014. This variable includes the proportion of unemployed residents aged 15-64 years in the neighbourhood. This variable was calculated by: total number of unemployed residents aged 15-64 years old in the area / total number of residents aged 15-64 years old in the area * 100. This variable has been linked to cohort respondents using their 5-digit postal code. References of the original data sources are listed in WP7 deliverable report.
+For RECORD, these data are available for neighbourhoods in 2014. This variable includes the proportion of unemployed residents aged 15-64 years in the neighbourhood. This variable was calculated by: total number of unemployed residents aged 15-64 years old in the area / total number of residents aged 15-64 years old in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of the original data sources are listed in WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_2014_W1$socenv_prop_unemployment_2014<-as.decimal(RECORD_W1_SocioEnviro$UNEMPLOYMENT_RATE_2014) 
-
-socenv_RECORD_2014_W2$socenv_prop_unemployment_2014<-as.decimal(RECORD_W2_SocioEnviro$UNEMPLOYMENT_RATE_2014)  
+socenv_RECORD_1$socenv_prop_unemployment_1 <-as.numeric(RECORD_w2$UNEMPLOYMENT_RATE_2014)
+ 
 ```    
 
 ### **Variable label**: Proportion of unemployed residents in 2015  
@@ -1653,7 +1644,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Proportion of intermediate educated residents in 2011  
 **Variable name**: socenv_prop_itm_education_2011  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2011.    
+**Variable description**: Proportion of intermediate educated residents in residential area in 2011.
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1669,7 +1660,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Proportion of intermediate educated residents in 2014  
 **Variable name**: socenv_prop_itm_education_2014  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2014.    
+**Variable description**: Proportion of intermediate educated residents in residential area in 2014.  
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1724,9 +1715,10 @@ For RECORD, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1739,9 +1731,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1754,9 +1747,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1769,9 +1763,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1784,9 +1779,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1794,14 +1790,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
 **Variable name**: socenv_prop_moroccan_2006  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.      
+**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1809,14 +1806,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
 **Variable name**: socenv_prop_moroccan_2011  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.      
+**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1829,9 +1827,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1844,9 +1843,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1854,14 +1854,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
 **Variable name**: socenv_prop_surinamese_2006  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.      
+**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1869,14 +1870,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
 **Variable name**: socenv_prop_surinamese_2011  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.      
+**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1889,9 +1891,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1904,9 +1907,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1919,9 +1923,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1934,9 +1939,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1949,9 +1955,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1964,9 +1971,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible. 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1976,7 +1984,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2007  
 **Variable name**: socenv_crimoff_2007    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.       
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.  
 **Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
@@ -1992,7 +2000,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
 **Variable name**: socenv_crimoff_2011    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011.       
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -2008,7 +2016,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
 **Variable name**: socenv_crimoff_2014    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.  
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -2024,7 +2032,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2015    
 **Variable name**: socenv_crimoff_2015    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -2040,7 +2048,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2016    
 **Variable name**: socenv_crimoff_2016    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -2056,7 +2064,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2007  
 **Variable name**: socenv_violentcrim_2007    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.       
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2072,7 +2080,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2011    
 **Variable name**: socenv_violentcrim_2011    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.        
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2088,7 +2096,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2016    
 **Variable name**: socenv_violentcrim_2016   
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.        
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2248,7 +2256,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2011    
 **Variable name**: socenv_po_2011    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.        
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2264,7 +2272,7 @@ For RECORD, these data are not available.
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2016    
 **Variable name**: socenv_po_2016    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.        
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2309,6 +2317,20 @@ For RECORD, these data are not available.
 
 ```  
 
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_0  
+**Variable description**: City indicator in 2007       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: For RECORD, the indicator variables start with 33.  
+**R script**:  
+```{r, echo=TRUE}  
+socenv_RECORD_0$socenv_city_0 <-as.integer(RECORD_w1_1$city) 
+
+```  
 
 
 
@@ -2319,13 +2341,11 @@ For RECORD, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
 For RECORD, the indicator variables start with 33.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_2009_W1$socenv_city_2009<-as.integer(RECORD_W1_area_identifiers$city) 
-
 
 
 ```
@@ -2444,7 +2464,21 @@ socenv_RECORD_2009_W1$socenv_city_2009<-as.integer(RECORD_W1_area_identifiers$ci
 ``` 
 
 
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_0
+**Variable description**: Neighbourhood indicator in 2007        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
 
+**Harmonization status**: complete
+**Harmonization comment**: For RECORD, the indicator variables start with 33.  
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_RECORD_0$socenv_neighbourhood_0 <-as.integer(RECORD_w1_1$neighbourhood) 
+
+``` 
 
 ### **Variable label**: Area indicator: neighbourhood  
 **Variable name**: socenv_neighbourhood_2009   
@@ -2453,30 +2487,28 @@ socenv_RECORD_2009_W1$socenv_city_2009<-as.integer(RECORD_W1_area_identifiers$ci
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
-**Harmonization comment**:  
-For RECORD, the indicator variables start with 33.
-**R script**:  
-```{r, echo=TRUE}  
-socenv_RECORD_2009_W1$socenv_neighbourhood_2009<-as.integer(RECORD_W1_area_identifiers$neighbourhood) 
-
-socenv_RECORD_2009_W2$socenv_neighbourhood_2009<-as.integer(RECORD_W2_area_identifiers$neighbourhood)
-
-```
-
-
-### **Variable label**: Area indicator: neighbourhood 
-**Variable name**: socenv_neighbourhood_2011
-**Variable description**: Neighbourhood indicator in 2011        
-**Variable type**: integer      
-**Variable unit**:   
-**Category coding**:     
-
 **Harmonization status**: impossible
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
 
+
+```
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_1
+**Variable description**: Neighbourhood indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**: For RECORD, the indicator variables start with 33.  
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_RECORD_1$socenv_neighbourhood_1 <-as.integer(RECORD_w2$neighbourhood) 
 
 ``` 
 
@@ -2628,8 +2660,8 @@ socenv_RECORD_2009_W2$socenv_neighbourhood_2009<-as.integer(RECORD_W2_area_ident
 ```  
 
 ### **Variable label**: Area indicator: 5-digit postal code 
-**Variable name**: socenv_PC5_2009 
-**Variable description**: 5-digit postal code (PC5) indicator in 2009        
+**Variable name**: socenv_PC5_0 
+**Variable description**: 5-digit postal code (PC5) indicator in 2007        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2639,9 +2671,28 @@ socenv_RECORD_2009_W2$socenv_neighbourhood_2009<-as.integer(RECORD_W2_area_ident
 For RECORD, the indicator variables start with 33.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_2009_W1$socenv_pc5_2009<-as.integer(RECORD_W1_area_identifiers$pc5) 
+socenv_RECORD_0$socenv_pc5_0 <-as.integer(RECORD_w1_1$pc5)
 
-socenv_RECORD_2009_W2$socenv_pc5_2009<-as.integer(RECORD_W2_area_identifiers$pc5)
 
 ```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code 
+**Variable name**: socenv_PC5_1 
+**Variable description**: 5-digit postal code (PC5) indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  
+For RECORD, the indicator variables start with 33.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_RECORD_1$socenv_pc5_1 <-as.integer(RECORD_w2$pc5) 
+
+
+```
+
 

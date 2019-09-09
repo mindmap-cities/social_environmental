@@ -20,15 +20,18 @@ GLOBE1991 <- opal.execute(erasmus_opal,'GLOBE1991')
 # GLOBE1997
 opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables=list("")) 
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
+
 # GLOBE2004
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2004', 'GLOBE.GLOBE2004', variables=list("")) 
-GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004')
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2004_socialenvironment_2006', 'GLOBE.GLOBE2004_socialenvironment_2006', variables=list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006", "city", "neighbourhood","PC4", "PC6")) 
+GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE2004_socialenvironment_2006')
+
 # GLOBE2011
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2011', 'GLOBE.GLOBE2011', variables =list("")) 
-GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE2011')
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2011_socialenvironment_2011', 'GLOBE.GLOBE2011_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011","NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011","city", "neighbourhood", "PC4","PC6"))
+GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE2011_socialenvironment_2011')
+
 # GLOBE2014
-opal.assign.table.tibble(erasmus_opal, 'GLOBE2014', 'GLOBE.GLOBE2014', variables =list("")) 
-GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE2014')
+opal.assign.table.tibble(erasmus_opal, 'GLOBE2014_socialenvironment_2011', 'GLOBE.GLOBE2014_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011","NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011","city", "neighbourhood", "PC4","PC6")) 
+GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE2014_socialenvironment_2011')
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
@@ -61,18 +64,18 @@ opal.logout(erasmus_opal)
 # Urbanization grade
 
 ### **Variable label**: Urbanization grade in 2006  
-**Variable name**: socenv_urbanization_grade_2006    
+**Variable name**: socenv_urbanization_grade_2    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2006.  
 **Variable type**: integer
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_urbanization_grade_2006<-as.integer(GLOBE_2004_socialenvironment_2006$URBANIZATION_GRADE_2006)
+socenv_GLOBE_2$socenv_urbanization_grade_2<-as.integer(GLOBE2004$URBANIZATION_GRADE_2006)
 ```  
 
 ### **Variable label**: Urbanization grade in 2007 
@@ -108,35 +111,35 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 ```  
 
 ### **Variable label**: Urbanization grade in 2011 
-**Variable name**: socenv_urbanization_grade_2011    
+**Variable name**: socenv_urbanization_grade_3    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
 **Variable type**: integer
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_urbanization_grade_2011<-as.integer(GLOBE_2011_socialenvironment_2011$URBANIZATION_GRADE_2011)
+socenv_GLOBE_3$socenv_urbanization_grade_3<-as.integer(GLOBE2011$URBANIZATION_GRADE_2011)
 
-socenv_GLOBE_2014$socenv_urbanization_grade_2011<-as.integer(GLOBE_2014_socialenvironment_2011$URBANIZATION_GRADE_2011)
 ```  
 
-### **Variable label**: Urbanization grade in 2014
-**Variable name**: socenv_urbanization_grade_2014    
-**Variable description**: Population density of the residential area (number of residents per km2) in 2014.  
+### **Variable label**: Urbanization grade in 2011
+**Variable name**: socenv_urbanization_grade_4  
+**Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
 **Variable type**: integer
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible 
+**Harmonization status**: complete 
 **Harmonization comment**:
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2014.   
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_GLOBE_4$socenv_urbanization_grade_4<-as.integer(GLOBE2014$URBANIZATION_GRADE_2011)
 
 ```    
 
@@ -145,86 +148,121 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 # Demographics
 
 ### **Variable label**: Proportion of men in 2006  
-**Variable name**: socenv_proportion_men_2006    
+**Variable name**: socenv_proportion_men_2    
 **Variable description**: Proportion of men in the residential area in 2006.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
-```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_men_2006<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_MEN_2006) 
+```{r, echo=TRUE}
+
+socenv_GLOBE_2$socenv_proportion_men_2<-as.numeric(GLOBE2004$PROPORTION_MEN_2006) 
 
 ```    
 
 ### **Variable label**: Proportion of men in 2011  
-**Variable name**: socenv_proportion_men_2011    
+**Variable name**: socenv_proportion_men_3   
 **Variable description**: Proportion of men in the residential area in 2011.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_men_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_MEN_2011) 
-
-socenv_GLOBE_2014$socenv_proportion_men_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_MEN_2011) 
+socenv_GLOBE_3$socenv_proportion_men_3<-as.numeric(GLOBE2011$PROPORTION_MEN_2011) 
 
 ```    
 
+
+### **Variable label**: Proportion of men in 2011  
+**Variable name**: socenv_proportion_men_4  
+**Variable description**: Proportion of men in the residential area in 2011.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_men_4<-as.numeric(GLOBE2014$PROPORTION_MEN_2011) 
+
+```
+
+
+
+
 ### **Variable label**: Proportion of women in 2006  
-**Variable name**: socenv_proportion_women_2006    
+**Variable name**: socenv_proportion_women_2    
 **Variable description**: Proportion of women in the residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_women_2006<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_WOMEN_2006)  
+socenv_GLOBE_2$socenv_proportion_women_2<-as.numeric(GLOBE2004$PROPORTION_WOMEN_2006)  
 
 ```    
 
 ### **Variable label**: Proportion of women in 2011    
-**Variable name**: socenv_proportion_women_2011    
+**Variable name**: socenv_proportion_women_3    
 **Variable description**: Proportion of women in the residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_women_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_WOMEN_2011)  
-
-socenv_GLOBE_2014$socenv_proportion_women_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_WOMEN_2011)  
+socenv_GLOBE_3$socenv_proportion_women_3<-as.numeric(GLOBE2011$PROPORTION_WOMEN_2011)  
 
 ```    
 
+### **Variable label**: Proportion of women in 2011    
+**Variable name**: socenv_proportion_women_4    
+**Variable description**: Proportion of women in the residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_women_4<-as.numeric(GLOBE2014$PROPORTION_WOMEN_2011)  
+
+```  
+
+
+
 ### **Variable label**: Proportion of residents aged 65 or older in 2006   
-**Variable name**: socenv_proportion_65_older_2006   
+**Variable name**: socenv_proportion_65_older_2   
 **Variable description**: Proportion of residents aged 65 or older in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_65_older_2006<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_65_OLDER_2006) 
+socenv_GLOBE_2$socenv_proportion_65_older_2<-as.numeric(GLOBE2004$PROPORTION_65_OLDER_2006) 
 
 ```    
 
@@ -245,54 +283,85 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 ```    
 
 ### **Variable label**: Proportion of residents aged 65 or older in 2011   
-**Variable name**: socenv_proportion_65_older_2011   
+**Variable name**: socenv_proportion_65_older_3   
 **Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_65_older_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_65_OLDER_2011) 
+socenv_GLOBE_3$socenv_proportion_65_older_3<-as.numeric(GLOBE2011$PROPORTION_65_OLDER_2011) 
 
-socenv_GLOBE_2014$socenv_proportion_65_older_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_65_OLDER_2011) 
 ```    
 
+### **Variable label**: Proportion of residents aged 65 or older in 2011   
+**Variable name**: socenv_proportion_65_older_4   
+**Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_65_older_4<-as.numeric(GLOBE2014$PROPORTION_65_OLDER_2011) 
+
+```
+
+
 ### **Variable label**: Proportion of unmaried residents in 2008   
-**Variable name**: socenv_proportion_unmaried_2008   
+**Variable name**: socenv_proportion_unmaried_2   
 **Variable description**: Proportion of unmaried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_unmaried_2008<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_UNMARIED_2008) 
+socenv_GLOBE_2$socenv_proportion_unmaried_2<-as.numeric(GLOBE2004$PROPORTION_UNMARIED_2008) 
 
 ```    
 
 ### **Variable label**: Proportion of unmaried residents in 2011   
-**Variable name**: socenv_proportion_unmaried_2011   
+**Variable name**: socenv_proportion_unmaried_3   
 **Variable description**: Proportion of unmaried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_unmaried_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_UNMARIED_2011) 
+socenv_GLOBE_3$socenv_proportion_unmaried_3<-as.numeric(GLOBE2011$PROPORTION_UNMARIED_2011) 
 
-socenv_GLOBE_2014$socenv_proportion_unmaried_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_UNMARIED_2011)
 ```    
+
+### **Variable label**: Proportion of unmaried residents in 2011   
+**Variable name**: socenv_proportion_unmaried_4   
+**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_unmaried_4<-as.numeric(GLOBE2014$PROPORTION_UNMARIED_2011) 
+
+```   
 
 ### **Variable label**: Proportion of maried residents in 2006   
 **Variable name**: socenv_proportion_maried_2006   
@@ -301,7 +370,7 @@ socenv_GLOBE_2014$socenv_proportion_unmaried_2011<-as.decimal(GLOBE_2014_sociale
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 2006. 
 **R script**:  
@@ -311,38 +380,54 @@ For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 
 ```    
 
 ### **Variable label**: Proportion of maried residents in 2008   
-**Variable name**: socenv_proportion_maried_2008   
+**Variable name**: socenv_proportion_maried_2   
 **Variable description**: Proportion of maried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_maried_2008<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_MARIED_2008) 
+socenv_GLOBE_2$socenv_proportion_maried_2<-as.numeric(GLOBE20046$PROPORTION_MARIED_2008) 
 
 ```    
 
 ### **Variable label**: Proportion of maried residents in 2011   
-**Variable name**: socenv_proportion_maried_2011   
+**Variable name**: socenv_proportion_maried_3   
 **Variable description**: Proportion of maried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_maried_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_MARIED_2011) 
-
-socenv_GLOBE_2014$socenv_proportion_maried_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_MARIED_2011) 
+socenv_GLOBE_3$socenv_proportion_maried_3<-as.numeric(GLOBE2011$PROPORTION_MARIED_2011) 
 
 ```    
+
+### **Variable label**: Proportion of maried residents in 2011   
+**Variable name**: socenv_proportion_maried_4   
+**Variable description**: Proportion of maried residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_maried_4<-as.numeric(GLOBE2014$PROPORTION_MARIED_2011) 
+
+``` 
+
+
 
 ### **Variable label**: Proportion of divorced residents in 2006   
 **Variable name**: socenv_proportion_divorced_2006   
@@ -351,7 +436,7 @@ socenv_GLOBE_2014$socenv_proportion_maried_2011<-as.decimal(GLOBE_2014_socialenv
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
@@ -362,36 +447,51 @@ For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 
 ```    
 
 ### **Variable label**: Proportion of divorced residents in 2008   
-**Variable name**: socenv_proportion_divorced_2008   
+**Variable name**: socenv_proportion_divorced_2   
 **Variable description**: Proportion of divorced residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_divorced_2008<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_DIVORCED_2008)  
+socenv_GLOBE_2$socenv_proportion_divorced_2<-as.numeric(GLOBE2004$PROPORTION_DIVORCED_2008)  
 
 ```    
 
 ### **Variable label**: Proportion of divorced residents in 2011   
-**Variable name**: socenv_proportion_divorced_2011   
+**Variable name**: socenv_proportion_divorced_3   
 **Variable description**: Proportion of divorced residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_divorced_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_DIVORCED_2011)  
+socenv_GLOBE_3$socenv_proportion_divorced_3<-as.numeric(GLOBE2011$PROPORTION_DIVORCED_2011)  
 
-socenv_GLOBE_2014$socenv_proportion_divorced_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_DIVORCED_2011)  
+```    
+
+### **Variable label**: Proportion of divorced residents in 2011   
+**Variable name**: socenv_proportion_divorced_4   
+**Variable description**: Proportion of divorced residents in residential area in 2011.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_divorced_4<-as.numeric(GLOBE2014$PROPORTION_DIVORCED_2011)  
+
 ```    
 
 ### **Variable label**: Proportion of widowed residents in 2006   
@@ -411,52 +511,66 @@ For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 
 ```    
 
 ### **Variable label**: Proportion of widowed residents in 2008     
-**Variable name**: socenv_proportion_widowed_2008   
+**Variable name**: socenv_proportion_widowed_2   
 **Variable description**: Proportion of widowed residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_widowed_2008<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_WIDOWED_2008)  
+socenv_GLOBE_2$socenv_proportion_widowed_2<-as.numeric(GLOBE2004$PROPORTION_WIDOWED_2008)  
 
 ```    
 
 ### **Variable label**: Proportion of widowed residents in 2011    
-**Variable name**: socenv_proportion_widowed_2011   
+**Variable name**: socenv_proportion_widowed_3   
 **Variable description**: Proportion of widowed residents in residential area in 2011.  
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_widowed_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_WIDOWED_2011)  
-
-socenv_GLOBE_2014$socenv_proportion_widowed_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_WIDOWED_2011)
+socenv_GLOBE_3$socenv_proportion_widowed_3<-as.numeric(GLOBE2011$PROPORTION_WIDOWED_2011)  
 
 ```    
 
+### **Variable label**: Proportion of widowed residents in 2011    
+**Variable name**: socenv_proportion_widowed_4   
+**Variable description**: Proportion of widowed residents in residential area in 2011.  
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_widowed_4<-as.numeric(GLOBE2014$PROPORTION_WIDOWED_2011)  
+
+```   
+
 ### **Variable label**: Average household size in 2006   
-**Variable name**: socenv_average_hh_size_2006   
+**Variable name**: socenv_average_hh_size_2   
 **Variable description**: Average household size in residential area in 2006.  
 **Variable type**: integer   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_average_hh_size_2006<-as.integer(GLOBE_2004_socialenvironment_2006$AVERAGE_HOUSEHOLD_SIZE_2006) 
+socenv_GLOBE_2$socenv_average_hh_size_2<-as.integer(GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006) 
 
 ```    
 
@@ -477,36 +591,38 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 ```    
 
 ### **Variable label**: Average household size in 2011   
-**Variable name**: socenv_average_hh_size_2011   
+**Variable name**: socenv_average_hh_size_3   
 **Variable description**: Average household size in residential area in 2011.  
 **Variable type**: integer   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_average_hh_size_2011<-as.integer(GLOBE_2011_socialenvironment_2011$AVERAGE_HOUSEHOLD_SIZE_2011)   
+socenv_GLOBE_3$socenv_average_hh_size_3<-as.integer(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)   
 
-socenv_GLOBE_2014$socenv_average_hh_size_2011<-as.integer(GLOBE_2014_socialenvironment_2011$AVERAGE_HOUSEHOLD_SIZE_2011) 
 ```    
 
-### **Variable label**: Average household size in 2014   
-**Variable name**: socenv_average_hh_size_2014   
-**Variable description**: Average household size in residential area in 2014.  
+
+### **Variable label**: Average household size in 2011   
+**Variable name**: socenv_average_hh_size_4   
+**Variable description**: Average household size in residential area in 2011.  
 **Variable type**: integer   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  impossible
-**Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2014.
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_GLOBE_4$socenv_average_hh_size_4<-as.integer(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011)   
 
-```    
+``` 
+
 
 ### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
@@ -518,6 +634,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 **Harmonization status**:  impossible
 **Harmonization comment**: 
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2015.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -532,7 +649,8 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 
 **Harmonization status**:  impossible
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2016. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2016.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -542,43 +660,56 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 # Housing
 
 ### **Variable label**: Average value of dwellings in 1000 euros in 2006    
-**Variable name**: socenv_avv_dwellings_2006  
+**Variable name**: socenv_avv_dwellings_2  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2006.    
 **Variable type**: integer   
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_avv_dwellings_2006<-as.integer(GLOBE_2004_socialenvironment_2006$AVERAGE_VALUE_DWELLINGS_2006) 
+socenv_GLOBE_2$socenv_avv_dwellings_2<-as.integer(GLOBE2004$AVERAGE_VALUE_DWELLINGS_2006) 
 
 ```    
 
 ### **Variable label**: Average value of dwellings in 1000 euros in 2011    
-**Variable name**: socenv_avv_dwellings_2011  
+**Variable name**: socenv_avv_dwellings_3  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2011.    
 **Variable type**: integer   
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_avv_dwellings_2011<-as.integer(GLOBE_2011_socialenvironment_2011$AVERAGE_VALUE_DWELLINGS_2011)  
-
-socenv_GLOBE_2014$socenv_avv_dwellings_2011<-as.integer(GLOBE_2014_socialenvironment_2011$AVERAGE_VALUE_DWELLINGS_2011)  
+socenv_GLOBE_3$socenv_avv_dwellings_3<-as.integer(GLOBE2011$AVERAGE_VALUE_DWELLINGS_2011)  
 
 ```    
 
+### **Variable label**: Average value of dwellings in 1000 euros in 2011    
+**Variable name**: socenv_avv_dwellings_4  
+**Variable description**: Average value of dwellings in 1000 euros in residential area in 2011.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_avv_dwellings_4<-as.integer(GLOBE2014$AVERAGE_VALUE_DWELLINGS_2011)  
+
+```
+
 ### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
 **Variable name**: socenv_avv_dwelling_m2_2007  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -593,14 +724,14 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2011  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: 
 For GLOBE, these data are not available.  
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -608,14 +739,14 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2013  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: 
 For GLOBE, these data are not available.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -623,14 +754,14 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2014 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2014  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014. **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: 
 For GLOBE, these data are not available.  
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -638,14 +769,14 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2015   
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
-**Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015. **Variable type**: integer   
 **Variable unit**: euros    
 **Category coding**:   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: 
 For GLOBE, these data are not available.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -661,28 +792,43 @@ For GLOBE, these data are not available.
 **Harmonization status**:  impossible
 **Harmonization comment**: 
 For GLOBE, these data are available for neighbourhoods in 2012, not in 2011. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
 ```    
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2012   
-**Variable name**: socenv_prop_unocc_dwellings_2012
+**Variable name**: socenv_prop_unocc_dwellings_3
 **Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Complete
+**Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_prop_unocc_dwellings_2012<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
-
-socenv_GLOBE_2014$socenv_prop_unocc_dwellings_2012<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_UNOCCUPIED_DWELLINGS_2012) 
+socenv_GLOBE_3$socenv_prop_unocc_dwellings_3<-as.numeric(GLOBE2011$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
 
 ```    
+
+### **Variable label**: Proportion of unoccupied dwellings in 2012   
+**Variable name**: socenv_prop_unocc_dwellings_4
+**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+For GLOBE, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_prop_unocc_dwellings_4<-as.numeric(GLOBE2014$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
+```
+
 
 ### **Variable label**: Proportion of unoccupied dwellings in 2014   
 **Variable name**: socenv_prop_unocc_dwellings_2014
@@ -691,7 +837,7 @@ socenv_GLOBE_2014$socenv_prop_unocc_dwellings_2012<-as.decimal(GLOBE_2014_social
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: impossible  
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
@@ -702,7 +848,7 @@ socenv_GLOBE_2014$socenv_prop_unocc_dwellings_2012<-as.decimal(GLOBE_2014_social
 # Income
 
 ### **Variable label**: Average income in 1000 euros in 2005  
-**Variable name**: socenv_av_inc1000_2005  
+**Variable name**: socenv_av_inc1000_2  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
 **Variable type**: integer     
 **Variable unit**: 1000 euros   
@@ -713,7 +859,7 @@ socenv_GLOBE_2014$socenv_prop_unocc_dwellings_2012<-as.decimal(GLOBE_2014_social
 For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_av_inc1000_2005<-as.integer(GLOBE_2004_socialenvironment_2006$AVERAGE_INCOME_RESIDENTS_2005) 
+socenv_GLOBE_2$socenv_av_inc1000_2<-as.integer(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005) 
 
 ```    
 
@@ -724,7 +870,7 @@ socenv_GLOBE_2004$socenv_av_inc1000_2005<-as.integer(GLOBE_2004_socialenvironmen
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:
 For GLOBE, these data are available for neighbourhoods in 2005 and 2011, not in 2006.
 **R script**:  
@@ -734,7 +880,7 @@ For GLOBE, these data are available for neighbourhoods in 2005 and 2011, not in 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2011   
-**Variable name**: socenv_av_inc1000_2011 
+**Variable name**: socenv_av_inc1000_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
 **Variable type**: integer     
 **Variable unit**: 1000 euros    
@@ -742,14 +888,29 @@ For GLOBE, these data are available for neighbourhoods in 2005 and 2011, not in 
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_av_inc1000_2011<-as.integer(GLOBE_2011_socialenvironment_2011$AVERAGE_INCOME_RESIDENTS_2011) 
-
-socenv_GLOBE_2014$socenv_av_inc1000_2011<-as.integer(GLOBE_2014_socialenvironment_2011$AVERAGE_INCOME_RESIDENTS_2011) 
+socenv_GLOBE_3$socenv_av_inc1000_3<-as.integer(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011) 
 
 ```    
+
+### **Variable label**: Average income in 1000 euros in 2011   
+**Variable name**: socenv_av_inc1000_4 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros    
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_av_inc1000_4<-as.integer(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011) 
+
+``` 
+
 
 ### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
@@ -758,7 +919,7 @@ socenv_GLOBE_2014$socenv_av_inc1000_2011<-as.integer(GLOBE_2014_socialenvironmen
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -774,7 +935,7 @@ For GLOBE, these data are not available.
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -790,7 +951,7 @@ For GLOBE, these data are not available.
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:   
@@ -806,7 +967,7 @@ For GLOBE, these data are not available.
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -822,7 +983,7 @@ For GLOBE, these data are not available.
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -838,7 +999,7 @@ For GLOBE, these data are not available.
 **Variable unit**: euros     
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -854,7 +1015,7 @@ For GLOBE, these data are not available.
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -864,7 +1025,7 @@ For GLOBE, these data are not available.
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
-**Variable name**: socenv_av_inc1000dich_2005  
+**Variable name**: socenv_av_inc1000dich_2  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
 **Variable unit**:   
@@ -877,11 +1038,11 @@ For GLOBE, these data are not available.
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2005) by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
 Here, this variable is linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_GLOBE_2004$socenv_av_inc1000dich_2005 < ifelse(GLOBE_2004_socialenvironment_2006$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
+socenv_GLOBE_2$socenv_av_inc1000dich_2 < ifelse(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
 
 ```       
 
@@ -897,7 +1058,7 @@ socenv_GLOBE_2004$socenv_av_inc1000dich_2005 < ifelse(GLOBE_2004_socialenvironme
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -907,7 +1068,7 @@ For GLOBE, these data are not available.
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
-**Variable name**: socenv_av_inc1000dich_2011 
+**Variable name**: socenv_av_inc1000dich_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
 **Variable unit**:    
@@ -920,17 +1081,37 @@ For GLOBE, these data are not available.
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
-Here, this variable is linked to GLOBE participants at wave 2011 and 2014.
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100). Here, this variable is linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_2011$socenv_av_inc1000dich_2011 < ifelse(GLOBE_2011_socialenvironment_2011$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
-
-socenv_GLOBE_2014$socenv_av_inc1000dich_2011 < ifelse(GLOBE_2014_socialenvironment_2011$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
-
+socenv_GLOBE_3$socenv_av_inc1000dich_3 < ifelse(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
 
 ```    
+
+
+### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
+**Variable name**: socenv_av_inc1000dich_4 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100). Here, this variable is linked to GLOBE participants at wave 2011.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_GLOBE_4$socenv_av_inc1000dich_4 < ifelse(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
+
+```    
+
 
 ### **Variable label**: Average income in euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_incdich_2006  
@@ -948,11 +1129,10 @@ socenv_GLOBE_2014$socenv_av_inc1000dich_2011 < ifelse(GLOBE_2014_socialenvironme
 1 | Greater than country-specific net mean household income   
 
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
- 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -970,7 +1150,7 @@ For GLOBE, these data are not available.
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -983,7 +1163,7 @@ For GLOBE, these data are not available.
 **Variable name**: socenv_av_incdich_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
-**Variable unit**: euros    
+**Variable unit**:     
 **Category coding**:   
 
 **Code** | **Category Label**  
@@ -991,7 +1171,7 @@ For GLOBE, these data are not available.
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:    
@@ -1012,7 +1192,7 @@ For GLOBE, these data are not available.
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1033,7 +1213,7 @@ For GLOBE, these data are not available.
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1054,7 +1234,7 @@ For GLOBE, these data are not available.
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1075,7 +1255,7 @@ For GLOBE, these data are not available.
 0 | Less than or equal to country-specific net mean household income
 1 | Greater than country-specific net mean household income   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1088,7 +1268,7 @@ For GLOBE, these data are not available.
 **Variable name**: socenv_av_hhinc_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**: in euros   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**: impossible
@@ -1103,7 +1283,7 @@ For GLOBE, these data are not available.
 **Variable name**: socenv_av_hhinc_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**: in euros   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**: impossible
@@ -1119,7 +1299,7 @@ For GLOBE, these data are not available.
 **Variable name**: socenv_av_hhinc_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**: in euros   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**: impossible
@@ -1179,7 +1359,7 @@ For GLOBE, these data are not available.
 
 
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
-**Variable name**: socenv_av_inc1000Z_2005  
+**Variable name**: socenv_av_inc1000Z_2  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
 **Variable type**: integer     
 **Variable unit**:   
@@ -1187,10 +1367,10 @@ For GLOBE, these data are not available.
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2005) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2005 in the Netherlands: y=12.3206 and o=2.42953. Here, this variable is linked to GLOBE participants at wave 2004.
+We standardized average gross year income in 1000 euros of residents in the neighbourhood by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2005 in the Netherlands: y=12.3206 and o=2.42953. Here, this variable is linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_GLOBE_2004$socenv_av_inc1000Z_2005 <- ((GLOBE_2004_socialenvironment_2006$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
+socenv_GLOBE_2$socenv_av_inc1000Z_2 <- ((GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
 
 ```       
 
@@ -1201,7 +1381,7 @@ socenv_GLOBE_2004$socenv_av_inc1000Z_2005 <- ((GLOBE_2004_socialenvironment_2006
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1211,7 +1391,7 @@ For GLOBE, these data are not available.
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
-**Variable name**: socenv_av_inc1000Z_2011 
+**Variable name**: socenv_av_inc1000Z_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
 **Variable type**: integer     
 **Variable unit**:    
@@ -1219,15 +1399,32 @@ For GLOBE, these data are not available.
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We standardized average gross year income in 1000 euros of residents in the neighbourhood (see variable socenv_av_inc1000_2011) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2011 in the Netherlands: y=22.1272 and o=4.99632. Here, this variable is linked to GLOBE participants at wave 2011 and 2014.
+We standardized average gross year income in 1000 euros of residents in the neighbourhood by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2011 in the Netherlands: y=22.1272 and o=4.99632. Here, this variable is linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_2011$socenv_av_inc1000Z_2011 <- ((GLOBE_2011_socialenvironment_2011$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
-
-socenv_GLOBE_2014$socenv_av_inc1000Z_2011 <- ((GLOBE_2014_socialenvironment_2011$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+socenv_GLOBE_3$socenv_av_inc1000Z_3 <- ((GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
 
 ```    
+
+### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
+**Variable name**: socenv_av_inc1000Z_4 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We standardized average gross year income in 1000 euros of residents in the neighbourhood by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2011 in the Netherlands: y=22.1272 and o=4.99632. Here, this variable is linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_GLOBE_4$socenv_av_inc1000Z_4 <- ((GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+
+``` 
+
+
 
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
@@ -1239,11 +1436,10 @@ socenv_GLOBE_2014$socenv_av_inc1000Z_2011 <- ((GLOBE_2014_socialenvironment_2011
 **Harmonization status**: 
 **Harmonization comment**: 
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
- 
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1256,7 +1452,7 @@ For GLOBE, these data are not available.
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1269,10 +1465,10 @@ For GLOBE, these data are not available.
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
 **Variable type**: integer     
-**Variable unit**: euros    
+**Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:    
@@ -1288,7 +1484,7 @@ For GLOBE, these data are not available.
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1304,7 +1500,7 @@ For GLOBE, these data are not available.
 **Variable unit**:  
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1320,7 +1516,7 @@ For GLOBE, these data are not available.
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1336,7 +1532,7 @@ For GLOBE, these data are not available.
 **Variable unit**:     
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1394,7 +1590,7 @@ For GLOBE, these data are not available.
 
 
 ### **Variable label**: Proportion of income recipients in 2005
-**Variable name**: socenv_av_inc_recipients_2005  
+**Variable name**: socenv_av_inc_recipients_2  
 **Variable description**: Proportion of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1405,11 +1601,11 @@ For GLOBE, these data are not available.
 For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_av_inc_recipients_2005<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_INCOME_RECIPIENTS_2005) 
+socenv_GLOBE_2$socenv_av_inc_recipients_2<-as.numeric(GLOBE2004$PROPORTION_INCOME_RECIPIENTS_2005) 
 ```    
 
 ### **Variable label**: Proportion of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_2011  
+**Variable name**: socenv_av_inc_recipients_3  
 **Variable description**: Proportion of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1417,14 +1613,29 @@ socenv_GLOBE_2004$socenv_av_inc_recipients_2005<-as.decimal(GLOBE_2004_socialenv
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_av_inc_recipients_2011<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_INCOME_RECIPIENTS_2011) 
+socenv_GLOBE_3$socenv_av_inc_recipients_3<-as.numeric(GLOBE2011$PROPORTION_INCOME_RECIPIENTS_2011) 
 
-socenv_GLOBE_2014$socenv_av_inc_recipients_2011<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_INCOME_RECIPIENTS_2011) 
 ```    
 
+
+### **Variable label**: Proportion of income recipients in 2011  
+**Variable name**: socenv_av_inc_recipients_4  
+**Variable description**: Proportion of income recipients in residential area in 2011.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_av_inc_recipients_4<-as.numeric(GLOBE2014$PROPORTION_INCOME_RECIPIENTS_2011) 
+
+```
 
 
 # Unemployment
@@ -1436,7 +1647,7 @@ socenv_GLOBE_2014$socenv_av_inc_recipients_2011<-as.decimal(GLOBE_2014_socialenv
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -1452,9 +1663,10 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.  
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1467,9 +1679,10 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1482,9 +1695,10 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1497,9 +1711,10 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1508,7 +1723,7 @@ For GLOBE, these data are not available.
 # Social security
 
 ### **Variable label**: Proportion of social security beneficiaries in 2006  
-**Variable name**: socenv_proportion_socsecben_2006   
+**Variable name**: socenv_proportion_socsecben_2   
 **Variable description**: Proportion of social security beneficiaries in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1519,7 +1734,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_socsecben_2006<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_SOCSECBEN_2006)  
+socenv_GLOBE_2$socenv_proportion_socsecben_2<-as.numeric(GLOBE2004$PROPORTION_SOCSECBEN_2006)  
 
 ```    
 
@@ -1530,7 +1745,7 @@ socenv_GLOBE_2004$socenv_proportion_socsecben_2006<-as.decimal(GLOBE_2004_social
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2007.
 **R script**:  
@@ -1540,7 +1755,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 ```    
 
 ### **Variable label**: Proportion of social security beneficiaries in 2010  
-**Variable name**: socenv_proportion_socsecben_2010   
+**Variable name**: socenv_proportion_socsecben_3   
 **Variable description**: Proportion of social security beneficiaries in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1548,14 +1763,30 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_socsecben_2010<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_SOCSECBEN_2010) 
-
-socenv_GLOBE_2014$socenv_proportion_socsecben_2010<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_SOCSECBEN_2010) 
+socenv_GLOBE_3$socenv_proportion_socsecben_3<-as.numeric(GLOBE2011$PROPORTION_SOCSECBEN_2010) 
 
 ```    
+
+
+### **Variable label**: Proportion of social security beneficiaries in 2010  
+**Variable name**: socenv_proportion_socsecben_4   
+**Variable description**: Proportion of social security beneficiaries in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_socsecben_4<-as.numeric(GLOBE2014$PROPORTION_SOCSECBEN_2010) 
+
+```
+
 
 ### **Variable label**: Proportion of social security beneficiaries in 2011  
 **Variable name**: socenv_proportion_socsecben_2011   
@@ -1564,9 +1795,10 @@ socenv_GLOBE_2014$socenv_proportion_socsecben_2010<-as.decimal(GLOBE_2014_social
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2011. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1579,9 +1811,10 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2015.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1594,16 +1827,17 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2016. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
 ```    
 
 ### **Variable label**: Proportion of residents with disability benefit in 2006  
-**Variable name**: socenv_proportion_disben_2006   
+**Variable name**: socenv_proportion_disben_2   
 **Variable description**: Proportion of residents with a disability benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1614,11 +1848,11 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_disben_2006<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_DISABILITY_BENEFIT_2006)  
+socenv_GLOBE_2$socenv_proportion_disben_2<-as.numeric(GLOBE2004$PROPORTION_DISABILITY_BENEFIT_2006)  
 ```    
 
 ### **Variable label**: Proportion of residents with disability benefit in 2010  
-**Variable name**: socenv_proportion_disben_2010   
+**Variable name**: socenv_proportion_disben_3   
 **Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1626,17 +1860,33 @@ socenv_GLOBE_2004$socenv_proportion_disben_2006<-as.decimal(GLOBE_2004_socialenv
 
 **Harmonization status**: complete
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_disben_2010<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_DISABILITY_BENEFIT_2010)  
+socenv_GLOBE_3$socenv_proportion_disben_3<-as.numeric(GLOBE2011$PROPORTION_DISABILITY_BENEFIT_2010)  
 
-socenv_GLOBE_2014$socenv_proportion_disben_2010<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_DISABILITY_BENEFIT_2010)
 ```    
 
 
+### **Variable label**: Proportion of residents with disability benefit in 2010  
+**Variable name**: socenv_proportion_disben_4   
+**Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_disben_4<-as.numeric(GLOBE2014$PROPORTION_DISABILITY_BENEFIT_2010)  
+
+```
+
+
 ### **Variable label**: Proportion of residents with unemployment benefit in 2006 
-**Variable name**: socenv_proportion_unemplben_2006   
+**Variable name**: socenv_proportion_unemplben_2   
 **Variable description**: Proportion of residents with a unemployment benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1647,11 +1897,11 @@ socenv_GLOBE_2014$socenv_proportion_disben_2010<-as.decimal(GLOBE_2014_socialenv
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_proportion_unemplben_2006<-as.decimal(GLOBE_2004_socialenvironment_2006$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
+socenv_GLOBE_2$socenv_proportion_unemplben_2<-as.numeric(GLOBE2004$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
 ```    
 
 ### **Variable label**: Proportion of residents with unemployment benefit in 2010  
-**Variable name**: socenv_proportion_unemplben_2010   
+**Variable name**: socenv_proportion_unemplben_3   
 **Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1659,12 +1909,27 @@ socenv_GLOBE_2004$socenv_proportion_unemplben_2006<-as.decimal(GLOBE_2004_social
 
 **Harmonization status**:  complete
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_proportion_unemplben_2010<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
+socenv_GLOBE_3$socenv_proportion_unemplben_3<-as.numeric(GLOBE2011$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
 
-socenv_GLOBE_2014$socenv_proportion_unemplben_2010<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)
+```    
+
+### **Variable label**: Proportion of residents with unemployment benefit in 2010  
+**Variable name**: socenv_proportion_unemplben_4   
+**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  complete
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_proportion_unemplben_4<-as.numeric(GLOBE2014$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
+
 ```    
 
 # Educational level  
@@ -1676,7 +1941,7 @@ socenv_GLOBE_2014$socenv_proportion_unemplben_2010<-as.decimal(GLOBE_2014_social
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
@@ -1686,7 +1951,7 @@ For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 ```    
 
 ### **Variable label**: Proportion of low educated residents in 2014 
-**Variable name**: socenv_prop_low_education_2014  
+**Variable name**: socenv_prop_low_education_3  
 **Variable description**: Proportion of low educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1694,14 +1959,31 @@ For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 
 **Harmonization status**: complete 
 **Harmonization comment**:
-For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_prop_low_education_2014<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_LOW_EDUCATION_2014) 
+socenv_GLOBE_3$socenv_prop_low_education_3<-as.numeric(GLOBE2011$PROPORTION_LOW_EDUCATION_2014) 
 
-socenv_GLOBE_2014$socenv_prop_low_education_2014<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_LOW_EDUCATION_2014) 
 
 ```    
+
+
+### **Variable label**: Proportion of low educated residents in 2014 
+**Variable name**: socenv_prop_low_education_4  
+**Variable description**: Proportion of low educated residents in residential area in 2014.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete 
+**Harmonization comment**:
+For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_prop_low_education_4<-as.numeric(GLOBE2014$PROPORTION_LOW_EDUCATION_2014) 
+
+``` 
+
 
 ### **Variable label**: Proportion of intermediate educated residents in 2011  
 **Variable name**: socenv_prop_itm_education_2011  
@@ -1710,7 +1992,7 @@ socenv_GLOBE_2014$socenv_prop_low_education_2014<-as.decimal(GLOBE_2014_socialen
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
@@ -1720,22 +2002,40 @@ For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 ```    
 
 ### **Variable label**: Proportion of intermediate educated residents in 2014  
-**Variable name**: socenv_prop_itm_education_2014  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2014.    
+**Variable name**: socenv_prop_itm_education_3  
+**Variable description**: Proportion of intermediate educated residents in residential area in 2014.  
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Complete 
+**Harmonization status**: complete 
 **Harmonization comment**:  
-For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_prop_itm_education_2014<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_INTERMEDIATE_EDUCATION_2014)
+socenv_GLOBE_3$socenv_prop_itm_education_3<-as.numeric(GLOBE2011$PROPORTION_INTERMEDIATE_EDUCATION_2014)
 
-socenv_GLOBE_2014$socenv_prop_itm_education_2014<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_INTERMEDIATE_EDUCATION_2014)
 
 ```    
+
+### **Variable label**: Proportion of intermediate educated residents in 2014  
+**Variable name**: socenv_prop_itm_education_4  
+**Variable description**: Proportion of intermediate educated residents in residential area in 2014.  
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete 
+**Harmonization comment**:  
+For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_prop_itm_education_4<-as.numeric(GLOBE2014$PROPORTION_INTERMEDIATE_EDUCATION_2014)
+
+
+```  
+
+
 
 ### **Variable label**: Proportion of high educated residents in 2011  
 **Variable name**: socenv_prop_high_education_2011  
@@ -1744,7 +2044,7 @@ socenv_GLOBE_2014$socenv_prop_itm_education_2014<-as.decimal(GLOBE_2014_socialen
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
@@ -1754,22 +2054,38 @@ For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 ```    
 
 ### **Variable label**: Proportion of high educated residents in 2014  
-**Variable name**: socenv_prop_high_education_2014  
+**Variable name**: socenv_prop_high_education_3  
 **Variable description**: Proportion of high educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Complete 
+**Harmonization status**: complete 
 **Harmonization comment**:  
-For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_prop_high_education_2014<-as.decimal(GLOBE_2011_socialenvironment_2011$PROPORTION_HIGH_EDUCATION_2014)
+socenv_GLOBE_3$socenv_prop_high_education_3<-as.numeric(GLOBE2011$PROPORTION_HIGH_EDUCATION_2014)
 
-socenv_GLOBE_2014$socenv_prop_high_education_2014<-as.decimal(GLOBE_2014_socialenvironment_2011$PROPORTION_HIGH_EDUCATION_2014)
 
 ```    
+
+### **Variable label**: Proportion of high educated residents in 2014  
+**Variable name**: socenv_prop_high_education_4  
+**Variable description**: Proportion of high educated residents in residential area in 2014.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete 
+**Harmonization comment**:  
+For GLOBE, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_prop_high_education_4<-as.numeric(GLOBE2014$PROPORTION_HIGH_EDUCATION_2014)
+
+```
+
 
 # Immigrants and ethnic minority groups
 
@@ -1780,7 +2096,7 @@ socenv_GLOBE_2014$socenv_prop_high_education_2014<-as.decimal(GLOBE_2014_sociale
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
@@ -1796,9 +2112,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1811,9 +2128,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1826,9 +2144,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1841,9 +2160,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1851,14 +2171,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
 **Variable name**: socenv_prop_moroccan_2006  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.      
+**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1866,14 +2187,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
 **Variable name**: socenv_prop_moroccan_2011  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.      
+**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1886,9 +2208,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1901,9 +2224,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1911,14 +2235,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
 **Variable name**: socenv_prop_surinamese_2006  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.      
+**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.  
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1926,14 +2251,15 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
 **Variable name**: socenv_prop_surinamese_2011  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.      
+**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.  
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1946,9 +2272,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1961,9 +2288,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1976,9 +2304,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -1991,9 +2320,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -2006,9 +2336,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -2021,9 +2352,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.  
+**R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
 
@@ -2033,12 +2365,12 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2007  
 **Variable name**: socenv_crimoff_2007    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.       
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007. 
 **Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2007.
 **R script**:  
@@ -2048,31 +2380,46 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2007.
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
-**Variable name**: socenv_crimoff_2011    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011.       
+**Variable name**: socenv_crimoff_3    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**: complete 
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_crimoff_2011<-as.integer(GLOBE_2011_socialenvironment_2011$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011)
-
-socenv_GLOBE_2014$socenv_crimoff_2011<-as.integer(GLOBE_2014_socialenvironment_2011$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011)
+socenv_GLOBE_3$socenv_crimoff_3<-as.integer(GLOBE2011$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011)
 
 ```    
 
-### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
-**Variable name**: socenv_crimoff_2014    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.        
+### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
+**Variable name**: socenv_crimoff_4    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_crimoff_4<-as.integer(GLOBE2014$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011)
+
+```
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
+**Variable name**: socenv_crimoff_2014    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014. 
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible
 **Harmonization comment**:
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2014.
 **R script**:  
@@ -2083,12 +2430,12 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2014.
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2015    
 **Variable name**: socenv_crimoff_2015    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2015.
 **R script**:   
@@ -2099,12 +2446,12 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2015.
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2016    
 **Variable name**: socenv_crimoff_2016    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  Impossible
+**Harmonization status**:  impossible
 **Harmonization comment**:
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:   
@@ -2115,12 +2462,12 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2007  
 **Variable name**: socenv_violentcrim_2007    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.       
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -2131,12 +2478,12 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2011    
 **Variable name**: socenv_violentcrim_2011    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.        
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:   
@@ -2147,12 +2494,12 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2016    
 **Variable name**: socenv_violentcrim_2016   
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.        
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:   
@@ -2168,7 +2515,7 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -2184,7 +2531,7 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
@@ -2200,7 +2547,7 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:   
@@ -2210,7 +2557,7 @@ For GLOBE, these data are not available.
 ```    
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2011  
-**Variable name**: socenv_vandalism_po_2011   
+**Variable name**: socenv_vandalism_po_3   
 **Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2011.        
 **Variable type**: integer     
 **Variable unit**:   
@@ -2218,13 +2565,29 @@ For GLOBE, these data are not available.
 
 **Harmonization status**: complete 
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_vandalism_po_2011<-as.integer(GLOBE_2011_socialenvironment_2011$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
+socenv_GLOBE_3$socenv_vandalism_po_3<-as.integer(GLOBE2011$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
 
-socenv_GLOBE_2014$socenv_vandalism_po_2011<-as.integer(GLOBE_2014_socialenvironment_2011$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
 ```    
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2011  
+**Variable name**: socenv_vandalism_po_4   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2011.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_vandalism_po_4<-as.integer(GLOBE2014$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
+
+```   
+
 
 ### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2016    
 **Variable name**: socenv_vandalism_po_2016   
@@ -2243,7 +2606,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 ```    
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2011    
-**Variable name**: socenv_violentcrim_sexoff_2011    
+**Variable name**: socenv_violentcrim_sexoff_3    
 **Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2011.         
 **Variable type**: integer      
 **Variable unit**:   
@@ -2251,13 +2614,30 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 
 **Harmonization status**: complete 
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011 and 2014.
+For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_violentcrim_sexoff_2011<-as.integer(GLOBE_2011_socialenvironment_2011$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011)
+socenv_GLOBE_3$socenv_violentcrim_sexoff_3<-as.integer(GLOBE2011$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011)
 
-socenv_GLOBE_2014$socenv_violentcrim_sexoff_2011<-as.integer(GLOBE_2014_socialenvironment_2011$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011)
 ```     
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2011    
+**Variable name**: socenv_violentcrim_sexoff_4    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2011.         
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete 
+**Harmonization comment**: 
+For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014.
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_violentcrim_sexoff_4<-as.integer(GLOBE2014$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011)
+
+```    
+
+
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2016  
 **Variable name**: socenv_violentcrim_sexoff_2016   
@@ -2282,7 +2662,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are not available.
 **R script**:  
@@ -2298,7 +2678,7 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are not available.
 **R script**:   
@@ -2309,12 +2689,12 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2011    
 **Variable name**: socenv_po_2011    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.        
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are not available.
 **R script**:  
@@ -2325,12 +2705,12 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2016    
 **Variable name**: socenv_po_2016    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.        
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible 
+**Harmonization status**: impossible 
 **Harmonization comment**:  
 For GLOBE, these data are not available.
 **R script**:  
@@ -2340,7 +2720,7 @@ For GLOBE, these data are not available.
 ```    
 
 ### **Variable label**: Area indicator: city 
-**Variable name**: socenv_city_2004   
+**Variable name**: socenv_city_2   
 **Variable description**: City indicator in 2004       
 **Variable type**: integer      
 **Variable unit**:   
@@ -2351,7 +2731,7 @@ For GLOBE, these data are not available.
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_city_2004<-as.integer(GLOBE_2004_socialenvironment_2006$city)
+socenv_GLOBE_2$socenv_city_2<-as.integer(GLOBE2004$city)
 
 
 ```
@@ -2373,6 +2753,21 @@ socenv_GLOBE_2004$socenv_city_2004<-as.integer(GLOBE_2004_socialenvironment_2006
 ```
 
 
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_2007   
+**Variable description**: City indicator in 2007       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For GLOBE, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2009   
@@ -2392,7 +2787,7 @@ socenv_GLOBE_2004$socenv_city_2004<-as.integer(GLOBE_2004_socialenvironment_2006
 
 
 ### **Variable label**: Area indicator: city  
-**Variable name**: socenv_city_2011   
+**Variable name**: socenv_city_3   
 **Variable description**: City indicator in 2011        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2403,12 +2798,12 @@ socenv_GLOBE_2004$socenv_city_2004<-as.integer(GLOBE_2004_socialenvironment_2006
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_city_2011<-as.integer(GLOBE_2011_socialenvironment_2011$city)
+socenv_GLOBE_3$socenv_city_3<-as.integer(GLOBE2011$city)
 
 ```
 
 ### **Variable label**: Area indicator: city  
-**Variable name**: socenv_city_2014   
+**Variable name**: socenv_city_4   
 **Variable description**: City indicator in 2014        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2419,7 +2814,7 @@ socenv_GLOBE_2011$socenv_city_2011<-as.integer(GLOBE_2011_socialenvironment_2011
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2014$socenv_city_2014<-as.integer(GLOBE_2014_socialenvironment_2011$city)
+socenv_GLOBE_4$socenv_city_4<-as.integer(GLOBE2014$city)
 
 ```
 
@@ -2430,7 +2825,7 @@ socenv_GLOBE_2014$socenv_city_2014<-as.integer(GLOBE_2014_socialenvironment_2011
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible
+**Harmonization status**: impossible
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
@@ -2444,7 +2839,7 @@ socenv_GLOBE_2014$socenv_city_2014<-as.integer(GLOBE_2014_socialenvironment_2011
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible
+**Harmonization status**: impossible
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
@@ -2458,7 +2853,7 @@ socenv_GLOBE_2014$socenv_city_2014<-as.integer(GLOBE_2014_socialenvironment_2011
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: Impossible
+**Harmonization status**: impossible
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
@@ -2467,7 +2862,7 @@ socenv_GLOBE_2014$socenv_city_2014<-as.integer(GLOBE_2014_socialenvironment_2011
 
 
 ### **Variable label**: Area indicator: neighbourhood  
-**Variable name**: socenv_neighbourhood_2004   
+**Variable name**: socenv_neighbourhood_2   
 **Variable description**: Neighbourhood indicator in 2004       
 **Variable type**: integer      
 **Variable unit**:   
@@ -2478,13 +2873,29 @@ socenv_GLOBE_2014$socenv_city_2014<-as.integer(GLOBE_2014_socialenvironment_2011
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_neighbourhood_2004<-as.integer(GLOBE_2004_socialenvironment_2006$neighbourhood)
+socenv_GLOBE_2$socenv_neighbourhood_2<-as.integer(GLOBE2004$neighbourhood)
 
 ```
 
 ### **Variable label**: Area indicator: neighbourhood  
 **Variable name**: socenv_neighbourhood_2006   
 **Variable description**: Neighbourhood indicator in 2006       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For GLOBE, these data are not available.
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+### **Variable label**: Area indicator: neighbourhood  
+**Variable name**: socenv_neighbourhood_2007   
+**Variable description**: Neighbourhood indicator in 2007       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2515,7 +2926,7 @@ socenv_GLOBE_2004$socenv_neighbourhood_2004<-as.integer(GLOBE_2004_socialenviron
 
 
 ### **Variable label**: Area indicator: neighbourhood  
-**Variable name**: socenv_neighbourhood_2011   
+**Variable name**: socenv_neighbourhood_3   
 **Variable description**: Neighbourhood indicator in 2011       
 **Variable type**: integer      
 **Variable unit**:   
@@ -2526,15 +2937,13 @@ socenv_GLOBE_2004$socenv_neighbourhood_2004<-as.integer(GLOBE_2004_socialenviron
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_neighbourhood_2011<-as.integer(GLOBE_2011_socialenvironment_2011$neighbourhood)
-
-
+socenv_GLOBE_3$socenv_neighbourhood_3<-as.integer(GLOBE2011$neighbourhood)
 
 ```
 
 
 ### **Variable label**: Area indicator: neighbourhood  
-**Variable name**: socenv_neighbourhood_2014  
+**Variable name**: socenv_neighbourhood_4  
 **Variable description**: Neighbourhood indicator in 2014        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2545,14 +2954,14 @@ socenv_GLOBE_2011$socenv_neighbourhood_2011<-as.integer(GLOBE_2011_socialenviron
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2014$socenv_neighbourhood_2014<-as.integer(GLOBE_2014_socialenvironment_2011$neighbourhood)
+socenv_GLOBE_4$socenv_neighbourhood_4<-as.integer(GLOBE2014$neighbourhood)
 
 ```
 
 
 
 ### **Variable label**: Area indicator: 4-digit postal code 
-**Variable name**: socenv_PC4_2004 
+**Variable name**: socenv_PC4_2 
 **Variable description**: 4-digit postal code (PC4) indicator in 2004        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2563,7 +2972,7 @@ socenv_GLOBE_2014$socenv_neighbourhood_2014<-as.integer(GLOBE_2014_socialenviron
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_PC4_2004<-as.integer(GLOBE_2004_socialenvironment_2006$PC4)
+socenv_GLOBE_2$socenv_PC4_2<-as.integer(GLOBE2004$PC4)
 
 ```
 
@@ -2586,7 +2995,7 @@ socenv_GLOBE_2004$socenv_PC4_2004<-as.integer(GLOBE_2004_socialenvironment_2006$
 ```
 
 ### **Variable label**: Area indicator: 4-digit postal code 
-**Variable name**: socenv_PC4_2011 
+**Variable name**: socenv_PC4_3 
 **Variable description**: 4-digit postal code (PC4) indicator in 2011        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2597,13 +3006,13 @@ socenv_GLOBE_2004$socenv_PC4_2004<-as.integer(GLOBE_2004_socialenvironment_2006$
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_PC4_2011<-as.integer(GLOBE_2011_socialenvironment_2011$PC4)
+socenv_GLOBE_3$socenv_PC4_3<-as.integer(GLOBE2011$PC4)
 
 ```
 
 
 ### **Variable label**: Area indicator: 4-digit postal code 
-**Variable name**: socenv_PC4_2014 
+**Variable name**: socenv_PC4_4 
 **Variable description**: 4-digit postal code (PC4) indicator in 2014        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2614,12 +3023,12 @@ socenv_GLOBE_2011$socenv_PC4_2011<-as.integer(GLOBE_2011_socialenvironment_2011$
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2014$socenv_PC4_2014<-as.integer(GLOBE_2014_socialenvironment_2011$PC4)
+socenv_GLOBE_4$socenv_PC4_4<-as.integer(GLOBE2014$PC4)
 
 ```
 
 ### **Variable label**: Area indicator: 6-digit postal code 
-**Variable name**: socenv_PC6_2004
+**Variable name**: socenv_PC6_2
 **Variable description**: 6-digit postal code (PC6) indicator in 2004        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2630,7 +3039,7 @@ socenv_GLOBE_2014$socenv_PC4_2014<-as.integer(GLOBE_2014_socialenvironment_2011$
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2004$socenv_PC6_2004<-as.integer(GLOBE_2004_socialenvironment_2006$PC6)
+socenv_GLOBE_2$socenv_PC6_2<-as.integer(GLOBE2004$PC6)
 
 ```
 
@@ -2653,7 +3062,7 @@ socenv_GLOBE_2004$socenv_PC6_2004<-as.integer(GLOBE_2004_socialenvironment_2006$
 
 
 ### **Variable label**: Area indicator: 6-digit postal code 
-**Variable name**: socenv_PC6_2011
+**Variable name**: socenv_PC6_3
 **Variable description**: 6-digit postal code (PC6) indicator in 2011        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2664,13 +3073,13 @@ socenv_GLOBE_2004$socenv_PC6_2004<-as.integer(GLOBE_2004_socialenvironment_2006$
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2011$socenv_PC6_2011<-as.integer(GLOBE_2011_socialenvironment_2011$PC6)
+socenv_GLOBE_3$socenv_PC6_3<-as.integer(GLOBE2011$PC6)
 
 ```
 
 
 ### **Variable label**: Area indicator: 6-digit postal code 
-**Variable name**: socenv_PC6_2014
+**Variable name**: socenv_PC6_4
 **Variable description**: 6-digit postal code (PC6) indicator in 2014        
 **Variable type**: integer      
 **Variable unit**:   
@@ -2681,20 +3090,37 @@ socenv_GLOBE_2011$socenv_PC6_2011<-as.integer(GLOBE_2011_socialenvironment_2011$
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2014$socenv_PC6_2014<-as.integer(GLOBE_2014_socialenvironment_2011$PC6)
+socenv_GLOBE_4$socenv_PC6_4<-as.integer(GLOBE2014$PC6)
 
 ```
 
 
 ### **Variable label**: Area indicator: 5-digit postal code 
-**Variable name**: socenv_PC5_2009
-**Variable description**: 5-digit postal code (PC5) indicator in 2009        
+**Variable name**: socenv_PC5_2007 
+**Variable description**: 5-digit postal code (PC5) indicator in 2007        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**: impossible
-**Harmonization comment**: For GLOBE, these data are not available.  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code 
+**Variable name**: socenv_PC5_2011 
+**Variable description**: 5-digit postal code (PC5) indicator in 2011        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
 
