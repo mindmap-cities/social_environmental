@@ -133,9 +133,9 @@ socenv_RECORD_1$socenv_urbanization_grade_1 <-as.integer(RECORD_w2$URBANIZATION_
 
 # Demographics
 
-### **Variable label**: Proportion of men in 2006  
-**Variable name**: socenv_proportion_men_2006    
-**Variable description**: Proportion of men in the residential area in 2006.  
+### **Variable label**: Percentage of men in 2006  
+**Variable name**: socenv_percentage_men_2006    
+**Variable description**: Percentage of men in the residential area in 2006.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
@@ -149,9 +149,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of men in 2011  
-**Variable name**: socenv_proportion_men_2011    
-**Variable description**: Proportion of men in the residential area in 2011.  
+### **Variable label**: Percentage of men in 2011  
+**Variable name**: socenv_percentage_men_2011    
+**Variable description**: Percentage of men in the residential area in 2011.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
@@ -165,9 +165,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of women in 2006  
-**Variable name**: socenv_proportion_women_2006    
-**Variable description**: Proportion of women in the residential area in 2006.  
+### **Variable label**: Percentage of women in 2006  
+**Variable name**: socenv_percentage_women_2006    
+**Variable description**: Percentage of women in the residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -181,9 +181,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of women in 2011    
-**Variable name**: socenv_proportion_women_2011    
-**Variable description**: Proportion of women in the residential area in 2011.  
+### **Variable label**: Percentage of women in 2011    
+**Variable name**: socenv_percentage_women_2011    
+**Variable description**: Percentage of women in the residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -197,9 +197,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2006   
-**Variable name**: socenv_proportion_65_older_2006   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2006.  
+### **Variable label**: Percentage of residents aged 65 or older in 2006   
+**Variable name**: socenv_percentage_65_older_2006   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -213,9 +213,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2007   
-**Variable name**: socenv_proportion_65_older_2007   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2007.  
+### **Variable label**: Percentage of residents aged 65 or older in 2007   
+**Variable name**: socenv_percentage_65_older_2007   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2007.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -229,9 +229,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2011   
-**Variable name**: socenv_proportion_65_older_2011   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
+### **Variable label**: Percentage of residents aged 65 or older in 2011   
+**Variable name**: socenv_percentage_65_older_2011   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -245,9 +245,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unmaried residents in 2008   
-**Variable name**: socenv_proportion_unmaried_2008   
-**Variable description**: Proportion of unmaried residents in residential area in 2008.  
+### **Variable label**: Percentage of unmaried residents in 2008   
+**Variable name**: socenv_percentage_unmaried_2008   
+**Variable description**: Percentage of unmaried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -261,9 +261,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unmaried residents in 2011   
-**Variable name**: socenv_proportion_unmaried_2011   
-**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+### **Variable label**: Percentage of unmaried residents in 2011   
+**Variable name**: socenv_percentage_unmaried_2011   
+**Variable description**: Percentage of unmaried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -277,9 +277,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2006   
-**Variable name**: socenv_proportion_maried_2006   
-**Variable description**: Proportion of maried residents in residential area in 2006.  
+### **Variable label**: Percentage of maried residents in 2006   
+**Variable name**: socenv_percentage_maried_2006   
+**Variable description**: Percentage of maried residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -293,9 +293,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2008   
-**Variable name**: socenv_proportion_maried_2008   
-**Variable description**: Proportion of maried residents in residential area in 2008.  
+### **Variable label**: Percentage of maried residents in 2008   
+**Variable name**: socenv_percentage_maried_2008   
+**Variable description**: Percentage of maried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -309,9 +309,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2011   
-**Variable name**: socenv_proportion_maried_2011   
-**Variable description**: Proportion of maried residents in residential area in 2011.  
+### **Variable label**: Percentage of maried residents in 2011   
+**Variable name**: socenv_percentage_maried_2011   
+**Variable description**: Percentage of maried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -325,9 +325,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2006   
-**Variable name**: socenv_proportion_divorced_2006   
-**Variable description**: Proportion of divorced residents in residential area in 2006.  
+### **Variable label**: Percentage of divorced residents in 2006   
+**Variable name**: socenv_percentage_divorced_2006   
+**Variable description**: Percentage of divorced residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -341,9 +341,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2008   
-**Variable name**: socenv_proportion_divorced_2008   
-**Variable description**: Proportion of divorced residents in residential area in 2008.  
+### **Variable label**: Percentage of divorced residents in 2008   
+**Variable name**: socenv_percentage_divorced_2008   
+**Variable description**: Percentage of divorced residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -357,9 +357,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2011   
-**Variable name**: socenv_proportion_divorced_2011   
-**Variable description**: Proportion of divorced residents in residential area in 2011.  
+### **Variable label**: Percentage of divorced residents in 2011   
+**Variable name**: socenv_percentage_divorced_2011   
+**Variable description**: Percentage of divorced residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -373,9 +373,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2006   
-**Variable name**: socenv_proportion_widowed_2006   
-**Variable description**: Proportion of widowed residents in residential area in 2006.  
+### **Variable label**: Percentage of widowed residents in 2006   
+**Variable name**: socenv_percentage_widowed_2006   
+**Variable description**: Percentage of widowed residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -389,9 +389,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2008     
-**Variable name**: socenv_proportion_widowed_2008   
-**Variable description**: Proportion of widowed residents in residential area in 2008.  
+### **Variable label**: Percentage of widowed residents in 2008     
+**Variable name**: socenv_percentage_widowed_2008   
+**Variable description**: Percentage of widowed residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -405,9 +405,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2011    
-**Variable name**: socenv_proportion_widowed_2011   
-**Variable description**: Proportion of widowed residents in residential area in 2011.  
+### **Variable label**: Percentage of widowed residents in 2011    
+**Variable name**: socenv_percentage_widowed_2011   
+**Variable description**: Percentage of widowed residents in residential area in 2011.  
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -424,7 +424,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_2006   
 **Variable description**: Average household size in residential area in 2006.  
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -440,7 +440,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2006.
 ### **Variable label**: Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -456,7 +456,7 @@ For RECORD, these data are available for neighbourhoodsin 2014, not in 2009.
 ### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_2011   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: integer   
+**Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -472,7 +472,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 ### **Variable label**: Average household size in 2014   
 **Variable name**: socenv_average_hh_size_1   
 **Variable description**: Average household size in residential area in 2014.  
-**Variable type**: integer   
+**Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -481,14 +481,14 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 For RECORD, these data are available for neighbourhoods in 2014. This variable was calculated by: total number of residents in area / total number of households in area * 100. This variable has been linked cohort respondents using their 5-digit postal code.References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_1$socenv_average_hh_size_1 <-as.integer(RECORD_w2$AVERAGE_HOUSEHOLD_SIZE_2014)
+socenv_RECORD_1$socenv_average_hh_size_1 <-as.numeric(RECORD_w2$AVERAGE_HOUSEHOLD_SIZE_2014)
 
 ```    
 
 ### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
-**Variable type**: integer   
+**Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
@@ -504,7 +504,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2015.
 ### **Variable label**: Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
-**Variable type**: integer   
+**Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -628,9 +628,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2011   
-**Variable name**: socenv_prop_unocc_dwellings_2011
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2011.    
+### **Variable label**: Percentage of unoccupied dwellings in 2011   
+**Variable name**: socenv_perc_unocc_dwellings_2011
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2011.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -644,9 +644,9 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2012   
-**Variable name**: socenv_prop_unocc_dwellings_2012
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+### **Variable label**: Percentage of unoccupied dwellings in 2012   
+**Variable name**: socenv_perc_unocc_dwellings_2012
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -660,9 +660,9 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_prop_unocc_dwellings_1
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2014.    
+### **Variable label**: Percentage of unoccupied dwellings in 2014   
+**Variable name**: socenv_perc_unocc_dwellings_1
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -672,7 +672,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 For RECORD, these data are available for neighbourhoods in 2014. This variable was caluclated by: total number of unoccupied dwellings in the area / total number of dwellings in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_1$socenv_prop_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION_UNOCCUPIED_DWELLINGS_2014)
+socenv_RECORD_1$socenv_perc_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION_UNOCCUPIED_DWELLINGS_2014)
 
 ```    
 
@@ -681,7 +681,7 @@ socenv_RECORD_1$socenv_prop_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION
 ### **Variable label**: Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
@@ -696,7 +696,7 @@ socenv_RECORD_1$socenv_prop_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION
 ### **Variable label**: Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -711,7 +711,7 @@ socenv_RECORD_1$socenv_prop_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION
 ### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -727,7 +727,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -742,7 +742,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -758,7 +758,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -774,7 +774,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -790,7 +790,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -806,7 +806,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros     
 **Category coding**:   
 
@@ -822,7 +822,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -1025,11 +1025,16 @@ For RECORD, these data are not available.
 ```    
 
 ### **Variable label**: Average income in euros in 2016 (dichotomized)  
-**Variable name**: socenv_av_inc_2016  
+**Variable name**: socenv_av_incdich_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
 **Variable type**: integer     
 **Variable unit**:     
 **Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**:  
@@ -1044,7 +1049,7 @@ For RECORD, these data are not available.
  ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_0  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1052,14 +1057,14 @@ For RECORD, these data are not available.
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.integer(RECORD_W1_1$Inc_St500)
+socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.numeric(RECORD_W1_1$Inc_St500)
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_0  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1067,14 +1072,14 @@ socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.integer(RECORD_W1_1$Inc_St500)
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.integer(RECORD_W1_1$Inc_St1000)
+socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.numeric(RECORD_W1_1$Inc_St1000)
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_0  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1082,7 +1087,7 @@ socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.integer(RECORD_W1_1$Inc_St1000)
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_0$socenv_av_hhinc_2000m_0 <-as.integer(RECORD_W1_1$Inc_St2000)
+socenv_RECORD_0$socenv_av_hhinc_2000m_0 <-as.numeric(RECORD_W1_1$Inc_St2000)
 
 ```     
 
@@ -1153,7 +1158,7 @@ socenv_RECORD_0$socenv_av_hhincdich_2000m_0 < ifelse (RECORD_W1_1$Inc_St2000 >= 
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -1170,7 +1175,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1187,7 +1192,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1206,7 +1211,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1223,7 +1228,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
 **Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1239,7 +1244,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:     
 **Category coding**:   
 
@@ -1255,7 +1260,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1271,7 +1276,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:  
 **Category coding**:   
 
@@ -1287,7 +1292,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1303,7 +1308,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:     
 **Category coding**:   
 
@@ -1319,7 +1324,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1335,7 +1340,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1350,7 +1355,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1364,9 +1369,9 @@ These data are not available for RECORD.
 
 
 
-### **Variable label**: Proportion of income recipients in 2005
+### **Variable label**: Percentage of income recipients in 2005
 **Variable name**: socenv_av_inc_recipients_2005  
-**Variable description**: Proportion of income recipients in residential area in 2005.    
+**Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1380,9 +1385,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of income recipients in 2011  
+### **Variable label**: Percentage of income recipients in 2011  
 **Variable name**: socenv_av_inc_recipients_2011  
-**Variable description**: Proportion of income recipients in residential area in 2011.    
+**Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1398,9 +1403,9 @@ For RECORD, these data are not available.
 
 # Unemployment
 
-### **Variable label**: Proportion of unemployed residents in 2006  
-**Variable name**: socenv_prop_unemployment_2006  
-**Variable description**: Proportion of unemployed residents in residential area in 2006.    
+### **Variable label**: Percentage of unemployed residents in 2006  
+**Variable name**: socenv_perc_unemployment_2006  
+**Variable description**: Percentage of unemployed residents in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1414,9 +1419,9 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2006.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2007    
-**Variable name**: socenv_prop_unemployment_2007    
-**Variable description**: Proportion of unemployed residents in residential area in 2007.    
+### **Variable label**: Percentage of unemployed residents in 2007    
+**Variable name**: socenv_perc_unemployment_2007    
+**Variable description**: Percentage of unemployed residents in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1430,9 +1435,9 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2007.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2011    
-**Variable name**: socenv_prop_unemployment_2011    
-**Variable description**: Proportion of unemployed residents in residential area in 2011.    
+### **Variable label**: Percentage of unemployed residents in 2011    
+**Variable name**: socenv_perc_unemployment_2011    
+**Variable description**: Percentage of unemployed residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1446,25 +1451,25 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2014  
-**Variable name**: socenv_prop_unemployment_1  
-**Variable description**: Proportion of unemployed residents in residential area in 2014.    
+### **Variable label**: Percentage of unemployed residents in 2014  
+**Variable name**: socenv_perc_unemployment_1  
+**Variable description**: Percentage of unemployed residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**:
-For RECORD, these data are available for neighbourhoods in 2014. This variable includes the proportion of unemployed residents aged 15-64 years in the neighbourhood. This variable was calculated by: total number of unemployed residents aged 15-64 years old in the area / total number of residents aged 15-64 years old in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of the original data sources are listed in WP7 deliverable report.
+For RECORD, these data are available for neighbourhoods in 2014. This variable includes the percentage of unemployed residents aged 15-64 years in the neighbourhood. This variable was calculated by: total number of unemployed residents aged 15-64 years old in the area / total number of residents aged 15-64 years old in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of the original data sources are listed in WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_1$socenv_prop_unemployment_1 <-as.numeric(RECORD_w2$UNEMPLOYMENT_RATE_2014)
+socenv_RECORD_1$socenv_perc_unemployment_1 <-as.numeric(RECORD_w2$UNEMPLOYMENT_RATE_2014)
  
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2015  
-**Variable name**: socenv_prop_unemployment_2015  
-**Variable description**: Proportion of unemployed residents in residential area in 2015.    
+### **Variable label**: Percentage of unemployed residents in 2015  
+**Variable name**: socenv_perc_unemployment_2015  
+**Variable description**: Percentage of unemployed residents in residential area in 2015.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1480,9 +1485,9 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2015.
 
 # Social security
 
-### **Variable label**: Proportion of social security beneficiaries in 2006  
-**Variable name**: socenv_proportion_socsecben_2006   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2006.    
+### **Variable label**: Percentage of social security beneficiaries in 2006  
+**Variable name**: socenv_percentage_socsecben_2006   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1496,9 +1501,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2007    
-**Variable name**: socenv_proportion_socsecben_2007   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2007.    
+### **Variable label**: Percentage of social security beneficiaries in 2007    
+**Variable name**: socenv_percentage_socsecben_2007   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1512,9 +1517,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2010  
-**Variable name**: socenv_proportion_socsecben_2010   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2010.    
+### **Variable label**: Percentage of social security beneficiaries in 2010  
+**Variable name**: socenv_percentage_socsecben_2010   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1528,9 +1533,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2011  
-**Variable name**: socenv_proportion_socsecben_2011   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2011.    
+### **Variable label**: Percentage of social security beneficiaries in 2011  
+**Variable name**: socenv_percentage_socsecben_2011   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1544,9 +1549,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2015  
-**Variable name**: socenv_proportion_socsecben_2015   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2015.    
+### **Variable label**: Percentage of social security beneficiaries in 2015  
+**Variable name**: socenv_percentage_socsecben_2015   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2015.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1560,9 +1565,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2016  
-**Variable name**: socenv_proportion_socsecben_2016   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2016.    
+### **Variable label**: Percentage of social security beneficiaries in 2016  
+**Variable name**: socenv_percentage_socsecben_2016   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2016.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1576,9 +1581,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of residents with disability benefit in 2010  
-**Variable name**: socenv_proportion_disben_2010   
-**Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
+### **Variable label**: Percentage of residents with disability benefit in 2010  
+**Variable name**: socenv_percentage_disben_2010   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1592,9 +1597,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of residents with unemployment benefit in 2010  
-**Variable name**: socenv_proportion_unemplben_2010   
-**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
+### **Variable label**: Percentage of residents with unemployment benefit in 2010  
+**Variable name**: socenv_percentage_unemplben_2010   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1610,9 +1615,9 @@ For RECORD, these data are not available.
 
 # Educational level  
 
-### **Variable label**: Proportion of low educated residents in 2011  
-**Variable name**: socenv_prop_low_education_2011  
-**Variable description**: Proportion of low educated residents in residential area in 2011.    
+### **Variable label**: Percentage of low educated residents in 2011  
+**Variable name**: socenv_perc_low_education_2011  
+**Variable description**: Percentage of low educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1626,9 +1631,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of low educated residents in 2014 
-**Variable name**: socenv_prop_low_education_2014  
-**Variable description**: Proportion of low educated residents in residential area in 2014.    
+### **Variable label**: Percentage of low educated residents in 2014 
+**Variable name**: socenv_perc_low_education_2014  
+**Variable description**: Percentage of low educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1642,9 +1647,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of intermediate educated residents in 2011  
-**Variable name**: socenv_prop_itm_education_2011  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2011.
+### **Variable label**: Percentage of intermediate educated residents in 2011  
+**Variable name**: socenv_perc_itm_education_2011  
+**Variable description**: Percentage of intermediate educated residents in residential area in 2011.
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1658,9 +1663,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of intermediate educated residents in 2014  
-**Variable name**: socenv_prop_itm_education_2014  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2014.  
+### **Variable label**: Percentage of intermediate educated residents in 2014  
+**Variable name**: socenv_perc_itm_education_2014  
+**Variable description**: Percentage of intermediate educated residents in residential area in 2014.  
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1674,9 +1679,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of high educated residents in 2011  
-**Variable name**: socenv_prop_high_education_2011  
-**Variable description**: Proportion of high educated residents in residential area in 2011.    
+### **Variable label**: Percentage of high educated residents in 2011  
+**Variable name**: socenv_perc_high_education_2011  
+**Variable description**: Percentage of high educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1690,9 +1695,9 @@ For RECORD, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of high educated residents in 2014  
-**Variable name**: socenv_prop_high_education_2014  
-**Variable description**: Proportion of high educated residents in residential area in 2014.    
+### **Variable label**: Percentage of high educated residents in 2014  
+**Variable name**: socenv_perc_high_education_2014  
+**Variable description**: Percentage of high educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1708,9 +1713,9 @@ For RECORD, these data are not available.
 
 # Immigrants and ethnic minority groups
 
-### **Variable label**: Proportion of immigrants in 2011  
-**Variable name**: socenv_prop_immigrants_2011
-**Variable description**: Proportion of immigrants in residential area in 2011.      
+### **Variable label**: Percentage of immigrants in 2011  
+**Variable name**: socenv_perc_immigrants_2011
+**Variable description**: Percentage of immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1724,9 +1729,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of western immigrants in 2006  
-**Variable name**: socenv_prop_west_imgs_2006  
-**Variable description**: Proportion of western immigrants in residential area in 2006.      
+### **Variable label**: Percentage of western immigrants in 2006  
+**Variable name**: socenv_perc_west_imgs_2006  
+**Variable description**: Percentage of western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1740,9 +1745,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of western immigrants in 2011  
-**Variable name**: socenv_prop_west_imgs_2011  
-**Variable description**: Proportion of western immigrants in residential area in 2011.      
+### **Variable label**: Percentage of western immigrants in 2011  
+**Variable name**: socenv_perc_west_imgs_2011  
+**Variable description**: Percentage of western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1756,9 +1761,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of non-western immigrants in 2006  
-**Variable name**: socenv_prop_nonwest_imgs_2006  
-**Variable description**: Proportion of non-western immigrants in residential area in 2006.      
+### **Variable label**: Percentage of non-western immigrants in 2006  
+**Variable name**: socenv_perc_nonwest_imgs_2006  
+**Variable description**: Percentage of non-western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1772,9 +1777,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of non-western immigrants in 2011  
-**Variable name**: socenv_prop_nonwest_imgs_2011  
-**Variable description**: Proportion of non-western immigrants in residential area in 2011.      
+### **Variable label**: Percentage of non-western immigrants in 2011  
+**Variable name**: socenv_perc_nonwest_imgs_2011  
+**Variable description**: Percentage of non-western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1788,9 +1793,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
-**Variable name**: socenv_prop_moroccan_2006  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.    
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2006  
+**Variable name**: socenv_perc_moroccan_2006  
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1804,9 +1809,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
-**Variable name**: socenv_prop_moroccan_2011  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.    
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2011  
+**Variable name**: socenv_perc_moroccan_2011  
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1820,9 +1825,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2006  
-**Variable name**: socenv_prop_antaru_2006  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2006  
+**Variable name**: socenv_perc_antaru_2006  
+**Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1836,9 +1841,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2011  
-**Variable name**: socenv_prop_antaru_2011  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2011  
+**Variable name**: socenv_perc_antaru_2011  
+**Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1852,9 +1857,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
-**Variable name**: socenv_prop_surinamese_2006  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.   
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2006  
+**Variable name**: socenv_perc_surinamese_2006  
+**Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2006.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1868,9 +1873,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
-**Variable name**: socenv_prop_surinamese_2011  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.   
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2011  
+**Variable name**: socenv_perc_surinamese_2011  
+**Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2011.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1884,9 +1889,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Turkish origin in 2006  
-**Variable name**: socenv_prop_turkey_2006  
-**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Turkish origin in 2006  
+**Variable name**: socenv_perc_turkey_2006  
+**Variable description**: Percentage of immigrants of Turkish origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1900,9 +1905,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Turkish origin in 2011  
-**Variable name**: socenv_prop_turkey_2011  
-**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Turkish origin in 2011  
+**Variable name**: socenv_perc_turkey_2011  
+**Variable description**: Percentage of immigrants of Turkish origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1916,9 +1921,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of other origin in 2006  
-**Variable name**: socenv_prop_other_2006  
-**Variable description**: Proportion of immigrants of other origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of other origin in 2006  
+**Variable name**: socenv_perc_other_2006  
+**Variable description**: Percentage of immigrants of other origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1932,9 +1937,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of other origin in 2011  
-**Variable name**: socenv_prop_other_2011  
-**Variable description**: Proportion of immigrants of other origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of other origin in 2011  
+**Variable name**: socenv_perc_other_2011  
+**Variable description**: Percentage of immigrants of other origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1948,9 +1953,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of foreigners in 2007  
-**Variable name**: socenv_prop_foreigners_2007  
-**Variable description**: Proportion of foreigners in residential area in 2007.      
+### **Variable label**: Percentage of foreigners in 2007  
+**Variable name**: socenv_perc_foreigners_2007  
+**Variable description**: Percentage of foreigners in residential area in 2007.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1964,9 +1969,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of foreigners in 2011  
-**Variable name**: socenv_prop_foreigners_2011  
-**Variable description**: Proportion of foreigners in residential area in 2011.      
+### **Variable label**: Percentage of foreigners in 2011  
+**Variable name**: socenv_perc_foreigners_2011  
+**Variable description**: Percentage of foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   

@@ -15,18 +15,18 @@ erasmus_opal <- opal.login()
 opal.assign.table.tibble(erasmus_opal, 'LASA2B', 'LASA.LASA2B',variables = list(''))
 LASA2B <- opal.execute(erasmus_opal,'LASA2B')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA2F-socioenviro', 'LASA.LASA2F-socioenviro',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
-LASA2F <- opal.execute(erasmus_opal,'LASA2F-socioenviro')
-opal.assign.table.tibble(erasmus_opal, 'LASA2_Fwave_Area_Identifiers', 'LASA.LASA2_Fwave_Area_Identifiers', variables = list("municipality", "city", "neighhourhood", "PC4", "PC6"))
+opal.assign.table.tibble(erasmus_opal, 'LASA2F_socioenviro', 'LASA.LASA2F_socioenviro',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
+LASA2F <- opal.execute(erasmus_opal,'LASA2F_socioenviro')
+opal.assign.table.tibble(erasmus_opal, 'LASA2_Fwave_Area_Identifiers', 'LASA.LASA2_Fwave_Area_Identifiers', variables = list("municipality", "city", "neighbourhood", "PC4", "PC6"))
 LASA2F <- opal.execute(erasmus_opal, 'LASA2_Fwave_Area_Identifiers')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA2G', 'LASA.LASA2G',variables = list(''))
 LASA2G <- opal.execute(erasmus_opal,'LASA2G')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA2H-socioenviro', 'LASA.LASA2H-socioenviro',variables = list('URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011",
+opal.assign.table.tibble(erasmus_opal, 'LASA2H_socioenviro', 'LASA.LASA2H_socioenviro',variables = list('URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011",
 "NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011'))
-LASA2H <- opal.execute(erasmus_opal,'LASA2H-socioenviro')
-opal.assign.table.tibble(erasmus_opal, 'LASA2_Hwave_Area_Identifiers', 'LASA.LASA2_Hwave_Area_Identifiers', variables = list("municipality", "city", "neighhourhood", "PC4", "PC6"))
+LASA2H <- opal.execute(erasmus_opal,'LASA2H_socioenviro')
+opal.assign.table.tibble(erasmus_opal, 'LASA2_Hwave_Area_Identifiers', 'LASA.LASA2_Hwave_Area_Identifiers', variables = list("municipality", "city", "neighbourhood", "PC4", "PC6"))
 LASA2H <- opal.execute(erasmus_opal, 'LASA2_Hwave_Area_Identifiers')
 
 ```
@@ -139,9 +139,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 # Demographics
 
-### **Variable label**: Proportion of men in 2006  
-**Variable name**: socenv_proportion_men_1    
-**Variable description**: Proportion of men in the residential area in 2006.  
+### **Variable label**: Percentage of men in 2006  
+**Variable name**: socenv_percentage_men_1    
+**Variable description**: Percentage of men in the residential area in 2006.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
@@ -151,13 +151,13 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_men_1<-as.numeric(LASA2F$PROPORTION_MEN_2006) 
+socenv_LASA2_1$socenv_percentage_men_1<-as.numeric(LASA2F$PROPORTION_MEN_2006) 
 
 ```    
 
-### **Variable label**: Proportion of men in 2011  
-**Variable name**: socenv_proportion_men_3    
-**Variable description**: Proportion of men in the residential area in 2011.  
+### **Variable label**: Percentage of men in 2011  
+**Variable name**: socenv_percentage_men_3    
+**Variable description**: Percentage of men in the residential area in 2011.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
@@ -167,13 +167,13 @@ socenv_LASA2_1$socenv_proportion_men_1<-as.numeric(LASA2F$PROPORTION_MEN_2006)
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of men in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_men_3<-as.numeric(LASA2H$PROPORTION_MEN_2011) 
+socenv_LASA2_3$socenv_percentage_men_3<-as.numeric(LASA2H$PROPORTION_MEN_2011) 
 
 ```    
 
-### **Variable label**: Proportion of women in 2006  
-**Variable name**: socenv_proportion_women_1    
-**Variable description**: Proportion of women in the residential area in 2006.  
+### **Variable label**: Percentage of women in 2006  
+**Variable name**: socenv_percentage_women_1    
+**Variable description**: Percentage of women in the residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -183,13 +183,13 @@ socenv_LASA2_3$socenv_proportion_men_3<-as.numeric(LASA2H$PROPORTION_MEN_2011)
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_women_1<-as.numeric(LASA2F$PROPORTION_WOMEN_2006)  
+socenv_LASA2_1$socenv_percentage_women_1<-as.numeric(LASA2F$PROPORTION_WOMEN_2006)  
 
 ```    
 
-### **Variable label**: Proportion of women in 2011    
-**Variable name**: socenv_proportion_women_3    
-**Variable description**: Proportion of women in the residential area in 2011.  
+### **Variable label**: Percentage of women in 2011    
+**Variable name**: socenv_percentage_women_3    
+**Variable description**: Percentage of women in the residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -199,13 +199,13 @@ socenv_LASA2_1$socenv_proportion_women_1<-as.numeric(LASA2F$PROPORTION_WOMEN_200
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was calculated by: total number of women in area / total number of residents in area * 100. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_women_3<-as.numeric(LASA2H$PROPORTION_WOMEN_2011)  
+socenv_LASA2_3$socenv_percentage_women_3<-as.numeric(LASA2H$PROPORTION_WOMEN_2011)  
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2006   
-**Variable name**: socenv_proportion_65_older_1   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2006.  
+### **Variable label**: Percentage of residents aged 65 or older in 2006   
+**Variable name**: socenv_percentage_65_older_1   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -215,13 +215,13 @@ socenv_LASA2_3$socenv_proportion_women_3<-as.numeric(LASA2H$PROPORTION_WOMEN_201
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_65_older_1<-as.numeric(LASA2F$PROPORTION_65_OLDER_2006) 
+socenv_LASA2_1$socenv_percentage_65_older_1<-as.numeric(LASA2F$PROPORTION_65_OLDER_2006) 
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2007   
-**Variable name**: socenv_proportion_65_older_2007   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2007.  
+### **Variable label**: Percentage of residents aged 65 or older in 2007   
+**Variable name**: socenv_percentage_65_older_2007   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2007.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -235,9 +235,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2011   
-**Variable name**: socenv_proportion_65_older_3   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
+### **Variable label**: Percentage of residents aged 65 or older in 2011   
+**Variable name**: socenv_percentage_65_older_3   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -247,12 +247,12 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_65_older_3<-as.numeric(LASA2H$PROPORTION_65_OLDER_2011) 
+socenv_LASA2_3$socenv_percentage_65_older_3<-as.numeric(LASA2H$PROPORTION_65_OLDER_2011) 
 ```    
 
-### **Variable label**: Proportion of unmaried residents in 2008   
-**Variable name**: socenv_proportion_unmaried_1   
-**Variable description**: Proportion of unmaried residents in residential area in 2008.  
+### **Variable label**: Percentage of unmaried residents in 2008   
+**Variable name**: socenv_percentage_unmaried_1   
+**Variable description**: Percentage of unmaried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -262,13 +262,13 @@ socenv_LASA2_3$socenv_proportion_65_older_3<-as.numeric(LASA2H$PROPORTION_65_OLD
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_unmaried_1<-as.numeric(LASA2F$PROPORTION_UNMARIED_2008) 
+socenv_LASA2_1$socenv_percentage_unmaried_1<-as.numeric(LASA2F$PROPORTION_UNMARIED_2008) 
 
 ```    
 
-### **Variable label**: Proportion of unmaried residents in 2011   
-**Variable name**: socenv_proportion_unmaried_3   
-**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+### **Variable label**: Percentage of unmaried residents in 2011   
+**Variable name**: socenv_percentage_unmaried_3   
+**Variable description**: Percentage of unmaried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -278,12 +278,12 @@ socenv_LASA2_1$socenv_proportion_unmaried_1<-as.numeric(LASA2F$PROPORTION_UNMARI
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_unmaried_3<-as.numeric(LASA2H$PROPORTION_UNMARIED_2011) 
+socenv_LASA2_3$socenv_percentage_unmaried_3<-as.numeric(LASA2H$PROPORTION_UNMARIED_2011) 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2006   
-**Variable name**: socenv_proportion_maried_2006   
-**Variable description**: Proportion of maried residents in residential area in 2006.  
+### **Variable label**: Percentage of maried residents in 2006   
+**Variable name**: socenv_percentage_maried_2006   
+**Variable description**: Percentage of maried residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -297,9 +297,9 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2008   
-**Variable name**: socenv_proportion_maried_1   
-**Variable description**: Proportion of maried residents in residential area in 2008.  
+### **Variable label**: Percentage of maried residents in 2008   
+**Variable name**: socenv_percentage_maried_1   
+**Variable description**: Percentage of maried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -309,13 +309,13 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_maried_1<-as.numeric(LASA2F$PROPORTION_MARIED_2008) 
+socenv_LASA2_1$socenv_percentage_maried_1<-as.numeric(LASA2F$PROPORTION_MARIED_2008) 
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2011   
-**Variable name**: socenv_proportion_maried_3   
-**Variable description**: Proportion of maried residents in residential area in 2011.  
+### **Variable label**: Percentage of maried residents in 2011   
+**Variable name**: socenv_percentage_maried_3   
+**Variable description**: Percentage of maried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -325,13 +325,13 @@ socenv_LASA2_1$socenv_proportion_maried_1<-as.numeric(LASA2F$PROPORTION_MARIED_2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_maried_3<-as.numeric(LASA2H$PROPORTION_MARIED_2011) 
+socenv_LASA2_3$socenv_percentage_maried_3<-as.numeric(LASA2H$PROPORTION_MARIED_2011) 
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2006   
-**Variable name**: socenv_proportion_divorced_2006   
-**Variable description**: Proportion of divorced residents in residential area in 2006.  
+### **Variable label**: Percentage of divorced residents in 2006   
+**Variable name**: socenv_percentage_divorced_2006   
+**Variable description**: Percentage of divorced residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -346,9 +346,9 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2008   
-**Variable name**: socenv_proportion_divorced_1   
-**Variable description**: Proportion of divorced residents in residential area in 2008.  
+### **Variable label**: Percentage of divorced residents in 2008   
+**Variable name**: socenv_percentage_divorced_1   
+**Variable description**: Percentage of divorced residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -358,13 +358,13 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_divorced_1<-as.numeric(LASA2F$PROPORTION_DIVORCED_2008)  
+socenv_LASA2_1$socenv_percentage_divorced_1<-as.numeric(LASA2F$PROPORTION_DIVORCED_2008)  
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2011   
-**Variable name**: socenv_proportion_divorced_3   
-**Variable description**: Proportion of divorced residents in residential area in 2011.  
+### **Variable label**: Percentage of divorced residents in 2011   
+**Variable name**: socenv_percentage_divorced_3   
+**Variable description**: Percentage of divorced residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -374,13 +374,13 @@ socenv_LASA2_1$socenv_proportion_divorced_1<-as.numeric(LASA2F$PROPORTION_DIVORC
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_divorced_3<-as.numeric(LASA2H$PROPORTION_DIVORCED_2011)  
+socenv_LASA2_3$socenv_percentage_divorced_3<-as.numeric(LASA2H$PROPORTION_DIVORCED_2011)  
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2006   
-**Variable name**: socenv_proportion_widowed_2006   
-**Variable description**: Proportion of widowed residents in residential area in 2006.  
+### **Variable label**: Percentage of widowed residents in 2006   
+**Variable name**: socenv_percentage_widowed_2006   
+**Variable description**: Percentage of widowed residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -394,9 +394,9 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2008     
-**Variable name**: socenv_proportion_widowed_1   
-**Variable description**: Proportion of widowed residents in residential area in 2008.  
+### **Variable label**: Percentage of widowed residents in 2008     
+**Variable name**: socenv_percentage_widowed_1   
+**Variable description**: Percentage of widowed residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -406,13 +406,13 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_widowed_1<-as.numeric(LASA2F$PROPORTION_WIDOWED_2008)  
+socenv_LASA2_1$socenv_percentage_widowed_1<-as.numeric(LASA2F$PROPORTION_WIDOWED_2008)  
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2011    
-**Variable name**: socenv_proportion_widowed_3   
-**Variable description**: Proportion of widowed residents in residential area in 2011.  
+### **Variable label**: Percentage of widowed residents in 2011    
+**Variable name**: socenv_percentage_widowed_3   
+**Variable description**: Percentage of widowed residents in residential area in 2011.  
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -422,14 +422,14 @@ socenv_LASA2_1$socenv_proportion_widowed_1<-as.numeric(LASA2F$PROPORTION_WIDOWED
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_widowed_3<-as.numeric(LASA2H$PROPORTION_WIDOWED_2011)  
+socenv_LASA2_3$socenv_percentage_widowed_3<-as.numeric(LASA2H$PROPORTION_WIDOWED_2011)  
 
 ```    
 
 ### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_1   
 **Variable description**: Average household size in residential area in 2006.  
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -438,14 +438,14 @@ socenv_LASA2_3$socenv_proportion_widowed_3<-as.numeric(LASA2H$PROPORTION_WIDOWED
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_average_hh_size_1<-as.integer(LASA2F$AVERAGE_HOUSEHOLD_SIZE_2006) 
+socenv_LASA2_1$socenv_average_hh_size_1<-as.numeric(LASA2F$AVERAGE_HOUSEHOLD_SIZE_2006) 
 
 ```    
 
 ### **Variable label**: Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -461,7 +461,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 ### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_3   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -470,14 +470,14 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_average_hh_size_3<-as.integer(LASA2H$AVERAGE_HOUSEHOLD_SIZE_2011)   
+socenv_LASA2_3$socenv_average_hh_size_3<-as.numeric(LASA2H$AVERAGE_HOUSEHOLD_SIZE_2011)   
 
 ```    
 
 ### **Variable label**: Average household size in 2014   
 **Variable name**: socenv_average_hh_size_2014   
 **Variable description**: Average household size in residential area in 2014.  
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -493,7 +493,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 ### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -509,7 +509,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 ### **Variable label**: Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
-**Variable type**: integer   
+**Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
@@ -632,9 +632,9 @@ For LASA, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2011   
-**Variable name**: socenv_prop_unocc_dwellings_2011
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2011.    
+### **Variable label**: Percentage of unoccupied dwellings in 2011   
+**Variable name**: socenv_perc_unocc_dwellings_2011
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2011.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -648,9 +648,9 @@ For LASA, these data are available for neighbourhoods in 2012, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2012   
-**Variable name**: socenv_prop_unocc_dwellings_3
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+### **Variable label**: Percentage of unoccupied dwellings in 2012   
+**Variable name**: socenv_perc_unocc_dwellings_3
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -660,13 +660,13 @@ For LASA, these data are available for neighbourhoods in 2012, not in 2011.
 For LASA, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_prop_unocc_dwellings_3<-as.numeric(LASA2H$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
+socenv_LASA2_3$socenv_perc_unocc_dwellings_3<-as.numeric(LASA2H$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_prop_unocc_dwellings_2014
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2014.    
+### **Variable label**: Percentage of unoccupied dwellings in 2014   
+**Variable name**: socenv_perc_unocc_dwellings_2014
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
@@ -684,7 +684,7 @@ socenv_LASA2_3$socenv_prop_unocc_dwellings_3<-as.numeric(LASA2H$PROPORTION_UNOCC
 ### **Variable label**: Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_1  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
@@ -693,14 +693,14 @@ socenv_LASA2_3$socenv_prop_unocc_dwellings_3<-as.numeric(LASA2H$PROPORTION_UNOCC
 For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_av_inc1000_1<-as.integer(LASA2F$AVERAGE_INCOME_RESIDENTS_2005) 
+socenv_LASA2_1$socenv_av_inc1000_1<-as.numeric(LASA2F$AVERAGE_INCOME_RESIDENTS_2005) 
 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
-**Variable type**: integer     
+**Variable type**: decimal      
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -716,7 +716,7 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011, not in 2
 ### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -725,13 +725,13 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_av_inc1000_3<-as.integer(LASA2H$AVERAGE_INCOME_RESIDENTS_2011) 
+socenv_LASA2_3$socenv_av_inc1000_3<-as.numeric(LASA2H$AVERAGE_INCOME_RESIDENTS_2011) 
 ```    
 
 ### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
-**Variable type**: integer     
+**Variable type**: decimal      
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -747,7 +747,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -763,7 +763,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -779,7 +779,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -795,7 +795,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
-**Variable type**: integer     
+**Variable type**: decimal          
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -811,7 +811,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros     
 **Category coding**:   
 
@@ -827,7 +827,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -1025,7 +1025,7 @@ socenv_LASA2_3$socenv_av_inc1000dich_3 < ifelse(LASA2H$AVERAGE_INCOME_RESIDENTS_
 ```    
 
 ### **Variable label**: Average income in euros in 2016 (dichotomized)  
-**Variable name**: socenv_av_inc_2016  
+**Variable name**: socenv_av_incdich_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
 **Variable type**: integer     
 **Variable unit**:     
@@ -1047,7 +1047,7 @@ socenv_LASA2_3$socenv_av_inc1000dich_3 < ifelse(LASA2H$AVERAGE_INCOME_RESIDENTS_
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1062,7 +1062,7 @@ socenv_LASA2_3$socenv_av_inc1000dich_3 < ifelse(LASA2H$AVERAGE_INCOME_RESIDENTS_
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
-**Variable type**: integer     
+**Variable type**: decimal      
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1078,7 +1078,7 @@ socenv_LASA2_3$socenv_av_inc1000dich_3 < ifelse(LASA2H$AVERAGE_INCOME_RESIDENTS_
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1142,7 +1142,7 @@ socenv_LASA2_3$socenv_av_inc1000dich_3 < ifelse(LASA2H$AVERAGE_INCOME_RESIDENTS_
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_1  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1152,14 +1152,14 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_LASA2_1$socenv_av_inc1000Z_1 <- ((LASA2F$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
+socenv_LASA2_1$socenv_av_inc1000Z_1 <- as.numeric((LASA2F$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
 
 ```       
 
 ### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
-**Variable type**: integer     
+**Variable type**: decimal     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1175,7 +1175,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1185,14 +1185,14 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_LASA2_3$socenv_av_inc1000Z_3 <- ((LASA2H$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+socenv_LASA2_3$socenv_av_inc1000Z_3 <- as.numeric((LASA2H$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
 
 ```    
 
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1211,7 +1211,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
 **Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1227,7 +1227,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1243,7 +1243,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1259,7 +1259,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:  
 **Category coding**:   
 
@@ -1275,7 +1275,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1291,7 +1291,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:     
 **Category coding**:   
 
@@ -1307,7 +1307,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1323,7 +1323,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1338,7 +1338,7 @@ For LASA, these data are not available.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: integer     
+**Variable type**: decimal       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1352,9 +1352,9 @@ For LASA, these data are not available.
 
 
 
-### **Variable label**: Proportion of income recipients in 2005
+### **Variable label**: Percentage of income recipients in 2005
 **Variable name**: socenv_av_inc_recipients_1  
-**Variable description**: Proportion of income recipients in residential area in 2005.    
+**Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1367,9 +1367,9 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011. This var
 socenv_LASA2_1$socenv_av_inc_recipients_1<-as.numeric(LASA2F$PROPORTION_INCOME_RECIPIENTS_2005) 
 ```    
 
-### **Variable label**: Proportion of income recipients in 2011  
+### **Variable label**: Percentage of income recipients in 2011  
 **Variable name**: socenv_av_inc_recipients_3  
-**Variable description**: Proportion of income recipients in residential area in 2011.    
+**Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1384,9 +1384,9 @@ socenv_LASA2_3$socenv_av_inc_recipients_3<-as.numeric(LASA2H$PROPORTION_INCOME_R
 
 # Unemployment
 
-### **Variable label**: Proportion of unemployed residents in 2006  
-**Variable name**: socenv_prop_unemployment_2006  
-**Variable description**: Proportion of unemployed residents in residential area in 2006.    
+### **Variable label**: Percentage of unemployed residents in 2006  
+**Variable name**: socenv_perc_unemployment_2006  
+**Variable description**: Percentage of unemployed residents in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1400,9 +1400,9 @@ For LASA, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2007    
-**Variable name**: socenv_prop_unemployment_2007    
-**Variable description**: Proportion of unemployed residents in residential area in 2007.    
+### **Variable label**: Percentage of unemployed residents in 2007    
+**Variable name**: socenv_perc_unemployment_2007    
+**Variable description**: Percentage of unemployed residents in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1416,9 +1416,9 @@ For LASA, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2011    
-**Variable name**: socenv_prop_unemployment_2011    
-**Variable description**: Proportion of unemployed residents in residential area in 2011.    
+### **Variable label**: Percentage of unemployed residents in 2011    
+**Variable name**: socenv_perc_unemployment_2011    
+**Variable description**: Percentage of unemployed residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1432,9 +1432,9 @@ For LASA, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2014  
-**Variable name**: socenv_prop_unemployment_2014  
-**Variable description**: Proportion of unemployed residents in residential area in 2014.    
+### **Variable label**: Percentage of unemployed residents in 2014  
+**Variable name**: socenv_perc_unemployment_2014  
+**Variable description**: Percentage of unemployed residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1448,9 +1448,9 @@ For LASA, these data are not available.
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2015  
-**Variable name**: socenv_prop_unemployment_2015  
-**Variable description**: Proportion of unemployed residents in residential area in 2015.    
+### **Variable label**: Percentage of unemployed residents in 2015  
+**Variable name**: socenv_perc_unemployment_2015  
+**Variable description**: Percentage of unemployed residents in residential area in 2015.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1466,9 +1466,9 @@ For LASA, these data are not available.
 
 # Social security
 
-### **Variable label**: Proportion of social security beneficiaries in 2006  
-**Variable name**: socenv_proportion_socsecben_1   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2006.    
+### **Variable label**: Percentage of social security beneficiaries in 2006  
+**Variable name**: socenv_percentage_socsecben_1   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1478,13 +1478,13 @@ For LASA, these data are not available.
 For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_socsecben_1<-as.numeric(LASA2F$PROPORTION_SOCSECBEN_2006)  
+socenv_LASA2_1$socenv_percentage_socsecben_1<-as.numeric(LASA2F$PROPORTION_SOCSECBEN_2006)  
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2007    
-**Variable name**: socenv_proportion_socsecben_2007   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2007.    
+### **Variable label**: Percentage of social security beneficiaries in 2007    
+**Variable name**: socenv_percentage_socsecben_2007   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1498,9 +1498,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2010  
-**Variable name**: socenv_proportion_socsecben_3   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2010.    
+### **Variable label**: Percentage of social security beneficiaries in 2010  
+**Variable name**: socenv_percentage_socsecben_3   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1510,12 +1510,12 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_socsecben_3<-as.numeric(LASA2H$PROPORTION_SOCSECBEN_2010)  
+socenv_LASA2_3$socenv_percentage_socsecben_3<-as.numeric(LASA2H$PROPORTION_SOCSECBEN_2010)  
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2011  
-**Variable name**: socenv_proportion_socsecben_2011   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2011.    
+### **Variable label**: Percentage of social security beneficiaries in 2011  
+**Variable name**: socenv_percentage_socsecben_2011   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1529,9 +1529,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2015  
-**Variable name**: socenv_proportion_socsecben_2015   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2015.    
+### **Variable label**: Percentage of social security beneficiaries in 2015  
+**Variable name**: socenv_percentage_socsecben_2015   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2015.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1545,9 +1545,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2016  
-**Variable name**: socenv_proportion_socsecben_2016   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2016.    
+### **Variable label**: Percentage of social security beneficiaries in 2016  
+**Variable name**: socenv_percentage_socsecben_2016   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2016.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1561,9 +1561,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
-### **Variable label**: Proportion of residents with disability benefit in 2006  
-**Variable name**: socenv_proportion_disben_1   
-**Variable description**: Proportion of residents with a disability benefit in residential area in 2006.    
+### **Variable label**: Percentage of residents with disability benefit in 2006  
+**Variable name**: socenv_percentage_disben_1   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1573,12 +1573,12 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_disben_1<-as.numeric(LASA2F$PROPORTION_DISABILITY_BENEFIT_2006)  
+socenv_LASA2_1$socenv_percentage_disben_1<-as.numeric(LASA2F$PROPORTION_DISABILITY_BENEFIT_2006)  
 ```    
 
-### **Variable label**: Proportion of residents with disability benefit in 2010  
-**Variable name**: socenv_proportion_disben_3   
-**Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
+### **Variable label**: Percentage of residents with disability benefit in 2010  
+**Variable name**: socenv_percentage_disben_3   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1588,13 +1588,13 @@ socenv_LASA2_1$socenv_proportion_disben_1<-as.numeric(LASA2F$PROPORTION_DISABILI
 For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of disability benefits (AO)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_disben_3<-as.numeric(LASA2H$PROPORTION_DISABILITY_BENEFIT_2010)  
+socenv_LASA2_3$socenv_percentage_disben_3<-as.numeric(LASA2H$PROPORTION_DISABILITY_BENEFIT_2010)  
 ```    
 
 
-### **Variable label**: Proportion of residents with unemployment benefit in 2006 
-**Variable name**: socenv_proportion_unemplben_1   
-**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2006.    
+### **Variable label**: Percentage of residents with unemployment benefit in 2006 
+**Variable name**: socenv_percentage_unemplben_1   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1604,12 +1604,12 @@ socenv_LASA2_3$socenv_proportion_disben_3<-as.numeric(LASA2H$PROPORTION_DISABILI
 For LASA, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_1$socenv_proportion_unemplben_1<-as.numeric(LASA2F$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
+socenv_LASA2_1$socenv_percentage_unemplben_1<-as.numeric(LASA2F$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
 ```    
 
-### **Variable label**: Proportion of residents with unemployment benefit in 2010  
-**Variable name**: socenv_proportion_unemplben_3   
-**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
+### **Variable label**: Percentage of residents with unemployment benefit in 2010  
+**Variable name**: socenv_percentage_unemplben_3   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1619,14 +1619,14 @@ socenv_LASA2_1$socenv_proportion_unemplben_1<-as.numeric(LASA2F$PROPORTION_UNEMP
 For LASA, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_proportion_unemplben_3<-as.numeric(LASA2H$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
+socenv_LASA2_3$socenv_percentage_unemplben_3<-as.numeric(LASA2H$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
 ```    
 
 # Educational level  
 
-### **Variable label**: Proportion of low educated residents in 2011  
-**Variable name**: socenv_prop_low_education_2011  
-**Variable description**: Proportion of low educated residents in residential area in 2011.    
+### **Variable label**: Percentage of low educated residents in 2011  
+**Variable name**: socenv_perc_low_education_2011  
+**Variable description**: Percentage of low educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1640,25 +1640,25 @@ For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of low educated residents in 2014 
-**Variable name**: socenv_prop_low_education_3  
-**Variable description**: Proportion of low educated residents in residential area in 2014.    
+### **Variable label**: Percentage of low educated residents in 2014 
+**Variable name**: socenv_perc_low_education_3  
+**Variable description**: Percentage of low educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**: complete 
 **Harmonization comment**:
-For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
+For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_prop_low_education_3<-as.numeric(LASA2H$PROPORTION_LOW_EDUCATION_2014) 
+socenv_LASA2_3$socenv_perc_low_education_3<-as.numeric(LASA2H$PROPORTION_LOW_EDUCATION_2014) 
 
 ```    
 
-### **Variable label**: Proportion of intermediate educated residents in 2011  
-**Variable name**: socenv_prop_itm_education_2011  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2011.    
+### **Variable label**: Percentage of intermediate educated residents in 2011  
+**Variable name**: socenv_perc_itm_education_2011  
+**Variable description**: Percentage of intermediate educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1672,24 +1672,24 @@ For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of intermediate educated residents in 2014  
-**Variable name**: socenv_prop_itm_education_3  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2014.    
+### **Variable label**: Percentage of intermediate educated residents in 2014  
+**Variable name**: socenv_perc_itm_education_3  
+**Variable description**: Percentage of intermediate educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**: complete 
 **Harmonization comment**:  
-For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
+For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_prop_itm_education_3<-as.numeric(LASA2H$PROPORTION_INTERMEDIATE_EDUCATION_2014)
+socenv_LASA2_3$socenv_perc_itm_education_3<-as.numeric(LASA2H$PROPORTION_INTERMEDIATE_EDUCATION_2014)
 ```    
 
-### **Variable label**: Proportion of high educated residents in 2011  
-**Variable name**: socenv_prop_high_education_2011  
-**Variable description**: Proportion of high educated residents in residential area in 2011.    
+### **Variable label**: Percentage of high educated residents in 2011  
+**Variable name**: socenv_perc_high_education_2011  
+**Variable description**: Percentage of high educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1703,26 +1703,26 @@ For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
-### **Variable label**: Proportion of high educated residents in 2014  
-**Variable name**: socenv_prop_high_education_3  
-**Variable description**: Proportion of high educated residents in residential area in 2014.    
+### **Variable label**: Percentage of high educated residents in 2014  
+**Variable name**: socenv_perc_high_education_3  
+**Variable description**: Percentage of high educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**: complete 
 **Harmonization comment**:  
-For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the proportion of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
+For LASA, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to LASA participants at wave 2011/12.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA2_3$socenv_prop_high_education_3<-as.numeric(LASA2H$PROPORTION_HIGH_EDUCATION_2014)
+socenv_LASA2_3$socenv_perc_high_education_3<-as.numeric(LASA2H$PROPORTION_HIGH_EDUCATION_2014)
 ```    
 
 # Immigrants and ethnic minority groups
 
-### **Variable label**: Proportion of immigrants in 2011  
-**Variable name**: socenv_prop_immigrants_2011
-**Variable description**: Proportion of immigrants in residential area in 2011.      
+### **Variable label**: Percentage of immigrants in 2011  
+**Variable name**: socenv_perc_immigrants_2011
+**Variable description**: Percentage of immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1736,9 +1736,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of western immigrants in 2006  
-**Variable name**: socenv_prop_west_imgs_2006  
-**Variable description**: Proportion of western immigrants in residential area in 2006.      
+### **Variable label**: Percentage of western immigrants in 2006  
+**Variable name**: socenv_perc_west_imgs_2006  
+**Variable description**: Percentage of western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1752,9 +1752,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of western immigrants in 2011  
-**Variable name**: socenv_prop_west_imgs_2011  
-**Variable description**: Proportion of western immigrants in residential area in 2011.      
+### **Variable label**: Percentage of western immigrants in 2011  
+**Variable name**: socenv_perc_west_imgs_2011  
+**Variable description**: Percentage of western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1768,9 +1768,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of non-western immigrants in 2006  
-**Variable name**: socenv_prop_nonwest_imgs_2006  
-**Variable description**: Proportion of non-western immigrants in residential area in 2006.      
+### **Variable label**: Percentage of non-western immigrants in 2006  
+**Variable name**: socenv_perc_nonwest_imgs_2006  
+**Variable description**: Percentage of non-western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1784,9 +1784,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of non-western immigrants in 2011  
-**Variable name**: socenv_prop_nonwest_imgs_2011  
-**Variable description**: Proportion of non-western immigrants in residential area in 2011.      
+### **Variable label**: Percentage of non-western immigrants in 2011  
+**Variable name**: socenv_perc_nonwest_imgs_2011  
+**Variable description**: Percentage of non-western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1800,9 +1800,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
-**Variable name**: socenv_prop_moroccan_2006  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.    **Variable type**: decimal     
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2006  
+**Variable name**: socenv_perc_moroccan_2006  
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2006.    **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -1815,9 +1815,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
-**Variable name**: socenv_prop_moroccan_2011  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.    
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2011  
+**Variable name**: socenv_perc_moroccan_2011  
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1831,9 +1831,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2006  
-**Variable name**: socenv_prop_antaru_2006  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2006  
+**Variable name**: socenv_perc_antaru_2006  
+**Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1847,9 +1847,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2011  
-**Variable name**: socenv_prop_antaru_2011  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2011  
+**Variable name**: socenv_perc_antaru_2011  
+**Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1863,9 +1863,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
-**Variable name**: socenv_prop_surinamese_2006  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.  **Variable type**: decimal     
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2006  
+**Variable name**: socenv_perc_surinamese_2006  
+**Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2006.  **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -1878,9 +1878,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
-**Variable name**: socenv_prop_surinamese_2011  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.   
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2011  
+**Variable name**: socenv_perc_surinamese_2011  
+**Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2011.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1894,57 +1894,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Turkish origin in 2006  
-**Variable name**: socenv_prop_turkey_2006  
-**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2006.      
-**Variable type**: decimal     
-**Variable unit**:   
-**Category coding**:   
-
-**Harmonization status**: impossible 
-**Harmonization comment**: 
-Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
-**R script**: 
-```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
-
-### **Variable label**: Proportion of immigrants of Turkish origin in 2011  
-**Variable name**: socenv_prop_turkey_2011  
-**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2011.      
-**Variable type**: decimal     
-**Variable unit**:   
-**Category coding**:   
-
-**Harmonization status**: impossible 
-**Harmonization comment**: 
-Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
-**R script**: 
-```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
-
-### **Variable label**: Proportion of immigrants of other origin in 2006  
-**Variable name**: socenv_prop_other_2006  
-**Variable description**: Proportion of immigrants of other origin in residential area in 2006.      
-**Variable type**: decimal     
-**Variable unit**:   
-**Category coding**:   
-
-**Harmonization status**: impossible 
-**Harmonization comment**: 
-Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
-**R script**: 
-```{r, echo=TRUE}  
-#This is where the R-script will be written  
-
-```    
-
-### **Variable label**: Proportion of immigrants of other origin in 2011  
-**Variable name**: socenv_prop_other_2011  
-**Variable description**: Proportion of immigrants of other origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Turkish origin in 2006  
+**Variable name**: socenv_perc_turkey_2006  
+**Variable description**: Percentage of immigrants of Turkish origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1958,9 +1910,9 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of foreigners in 2007  
-**Variable name**: socenv_prop_foreigners_2007  
-**Variable description**: Proportion of foreigners in residential area in 2007.      
+### **Variable label**: Percentage of immigrants of Turkish origin in 2011  
+**Variable name**: socenv_perc_turkey_2011  
+**Variable description**: Percentage of immigrants of Turkish origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -1974,9 +1926,57 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
-### **Variable label**: Proportion of foreigners in 2011  
-**Variable name**: socenv_prop_foreigners_2011  
-**Variable description**: Proportion of foreigners in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of other origin in 2006  
+**Variable name**: socenv_perc_other_2006  
+**Variable description**: Percentage of immigrants of other origin in residential area in 2006.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**: 
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Percentage of immigrants of other origin in 2011  
+**Variable name**: socenv_perc_other_2011  
+**Variable description**: Percentage of immigrants of other origin in residential area in 2011.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
+**R script**: 
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Percentage of foreigners in 2007  
+**Variable name**: socenv_perc_foreigners_2007  
+**Variable description**: Percentage of foreigners in residential area in 2007.      
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
+**R script**: 
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
+### **Variable label**: Percentage of foreigners in 2011  
+**Variable name**: socenv_perc_foreigners_2011  
+**Variable description**: Percentage of foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
