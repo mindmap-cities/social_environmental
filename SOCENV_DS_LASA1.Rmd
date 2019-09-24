@@ -39,6 +39,9 @@ LASA1H <- opal.execute(erasmus_opal, 'LASA1_Hwave_Area_Identifiers')
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
+LASA1F<-merge(LASA1Fa, LASA1Fb, by="id", all=TRUE)
+LASA1H<-merge(LASA1Ha, LASA1Hb, by="id", all=TRUE)
+
 socenv_LASA1_0<- data.frame(id= LASA1B$id)
 socenv_LASA1_1<- data.frame(id= LASA1C$id)
 socenv_LASA1_2<- data.frame(id= LASA1D$id)
@@ -438,23 +441,23 @@ socenv_LASA1_6$socenv_percentage_widowed_6<-as.numeric(LASA1H$PROPORTION_WIDOWED
  Average household size in 2006   
 **Variable name**: socenv_average_hh_size_4   
 **Variable description**: Average household size in residential area in 2006.  
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**:  
-For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
+For LASA, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_average_hh_size_4<-as.numeric(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006) 
+socenv_LASA1_4$socenv_average_hh_size_4<-as.integer(round(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006)) 
 
 ```    
 
  Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -470,23 +473,23 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
  Average household size in 2011   
 **Variable name**: socenv_average_hh_size_6   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**:  
-For LASA, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
+For LASA, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_average_hh_size_6<-as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)   
+socenv_LASA1_6$socenv_average_hh_size_6<-as.integer(round(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011))   
 
 ```    
 
  Average household size in 2014   
 **Variable name**: socenv_average_hh_size_2014   
 **Variable description**: Average household size in residential area in 2014.  
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -502,7 +505,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
  Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -518,7 +521,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
  Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -693,23 +696,23 @@ socenv_LASA1_6$socenv_perc_unocc_dwellings_6<-as.numeric(LASA1H$PROPORTION_UNOCC
  Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_4  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
+For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_av_inc1000_4<-as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005) 
+socenv_LASA1_4$socenv_av_inc1000_4<-as.integer(round(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)) 
 
 ```    
 
  Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
-**Variable type**: decimal     
+**Variable type**: integer    
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -725,24 +728,24 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011, not in 2
  Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_6 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
+For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_LASA1_6$socenv_av_inc1000_6<-as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011) 
+socenv_LASA1_6$socenv_av_inc1000_6<-as.integer(round(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)) 
 
 ```    
 
  Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -758,7 +761,7 @@ For LASA, these data are not available.
  Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -774,7 +777,7 @@ For LASA, these data are not available.
  Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -790,7 +793,7 @@ For LASA, these data are not available.
  Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -806,7 +809,7 @@ For LASA, these data are not available.
  Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -822,7 +825,7 @@ For LASA, these data are not available.
  Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros     
 **Category coding**:   
 
@@ -838,7 +841,7 @@ For LASA, these data are not available.
  Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -870,7 +873,7 @@ For LASA, these data are not available.
 We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_4$socenv_av_inc1000dich_4 < ifelse(LASA1F$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
+socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(LASA1F$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
 
 ```       
 
@@ -911,7 +914,7 @@ socenv_LASA1_4$socenv_av_inc1000dich_4 < ifelse(LASA1F$AVERAGE_INCOME_RESIDENTS_
 We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_6$socenv_av_inc1000dich_6 < ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
+socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
 
 ```       
 
@@ -1058,7 +1061,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 < ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_
  Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1073,7 +1076,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 < ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_
  Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1089,7 +1092,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 < ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_
  Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1153,7 +1156,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 < ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_
  Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_4  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
-**Variable type**: decimal     
+**Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
 
@@ -1163,14 +1166,14 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_LASA1_4$socenv_av_inc1000Z_4 <- as.numeric((LASA1F$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
+socenv_LASA1_4$socenv_av_inc1000Z_4 <- ((LASA1F$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
 
 ```       
 
  Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1186,7 +1189,7 @@ For LASA, these data are not available.
  Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_6 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1196,14 +1199,14 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_LASA1_6$socenv_av_inc1000Z_6 <- as.numeric((LASA1H$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+socenv_LASA1_6$socenv_av_inc1000Z_6 <- ((LASA1H$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
 
 ```    
 
  Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1223,7 +1226,7 @@ For LASA, these data are not available.
  Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
 **Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1239,7 +1242,7 @@ For LASA, these data are not available.
  Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1255,7 +1258,7 @@ For LASA, these data are not available.
  Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
-**Variable type**: decimal     
+**Variable type**: integer    
 **Variable unit**:    
 **Category coding**:   
 
@@ -1271,7 +1274,7 @@ For LASA, these data are not available.
  Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:  
 **Category coding**:   
 
@@ -1287,7 +1290,7 @@ For LASA, these data are not available.
  Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
-**Variable type**: decimal       
+**Variable type**: integer      
 **Variable unit**:    
 **Category coding**:   
 
@@ -1303,7 +1306,7 @@ For LASA, these data are not available.
  Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:     
 **Category coding**:   
 
@@ -1319,7 +1322,7 @@ For LASA, these data are not available.
  Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
-**Variable type**: decimal       
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -1335,7 +1338,7 @@ For LASA, these data are not available.
  Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1350,7 +1353,7 @@ For LASA, these data are not available.
  Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 **Harmonization status**: impossible
@@ -1364,7 +1367,7 @@ For LASA, these data are not available.
 
 
  Percentage of income recipients in 2005
-**Variable name**: socenv_av_inc_recipients_4  
+**Variable name**: socenv_perc_inc_recipients_4  
 **Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1375,11 +1378,11 @@ For LASA, these data are not available.
 For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_av_inc_recipients_4<-as.numeric(LASA1F$PROPORTION_INCOME_RECIPIENTS_2005) 
+socenv_LASA1_4$socenv_perc_inc_recipients_4<-as.numeric(LASA1F$PROPORTION_INCOME_RECIPIENTS_2005) 
 ```    
 
  Percentage of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_6  
+**Variable name**: socenv_perc_inc_recipients_6  
 **Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1390,7 +1393,7 @@ socenv_LASA1_4$socenv_av_inc_recipients_4<-as.numeric(LASA1F$PROPORTION_INCOME_R
 For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_av_inc_recipients_6<-as.numeric(LASA1H$PROPORTION_INCOME_RECIPIENTS_2011) 
+socenv_LASA1_6$socenv_perc_inc_recipients_6<-as.numeric(LASA1H$PROPORTION_INCOME_RECIPIENTS_2011) 
 ```    
 
 # Unemployment
@@ -2397,7 +2400,19 @@ socenv_LASA1_6$socenv_city_6<-as.integer(LASA1H$city)
 
 ```  
 
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2004   
+**Variable description**: Municipality indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
 
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}  
+
+``` 
 
  Area indicator: municipality  
 **Variable name**: socenv_municipality_4   
@@ -2433,6 +2448,20 @@ socenv_LASA1_6$socenv_municipality_6<-as.integer(LASA1H$municipality)
 
 ```  
 
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2014   
+**Variable description**: Municipality indicator in 2014        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}  
+
+``` 
 
  Area indicator: municipality  
 **Variable name**: socenv_municipality_2016   

@@ -16,14 +16,14 @@ opal.assign.table.tibble(erasmus_opal, 'RECORD_w1_1', 'RECORD.RECORD_w1_1', vari
 RECORD_w1_1 <- opal.execute(erasmus_opal,'RECORD_w1_1')
 opal.assign.table.tibble(erasmus_opal, 'RECORD_W1_SocioEnviro', 'RECORD.RECORD_W1_SocioEnviro', variables = list ("URBANIZATION_GRADE_2009"))
 RECORD_w1_1 <- opal.execute(erasmus_opal,'RECORD_W1_SocioEnviro')
-opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_-_Area_identifiers_in_RECORD_W1', 'RECORD.190521_MINDMAP_-_Area_identifiers_in_RECORD_W1', variables = list ("city", "neighbourhood","pc5"))
-RECORD_w1_1 <- opal.execute(erasmus_opal,'190521_MINDMAP_-_Area_identifiers_in_RECORD_W1')
+opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_Area_identifiers_in_RECORD_W1', 'RECORD.190521_MINDMAP_Area_identifiers_in_RECORD_W1', variables = list ("city", "neighbourhood","pc5"))
+RECORD_w1_1 <- opal.execute(erasmus_opal,'190521_MINDMAP_Area_identifiers_in_RECORD_W1')
 
 # RECORD wave 2
 opal.assign.table.tibble(erasmus_opal, 'RECORD_W2_SocioEnviro', 'RECORD.RECORD_W2_SocioEnviro', variables = list ("URBANIZATION_GRADE_2009","AVERAGE_HOUSEHOLD_SIZE_2014","PROPORTION_UNOCCUPIED_DWELLINGS_2014","UNEMPLOYMENT_RATE_2014"))
 RECORD_w2 <- opal.execute(erasmus_opal,'RECORD_W2_SocioEnviro')
-opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_-_Area_identifiers_in_RECORD_W2', 'RECORD.190521_MINDMAP_-_Area_identifiers_in_RECORD_W2', variables = list ("neighbourhood", "pc5"))
-RECORD_w2 <- opal.execute(erasmus_opal,'190521_MINDMAP_-_Area_identifiers_in_RECORD_W2')
+opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_Area_identifiers_in_RECORD_W2', 'RECORD.190521_MINDMAP_Area_identifiers_in_RECORD_W2', variables = list ("neighbourhood", "pc5"))
+RECORD_w2 <- opal.execute(erasmus_opal,'190521_MINDMAP_Area_identifiers_in_RECORD_W2')
 
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -424,7 +424,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_2006   
 **Variable description**: Average household size in residential area in 2006.  
-**Variable type**: decimal   
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -440,7 +440,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2006.
 ### **Variable label**: Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
-**Variable type**: decimal   
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -456,7 +456,7 @@ For RECORD, these data are available for neighbourhoodsin 2014, not in 2009.
 ### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_2011   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -472,23 +472,23 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2011.
 ### **Variable label**: Average household size in 2014   
 **Variable name**: socenv_average_hh_size_1   
 **Variable description**: Average household size in residential area in 2014.  
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**: 
-For RECORD, these data are available for neighbourhoods in 2014. This variable was calculated by: total number of residents in area / total number of households in area * 100. This variable has been linked cohort respondents using their 5-digit postal code.References of all data sources are listed in the WP7 deliverable report.
+For RECORD, these data are available for neighbourhoods in 2014. This variable was calculated by: total number of residents in area / total number of households in area * 100. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked cohort respondents using their 5-digit postal code.References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_1$socenv_average_hh_size_1 <-as.numeric(RECORD_w2$AVERAGE_HOUSEHOLD_SIZE_2014)
+socenv_RECORD_1$socenv_average_hh_size_1 <-as.integer(round(RECORD_w2$AVERAGE_HOUSEHOLD_SIZE_2014))
 
 ```    
 
 ### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
-**Variable type**: decimal  
+**Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
 
@@ -504,7 +504,7 @@ For RECORD, these data are available for neighbourhoods in 2014, not in 2015.
 ### **Variable label**: Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -681,7 +681,7 @@ socenv_RECORD_1$socenv_perc_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION
 ### **Variable label**: Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
@@ -696,7 +696,7 @@ socenv_RECORD_1$socenv_perc_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION
 ### **Variable label**: Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -711,7 +711,7 @@ socenv_RECORD_1$socenv_perc_unocc_dwellings_1 <--as.numeric(RECORD_w2$PROPORTION
 ### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -727,7 +727,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -742,7 +742,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
-**Variable type**: decimal       
+**Variable type**: integer        
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -758,7 +758,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -774,7 +774,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -790,7 +790,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -806,7 +806,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
-**Variable type**: decimal       
+**Variable type**: integer          
 **Variable unit**: euros     
 **Category coding**:   
 
@@ -822,7 +822,7 @@ For RECORD, these data are not available.
 ### **Variable label**: Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -1049,7 +1049,7 @@ For RECORD, these data are not available.
  ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_0  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1057,14 +1057,14 @@ For RECORD, these data are not available.
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.numeric(RECORD_W1_1$Inc_St500)
+socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.integer(round(RECORD_W1_1$Inc_St500))
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_0  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1072,14 +1072,14 @@ socenv_RECORD_0$socenv_av_hhinc_500m_0 <-as.numeric(RECORD_W1_1$Inc_St500)
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.numeric(RECORD_W1_1$Inc_St1000)
+socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.integer(round(RECORD_W1_1$Inc_St1000))
 
 ```     
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_0  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1087,7 +1087,7 @@ socenv_RECORD_0$socenv_av_hhinc_1000m_0 <-as.numeric(RECORD_W1_1$Inc_St1000)
 **Harmonization comment**: In RECORD, these data were already available.
 **R script**:  
 ```{r, echo=TRUE}
-socenv_RECORD_0$socenv_av_hhinc_2000m_0 <-as.numeric(RECORD_W1_1$Inc_St2000)
+socenv_RECORD_0$socenv_av_hhinc_2000m_0 <-as.integer(round(RECORD_W1_1$Inc_St2000))
 
 ```     
 
@@ -1108,7 +1108,7 @@ socenv_RECORD_0$socenv_av_hhinc_2000m_0 <-as.numeric(RECORD_W1_1$Inc_St2000)
 **Harmonization comment**: We dichotomized average household income in 500 meter street network buffer around participants by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
 **R script**:   
 ```{r, echo=TRUE}  
-socenv_RECORD_0$socenv_av_hhincdich_500m_0 < ifelse (RECORD_W1_1$Inc_St500 >= 21536, 1, 0)
+socenv_RECORD_0$socenv_av_hhincdich_500m_0 <- ifelse(RECORD_W1_1$Inc_St500 >= 21536, 1, 0)
 
 ```  
 
@@ -1130,7 +1130,7 @@ socenv_RECORD_0$socenv_av_hhincdich_500m_0 < ifelse (RECORD_W1_1$Inc_St500 >= 21
 **Harmonization comment**: We dichotomized average household income in 1000 meter street network buffer around participants by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
 **R script**:   
 ```{r, echo=TRUE}  
-socenv_RECORD_0$socenv_av_hhincdich_1000m_0 < ifelse (RECORD_W1_1$Inc_St1000 >= 21536, 1, 0)
+socenv_RECORD_0$socenv_av_hhincdich_1000m_0 <- ifelse(RECORD_W1_1$Inc_St1000 >= 21536, 1, 0)
 
 ```     
 
@@ -1150,7 +1150,7 @@ socenv_RECORD_0$socenv_av_hhincdich_1000m_0 < ifelse (RECORD_W1_1$Inc_St1000 >= 
 **Harmonization comment**: We dichotomized average household income in 2000 meter street network buffer around participants by comparing it with the country-specific net mean household income (OECD) in 2005 (€21536).
 **R script**:   
 ```{r, echo=TRUE}  
-socenv_RECORD_0$socenv_av_hhincdich_2000m_0 < ifelse (RECORD_W1_1$Inc_St2000 >= 21536, 1, 0)
+socenv_RECORD_0$socenv_av_hhincdich_2000m_0 <- ifelse(RECORD_W1_1$Inc_St2000 >= 21536, 1, 0)
 
 ```    
 
@@ -1158,7 +1158,7 @@ socenv_RECORD_0$socenv_av_hhincdich_2000m_0 < ifelse (RECORD_W1_1$Inc_St2000 >= 
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -1175,7 +1175,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1192,7 +1192,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1211,7 +1211,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1228,7 +1228,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
 **Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1244,7 +1244,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:     
 **Category coding**:   
 
@@ -1260,7 +1260,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1276,7 +1276,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:  
 **Category coding**:   
 
@@ -1292,7 +1292,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1308,7 +1308,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:     
 **Category coding**:   
 
@@ -1324,7 +1324,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1340,7 +1340,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1355,7 +1355,7 @@ These data are not available for RECORD.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
@@ -1370,7 +1370,7 @@ These data are not available for RECORD.
 
 
 ### **Variable label**: Percentage of income recipients in 2005
-**Variable name**: socenv_av_inc_recipients_2005  
+**Variable name**: socenv_perc_inc_recipients_2005  
 **Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1386,7 +1386,7 @@ For RECORD, these data are not available.
 ```    
 
 ### **Variable label**: Percentage of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_2011  
+**Variable name**: socenv_perc_inc_recipients_2011  
 **Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -2348,7 +2348,6 @@ socenv_RECORD_0$socenv_city_0 <-as.integer(RECORD_w1_1$city)
 
 **Harmonization status**: impossible
 **Harmonization comment**:  
-For RECORD, the indicator variables start with 33.
 **R script**:  
 ```{r, echo=TRUE}  
 
@@ -2387,7 +2386,19 @@ For RECORD, the indicator variables start with 33.
 
 ```  
 
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2004   
+**Variable description**: Municipality indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
 
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}  
+
+``` 
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2006   
@@ -2421,6 +2432,19 @@ For RECORD, the indicator variables start with 33.
 
 ```  
 
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2014   
+**Variable description**: Municipality indicator in 2014        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:   
+**R script**:  
+```{r, echo=TRUE}  
+
+``` 
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2016   

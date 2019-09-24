@@ -22,15 +22,15 @@ opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables=
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 
 # GLOBE2004
-opal.assign.table.tibble(erasmus_opal, 'GLOBE_2004_socialenvironment_2006', 'GLOBE.GLOBE_2004_socialenvironment_2006', variables=list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_200","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT", "city", "NEIGHBORHOOD_CODE_2006","PC4_CODE_2006","PC6_CODE_2006"))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE_2004_socialenvironment_2006', 'GLOBE.GLOBE_2004_socialenvironment_2006', variables=list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_200","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT", "MUNICIPALITY_CODE_2006", "NEIGHBORHOOD_CODE_2006","PC4_CODE_2006","PC6_CODE_2006"))
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE_2004_socialenvironment_2006')
 
 # GLOBE2011
-opal.assign.table.tibble(erasmus_opal, 'GLOBE_2011_socialenvironment_2011', 'GLOBE.GLOBE_2011_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFF","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","city", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE_2011_socialenvironment_2011', 'GLOBE.GLOBE_2011_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_100","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","MUNICIPALITY_CODE_2011", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
 GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE_2011_socialenvironment_2011')
 
 # GLOBE2014
-opal.assign.table.tibble(erasmus_opal, 'GLOBE_2014_socialenvironment_2011', 'GLOBE.GLOBE_2014_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFF","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","city", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE_2014_socialenvironment_2011', 'GLOBE.GLOBE_2014_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_100","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","MUNICIPALITY_CODE_2011", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
 GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE_2014_socialenvironment_2011')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -391,7 +391,7 @@ For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_percentage_maried_2<-as.numeric(GLOBE20046$PROPORTION_MARIED_2008) 
+socenv_GLOBE_2$socenv_percentage_maried_2<-as.numeric(GLOBE2004$PROPORTION_MARIED_2008) 
 
 ```    
 
@@ -561,23 +561,23 @@ socenv_GLOBE_4$socenv_percentage_widowed_4<-as.numeric(GLOBE2014$PROPORTION_WIDO
 ### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_2   
 **Variable description**: Average household size in residential area in 2006.  
-**Variable type**: decimal   
+**Variable type**: integer   
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_average_hh_size_2<-as.numeric(GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006) 
+socenv_GLOBE_2$socenv_average_hh_size_2<-as.integer(round(GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006))
 
 ```    
 
 ### **Variable label**: Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
-**Variable type**: decimal    
+**Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
 
@@ -593,16 +593,16 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 ### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_3   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_average_hh_size_3<-as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)   
+socenv_GLOBE_3$socenv_average_hh_size_3<-as.integer(round(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)) 
 
 ```    
 
@@ -610,16 +610,16 @@ socenv_GLOBE_3$socenv_average_hh_size_3<-as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_
 ### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_4   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: decimal   
+**Variable type**: integer   
 **Variable unit**:   
 **Category coding**:   
 
 **Harmonization status**:  complete
 **Harmonization comment**:  
-For GLOBE, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
+For GLOBE, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_average_hh_size_4<-as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011)   
+socenv_GLOBE_4$socenv_average_hh_size_4<-as.integer(round(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011))  
 
 ``` 
 
@@ -627,7 +627,7 @@ socenv_GLOBE_4$socenv_average_hh_size_4<-as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_
 ### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -643,7 +643,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 ### **Variable label**: Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -709,7 +709,8 @@ socenv_GLOBE_4$socenv_avv_dwellings_4<-as.integer(GLOBE2014$AVERAGE_VALUE_DWELLI
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
 **Variable name**: socenv_avv_dwelling_m2_2007  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -724,7 +725,8 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2011  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -739,7 +741,8 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2013  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -754,7 +757,8 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2014 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2014  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -769,7 +773,8 @@ For GLOBE, these data are not available.
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2015   
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015. 
+**Variable type**: integer   
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -850,23 +855,23 @@ socenv_GLOBE_4$socenv_perc_unocc_dwellings_4<-as.numeric(GLOBE2014$PROPORTION_UN
 ### **Variable label**: Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_2  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to GLOBE participants at wave 2004.
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_av_inc1000_2<-as.numeric(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005) 
+socenv_GLOBE_2$socenv_av_inc1000_2<-as.integer(round(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005))
 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
@@ -882,32 +887,32 @@ For GLOBE, these data are available for neighbourhoods in 2005 and 2011, not in 
 ### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011.
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_av_inc1000_3<-as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011) 
+socenv_GLOBE_3$socenv_av_inc1000_3<-as.integer(round(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011))
 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_4 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2014.
+For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_av_inc1000_4<-as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011) 
+socenv_GLOBE_4$socenv_av_inc1000_4<-as.integer(round(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011)) 
 
 ``` 
 
@@ -915,7 +920,7 @@ socenv_GLOBE_4$socenv_av_inc1000_4<-as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENT
 ### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -931,7 +936,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -947,7 +952,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -963,7 +968,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -979,7 +984,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -995,7 +1000,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros     
 **Category coding**:   
 
@@ -1011,7 +1016,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -1042,7 +1047,7 @@ We dichotomized average gross year income in 1000 euros of residents in the neig
 Here, this variable is linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_GLOBE_2$socenv_av_inc1000dich_2 < ifelse(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
+socenv_GLOBE_2$socenv_av_inc1000dich_2 <- ifelse(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
 
 ```       
 
@@ -1085,7 +1090,7 @@ We dichotomized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_3$socenv_av_inc1000dich_3 < ifelse(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
+socenv_GLOBE_3$socenv_av_inc1000dich_3 <- ifelse(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
 
 ```    
 
@@ -1108,7 +1113,7 @@ We dichotomized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_4$socenv_av_inc1000dich_4 < ifelse(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
+socenv_GLOBE_4$socenv_av_inc1000dich_4 <- ifelse(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
 
 ```    
 
@@ -1267,7 +1272,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1282,7 +1287,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal       
+**Variable type**: integer      
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1298,7 +1303,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
-**Variable type**: decimal       
+**Variable type**: integer      
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -1361,7 +1366,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_2  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -1370,14 +1375,14 @@ For GLOBE, these data are not available.
 We standardized average gross year income in 1000 euros of residents in the neighbourhood by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2005 in the Netherlands: y=12.3206 and o=2.42953. Here, this variable is linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_GLOBE_2$socenv_av_inc1000Z_2 <- as.numeric((GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
+socenv_GLOBE_2$socenv_av_inc1000Z_2 <- ((GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
 
 ```       
 
 ### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1393,7 +1398,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1403,14 +1408,14 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_3$socenv_av_inc1000Z_3 <- as.numeric((GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+socenv_GLOBE_3$socenv_av_inc1000Z_3 <- ((GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_4 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
-**Variable type**: decimal     
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -1420,7 +1425,7 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_4$socenv_av_inc1000Z_4 <- as.numeric((GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+socenv_GLOBE_4$socenv_av_inc1000Z_4 <- ((GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
 
 ``` 
 
@@ -1429,7 +1434,7 @@ socenv_GLOBE_4$socenv_av_inc1000Z_4 <- as.numeric((GLOBE2014$AVERAGE_INCOME_RESI
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1448,7 +1453,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
 **Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
-**Variable type**: decimal       
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1464,7 +1469,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
-**Variable type**: decimal     
+**Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
 
@@ -1480,7 +1485,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**:    
 **Category coding**:   
 
@@ -1496,7 +1501,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**:  
 **Category coding**:   
 
@@ -1512,7 +1517,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**:    
 **Category coding**:   
 
@@ -1528,7 +1533,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**:     
 **Category coding**:   
 
@@ -1544,7 +1549,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**:   
 **Category coding**:   
 
@@ -1560,7 +1565,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: decimal       
+**Variable type**: integer         
 **Variable unit**:   
 **Category coding**:   
 
@@ -1575,7 +1580,7 @@ For GLOBE, these data are not available.
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
-**Variable type**: decimal    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -1590,7 +1595,7 @@ For GLOBE, these data are not available.
 
 
 ### **Variable label**: Percentage of income recipients in 2005
-**Variable name**: socenv_av_inc_recipients_2  
+**Variable name**: socenv_perc_inc_recipients_2  
 **Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1601,11 +1606,11 @@ For GLOBE, these data are not available.
 For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_av_inc_recipients_2<-as.numeric(GLOBE2004$PROPORTION_INCOME_RECIPIENTS_200) 
+socenv_GLOBE_2$socenv_perc_inc_recipients_2<-as.numeric(GLOBE2004$PROPORTION_INCOME_RECIPIENTS_200) 
 ```    
 
 ### **Variable label**: Percentage of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_3  
+**Variable name**: socenv_perc_inc_recipients_3  
 **Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1616,13 +1621,13 @@ socenv_GLOBE_2$socenv_av_inc_recipients_2<-as.numeric(GLOBE2004$PROPORTION_INCOM
 For GLOBE, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to GLOBE respondents at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_av_inc_recipients_3<-as.numeric(GLOBE2011$PROPORTION_INCOME_RECIPIENTS_201) 
+socenv_GLOBE_3$socenv_perc_inc_recipients_3<-as.numeric(GLOBE2011$PROPORTION_INCOME_RECIPIENTS_201) 
 
 ```    
 
 
 ### **Variable label**: Percentage of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_4  
+**Variable name**: socenv_perc_inc_recipients_4  
 **Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1912,7 +1917,7 @@ socenv_GLOBE_2$socenv_percentage_unemplben_2<-as.numeric(GLOBE2004$PROPORTION_UN
 For GLOBE, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_percentage_unemplben_3<-as.numeric(GLOBE2011$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
+socenv_GLOBE_3$socenv_percentage_unemplben_3<-as.numeric(GLOBE2011$PROPORTION_UNEMPLOYMENT_BENEFIT)  
 
 ```    
 
@@ -1928,7 +1933,7 @@ socenv_GLOBE_3$socenv_percentage_unemplben_3<-as.numeric(GLOBE2011$PROPORTION_UN
 For GLOBE, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to GLOBE participants at wave 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_percentage_unemplben_4<-as.numeric(GLOBE2014$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
+socenv_GLOBE_4$socenv_percentage_unemplben_4<-as.numeric(GLOBE2014$PROPORTION_UNEMPLOYMENT_BENEFIT)  
 
 ```    
 
@@ -2391,7 +2396,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2007.
 For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_crimoff_3<-as.integer(GLOBE2011$NUMBER_CRIMINAL_OFF)
+socenv_GLOBE_3$socenv_crimoff_3<-as.integer(GLOBE2011$NUMBER_CRIMINAL_OFFENSES_PER_100)
 
 ```    
 
@@ -2407,7 +2412,7 @@ socenv_GLOBE_3$socenv_crimoff_3<-as.integer(GLOBE2011$NUMBER_CRIMINAL_OFF)
 For GLOBE, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_crimoff_4<-as.integer(GLOBE2014$NUMBER_CRIMINAL_OFF)
+socenv_GLOBE_4$socenv_crimoff_4<-as.integer(GLOBE2014$NUMBER_CRIMINAL_OFFENSES_PER_100)
 
 ```
 
@@ -2726,12 +2731,12 @@ For GLOBE, these data are not available.
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
-For GLOBE, the indicator variables start with 11.
+For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_city_2<-as.integer(GLOBE2004$city)
+
 
 
 ```
@@ -2793,12 +2798,11 @@ socenv_GLOBE_2$socenv_city_2<-as.integer(GLOBE2004$city)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
-For GLOBE, the indicator variables start with 11.
+For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_city_3<-as.integer(GLOBE2011$city)
 
 ```
 
@@ -2809,14 +2813,28 @@ socenv_GLOBE_3$socenv_city_3<-as.integer(GLOBE2011$city)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
-For GLOBE, the indicator variables start with 11.
+For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_city_4<-as.integer(GLOBE2014$city)
+
 
 ```
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2   
+**Variable description**: Municipality indicator in 2004        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: For GLOBE, the indicator variables start with 11.  
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_2$socenv_municipality_2<-as.integer(GLOBE2004$MUNICIPALITY_CODE_2006)
+```  
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2006   
@@ -2833,18 +2851,34 @@ socenv_GLOBE_4$socenv_city_4<-as.integer(GLOBE2014$city)
 ```  
 
 ### **Variable label**: Area indicator: municipality  
-**Variable name**: socenv_municipality_2011   
+**Variable name**: socenv_municipality_3   
 **Variable description**: Municipality indicator in 2011        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible
-**Harmonization comment**:  
+**Harmonization status**: complete
+**Harmonization comment**: For GLOBE, the indicator variables start with 11.    
 **R script**:  
 ```{r, echo=TRUE}  
-
+socenv_GLOBE_3$socenv_municipality_3<-as.integer(GLOBE2011$MUNICIPALITY_CODE_2011)
 ```  
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_4   
+**Variable description**: Municipality indicator in 2014        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: For GLOBE, the indicator variables start with 11.  
+**R script**:  
+```{r, echo=TRUE}  
+socenv_GLOBE_4$socenv_municipality_4<-as.integer(GLOBE2014$MUNICIPALITY_CODE_2011)
+``` 
+
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2016   
@@ -2873,7 +2907,7 @@ socenv_GLOBE_4$socenv_city_4<-as.integer(GLOBE2014$city)
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_neighbourhood_2<-as.integer(GLOBE2004$NEIGHBOURHOOD_CODE_2006)
+socenv_GLOBE_2$socenv_neighbourhood_2<-as.integer(GLOBE2004$NEIGHBORHOOD_CODE_2006)
 
 ```
 
@@ -2937,7 +2971,7 @@ socenv_GLOBE_2$socenv_neighbourhood_2<-as.integer(GLOBE2004$NEIGHBOURHOOD_CODE_2
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_neighbourhood_3<-as.integer(GLOBE2011$NEIGHBOURHOOD_CODE_2011)
+socenv_GLOBE_3$socenv_neighbourhood_3<-as.integer(GLOBE2011$NEIGHBORHOOD_CODE_2011)
 
 ```
 
@@ -2954,7 +2988,7 @@ socenv_GLOBE_3$socenv_neighbourhood_3<-as.integer(GLOBE2011$NEIGHBOURHOOD_CODE_2
 For GLOBE, the indicator variables start with 11.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_neighbourhood_4<-as.integer(GLOBE2014$NEIGHBOURHOOD_CODE_2011)
+socenv_GLOBE_4$socenv_neighbourhood_4<-as.integer(GLOBE2014$NEIGHBORHOOD_CODE_2011)
 
 ```
 
