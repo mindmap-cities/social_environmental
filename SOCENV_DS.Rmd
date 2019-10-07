@@ -204,9 +204,9 @@ output: html_document
 
 
 
-### **Variable label**: Percentage of unmaried residents in 2008   
-**Variable name**: socenv_percentage_unmaried_2008   
-**Variable description**: Percentage of unmaried residents in residential area in 2008.  
+### **Variable label**: Percentage of unmarried residents in 2008   
+**Variable name**: socenv_percentage_unmarried_2008   
+**Variable description**: Percentage of unmarried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -219,9 +219,9 @@ output: html_document
 
 
 
-### **Variable label**: Percentage of unmaried residents in 2011   
-**Variable name**: socenv_percentage_unmaried_2011   
-**Variable description**: Percentage of unmaried residents in residential area in 2011.  
+### **Variable label**: Percentage of unmarried residents in 2011   
+**Variable name**: socenv_percentage_unmarried_2011   
+**Variable description**: Percentage of unmarried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -234,9 +234,9 @@ output: html_document
 
 
 
-### **Variable label**: Percentage of maried residents in 2006   
-**Variable name**: socenv_percentage_maried_2006   
-**Variable description**: Percentage of maried residents in residential area in 2006.  
+### **Variable label**: Percentage of married residents in 2006   
+**Variable name**: socenv_percentage_married_2006   
+**Variable description**: Percentage of married residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -249,9 +249,9 @@ output: html_document
 
 
 
-### **Variable label**: Percentage of maried residents in 2008   
-**Variable name**: socenv_percentage_maried_2008   
-**Variable description**: Percentage of maried residents in residential area in 2008.  
+### **Variable label**: Percentage of married residents in 2008   
+**Variable name**: socenv_percentage_married_2008   
+**Variable description**: Percentage of married residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -264,9 +264,9 @@ output: html_document
 
 
 
-### **Variable label**: Percentage of maried residents in 2011   
-**Variable name**: socenv_percentage_maried_2011   
-**Variable description**: Percentage of maried residents in residential area in 2011.  
+### **Variable label**: Percentage of married residents in 2011   
+**Variable name**: socenv_percentage_married_2011   
+**Variable description**: Percentage of married residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -413,7 +413,6 @@ output: html_document
 #This is where the R-script will be written
 
 
-
 ### **Variable label**: Average household size in 2014   
 **Variable name**: socenv_average_hh_size_2014   
 **Variable description**: Average household size in residential area in 2014.  
@@ -466,7 +465,7 @@ output: html_document
 **Variable name**: socenv_avv_dwellings_2006  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2006.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: 1000 euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -481,7 +480,7 @@ output: html_document
 **Variable name**: socenv_avv_dwellings_2011  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2011.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: 1000 euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -495,7 +494,7 @@ output: html_document
 **Variable name**: socenv_avv_dwelling_m2_2007  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -510,7 +509,7 @@ output: html_document
 **Variable name**: socenv_avv_dwelling_m2_2011  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**:  
@@ -525,7 +524,7 @@ output: html_document
 **Variable name**: socenv_avv_dwelling_m2_2013  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -540,7 +539,7 @@ output: html_document
 **Variable name**: socenv_avv_dwelling_m2_2014  
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**:  
@@ -555,7 +554,7 @@ output: html_document
 **Variable name**: socenv_avv_dwelling_m2_2015   
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
 **Variable type**: integer   
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -619,7 +618,7 @@ output: html_document
 **Variable name**: socenv_av_inc1000_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: 1000 euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -634,7 +633,7 @@ output: html_document
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: 1000 euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -649,7 +648,7 @@ output: html_document
 **Variable name**: socenv_av_inc1000_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: 1000 euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -664,7 +663,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -679,7 +678,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -694,7 +693,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -709,7 +708,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -724,7 +723,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -739,7 +738,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros   
 **Category coding**:   
 
 **Harmonization status**:  
@@ -754,7 +753,7 @@ output: html_document
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -969,7 +968,7 @@ output: html_document
 **Variable name**: socenv_av_hhinc_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -984,12 +983,12 @@ output: html_document
 **Variable name**: socenv_av_hhinc_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
 **Harmonization comment**:  
-**R script**:  
+**R script**: euros  
 {r, echo=TRUE}
 #This is where the R-script will be written
 
@@ -999,7 +998,7 @@ output: html_document
 **Variable name**: socenv_av_hhinc_2000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
 **Variable type**: integer     
-**Variable unit**:   
+**Variable unit**: euros  
 **Category coding**:   
 
 **Harmonization status**:  
@@ -1148,7 +1147,7 @@ output: html_document
 **Variable name**: socenv_av_incZ_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
 **Variable type**: integer     
-**Variable unit**: euros    
+**Variable unit**:     
 **Category coding**:   
 
 **Harmonization status**:  
@@ -1259,7 +1258,7 @@ output: html_document
 
 
 ### **Variable label**: Percentage of income recipients in 2005
-**Variable name**: socenv_av_inc_recipients_2005  
+**Variable name**: socenv_perc_inc_recipients_2005  
 **Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1273,7 +1272,7 @@ output: html_document
 
 
 ### **Variable label**: Percentage of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_2011  
+**Variable name**: socenv_perc_inc_recipients_2011  
 **Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
@@ -1460,9 +1459,38 @@ output: html_document
 
 
 
+### **Variable label**: Percentage of residents with disability benefit in 2006  
+**Variable name**: socenv_percentage_disben_2006   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
 ### **Variable label**: Percentage of residents with disability benefit in 2010  
 **Variable name**: socenv_percentage_disben_2010   
 **Variable description**: Percentage of residents with a disability benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+### **Variable label**: Percentage of residents with unemployment benefit in 2006  
+**Variable name**: socenv_percentage_unemplben_2006   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
@@ -2236,6 +2264,21 @@ output: html_document
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2006    
 **Variable description**: Municipality indicator in 2006   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  
+**Harmonization comment**:  
+**R script**:  
+{r, echo=TRUE}
+#This is where the R-script will be written
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_2007    
+**Variable description**: Municipality indicator in 2007   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
