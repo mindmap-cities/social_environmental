@@ -966,7 +966,7 @@ output: html_document
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
@@ -981,7 +981,7 @@ output: html_document
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_2006  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
@@ -996,7 +996,7 @@ output: html_document
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_2006  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
@@ -1071,7 +1071,7 @@ output: html_document
 
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_2005  
-**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1).
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -1086,7 +1086,7 @@ output: html_document
 
 ### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1100,7 +1100,7 @@ output: html_document
 
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_2011 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).   
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1115,7 +1115,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
-**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
+**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1). 
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1130,7 +1130,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
-**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
+**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1).        
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1145,7 +1145,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
-**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
+**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).        
 **Variable type**: integer     
 **Variable unit**:     
 **Category coding**:   
@@ -1160,7 +1160,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
-**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
+**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:  
@@ -1173,7 +1173,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
-**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
+**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1).       
 **Variable type**: integer     
 **Variable unit**:  
 **Category coding**:   
@@ -1188,7 +1188,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
-**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
+**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1).    
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1201,7 +1201,7 @@ output: html_document
 
 ### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
-**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
+**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1).    
 **Variable type**: integer     
 **Variable unit**:     
 **Category coding**:   
@@ -1214,7 +1214,7 @@ output: html_document
 
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).    .       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -2158,7 +2158,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2004    
-**Variable description**: City indicator in 2004    
+**Variable description**: City indicator in 2004.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2173,7 +2173,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2006    
-**Variable description**: City indicator in 2006    
+**Variable description**: City indicator in 2006.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2188,7 +2188,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2007    
-**Variable description**: City indicator in 2007    
+**Variable description**: City indicator in 2007.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2203,7 +2203,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2009    
-**Variable description**: City indicator in 2009    
+**Variable description**: City indicator in 2009.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2218,7 +2218,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2011    
-**Variable description**: City indicator in 2011    
+**Variable description**: City indicator in 2011.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2233,7 +2233,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2014    
-**Variable description**: City indicator in 2014   
+**Variable description**: City indicator in 2014.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2248,7 +2248,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2004    
-**Variable description**: Municipality indicator in 2004   
+**Variable description**: Municipality indicator in 2004.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2263,7 +2263,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2006    
-**Variable description**: Municipality indicator in 2006   
+**Variable description**: Municipality indicator in 2006.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2278,7 +2278,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2007    
-**Variable description**: Municipality indicator in 2007   
+**Variable description**: Municipality indicator in 2007.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2293,7 +2293,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2011    
-**Variable description**: Municipality indicator in 2011   
+**Variable description**: Municipality indicator in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2308,7 +2308,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2014    
-**Variable description**: Municipality indicator in 2014   
+**Variable description**: Municipality indicator in 2014.  
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2323,7 +2323,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: municipality
 **Variable name**: socenv_municipality_2016    
-**Variable description**: Municipality indicator in 2016   
+**Variable description**: Municipality indicator in 2016.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2338,7 +2338,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: neighbourhood
 **Variable name**: socenv_neighbourhood_2004    
-**Variable description**: Neighbourhood indicator in 2004   
+**Variable description**: Neighbourhood indicator in 2004.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2353,7 +2353,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: neighbourhood
 **Variable name**: socenv_neighbourhood_2006    
-**Variable description**: Neighbourhood indicator in 2006  
+**Variable description**: Neighbourhood indicator in 2006.  
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2368,7 +2368,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: neighbourhood
 **Variable name**: socenv_neighbourhood_2007    
-**Variable description**: Neighbourhood indicator in 2007  
+**Variable description**: Neighbourhood indicator in 2007.  
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2383,7 +2383,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: neighbourhood
 **Variable name**: socenv_neighbourhood_2009    
-**Variable description**: Neighbourhood indicator in 2009   
+**Variable description**: Neighbourhood indicator in 2009.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2398,7 +2398,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: neighbourhood
 **Variable name**: socenv_neighbourhood_2011    
-**Variable description**: Neighbourhood indicator in 2011   
+**Variable description**: Neighbourhood indicator in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2413,7 +2413,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: neighbourhood
 **Variable name**: socenv_neighbourhood_2014    
-**Variable description**: Neighbourhood indicator in 2014   
+**Variable description**: Neighbourhood indicator in 2014.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2429,7 +2429,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 4-digit postal code
 **Variable name**: socenv_pc4_2004    
-**Variable description**:  4-digit postal code (PC4) indicator in 2004   
+**Variable description**:  4-digit postal code (PC4) indicator in 2004.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2444,7 +2444,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 4-digit postal code
 **Variable name**: socenv_pc4_2006    
-**Variable description**:  4-digit postal code (PC4) indicator in 2006  
+**Variable description**:  4-digit postal code (PC4) indicator in 2006.  
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2459,7 +2459,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 4-digit postal code
 **Variable name**: socenv_pc4_2011   
-**Variable description**:  4-digit postal code (PC4) indicator in 2011   
+**Variable description**:  4-digit postal code (PC4) indicator in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2474,7 +2474,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 4-digit postal code
 **Variable name**: socenv_pc4_2014    
-**Variable description**:  4-digit postal code (PC4) indicator in 2014   
+**Variable description**:  4-digit postal code (PC4) indicator in 2014.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2489,7 +2489,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_pc6_2004    
-**Variable description**:  6-digit postal code (PC6) indicator in 2004   
+**Variable description**:  6-digit postal code (PC6) indicator in 2004.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2504,7 +2504,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_pc6_2006    
-**Variable description**:  6-digit postal code (PC6) indicator in 2006  
+**Variable description**:  6-digit postal code (PC6) indicator in 2006.  
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2519,7 +2519,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_pc6_2011   
-**Variable description**:  6-digit postal code (PC6) indicator in 2011   
+**Variable description**:  6-digit postal code (PC6) indicator in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2534,7 +2534,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_pc6_2014    
-**Variable description**:  6-digit postal code (PC6) indicator in 2014   
+**Variable description**:  6-digit postal code (PC6) indicator in 2014.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2549,7 +2549,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 5-digit postal code
 **Variable name**: socenv_pc5_2007    
-**Variable description**:  5-digit postal code (PC5) indicator in 2007   
+**Variable description**:  5-digit postal code (PC5) indicator in 2007.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2564,7 +2564,7 @@ output: html_document
 
 ### **Variable label**: Area indicator: 5-digit postal code
 **Variable name**: socenv_pc5_2011    
-**Variable description**:  5-digit postal code (PC5) indicator in 2011   
+**Variable description**:  5-digit postal code (PC5) indicator in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
