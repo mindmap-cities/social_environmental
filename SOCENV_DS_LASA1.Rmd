@@ -20,19 +20,19 @@ LASA1D <- opal.execute(erasmus_opal,'LASA1D')
 opal.assign.table.tibble(erasmus_opal, 'LASA1E', 'LASA.LASA1E',variables = list(''))
 LASA1E <- opal.execute(erasmus_opal,'LASA1E')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA1F_socioenviro', 'LASA.LASA1F_socioenviro',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
-LASA1F <- opal.execute(erasmus_opal,'LASA1F_socioenviro')
+opal.assign.table.tibble(erasmus_opal, 'LASA1F_socioenviro', 'LASA.LASA1F_socioenviro',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARRIED_2008","PROPORTION_MARRIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
+LASA1Fa <- opal.execute(erasmus_opal,'LASA1F_socioenviro')
 opal.assign.table.tibble(erasmus_opal, 'LASA1_Fwave_Area_Identifiers', 'LASA.LASA1_Fwave_Area_Identifiers', variables = list("municipality", "city", "neighbourhood", "PC4", "PC6"))
-LASA1F <- opal.execute(erasmus_opal, 'LASA1_Fwave_Area_Identifiers')
+LASA1Fb <- opal.execute(erasmus_opal, 'LASA1_Fwave_Area_Identifiers')
 
 opal.assign.table.tibble(erasmus_opal, 'LASA1G', 'LASA.LASA1G',variables = list(''))
 LASA1G <- opal.execute(erasmus_opal,'LASA1G')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA1H_socioenviro', 'LASA.LASA1H_socioenviro',variables = list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011",
+opal.assign.table.tibble(erasmus_opal, 'LASA1H_socioenviro', 'LASA.LASA1H_socioenviro',variables = list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARRIED_2011","PROPORTION_MARRIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011",
 "NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011"))
-LASA1H <- opal.execute(erasmus_opal,'LASA1H_socioenviro')
+LASA1Ha <- opal.execute(erasmus_opal,'LASA1H_socioenviro')
 opal.assign.table.tibble(erasmus_opal, 'LASA1_Hwave_Area_Identifiers', 'LASA.LASA1_Hwave_Area_Identifiers', variables = list("municipality", "city", "neighbourhood", "PC4", "PC6"))
-LASA1H <- opal.execute(erasmus_opal, 'LASA1_Hwave_Area_Identifiers')
+LASA1Hb <- opal.execute(erasmus_opal, 'LASA1_Hwave_Area_Identifiers')
 
 
 
@@ -64,12 +64,13 @@ opal.logout(erasmus_opal)
 6. [Social security](#Social security)  
 7. [Educational level](#Educational level)  
 8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
-9. [Crime](#Crime)  
+9. [Crime](#Crime)
+10. [Area indicators] (#Area indicators)
   
 
 # Urbanization grade
 
- Urbanization grade in 2006  
+### **Variable label**: Urbanization grade in 2006  
 **Variable name**: socenv_urbanization_grade_4    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2006.  
 **Variable type**: integer
@@ -84,7 +85,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011. This var
 socenv_LASA1_4$socenv_urbanization_grade_4<-as.integer(LASA1F$URBANIZATION_GRADE_2006)
 ```  
 
- Urbanization grade in 2007 
+### **Variable label**: Urbanization grade in 2007 
 **Variable name**: socenv_urbanization_grade_2007    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2007.  
 **Variable type**: integer
@@ -100,7 +101,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```  
 
- Urbanization grade in 2009 
+### **Variable label**: Urbanization grade in 2009 
 **Variable name**: socenv_urbanization_grade_2009    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2009.  
 **Variable type**: integer
@@ -116,7 +117,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```  
 
- Urbanization grade in 2011 
+### **Variable label**: Urbanization grade in 2011 
 **Variable name**: socenv_urbanization_grade_6    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
 **Variable type**: integer
@@ -131,7 +132,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011. This var
 socenv_LASA1_6$socenv_urbanization_grade_6<-as.integer(LASA1H$URBANIZATION_GRADE_2011)
 ```  
 
- Urbanization grade in 2014
+### **Variable label**: Urbanization grade in 2014
 **Variable name**: socenv_urbanization_grade_2014    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2014.  
 **Variable type**: integer
@@ -151,7 +152,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 # Demographics
 
- Percentage of men in 2006  
+### **Variable label**: Percentage of men in 2006  
 **Variable name**: socenv_percentage_men_4    
 **Variable description**: Percentage of men in the residential area in 2006.  
 **Variable type**: decimal
@@ -167,7 +168,7 @@ socenv_LASA1_4$socenv_percentage_men_4<-as.numeric(LASA1F$PROPORTION_MEN_2006)
 
 ```    
 
- Percentage of men in 2011  
+### **Variable label**: Percentage of men in 2011  
 **Variable name**: socenv_percentage_men_6    
 **Variable description**: Percentage of men in the residential area in 2011.  
 **Variable type**: decimal
@@ -183,7 +184,7 @@ socenv_LASA1_6$socenv_percentage_men_6<-as.numeric(LASA1H$PROPORTION_MEN_2011)
 
 ```    
 
- Percentage of women in 2006  
+### **Variable label**: Percentage of women in 2006  
 **Variable name**: socenv_percentage_women_4    
 **Variable description**: Percentage of women in the residential area in 2006.  
 **Variable type**: decimal  
@@ -199,7 +200,7 @@ socenv_LASA1_4$socenv_percentage_women_4<-as.numeric(LASA1F$PROPORTION_WOMEN_200
 
 ```    
 
- Percentage of women in 2011    
+### **Variable label**: Percentage of women in 2011    
 **Variable name**: socenv_percentage_women_6    
 **Variable description**: Percentage of women in the residential area in 2011.  
 **Variable type**: decimal  
@@ -215,7 +216,7 @@ socenv_LASA1_6$socenv_percentage_women_6<-as.numeric(LASA1H$PROPORTION_WOMEN_201
 
 ```    
 
- Percentage of residents aged 65 or older in 2006   
+### **Variable label**: Percentage of residents aged 65 or older in 2006   
 **Variable name**: socenv_percentage_65_older_4   
 **Variable description**: Percentage of residents aged 65 or older in residential area in 2006.  
 **Variable type**: decimal  
@@ -231,7 +232,7 @@ socenv_LASA1_4$socenv_percentage_65_older_4<-as.numeric(LASA1F$PROPORTION_65_OLD
 
 ```    
 
- Percentage of residents aged 65 or older in 2007   
+### **Variable label**: Percentage of residents aged 65 or older in 2007   
 **Variable name**: socenv_percentage_65_older_2007   
 **Variable description**: Percentage of residents aged 65 or older in residential area in 2007.  
 **Variable type**: decimal  
@@ -247,7 +248,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```    
 
- Percentage of residents aged 65 or older in 2011   
+### **Variable label**: Percentage of residents aged 65 or older in 2011   
 **Variable name**: socenv_percentage_65_older_6   
 **Variable description**: Percentage of residents aged 65 or older in residential area in 2011.  
 **Variable type**: decimal  
@@ -262,9 +263,9 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011. This var
 socenv_LASA1_6$socenv_percentage_65_older_6<-as.numeric(LASA1H$PROPORTION_65_OLDER_2011) 
 ```    
 
- Percentage of unmaried residents in 2008   
-**Variable name**: socenv_percentage_unmaried_4   
-**Variable description**: Percentage of unmaried residents in residential area in 2008.  
+### **Variable label**: Percentage of unmarried residents in 2008   
+**Variable name**: socenv_percentage_unmarried_4   
+**Variable description**: Percentage of unmarried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -274,13 +275,13 @@ socenv_LASA1_6$socenv_percentage_65_older_6<-as.numeric(LASA1H$PROPORTION_65_OLD
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_percentage_unmaried_4<-as.numeric(LASA1F$PROPORTION_UNMARIED_2008) 
+socenv_LASA1_4$socenv_percentage_unmarried_4<-as.numeric(LASA1F$PROPORTION_UNMARRIED_2008) 
 
 ```    
 
- Percentage of unmaried residents in 2011   
-**Variable name**: socenv_percentage_unmaried_6   
-**Variable description**: Percentage of unmaried residents in residential area in 2011.  
+### **Variable label**: Percentage of unmarried residents in 2011   
+**Variable name**: socenv_percentage_unmarried_6   
+**Variable description**: Percentage of unmarried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -290,12 +291,12 @@ socenv_LASA1_4$socenv_percentage_unmaried_4<-as.numeric(LASA1F$PROPORTION_UNMARI
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_percentage_unmaried_6<-as.numeric(LASA1H$PROPORTION_UNMARIED_2011) 
+socenv_LASA1_6$socenv_percentage_unmarried_6<-as.numeric(LASA1H$PROPORTION_UNMARRIED_2011) 
 ```    
 
- Percentage of maried residents in 2006   
-**Variable name**: socenv_percentage_maried_2006   
-**Variable description**: Percentage of maried residents in residential area in 2006.  
+### **Variable label**: Percentage of married residents in 2006   
+**Variable name**: socenv_percentage_married_2006   
+**Variable description**: Percentage of married residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -309,9 +310,9 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 
 ```    
 
- Percentage of maried residents in 2008   
-**Variable name**: socenv_percentage_maried_4   
-**Variable description**: Percentage of maried residents in residential area in 2008.  
+### **Variable label**: Percentage of married residents in 2008   
+**Variable name**: socenv_percentage_married_4   
+**Variable description**: Percentage of married residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -321,13 +322,13 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_percentage_maried_4<-as.numeric(LASA1F$PROPORTION_MARIED_2008) 
+socenv_LASA1_4$socenv_percentage_married_4<-as.numeric(LASA1F$PROPORTION_MARRIED_2008) 
 
 ```    
 
- Percentage of maried residents in 2011   
-**Variable name**: socenv_percentage_maried_6   
-**Variable description**: Percentage of maried residents in residential area in 2011.  
+### **Variable label**: Percentage of married residents in 2011   
+**Variable name**: socenv_percentage_married_6   
+**Variable description**: Percentage of married residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -337,11 +338,11 @@ socenv_LASA1_4$socenv_percentage_maried_4<-as.numeric(LASA1F$PROPORTION_MARIED_2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_percentage_maried_6<-as.numeric(LASA1H$PROPORTION_MARIED_2011) 
+socenv_LASA1_6$socenv_percentage_married_6<-as.numeric(LASA1H$PROPORTION_MARRIED_2011) 
 
 ```    
 
- Percentage of divorced residents in 2006   
+### **Variable label**: Percentage of divorced residents in 2006   
 **Variable name**: socenv_percentage_divorced_2006   
 **Variable description**: Percentage of divorced residents in residential area in 2006.  
 **Variable type**: decimal  
@@ -358,7 +359,7 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 
 ```    
 
- Percentage of divorced residents in 2008   
+### **Variable label**: Percentage of divorced residents in 2008   
 **Variable name**: socenv_percentage_divorced_4   
 **Variable description**: Percentage of divorced residents in residential area in 2008.  
 **Variable type**: decimal  
@@ -374,7 +375,7 @@ socenv_LASA1_4$socenv_percentage_divorced_4<-as.numeric(LASA1F$PROPORTION_DIVORC
 
 ```    
 
- Percentage of divorced residents in 2011   
+### **Variable label**: Percentage of divorced residents in 2011   
 **Variable name**: socenv_percentage_divorced_6   
 **Variable description**: Percentage of divorced residents in residential area in 2011.  
 **Variable type**: decimal  
@@ -390,7 +391,7 @@ socenv_LASA1_6$socenv_percentage_divorced_6<-as.numeric(LASA1H$PROPORTION_DIVORC
 
 ```    
 
- Percentage of widowed residents in 2006   
+### **Variable label**: Percentage of widowed residents in 2006   
 **Variable name**: socenv_percentage_widowed_2006   
 **Variable description**: Percentage of widowed residents in residential area in 2006.  
 **Variable type**: decimal  
@@ -406,7 +407,7 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 
 ```    
 
- Percentage of widowed residents in 2008     
+### **Variable label**: Percentage of widowed residents in 2008     
 **Variable name**: socenv_percentage_widowed_4   
 **Variable description**: Percentage of widowed residents in residential area in 2008.  
 **Variable type**: decimal  
@@ -422,7 +423,7 @@ socenv_LASA1_4$socenv_percentage_widowed_4<-as.numeric(LASA1F$PROPORTION_WIDOWED
 
 ```    
 
- Percentage of widowed residents in 2011    
+### **Variable label**: Percentage of widowed residents in 2011    
 **Variable name**: socenv_percentage_widowed_6   
 **Variable description**: Percentage of widowed residents in residential area in 2011.  
 **Variable type**: decimal   
@@ -438,7 +439,7 @@ socenv_LASA1_6$socenv_percentage_widowed_6<-as.numeric(LASA1H$PROPORTION_WIDOWED
 
 ```    
 
- Average household size in 2006   
+### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_4   
 **Variable description**: Average household size in residential area in 2006.  
 **Variable type**: integer     
@@ -450,11 +451,11 @@ socenv_LASA1_6$socenv_percentage_widowed_6<-as.numeric(LASA1H$PROPORTION_WIDOWED
 For LASA, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_average_hh_size_4<-as.integer(round(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006)) 
+socenv_LASA1_4$socenv_average_hh_size_4<-as.integer(round(as.numeric(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006))) 
 
 ```    
 
- Average household size in 2009   
+### **Variable label**: Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
 **Variable type**: integer     
@@ -470,7 +471,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```    
 
- Average household size in 2011   
+### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_6   
 **Variable description**: Average household size in residential area in 2011.  
 **Variable type**: integer     
@@ -482,11 +483,11 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_average_hh_size_6<-as.integer(round(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011))   
+socenv_LASA1_6$socenv_average_hh_size_6<-as.integer(round(as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)))   
 
 ```    
 
- Average household size in 2014   
+### **Variable label**: Average household size in 2014   
 **Variable name**: socenv_average_hh_size_2014   
 **Variable description**: Average household size in residential area in 2014.  
 **Variable type**: integer       
@@ -502,7 +503,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```    
 
- Average household size in 2015      
+### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
 **Variable type**: integer       
@@ -518,7 +519,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 ```    
 
- Average household size in 2016      
+### **Variable label**: Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
 **Variable type**: integer       
@@ -537,7 +538,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 
 # Housing
 
- Average value of dwellings in 1000 euros in 2006    
+### **Variable label**: Average value of dwellings in 1000 euros in 2006    
 **Variable name**: socenv_avv_dwellings_4  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2006.    
 **Variable type**: integer   
@@ -553,7 +554,7 @@ socenv_LASA1_4$socenv_avv_dwellings_4<-as.integer(LASA1F$AVERAGE_VALUE_DWELLINGS
 
 ```    
 
- Average value of dwellings in 1000 euros in 2011    
+### **Variable label**: Average value of dwellings in 1000 euros in 2011    
 **Variable name**: socenv_avv_dwellings_6  
 **Variable description**: Average value of dwellings in 1000 euros in residential area in 2011.    
 **Variable type**: integer   
@@ -569,9 +570,10 @@ socenv_LASA1_6$socenv_avv_dwellings_6<-as.integer(LASA1H$AVERAGE_VALUE_DWELLINGS
 
 ```    
 
- Average value of a plot (m2) in euros in 2007 (dwellings)    
+### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
 **Variable name**: socenv_avv_dwelling_m2_2007  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -584,9 +586,10 @@ For LASA, these data are not available.
 
 ```    
 
- Average value of a plot (m2) in euros in 2011 (dwellings)  
+### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2011  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -599,9 +602,10 @@ For LASA, these data are not available.
 
 ```    
 
- Average value of a plot (m2) in euros in 2013 (dwellings)  
+### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2013  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -614,9 +618,10 @@ For LASA, these data are not available.
 
 ```    
 
- Average value of a plot (m2) in euros in 2014 (dwellings)  
+### **Variable label**: Average value of a plot (m2) in euros in 2014 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2014  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2014. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -629,9 +634,10 @@ For LASA, these data are not available.
 
 ```    
 
- Average value of a plot (m2) in euros in 2015 (dwellings)  
+### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2015   
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015. 
+**Variable type**: integer   
 **Variable unit**: euros    
 **Category coding**:   
 
@@ -644,7 +650,7 @@ For LASA, these data are not available.
 
 ```    
 
- Percentage of unoccupied dwellings in 2011   
+### **Variable label**: Percentage of unoccupied dwellings in 2011   
 **Variable name**: socenv_perc_unocc_dwellings_2011
 **Variable description**: Percentage of unoccupied dwellings in residential area in 2011.    
 **Variable type**: decimal   
@@ -660,7 +666,7 @@ For LASA, these data are available for neighbourhoods in 2012, not in 2011.
 
 ```    
 
- Percentage of unoccupied dwellings in 2012   
+### **Variable label**: Percentage of unoccupied dwellings in 2012   
 **Variable name**: socenv_perc_unocc_dwellings_6
 **Variable description**: Percentage of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
@@ -676,7 +682,7 @@ socenv_LASA1_6$socenv_perc_unocc_dwellings_6<-as.numeric(LASA1H$PROPORTION_UNOCC
 
 ```    
 
- Percentage of unoccupied dwellings in 2014   
+### **Variable label**: Percentage of unoccupied dwellings in 2014   
 **Variable name**: socenv_perc_unocc_dwellings_2014
 **Variable description**: Percentage of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
@@ -693,7 +699,7 @@ socenv_LASA1_6$socenv_perc_unocc_dwellings_6<-as.numeric(LASA1H$PROPORTION_UNOCC
 
 # Income
 
- Average income in 1000 euros in 2005  
+### **Variable label**: Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_4  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
 **Variable type**: integer       
@@ -705,11 +711,11 @@ socenv_LASA1_6$socenv_perc_unocc_dwellings_6<-as.numeric(LASA1H$PROPORTION_UNOCC
 For LASA, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_av_inc1000_4<-as.integer(round(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)) 
+socenv_LASA1_4$socenv_av_inc1000_4 <- as.integer(round(as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)))
 
 ```    
 
- Average income in 1000 euros in 2006  
+### **Variable label**: Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
 **Variable type**: integer    
@@ -725,7 +731,7 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011, not in 2
 
 ```    
 
- Average income in 1000 euros in 2011   
+### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_6 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
 **Variable type**: integer       
@@ -738,11 +744,11 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011. This var
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_LASA1_6$socenv_av_inc1000_6<-as.integer(round(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)) 
+socenv_LASA1_6$socenv_av_inc1000_6 <- as.integer(round(as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)))
 
 ```    
 
- Average income in euros in 2006  
+### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
 **Variable type**: integer       
@@ -758,7 +764,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2007  
+### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
 **Variable type**: integer       
@@ -774,7 +780,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2011  
+### **Variable label**: Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
 **Variable type**: integer       
@@ -790,7 +796,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2013  
+### **Variable label**: Average income in euros in 2013  
 **Variable name**: socenv_av_inc_2013  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
 **Variable type**: integer       
@@ -806,7 +812,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2014  
+### **Variable label**: Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
 **Variable type**: integer       
@@ -822,7 +828,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2015  
+### **Variable label**: Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
 **Variable type**: integer       
@@ -838,7 +844,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2016  
+### **Variable label**: Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
 **Variable type**: integer         
@@ -855,7 +861,7 @@ For LASA, these data are not available.
 ```    
 
 
- Average income in 1000 euros in 2005 (dichotomized)  
+### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
 **Variable name**: socenv_av_inc1000dich_4  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
@@ -870,14 +876,14 @@ For LASA, these data are not available.
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by multiplying with average household size in the neighbourhood, and comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(LASA1F$AVERAGE_INCOME_RESIDENTS_2005 >= 23.896, 1, 0)
+socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005*LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006) > 23.896, 1, 0)
 
 ```       
 
- Average income in 1000 euros in 2006 (dichotomized)  
+### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_inc1000dich_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
@@ -897,7 +903,7 @@ socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(LASA1F$AVERAGE_INCOME_RESIDENTS
 
 ```    
 
- Average income in 1000 euros in 2011 (dichotomized)   
+### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
 **Variable name**: socenv_av_inc1000dich_6 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
@@ -911,14 +917,14 @@ socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(LASA1F$AVERAGE_INCOME_RESIDENTS
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by multiplying with average household size in the neighbourhood, and comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS_2011 >= 25.101, 1, 0)
+socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011*LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011) > 25.101, 1, 0)
 
 ```       
 
- Average income in euros in 2006 (dichotomized)  
+### **Variable label**: Average income in euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_incdich_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
@@ -938,7 +944,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```    
 
- Average income in euros in 2007 (dichotomized)  
+### **Variable label**: Average income in euros in 2007 (dichotomized)  
 **Variable name**: socenv_av_incdich_2007
 **Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
@@ -958,7 +964,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```    
 
- Average income in euros in 2011 (dichotomized)  
+### **Variable label**: Average income in euros in 2011 (dichotomized)  
 **Variable name**: socenv_av_incdich_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
@@ -978,7 +984,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```     
 
- Average income in euros in 2013 (dichotomized)  
+### **Variable label**: Average income in euros in 2013 (dichotomized)  
 **Variable name**: socenv_av_incdich_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
@@ -998,7 +1004,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```       
 
- Average income in euros in 2014 (dichotomized) 
+### **Variable label**: Average income in euros in 2014 (dichotomized) 
 **Variable name**: socenv_av_incdich_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)).      
 **Variable type**: integer     
@@ -1018,7 +1024,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```      
 
- Average income in euros in 2015 (dichotomized) 
+### **Variable label**: Average income in euros in 2015 (dichotomized) 
 **Variable name**: socenv_av_incdich_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific net mean household income (OECD)).     
 **Variable type**: integer     
@@ -1038,7 +1044,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```      
 
- Average income in euros in 2016 (dichotomized)  
+### **Variable label**: Average income in euros in 2016 (dichotomized)  
 **Variable name**: socenv_av_incdich_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
 **Variable type**: integer     
@@ -1058,9 +1064,9 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```     
 
- Average household income in euros in 2006
+### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer       
 **Variable unit**: euros   
 **Category coding**:   
@@ -1073,9 +1079,9 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```    
 
- Average household income in euros in 2006
+### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_2006  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
@@ -1089,9 +1095,9 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 ```    
 
 
- Average household income in euros in 2006
+### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_2006  
-**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
@@ -1105,7 +1111,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 ```    
 
 
- Average household income in euros in 2006 (dichotomized)
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
@@ -1121,7 +1127,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 ```    
 
 
- Average household income in euros in 2006 (dichotomized)
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_1000m_2006  
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
@@ -1136,7 +1142,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 ```    
 
- Average household income in euros in 2006 (dichotomized)
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
 **Variable type**: integer     
@@ -1153,9 +1159,9 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(LASA1H$AVERAGE_INCOME_RESIDENTS
 
 
 
- Average income in 1000 euros in 2005 (Z standardised)  
+### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_4  
-**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1).
 **Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
@@ -1166,13 +1172,13 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_LASA1_4$socenv_av_inc1000Z_4 <- ((LASA1F$AVERAGE_INCOME_RESIDENTS_2005-12.3206)/2.42953)
+socenv_LASA1_4$socenv_av_inc1000Z_4 <- (as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)-12.3206)/2.42953
 
 ```       
 
- Average income in 1000 euros in 2006 (Z standardized)  
+### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2006 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1186,9 +1192,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in 1000 euros in 2011 (Z standardized)   
+### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_6 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).   
 **Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
@@ -1199,13 +1205,13 @@ We standardized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_LASA1_6$socenv_av_inc1000Z_6 <- ((LASA1H$AVERAGE_INCOME_RESIDENTS_2011-22.1272)/4.99632)
+socenv_LASA1_6$socenv_av_inc1000Z_6 <- (as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)-22.1272)/4.99632
 
 ```    
 
- Average income in euros in 2006 (Z standardized)  
+### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2006  
-**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
+**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1). 
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1223,9 +1229,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2007 (Z standardized) 
+### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
-**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
+**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1).        
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1239,9 +1245,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2011 (Z standardized)  
+### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
-**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
+**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).        
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1255,9 +1261,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2013 (Z standardized)  
+### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
-**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
+**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1).      
 **Variable type**: integer    
 **Variable unit**:    
 **Category coding**:   
@@ -1271,9 +1277,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2014 (Z standardized) 
+### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
-**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
+**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1).       
 **Variable type**: integer       
 **Variable unit**:  
 **Category coding**:   
@@ -1287,9 +1293,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2015 (Z standardized) 
+### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
-**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
+**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1).    
 **Variable type**: integer      
 **Variable unit**:    
 **Category coding**:   
@@ -1303,9 +1309,9 @@ For LASA, these data are not available.
 
 ```    
 
- Average income in euros in 2016 (Z standardized)  
+### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
-**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
+**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1).    
 **Variable type**: integer       
 **Variable unit**:     
 **Category coding**:   
@@ -1319,9 +1325,9 @@ For LASA, these data are not available.
 
 ```  
 
- Average household income in euros in 2006 (Z standardized)
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).     
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -1335,9 +1341,9 @@ For LASA, these data are not available.
 ```    
 
 
- Average household income in euros in 2006 (Z standardized)
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_1000m_2006  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).    
 **Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
@@ -1350,7 +1356,7 @@ For LASA, these data are not available.
 
 ```    
 
- Average household income in euros in 2006 (Z standardized)
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_2000m_2006  
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
 **Variable type**: integer       
@@ -1366,7 +1372,7 @@ For LASA, these data are not available.
 
 
 
- Percentage of income recipients in 2005
+### **Variable label**: Percentage of income recipients in 2005
 **Variable name**: socenv_perc_inc_recipients_4  
 **Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
@@ -1381,7 +1387,7 @@ For LASA, these data are available for neighbourhoods in 2005 and 2011. This var
 socenv_LASA1_4$socenv_perc_inc_recipients_4<-as.numeric(LASA1F$PROPORTION_INCOME_RECIPIENTS_2005) 
 ```    
 
- Percentage of income recipients in 2011  
+### **Variable label**: Percentage of income recipients in 2011  
 **Variable name**: socenv_perc_inc_recipients_6  
 **Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
@@ -1398,7 +1404,7 @@ socenv_LASA1_6$socenv_perc_inc_recipients_6<-as.numeric(LASA1H$PROPORTION_INCOME
 
 # Unemployment
 
- Percentage of unemployed residents in 2006  
+### **Variable label**: Percentage of unemployed residents in 2006  
 **Variable name**: socenv_perc_unemployment_2006  
 **Variable description**: Percentage of unemployed residents in residential area in 2006.    
 **Variable type**: decimal     
@@ -1414,7 +1420,7 @@ For LASA, these data are not available.
 
 ```    
 
- Percentage of unemployed residents in 2007    
+### **Variable label**: Percentage of unemployed residents in 2007    
 **Variable name**: socenv_perc_unemployment_2007    
 **Variable description**: Percentage of unemployed residents in residential area in 2007.    
 **Variable type**: decimal     
@@ -1430,7 +1436,7 @@ For LASA, these data are not available.
 
 ```    
 
- Percentage of unemployed residents in 2011    
+### **Variable label**: Percentage of unemployed residents in 2011    
 **Variable name**: socenv_perc_unemployment_2011    
 **Variable description**: Percentage of unemployed residents in residential area in 2011.    
 **Variable type**: decimal     
@@ -1446,7 +1452,7 @@ For LASA, these data are not available.
 
 ```    
 
- Percentage of unemployed residents in 2014  
+### **Variable label**: Percentage of unemployed residents in 2014  
 **Variable name**: socenv_perc_unemployment_2014  
 **Variable description**: Percentage of unemployed residents in residential area in 2014.    
 **Variable type**: decimal     
@@ -1462,7 +1468,7 @@ For LASA, these data are not available.
 
 ```    
 
- Percentage of unemployed residents in 2015  
+### **Variable label**: Percentage of unemployed residents in 2015  
 **Variable name**: socenv_perc_unemployment_2015  
 **Variable description**: Percentage of unemployed residents in residential area in 2015.    
 **Variable type**: decimal     
@@ -1480,7 +1486,7 @@ For LASA, these data are not available.
 
 # Social security
 
- Percentage of social security beneficiaries in 2006  
+### **Variable label**: Percentage of social security beneficiaries in 2006  
 **Variable name**: socenv_percentage_socsecben_4   
 **Variable description**: Percentage of social security beneficiaries in residential area in 2006.    
 **Variable type**: decimal     
@@ -1496,7 +1502,7 @@ socenv_LASA1_4$socenv_percentage_socsecben_4<-as.numeric(LASA1F$PROPORTION_SOCSE
 
 ```    
 
- Percentage of social security beneficiaries in 2007    
+### **Variable label**: Percentage of social security beneficiaries in 2007    
 **Variable name**: socenv_percentage_socsecben_2007   
 **Variable description**: Percentage of social security beneficiaries in residential area in 2007.    
 **Variable type**: decimal     
@@ -1512,7 +1518,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
- Percentage of social security beneficiaries in 2010  
+### **Variable label**: Percentage of social security beneficiaries in 2010  
 **Variable name**: socenv_percentage_socsecben_6   
 **Variable description**: Percentage of social security beneficiaries in residential area in 2010.    
 **Variable type**: decimal     
@@ -1527,7 +1533,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010. This var
 socenv_LASA1_6$socenv_percentage_socsecben_6<-as.numeric(LASA1H$PROPORTION_SOCSECBEN_2010)  
 ```    
 
- Percentage of social security beneficiaries in 2011  
+### **Variable label**: Percentage of social security beneficiaries in 2011  
 **Variable name**: socenv_percentage_socsecben_2011   
 **Variable description**: Percentage of social security beneficiaries in residential area in 2011.    
 **Variable type**: decimal     
@@ -1543,7 +1549,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
- Percentage of social security beneficiaries in 2015  
+### **Variable label**: Percentage of social security beneficiaries in 2015  
 **Variable name**: socenv_percentage_socsecben_2015   
 **Variable description**: Percentage of social security beneficiaries in residential area in 2015.    
 **Variable type**: decimal     
@@ -1559,7 +1565,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
- Percentage of social security beneficiaries in 2016  
+### **Variable label**: Percentage of social security beneficiaries in 2016  
 **Variable name**: socenv_percentage_socsecben_2016   
 **Variable description**: Percentage of social security beneficiaries in residential area in 2016.    
 **Variable type**: decimal     
@@ -1575,7 +1581,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 
 ```    
 
- Percentage of residents with disability benefit in 2006  
+### **Variable label**: Percentage of residents with disability benefit in 2006  
 **Variable name**: socenv_percentage_disben_4   
 **Variable description**: Percentage of residents with a disability benefit in residential area in 2006.    
 **Variable type**: decimal     
@@ -1590,7 +1596,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010. This var
 socenv_LASA1_4$socenv_percentage_disben_4<-as.numeric(LASA1F$PROPORTION_DISABILITY_BENEFIT_2006)  
 ```    
 
- Percentage of residents with disability benefit in 2010  
+### **Variable label**: Percentage of residents with disability benefit in 2010  
 **Variable name**: socenv_percentage_disben_6   
 **Variable description**: Percentage of residents with a disability benefit in residential area in 2010.    
 **Variable type**: decimal     
@@ -1606,7 +1612,7 @@ socenv_LASA1_6$socenv_percentage_disben_6<-as.numeric(LASA1H$PROPORTION_DISABILI
 ```    
 
 
- Percentage of residents with unemployment benefit in 2006 
+### **Variable label**: Percentage of residents with unemployment benefit in 2006 
 **Variable name**: socenv_percentage_unemplben_4   
 **Variable description**: Percentage of residents with a unemployment benefit in residential area in 2006.    
 **Variable type**: decimal     
@@ -1621,7 +1627,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010. This var
 socenv_LASA1_4$socenv_percentage_unemplben_4<-as.numeric(LASA1F$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
 ```    
 
- Percentage of residents with unemployment benefit in 2010  
+### **Variable label**: Percentage of residents with unemployment benefit in 2010  
 **Variable name**: socenv_percentage_unemplben_6   
 **Variable description**: Percentage of residents with a unemployment benefit in residential area in 2010.    
 **Variable type**: decimal     
@@ -1638,7 +1644,7 @@ socenv_LASA1_6$socenv_percentage_unemplben_6<-as.numeric(LASA1H$PROPORTION_UNEMP
 
 # Educational level  
 
- Percentage of low educated residents in 2011  
+### **Variable label**: Percentage of low educated residents in 2011  
 **Variable name**: socenv_perc_low_education_2011  
 **Variable description**: Percentage of low educated residents in residential area in 2011.    
 **Variable type**: decimal     
@@ -1654,7 +1660,7 @@ For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
- Percentage of low educated residents in 2014 
+### **Variable label**: Percentage of low educated residents in 2014 
 **Variable name**: socenv_perc_low_education_6  
 **Variable description**: Percentage of low educated residents in residential area in 2014.    
 **Variable type**: decimal     
@@ -1670,7 +1676,7 @@ socenv_LASA1_6$socenv_perc_low_education_6<-as.numeric(LASA1H$PROPORTION_LOW_EDU
 
 ```    
 
- Percentage of intermediate educated residents in 2011  
+### **Variable label**: Percentage of intermediate educated residents in 2011  
 **Variable name**: socenv_perc_itm_education_2011  
 **Variable description**: Percentage of intermediate educated residents in residential area in 2011.    
 **Variable type**: decimal     
@@ -1686,7 +1692,7 @@ For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
- Percentage of intermediate educated residents in 2014  
+### **Variable label**: Percentage of intermediate educated residents in 2014  
 **Variable name**: socenv_perc_itm_education_6  
 **Variable description**: Percentage of intermediate educated residents in residential area in 2014.   
 **Variable type**: decimal     
@@ -1701,7 +1707,7 @@ For LASA, these data are available for 4-digit postal codes in 2014. This variab
 socenv_LASA1_6$socenv_perc_itm_education_6<-as.numeric(LASA1H$PROPORTION_INTERMEDIATE_EDUCATION_2014)
 ```    
 
- Percentage of high educated residents in 2011  
+### **Variable label**: Percentage of high educated residents in 2011  
 **Variable name**: socenv_perc_high_education_2011  
 **Variable description**: Percentage of high educated residents in residential area in 2011.    
 **Variable type**: decimal     
@@ -1717,7 +1723,7 @@ For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 
 ```    
 
- Percentage of high educated residents in 2014  
+### **Variable label**: Percentage of high educated residents in 2014  
 **Variable name**: socenv_perc_high_education_6  
 **Variable description**: Percentage of high educated residents in residential area in 2014.    
 **Variable type**: decimal     
@@ -1734,7 +1740,7 @@ socenv_LASA1_6$socenv_perc_high_education_6<-as.numeric(LASA1H$PROPORTION_HIGH_E
 
 # Immigrants and ethnic minority groups
 
- Percentage of immigrants in 2011  
+### **Variable label**: Percentage of immigrants in 2011  
 **Variable name**: socenv_perc_immigrants_2011
 **Variable description**: Percentage of immigrants in residential area in 2011.      
 **Variable type**: decimal     
@@ -1750,7 +1756,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of western immigrants in 2006  
+### **Variable label**: Percentage of western immigrants in 2006  
 **Variable name**: socenv_perc_west_imgs_2006  
 **Variable description**: Percentage of western immigrants in residential area in 2006.      
 **Variable type**: decimal     
@@ -1766,7 +1772,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of western immigrants in 2011  
+### **Variable label**: Percentage of western immigrants in 2011  
 **Variable name**: socenv_perc_west_imgs_2011  
 **Variable description**: Percentage of western immigrants in residential area in 2011.      
 **Variable type**: decimal     
@@ -1782,7 +1788,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of non-western immigrants in 2006  
+### **Variable label**: Percentage of non-western immigrants in 2006  
 **Variable name**: socenv_perc_nonwest_imgs_2006  
 **Variable description**: Percentage of non-western immigrants in residential area in 2006.      
 **Variable type**: decimal     
@@ -1798,7 +1804,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of non-western immigrants in 2011  
+### **Variable label**: Percentage of non-western immigrants in 2011  
 **Variable name**: socenv_perc_nonwest_imgs_2011  
 **Variable description**: Percentage of non-western immigrants in residential area in 2011.      
 **Variable type**: decimal     
@@ -1814,7 +1820,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Moroccan origin in 2006  
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2006  
 **Variable name**: socenv_perc_moroccan_2006  
 **Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2006.    
 **Variable type**: decimal     
@@ -1830,9 +1836,10 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Moroccan origin in 2011  
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2011  
 **Variable name**: socenv_perc_moroccan_2011  
-**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2011.    **Variable type**: decimal     
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2011.    
+**Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
@@ -1845,7 +1852,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Antillian and Aruban origin in 2006  
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2006  
 **Variable name**: socenv_perc_antaru_2006  
 **Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2006.      
 **Variable type**: decimal     
@@ -1861,7 +1868,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Antillian and Aruban origin in 2011  
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2011  
 **Variable name**: socenv_perc_antaru_2011  
 **Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2011.      
 **Variable type**: decimal     
@@ -1877,7 +1884,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Surinamese origin in 2006  
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2006  
 **Variable name**: socenv_perc_surinamese_2006  
 **Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2006.  
 **Variable type**: decimal     
@@ -1893,7 +1900,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Surinamese origin in 2011  
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2011  
 **Variable name**: socenv_perc_surinamese_2011  
 **Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2011.  
 **Variable type**: decimal     
@@ -1909,7 +1916,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Turkish origin in 2006  
+### **Variable label**: Percentage of immigrants of Turkish origin in 2006  
 **Variable name**: socenv_perc_turkey_2006  
 **Variable description**: Percentage of immigrants of Turkish origin in residential area in 2006.      
 **Variable type**: decimal     
@@ -1925,7 +1932,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of Turkish origin in 2011  
+### **Variable label**: Percentage of immigrants of Turkish origin in 2011  
 **Variable name**: socenv_perc_turkey_2011  
 **Variable description**: Percentage of immigrants of Turkish origin in residential area in 2011.      
 **Variable type**: decimal     
@@ -1941,7 +1948,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of other origin in 2006  
+### **Variable label**: Percentage of immigrants of other origin in 2006  
 **Variable name**: socenv_perc_other_2006  
 **Variable description**: Percentage of immigrants of other origin in residential area in 2006.      
 **Variable type**: decimal     
@@ -1957,7 +1964,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of immigrants of other origin in 2011  
+### **Variable label**: Percentage of immigrants of other origin in 2011  
 **Variable name**: socenv_perc_other_2011  
 **Variable description**: Percentage of immigrants of other origin in residential area in 2011.      
 **Variable type**: decimal     
@@ -1973,7 +1980,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of foreigners in 2007  
+### **Variable label**: Percentage of foreigners in 2007  
 **Variable name**: socenv_perc_foreigners_2007  
 **Variable description**: Percentage of foreigners in residential area in 2007.      
 **Variable type**: decimal     
@@ -1989,7 +1996,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
- Percentage of foreigners in 2011  
+### **Variable label**: Percentage of foreigners in 2011  
 **Variable name**: socenv_perc_foreigners_2011  
 **Variable description**: Percentage of foreigners in residential area in 2011.      
 **Variable type**: decimal     
@@ -2007,7 +2014,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 # Crime  
 
- Number of criminal offenses per 1000 residents in 2007  
+### **Variable label**: Number of criminal offenses per 1000 residents in 2007  
 **Variable name**: socenv_crimoff_2007    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007. 
 **Variable type**: integer    
@@ -2023,7 +2030,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2007.
 
 ```    
 
- Number of criminal offenses per 1000 residents in 2011  
+### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
 **Variable name**: socenv_crimoff_6    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011.  
 **Variable type**: integer     
@@ -2038,7 +2045,7 @@ For LASA, these data are available for neighbourhoods in 2011. This variable was
 socenv_LASA1_6$socenv_crimoff_6<-as.integer(LASA1H$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011)
 ```    
 
- Number of criminal offenses per 1000 residents in 2014    
+### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
 **Variable name**: socenv_crimoff_2014    
 **Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.  
 **Variable type**: integer     
@@ -2054,9 +2061,10 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2014.
 
 ```    
 
- Number of criminal offenses per 1000 residents in 2015    
+### **Variable label**: Number of criminal offenses per 1000 residents in 2015    
 **Variable name**: socenv_crimoff_2015    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015. **Variable type**: integer     
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015. 
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -2069,9 +2077,10 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2015.
 
 ```    
 
- Number of criminal offenses per 1000 residents in 2016    
+### **Variable label**: Number of criminal offenses per 1000 residents in 2016    
 **Variable name**: socenv_crimoff_2016    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016. **Variable type**: integer     
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016. 
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
@@ -2084,9 +2093,10 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 
 ```    
 
- Number of violent crimes per 1000 residents in 2007  
+### **Variable label**: Number of violent crimes per 1000 residents in 2007  
 **Variable name**: socenv_violentcrim_2007    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.    **Variable type**: integer      
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -2099,9 +2109,10 @@ For LASA, these data are not available.
 
 ```    
 
- Number of violent crimes per 1000 residents in 2011    
+### **Variable label**: Number of violent crimes per 1000 residents in 2011    
 **Variable name**: socenv_violentcrim_2011    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.    **Variable type**: integer      
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -2114,9 +2125,10 @@ For LASA, these data are not available.
 
 ```    
 
- Number of violent crimes per 1000 residents in 2016    
+### **Variable label**: Number of violent crimes per 1000 residents in 2016    
 **Variable name**: socenv_violentcrim_2016   
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.    **Variable type**: integer      
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -2129,7 +2141,7 @@ For LASA, these data are not available.
 
 ```    
 
- Number of thefts per 1000 residents in 2007  
+### **Variable label**: Number of thefts per 1000 residents in 2007  
 **Variable name**: socenv_thefts_2007    
 **Variable description**: Number of thefts per 1000 residents in residential area in 2007.        
 **Variable type**: integer     
@@ -2145,7 +2157,7 @@ For LASA, these data are not available.
 
 ```    
 
- Number of thefts per 1000 residents in 2011    
+### **Variable label**: Number of thefts per 1000 residents in 2011    
 **Variable name**: socenv_thefts_2011    
 **Variable description**: Number of thefts per 1000 residents in residential area in 2011.       
 **Variable type**: integer     
@@ -2161,7 +2173,7 @@ For LASA, these data are not available.
 
 ```    
 
- Number of thefts per 1000 residents in 2016  
+### **Variable label**: Number of thefts per 1000 residents in 2016  
 **Variable name**: socenv_thefts_2016    
 **Variable description**: Number of thefts per 1000 residents in residential area in 2016.        
 **Variable type**: integer     
@@ -2177,7 +2189,7 @@ For LASA, these data are not available.
 
 ```    
 
- Number of vandalism and public disorder per 1000 residents in 2011  
+### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2011  
 **Variable name**: socenv_vandalism_po_6   
 **Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2011.        
 **Variable type**: integer     
@@ -2192,7 +2204,7 @@ For LASA, these data are available for neighbourhoods in 2011. This variable was
 socenv_LASA1_6$socenv_vandalism_po_6<-as.integer(LASA1H$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
 ```    
 
- Number of vandalism and public disorder per 1000 residents in 2016    
+### **Variable label**: Number of vandalism and public disorder per 1000 residents in 2016    
 **Variable name**: socenv_vandalism_po_2016   
 **Variable description**: Number of vandalism and public disorder per 1000 residents in residential area in 2016.        
 **Variable type**: integer     
@@ -2208,7 +2220,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 
 ```    
 
- Number of violent crimes and sexual offenses per 1000 residents in 2011    
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2011    
 **Variable name**: socenv_violentcrim_sexoff_6    
 **Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2011.         
 **Variable type**: integer      
@@ -2223,7 +2235,7 @@ For LASA, these data are available for neighbourhoods in 2011. This variable was
 socenv_LASA1_6$socenv_violentcrim_sexoff_6<-as.integer(LASA1H$NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011)
 ```     
 
- Number of violent crimes and sexual offenses per 1000 residents in 2016  
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents in 2016  
 **Variable name**: socenv_violentcrim_sexoff_2016   
 **Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area in 2016.        
 **Variable type**: integer      
@@ -2239,7 +2251,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 
 ```    
 
- Number of vandalism per 1000 residents in 2011   
+### **Variable label**: Number of vandalism per 1000 residents in 2011   
 **Variable name**: socenv_vandalism_2011    
 **Variable description**: Number of vandalism per 1000 residents in residential area in 2011.        
 **Variable type**: integer     
@@ -2255,7 +2267,7 @@ For LASA, these data are not available.
 
 ```    
 
- Number of vandalism per 1000 residents in 2016    
+### **Variable label**: Number of vandalism per 1000 residents in 2016    
 **Variable name**: socenv_vandalism_2016    
 **Variable description**: Number of vandalism per 1000 residents in residential area in 2016.          
 **Variable type**: integer     
@@ -2271,7 +2283,7 @@ For LASA, these data are not available.
 
 ```    
 
- Number of public disorder per 1000 residents in 2011    
+### **Variable label**: Number of public disorder per 1000 residents in 2011    
 **Variable name**: socenv_po_2011    
 **Variable description**: Number of public disorder per 1000 residents in residential area in 2011.    
 **Variable type**: integer      
@@ -2287,9 +2299,10 @@ For LASA, these data are not available.
 
 ```    
 
- Number of public disorder per 1000 residents in 2016    
+### **Variable label**: Number of public disorder per 1000 residents in 2016    
 **Variable name**: socenv_po_2016    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   **Variable type**: integer      
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -2302,12 +2315,11 @@ For LASA, these data are not available.
 
 ```    
 
+#Area indicators
 
-
-
- Area indicator: city  
+### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2004   
-**Variable description**: City indicator in 2004        
+**Variable description**: City indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2321,9 +2333,9 @@ For LASA, these data are not available.
 ```  
 
 
- Area indicator: city  
+### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_4   
-**Variable description**: City indicator in 2006       
+**Variable description**: City indicator in 2006.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2338,7 +2350,7 @@ socenv_LASA1_4$socenv_city_4<-as.integer(LASA1F$city)
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2007   
-**Variable description**: City indicator in 2007       
+**Variable description**: City indicator in 2007.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2352,9 +2364,9 @@ socenv_LASA1_4$socenv_city_4<-as.integer(LASA1F$city)
 ```  
 
 
- Area indicator: city  
+### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2009   
-**Variable description**: City indicator in 2009        
+**Variable description**: City indicator in 2009.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2368,9 +2380,9 @@ socenv_LASA1_4$socenv_city_4<-as.integer(LASA1F$city)
 ```  
 
 
- Area indicator: city  
+### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_6   
-**Variable description**: City indicator in 2011        
+**Variable description**: City indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2385,9 +2397,9 @@ socenv_LASA1_6$socenv_city_6<-as.integer(LASA1H$city)
 ``` 
 
 
- Area indicator: city  
+### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2014   
-**Variable description**: City indicator in 2014        
+**Variable description**: City indicator in 2014.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2402,7 +2414,7 @@ socenv_LASA1_6$socenv_city_6<-as.integer(LASA1H$city)
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2004   
-**Variable description**: Municipality indicator in 2004        
+**Variable description**: Municipality indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2414,9 +2426,9 @@ socenv_LASA1_6$socenv_city_6<-as.integer(LASA1H$city)
 
 ``` 
 
- Area indicator: municipality  
+### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_4   
-**Variable description**: Municipality indicator in 2006        
+**Variable description**: Municipality indicator in 2006.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2432,9 +2444,25 @@ socenv_LASA1_4$socenv_municipality_4<-as.integer(LASA1F$municipality)
 
 
 
- Area indicator: municipality  
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2007  
+**Variable description**: Municipality indicator in 2007.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_6   
-**Variable description**: Municipality indicator in 2011        
+**Variable description**: Municipality indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2451,7 +2479,7 @@ socenv_LASA1_6$socenv_municipality_6<-as.integer(LASA1H$municipality)
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2014   
-**Variable description**: Municipality indicator in 2014        
+**Variable description**: Municipality indicator in 2014.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2463,9 +2491,9 @@ socenv_LASA1_6$socenv_municipality_6<-as.integer(LASA1H$municipality)
 
 ``` 
 
- Area indicator: municipality  
+### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2016   
-**Variable description**: Municipality indicator in 2016        
+**Variable description**: Municipality indicator in 2016.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2479,9 +2507,9 @@ socenv_LASA1_6$socenv_municipality_6<-as.integer(LASA1H$municipality)
 ```  
 
 
- Area indicator: neighbourhood 
+### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2004
-**Variable description**: Neighbourhood indicator in 2004        
+**Variable description**: Neighbourhood indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2494,9 +2522,9 @@ socenv_LASA1_6$socenv_municipality_6<-as.integer(LASA1H$municipality)
 ```  
 
 
- Area indicator: neighbourhood 
+### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_4
-**Variable description**: Neighbourhood indicator in 2006        
+**Variable description**: Neighbourhood indicator in 2006.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2512,7 +2540,7 @@ socenv_LASA1_4$socenv_neighbourhood_4<-as.integer(LASA1F$neighbourhood)
 
 ### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2007
-**Variable description**: Neighbourhood indicator in 2007        
+**Variable description**: Neighbourhood indicator in 2007.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2525,9 +2553,9 @@ socenv_LASA1_4$socenv_neighbourhood_4<-as.integer(LASA1F$neighbourhood)
 
 ``` 
 
- Area indicator: neighbourhood  
+### **Variable label**: Area indicator: neighbourhood  
 **Variable name**: socenv_neighbourhood_2009   
-**Variable description**: Neighbourhood indicator in 2009       
+**Variable description**: Neighbourhood indicator in 2009.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2541,9 +2569,9 @@ socenv_LASA1_4$socenv_neighbourhood_4<-as.integer(LASA1F$neighbourhood)
 ```
 
 
- Area indicator: neighbourhood 
+### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_6
-**Variable description**: Neighbourhood indicator in 2011        
+**Variable description**: Neighbourhood indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2557,9 +2585,9 @@ socenv_LASA1_6$socenv_neighbourhood_6<-as.integer(LASA1H$neighbourhood)
 ```  
 
 
- Area indicator: neighbourhood 
+### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2014
-**Variable description**: Neighbourhood indicator in 2014       
+**Variable description**: Neighbourhood indicator in 2014.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2573,9 +2601,9 @@ socenv_LASA1_6$socenv_neighbourhood_6<-as.integer(LASA1H$neighbourhood)
 ``` 
 
 
- Area indicator: 4-digit postal code 
+### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_2004
-**Variable description**: 4-digit postal code (PC4) indicator in 2004        
+**Variable description**: 4-digit postal code (PC4) indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2590,9 +2618,9 @@ socenv_LASA1_6$socenv_neighbourhood_6<-as.integer(LASA1H$neighbourhood)
 
 
 
- Area indicator: 4-digit postal code 
+### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_4
-**Variable description**: 4-digit postal code (PC4) indicator in 2006        
+**Variable description**: 4-digit postal code (PC4) indicator in 2006.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2606,9 +2634,9 @@ socenv_LASA1_4$socenv_PC4_4<-as.integer(LASA1F$PC4)
 
 ```  
 
- Area indicator: 4-digit postal code 
+### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_6
-**Variable description**: 4-digit postal code (PC4) indicator in 2011      
+**Variable description**: 4-digit postal code (PC4) indicator in 2011.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2624,9 +2652,9 @@ socenv_LASA1_6$socenv_PC4_6<-as.integer(LASA1H$PC4)
 
 
 
- Area indicator: 4-digit postal code 
+### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_2011
-**Variable description**: 4-digit postal code (PC4) indicator in 2014     
+**Variable description**: 4-digit postal code (PC4) indicator in 2014.     
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2641,9 +2669,9 @@ socenv_LASA1_6$socenv_PC4_6<-as.integer(LASA1H$PC4)
 
 
 
- Area indicator: 6-digit postal code
+### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_2004
-**Variable description**: 6-digit postal code (PC6) indicator in 2004       
+**Variable description**: 6-digit postal code (PC6) indicator in 2004.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2659,9 +2687,9 @@ For LASA, the indicator variables start with 22.
 
 
 
- Area indicator: 6-digit postal code
+### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_4
-**Variable description**: 6-digit postal code (PC6) indicator in 2006       
+**Variable description**: 6-digit postal code (PC6) indicator in 2006.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2676,9 +2704,9 @@ socenv_LASA1_4$socenv_PC6_4<-as.integer(LASA1F$PC6)
 ```  
 
 
- Area indicator: 6-digit postal code
+### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_6
-**Variable description**: 6-digit postal code (PC6) indicator in 2011      
+**Variable description**: 6-digit postal code (PC6) indicator in 2011.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2693,9 +2721,9 @@ socenv_LASA1_6$socenv_PC6_6<-as.integer(LASA1H$PC6)
 ```  
 
 
- Area indicator: 6-digit postal code
+### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_2014
-**Variable description**: 6-digit postal code (PC6) indicator in 2014      
+**Variable description**: 6-digit postal code (PC6) indicator in 2014.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2712,7 +2740,7 @@ For LASA, the indicator variables start with 22.
 
 ### **Variable label**: Area indicator: 5-digit postal code 
 **Variable name**: socenv_PC5_2007 
-**Variable description**: 5-digit postal code (PC5) indicator in 2007        
+**Variable description**: 5-digit postal code (PC5) indicator in 2007.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2729,7 +2757,7 @@ For LASA, the indicator variables start with 22.
 
 ### **Variable label**: Area indicator: 5-digit postal code 
 **Variable name**: socenv_PC5_2011 
-**Variable description**: 5-digit postal code (PC5) indicator in 2011        
+**Variable description**: 5-digit postal code (PC5) indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
