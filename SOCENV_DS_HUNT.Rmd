@@ -42,7 +42,7 @@ opal.logout(erasmus_opal)
 7. [Educational level](#Educational level)  
 8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
 9. [Crime](#Crime)
-10. [Area indicators] (#Area indicators)
+10. [indicators] (#Area indicators)
   
 
 # Urbanization grade
@@ -2315,7 +2315,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Harmonization comment**:  For HUNT, the indicator variables start with 44.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
+socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality + 44000000)
 
 ```  
 
