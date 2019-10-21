@@ -18,7 +18,7 @@ output: html_document
 7. [Educational level](#Educational level)  
 8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)  
 9. [Crime](#Crime)
-10. [Area identicators] (#Area identicators)
+10. [Area indicators] (#Area indicators)
   
 
 # Urbanization grade
@@ -2154,7 +2154,7 @@ output: html_document
 
 
 
-#Area identicators
+#Area indicators
 
 ### **Variable label**: Area indicator: city 
 **Variable name**: socenv_city_2004    
