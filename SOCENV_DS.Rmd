@@ -12,7 +12,7 @@ output: html_document
 1. [Urbanization grade](#Urbanzation grade)  
 2. [Demographics](#Demographics)  
 3. [Housing](#Housing)  
-4. [](#Income)  
+4. [Income](#Income)  
 5. [Unemployment](#Unemployment)  
 6. [Social security](#Social security)  
 7. [Educational level](#Educational level)  
