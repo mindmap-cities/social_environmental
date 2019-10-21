@@ -19,7 +19,7 @@ opal.assign.table.tibble(erasmus_opal, 'HUNT2', 'HUNT.HUNT2', variables=list('')
 HUNT2<- opal.execute(erasmus_opal,'HUNT2')
 
 # HUNT3
-opal.assign.table.tibble(erasmus_opal, 'HUNT3_socioenviro_april2019', 'HUNT.HUNT3_socioenviro_april2019',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_MARIED_2006","PROPORTION_DIVORCED_2006","PROPORTION_WIDOWED_2006","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_INCOME_2006","UNEMPLOYMENT_RATE_2006","PROPORTION_SOCSECBEN_2006","PROPORTION_UNOCCUPIED_DWELLINGS_2011","PROPORTION_LOW_EDUCATION_2011","PROPORTION_INTERMEDIATE_EDUCATION_2011","PROPORTION_HIGH_EDUCATION_2011","municipality"))
+opal.assign.table.tibble(erasmus_opal, 'HUNT3_socioenviro_april2019', 'HUNT.HUNT3_socioenviro_april2019',variables = list("URBANIZATON_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_MARRIED_2006","PROPORTION_DIVORCED_2006","PROPORTION_WIDOWED_2006","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_INCOME_2006","UNEMPLOYMENT_RATE_2006","PROPORTION_SOCSECBEN_2006","PROPORTION_UNOCCUPIED_DWELLINGS_2011","PROPORTION_LOW_EDUCATION_2011","PROPORTION_INTERMEDIATE_EDUCATION_2011","PROPORTION_HIGH_EDUCATION_2011","municipality"))
 HUNT3 <- opal.execute(erasmus_opal,'HUNT3_socioenviro_april2019')
 
 ```
@@ -41,7 +41,8 @@ opal.logout(erasmus_opal)
 6. [Social security](#Social security)  
 7. [Educational level](#Educational level)  
 8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
-9. [Crime](#Crime)  
+9. [Crime](#Crime)
+10. [Area indicators] (#Area indicators)
   
 
 # Urbanization grade
@@ -59,7 +60,7 @@ For HUNT, urbanization grade data are available for municipalities in 2006. Thes
 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2$socenv_urbanization_grade_2 <-as.integer(HUNT3$URBANIZATION_GRADE_2006)
+socenv_HUNT_2$socenv_urbanization_grade_2 <-as.integer(round(HUNT3$URBANIZATON_GRADE_2006))
 ```  
 
 ### **Variable label**: Urbanization grade in 2007 
@@ -230,9 +231,9 @@ socenv_HUNT_2$socenv_percentage_65_older_2<-as.numeric(HUNT3$PROPORTION_65_OLDER
 
 ```    
 
-### **Variable label**: Percentage of unmaried residents in 2008   
-**Variable name**: socenv_percentage_unmaried_2008   
-**Variable description**: Percentage of unmaried residents in residential area in 2008.  
+### **Variable label**: Percentage of unmarried residents in 2008   
+**Variable name**: socenv_percentage_unmarried_2008   
+**Variable description**: Percentage of unmarried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -245,9 +246,9 @@ socenv_HUNT_2$socenv_percentage_65_older_2<-as.numeric(HUNT3$PROPORTION_65_OLDER
 
 ```    
 
-### **Variable label**: Percentage of unmaried residents in 2011   
-**Variable name**: socenv_percentage_unmaried_2011   
-**Variable description**: Percentage of unmaried residents in residential area in 2011.  
+### **Variable label**: Percentage of unmarried residents in 2011   
+**Variable name**: socenv_percentage_unmarried_2011   
+**Variable description**: Percentage of unmarried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -259,9 +260,9 @@ socenv_HUNT_2$socenv_percentage_65_older_2<-as.numeric(HUNT3$PROPORTION_65_OLDER
 #This is where the R-script will be written  
 ```    
 
-### **Variable label**: Percentage of maried residents in 2006   
-**Variable name**: socenv_percentage_maried_2   
-**Variable description**: Percentage of maried residents in residential area in 2006.  
+### **Variable label**: Percentage of married residents in 2006   
+**Variable name**: socenv_percentage_married_2   
+**Variable description**: Percentage of married residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -271,12 +272,12 @@ socenv_HUNT_2$socenv_percentage_65_older_2<-as.numeric(HUNT3$PROPORTION_65_OLDER
 For HUNT, these data are available for municipalties in 2006. This variable was calculated by: number of married residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2$socenv_percentage_maried_2<-as.numeric(HUNT3$PROPORTION_MARIED_2006) 
+socenv_HUNT_2$socenv_percentage_married_2<-as.numeric(HUNT3$PROPORTION_MARRIED_2006) 
 ```    
 
-### **Variable label**: Percentage of maried residents in 2008   
-**Variable name**: socenv_percentage_maried_2008   
-**Variable description**: Percentage of maried residents in residential area in 2008.  
+### **Variable label**: Percentage of married residents in 2008   
+**Variable name**: socenv_percentage_married_2008   
+**Variable description**: Percentage of married residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -289,9 +290,9 @@ socenv_HUNT_2$socenv_percentage_maried_2<-as.numeric(HUNT3$PROPORTION_MARIED_200
 
 ```    
 
-### **Variable label**: Percentage of maried residents in 2011   
-**Variable name**: socenv_percentage_maried_2011   
-**Variable description**: Percentage of maried residents in residential area in 2011.  
+### **Variable label**: Percentage of married residents in 2011   
+**Variable name**: socenv_percentage_married_2011   
+**Variable description**: Percentage of married residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
@@ -404,7 +405,7 @@ socenv_HUNT_2$socenv_percentage_widowed_2<-as.numeric(HUNT3$PROPORTION_WIDOWED_2
 For HUNT, these data are available for municipalties in 2006. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2006$socenv_average_hh_size_2<-as.integer(round(HUNT3-socioenviro$AVERAGE_HOUSEHOLD_SIZE_2006)) 
+socenv_HUNT_2006$socenv_average_hh_size_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))) 
 ```    
 
 ### **Variable label**: Average household size in 2009   
@@ -531,7 +532,8 @@ socenv_HUNT_2006$socenv_average_hh_size_2<-as.integer(round(HUNT3-socioenviro$AV
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2011  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. **Variable type**: integer   
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. 
+**Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
@@ -578,7 +580,8 @@ socenv_HUNT_2006$socenv_average_hh_size_2<-as.integer(round(HUNT3-socioenviro$AV
 **Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
 **Variable type**: integer   
 **Variable unit**: euros    
-**Category coding**:   
+**Category coding**:
+
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**: 
@@ -658,10 +661,10 @@ socenv_HUNT_2$socenv_perc_unocc_dwellings_2<-as.numeric(HUNT3$PROPORTION_UNOCCUP
 
 **Harmonization status**: complete 
 **Harmonization comment**:  
-For HUNT, these data are available for municipalities in 2006. This variable includes the average gross year income in 1000 euros of residents in municipalities (Currency conversion according to European Central Bank in 2006: 1.00NOK=0.080472 euros (not: 0.0961356)). This variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report.  
+For HUNT, these data are available for municipalities in 2006. This variable includes the average gross year income in 1000 euros of residents aged 17 years and older in municipalities. This variable was already converted using a currency conversion of 1.00NOK=€0.0961356. However, this exchange rate was incorrect and therefore this variable should be recalculated using the correct currency conversion of ECB in 2006, which is 1.00NOK=€0.12433. The final variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report.  
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2$socenv_av_inc1000_2<-as.integer(round((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.080472)/1000) 
+socenv_HUNT_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000) 
 
 ```    
 
@@ -688,10 +691,10 @@ socenv_HUNT_2$socenv_av_inc1000_2<-as.integer(round((HUNT3$AVERAGE_INCOME_2006/0
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-For HUNT, these data are available for municipalities in 2006. This variable includes the average gross year income in 1000 euros of residents in municipalities (Currency conversion according to European Central Bank in 2006: 1.00NOK=0.080472 euros (not: 0.0961356)). This variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report.
+For HUNT, these data are available for municipalities in 2006. This variable includes the average gross year income in euros of residents aged 17 years and older in municipalities. This variable was already converted using a currency conversion of 1.00NOK=€0.0961356. However, this exchange rate was incorrect and therefore this variable should be recalculated using the correct currency conversion of ECB in 2006, which is 1.00NOK=€0.12433. The final variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2$socenv_av_inc_2<-as.integer(round((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.080472)) 
+socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)) 
 
 ```       
 
@@ -704,7 +707,6 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round((HUNT3$AVERAGE_INCOME_2006/0.096
 
 **Harmonization status**: impossible 
 **Harmonization comment**:
-
 **R script**:  
 ```{r, echo=TRUE}  
 #This is where the R-script will be written  
@@ -821,11 +823,12 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round((HUNT3$AVERAGE_INCOME_2006/0.096
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2004 (€21962) (262396 NOK; currency conversion according to the European Central Bank in 2004: 1NOK=0.083697 Euros).
+We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by multiplying it with average household size in the municipality, and comparing it with the country-specific net mean household income (OECD-data) in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197). 
+The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). The final variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.080472)/1000) >= 21.962, 1, 0)
+socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse(as.numeric((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 39.936, 1, 0)
 
 ```   
 
@@ -850,7 +853,7 @@ socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((((HUNT3$AVERAGE_INCOME_2006/0.0
 
 ### **Variable label**: Average income in euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_incdich_2  
-**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -862,17 +865,18 @@ socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((((HUNT3$AVERAGE_INCOME_2006/0.0
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2004 (€21962) (262396 NOK; Currency conversion according to the European Central Bank in 2004: 1NOK=0.083697 Euros; Currency conversion according to the European Central Bank in 2006: 1NOK= 0.080472).
+We dichotomized average gross year income of residents aged 17 years or older in the municipality in 2006 by multiplying it with average household size in the municipality, and comparing it with the country-specific net mean household income (OECD-data in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197).
+The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been correted here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). The final variable has been linked to cohort respondents in 2006 using their municipality code.
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.080472) >= 21962, 1, 0)
+socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 39936, 1, 0)
 
 ```     
 
 ### **Variable label**: Average income in euros in 2007 (dichotomized)
 **Variable name**: socenv_av_incdich_2007
-**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -892,7 +896,7 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 ### **Variable label**: Average income in euros in 2011 (dichotomized)  
 **Variable name**: socenv_av_incdich_2011  
-**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)). 
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -904,7 +908,6 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
-
 **R script**:  
 ```{r, echo=TRUE} 
 
@@ -913,7 +916,6 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 ### **Variable label**: Average income in euros in 2013 (dichotomized)  
 **Variable name**: socenv_av_incdich_2013
 **Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).   
-
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -934,7 +936,6 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 ### **Variable label**: Average income in euros in 2014 (dichotomized) 
 **Variable name**: socenv_av_incdich_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)). 
-
 **Variable type**: integer     
 **Variable unit**:  
 **Category coding**:   
@@ -996,7 +997,7 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
@@ -1011,7 +1012,7 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_1000m_2006  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer     
 **Variable unit**: euros   
 **Category coding**:   
@@ -1027,7 +1028,7 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 ### **Variable label**: Average household income in euros in 2006
 **Variable name**: socenv_av_hhinc_2000m_2006  
-**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006. 
 **Variable type**: integer       
 **Variable unit**: euros   
 **Category coding**:   
@@ -1089,7 +1090,7 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 ### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
 **Variable name**: socenv_av_inc1000Z_2005  
-**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1)
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1).
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -1105,7 +1106,7 @@ socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(((HUNT3$AVERAGE_INCOME_2006/0.096135
 
 ### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_inc1000Z_2 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1)      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1).     
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1122,7 +1123,7 @@ socenv_HUNT_2$socenv_av_inc1000Z_2 <- as.numeric(((((HUNT3$AVERAGE_INCOME_2006/0
 
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_2011 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)   
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).   
 **Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
@@ -1136,7 +1137,7 @@ socenv_HUNT_2$socenv_av_inc1000Z_2 <- as.numeric(((((HUNT3$AVERAGE_INCOME_2006/0
 
 ### **Variable label**: Average income in euros in 2006 (Z standardized)  
 **Variable name**: socenv_av_incZ_2  
-**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1) 
+**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1). 
 **Variable type**: integer       
 **Variable unit**:    
 **Category coding**:   
@@ -1151,13 +1152,13 @@ We standardized average gross year income of residents in the neighbourhood by u
  
 ```{r, echo=TRUE}  
 
-socenv_HUNT_2$socenv_av_incZ_2 <- ((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.080472)-21372.40)/2346.074)
+socenv_HUNT_2$socenv_av_incZ_2 <- as.numeric((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.080472)-21372.40)/2346.074)
 
 ```    
 
 ### **Variable label**: Average income in euros in 2007 (Z standardized) 
 **Variable name**: socenv_av_incZ_2007
-**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1)        
+**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1).        
 **Variable type**: integer         
 **Variable unit**:    
 **Category coding**:   
@@ -1173,7 +1174,7 @@ For HUNT, these data are not available.
 
 ### **Variable label**: Average income in euros in 2011 (Z standardized)  
 **Variable name**: socenv_av_incZ_2011  
-**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1)        
+**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).        
 **Variable type**: integer         
 **Variable unit**:   
 **Category coding**:   
@@ -1188,7 +1189,7 @@ For HUNT, these data are not available.
 
 ### **Variable label**: Average income in euros in 2013 (Z standardized)  
 **Variable name**: socenv_av_incZ_2013
-**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1)      
+**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1).      
 **Variable type**: integer         
 **Variable unit**:    
 **Category coding**:   
@@ -1203,7 +1204,7 @@ For HUNT, these data are not available.
 
 ### **Variable label**: Average income in euros in 2014 (Z standardized) 
 **Variable name**: socenv_av_incZ_2014  
-**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1)       
+**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1).       
 **Variable type**: integer         
 **Variable unit**:  
 **Category coding**:   
@@ -1218,7 +1219,7 @@ For HUNT, these data are not available.
 
 ### **Variable label**: Average income in euros in 2015 (Z standardized) 
 **Variable name**: socenv_av_incZ_2015  
-**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1)    
+**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1).    
 **Variable type**: integer         
 **Variable unit**:    
 **Category coding**:   
@@ -1233,7 +1234,7 @@ For HUNT, these data are not available.
 
 ### **Variable label**: Average income in euros in 2016 (Z standardized)  
 **Variable name**: socenv_av_incZ_2016  
-**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1)    
+**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1).    
 **Variable type**: integer         
 **Variable unit**:     
 **Category coding**:   
@@ -1250,7 +1251,7 @@ For HUNT, these data are not available.
 
 ### **Variable label**: Average household income in euros in 2006 (Z standardized)
 **Variable name**: socenv_av_hhincZ_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1)    .       
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).    
 **Variable type**: integer         
 **Variable unit**:   
 **Category coding**:   
@@ -1491,6 +1492,21 @@ socenv_HUNT_2$socenv_percentage_socsecben_2<-as.numeric(HUNT3$PROPORTION_SOCSECB
 
 ```        
 
+### **Variable label**: Percentage of residents with disability benefit in 2006  
+**Variable name**: socenv_percentage_disben_2006   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```    
+
 ### **Variable label**: Percentage of residents with disability benefit in 2010  
 **Variable name**: socenv_percentage_disben_2010   
 **Variable description**: Percentage of residents with a disability benefit in residential area in 2010.    
@@ -1505,6 +1521,21 @@ socenv_HUNT_2$socenv_percentage_socsecben_2<-as.numeric(HUNT3$PROPORTION_SOCSECB
 #This is where the R-script will be written  
 
 ```    
+
+### **Variable label**: Percentage of residents with unemployment benefit in 2006  
+**Variable name**: socenv_percentage_unemplben_2006   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2006.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**:  
+**R script**:   
+```{r, echo=TRUE}  
+#This is where the R-script will be written  
+
+```   
 
 ### **Variable label**: Percentage of residents with unemployment benefit in 2010  
 **Variable name**: socenv_percentage_unemplben_2010   
@@ -2128,7 +2159,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 **R script**:   
 ```{r, echo=TRUE}  
@@ -2137,11 +2168,12 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2011    
 **Variable name**: socenv_po_2011    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.   **Variable type**: integer      
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.   
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete 
+**Harmonization status**: impossible 
 **Harmonization comment**: 
 **R script**:   
 ```{r, echo=TRUE}  
@@ -2150,7 +2182,8 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2016    
 **Variable name**: socenv_po_2016    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   **Variable type**: integer      
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -2161,10 +2194,11 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ```    
 
+#Area indicators
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2004   
-**Variable description**: City indicator in 2004        
+**Variable description**: City indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2180,7 +2214,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2006   
-**Variable description**: City indicator in 2006       
+**Variable description**: City indicator in 2006.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2195,7 +2229,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2007   
-**Variable description**: City indicator in 2007       
+**Variable description**: City indicator in 2007.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2211,7 +2245,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2009   
-**Variable description**: City indicator in 2009        
+**Variable description**: City indicator in 2009.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2227,7 +2261,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2011   
-**Variable description**: City indicator in 2011        
+**Variable description**: City indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2243,7 +2277,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: city  
 **Variable name**: socenv_city_2014   
-**Variable description**: City indicator in 2014        
+**Variable description**: City indicator in 2014.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2258,7 +2292,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2004   
-**Variable description**: Municipality indicator in 2004        
+**Variable description**: Municipality indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2272,7 +2306,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2  
-**Variable description**: Municipality indicator in 2006        
+**Variable description**: Municipality indicator in 2006.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2288,8 +2322,25 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 
 ### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2007  
+**Variable description**: Municipality indicator in 2007.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2011   
-**Variable description**: Municipality indicator in 2011        
+**Variable description**: Municipality indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2303,7 +2354,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2014   
-**Variable description**: Municipality indicator in 2014        
+**Variable description**: Municipality indicator in 2014.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2318,7 +2369,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: municipality  
 **Variable name**: socenv_municipality_2016   
-**Variable description**: Municipality indicator in 2016        
+**Variable description**: Municipality indicator in 2016.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2333,7 +2384,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2004
-**Variable description**: Neighbourhood indicator in 2004        
+**Variable description**: Neighbourhood indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2348,7 +2399,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2006
-**Variable description**: Neighbourhood indicator in 2006        
+**Variable description**: Neighbourhood indicator in 2006.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2364,7 +2415,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2007
-**Variable description**: Neighbourhood indicator in 2007        
+**Variable description**: Neighbourhood indicator in 2007.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2380,7 +2431,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: neighbourhood  
 **Variable name**: socenv_neighbourhood_2009   
-**Variable description**: Neighbourhood indicator in 2009        
+**Variable description**: Neighbourhood indicator in 2009.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2396,7 +2447,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2011
-**Variable description**: Neighbourhood indicator in 2011        
+**Variable description**: Neighbourhood indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2412,7 +2463,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: neighbourhood 
 **Variable name**: socenv_neighbourhood_2014
-**Variable description**: Neighbourhood indicator in 2014       
+**Variable description**: Neighbourhood indicator in 2014.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2428,7 +2479,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_2004
-**Variable description**: 4-digit postal code (PC4) indicator in 2004        
+**Variable description**: 4-digit postal code (PC4) indicator in 2004.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2445,7 +2496,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_2006
-**Variable description**: 4-digit postal code (PC4) indicator in 2006        
+**Variable description**: 4-digit postal code (PC4) indicator in 2006.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2460,7 +2511,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_2011
-**Variable description**: 4-digit postal code (PC4) indicator in 2011      
+**Variable description**: 4-digit postal code (PC4) indicator in 2011.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2477,7 +2528,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 4-digit postal code 
 **Variable name**: socenv_PC4_2011
-**Variable description**: 4-digit postal code (PC4) indicator in 2014     
+**Variable description**: 4-digit postal code (PC4) indicator in 2014.     
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2494,7 +2545,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_2004
-**Variable description**: 6-digit postal code (PC6) indicator in 2004       
+**Variable description**: 6-digit postal code (PC6) indicator in 2004.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2511,7 +2562,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_2006
-**Variable description**: 6-digit postal code (PC6) indicator in 2006       
+**Variable description**: 6-digit postal code (PC6) indicator in 2006.       
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2527,7 +2578,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_2011
-**Variable description**: 6-digit postal code (PC6) indicator in 2011      
+**Variable description**: 6-digit postal code (PC6) indicator in 2011.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2543,7 +2594,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 6-digit postal code
 **Variable name**: socenv_PC6_2014
-**Variable description**: 6-digit postal code (PC6) indicator in 2014      
+**Variable description**: 6-digit postal code (PC6) indicator in 2014.      
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:     
@@ -2558,7 +2609,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 5-digit postal code 
 **Variable name**: socenv_PC5_2007 
-**Variable description**: 5-digit postal code (PC5) indicator in 2007        
+**Variable description**: 5-digit postal code (PC5) indicator in 2007.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
@@ -2575,7 +2626,7 @@ socenv_HUNT_2$socenv_municipality_2<-as.integer(HUNT3$municipality)
 
 ### **Variable label**: Area indicator: 5-digit postal code 
 **Variable name**: socenv_PC5_2011 
-**Variable description**: 5-digit postal code (PC5) indicator in 2011        
+**Variable description**: 5-digit postal code (PC5) indicator in 2011.        
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
