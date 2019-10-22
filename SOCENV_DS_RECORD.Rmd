@@ -2627,7 +2627,7 @@ socenv_RECORD_1$socenv_neighbourhood_1 <-as.integer(RECORD_w2$neighbourhood)
 **Variable unit**:   
 **Category coding**:     
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
