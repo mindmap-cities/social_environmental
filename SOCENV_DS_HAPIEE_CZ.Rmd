@@ -17,8 +17,11 @@ erasmus_opal <- opal.login()
 opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list(''))
 HAPIEE_W1<- opal.execute(erasmus_opal,'HAPIEE_W1')
 #HAPIEE_W2 
-opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2',variables = list(''))
-HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_W2')
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_CZ_Socioenviro', 'HAPIEE.HAPIEE_CZ_Socioenviro',variables = list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011",
+"PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","UNEMPLOYMENT_RATE_2011","PROPORTION_LOW_EDUCATION_2011","PROPORTION_INTERMEDIATE_EDUCATION_2011",
+"PROPORTION_HIGH_EDUCATION_2011","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2016","AVERAGE_VALUE_DWELLINGS_M2_2013","AVERAGE_VALUE_DWELLINGS_M2_2014",
+"AVERAGE_VALUE_DWELLINGS_M2_2015","AVERAGE_HOUSEHOLD_SIZE_2014","AVERAGE_HOUSEHOLD_SIZE_2015","AVERAGE_HOUSEHOLD_SIZE_2016","AVERAGE_INCOME_2013","AVERAGE_INCOME_2014","AVERAGE_INCOME_2015","neighbourhood_2006","city_2006","municipality_2006"))
+HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_CZ_Socioenviro')
 ```
 ## Select country-specific sample
 ```{r,echo=FALSE}
@@ -44,9 +47,9 @@ opal.logout(erasmus_opal)
 5. [Unemployment](#Unemployment)  
 6. [Social security](#Social security)  
 7. [Educational level](#Educational level)  
-8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)  
+8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
 9. [Crime](#Crime)  
-  
+10. [Area indicators] (#Area indicators)  
 
 # Urbanization grade
 
@@ -57,11 +60,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -72,11 +75,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+  
 
 ```  
 
@@ -87,26 +90,28 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+  
 
 ```  
 
 ### **Variable label**: Urbanization grade in 2011 
-**Variable name**: socenv_urbanization_grade_2011    
+**Variable name**: socenv_urbanization_grade_1    
 **Variable description**: Population density of the residential area (number of residents per km2) in 2011.  
 **Variable type**: integer
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: complete
+**Harmonization comment**: 
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was calculated by: number of residents in the neighbourhood/neighbourhood area size. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}
-#This is where the R-script will be written
+
+socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATION_GRADE_2011)
 
 ```  
 
@@ -117,11 +122,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
-```{r, echo=TRUE}  
-#This is where the R-script will be written  
+```{r, echo=TRUE}
+  
 
 ```    
 
@@ -129,363 +134,381 @@ opal.logout(erasmus_opal)
 
 # Demographics
 
-### **Variable label**: Proportion of men in 2006  
-**Variable name**: socenv_proportion_men_2006    
-**Variable description**: Proportion of men in the residential area in 2006.  
+### **Variable label**: Percentage of men in 2006  
+**Variable name**: socenv_percentage_men_2006    
+**Variable description**: Percentage of men in the residential area in 2006.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of men in 2011  
-**Variable name**: socenv_proportion_men_2011    
-**Variable description**: Proportion of men in the residential area in 2011.  
+### **Variable label**: Percentage of men in 2011  
+**Variable name**: socenv_percentage_men_1    
+**Variable description**: Percentage of men in the residential area in 2011.  
 **Variable type**: decimal
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  complete
 **Harmonization comment**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was calculated by: total number of men in the neighbourhood/total number of residents in the neighbourhood * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
 
+socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_2011) 
+  
 ```    
 
-### **Variable label**: Proportion of women in 2006  
-**Variable name**: socenv_proportion_women_2006    
-**Variable description**: Proportion of women in the residential area in 2006.  
+### **Variable label**: Percentage of women in 2006  
+**Variable name**: socenv_percentage_women_2006    
+**Variable description**: Percentage of women in the residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of women in 2011    
-**Variable name**: socenv_proportion_women_2011    
-**Variable description**: Proportion of women in the residential area in 2011.  
+### **Variable label**: Percentage of women in 2011    
+**Variable name**: socenv_percentage_women_1    
+**Variable description**: Percentage of women in the residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  complete
 **Harmonization comment**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was calculated by: total number of women in the neighbourhood/total number of residents in the neighbourhood * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WOMEN_2011)   
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2006   
-**Variable name**: socenv_proportion_65_older_2006   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2006.  
+### **Variable label**: Percentage of residents aged 65 or older in 2006   
+**Variable name**: socenv_percentage_65_older_2006   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2007   
-**Variable name**: socenv_proportion_65_older_2007   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2007.  
+### **Variable label**: Percentage of residents aged 65 or older in 2007   
+**Variable name**: socenv_percentage_65_older_2007   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2007.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of residents aged 65 or older in 2011   
-**Variable name**: socenv_proportion_65_older_2011   
-**Variable description**: Proportion of residents aged 65 or older in residential area in 2011.  
+### **Variable label**: Percentage of residents aged 65 or older in 2011   
+**Variable name**: socenv_percentage_65_older_1   
+**Variable description**: Percentage of residents aged 65 or older in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  complete
+**Harmonization comment**:
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION_65_OLDER_2011) 
+  
 
 ```    
 
-### **Variable label**: Proportion of unmaried residents in 2008   
-**Variable name**: socenv_proportion_unmaried_2008   
-**Variable description**: Proportion of unmaried residents in residential area in 2008.  
+### **Variable label**: Percentage of unmarried residents in 2008   
+**Variable name**: socenv_percentage_unmarried_2008   
+**Variable description**: Percentage of unmarried residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of unmaried residents in 2011   
-**Variable name**: socenv_proportion_unmaried_2011   
-**Variable description**: Proportion of unmaried residents in residential area in 2011.  
+### **Variable label**: Percentage of unmarried residents in 2011   
+**Variable name**: socenv_percentage_unmarried_1   
+**Variable description**: Percentage of unmarried residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  complete
 **Harmonization comment**:  
-**R script**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTION_UNMARIED_2011)   
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2006   
-**Variable name**: socenv_proportion_maried_2006   
-**Variable description**: Proportion of maried residents in residential area in 2006.  
+### **Variable label**: Percentage of married residents in 2006   
+**Variable name**: socenv_percentage_married_2006   
+**Variable description**: Percentage of married residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2008   
-**Variable name**: socenv_proportion_maried_2008   
-**Variable description**: Proportion of maried residents in residential area in 2008.  
+### **Variable label**: Percentage of married residents in 2008   
+**Variable name**: socenv_percentage_married_2008   
+**Variable description**: Percentage of married residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of maried residents in 2011   
-**Variable name**: socenv_proportion_maried_2011   
-**Variable description**: Proportion of maried residents in residential area in 2011.  
+### **Variable label**: Percentage of married residents in 2011   
+**Variable name**: socenv_percentage_married_1   
+**Variable description**: Percentage of married residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  complete
+**Harmonization comment**: 
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_MARIED_2011)   
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2006   
-**Variable name**: socenv_proportion_divorced_2006   
-**Variable description**: Proportion of divorced residents in residential area in 2006.  
+### **Variable label**: Percentage of divorced residents in 2006   
+**Variable name**: socenv_percentage_divorced_2006   
+**Variable description**: Percentage of divorced residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2008   
-**Variable name**: socenv_proportion_divorced_2008   
-**Variable description**: Proportion of divorced residents in residential area in 2008.  
+### **Variable label**: Percentage of divorced residents in 2008   
+**Variable name**: socenv_percentage_divorced_2008   
+**Variable description**: Percentage of divorced residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of divorced residents in 2011   
-**Variable name**: socenv_proportion_divorced_2011   
-**Variable description**: Proportion of divorced residents in residential area in 2011.  
+### **Variable label**: Percentage of divorced residents in 2011   
+**Variable name**: socenv_percentage_divorced_1   
+**Variable description**: Percentage of divorced residents in residential area in 2011.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  complete
+**Harmonization comment**: 
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION_DIVORCED_2011) 
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2006   
-**Variable name**: socenv_proportion_widowed_2006   
-**Variable description**: Proportion of widowed residents in residential area in 2006.  
+### **Variable label**: Percentage of widowed residents in 2006   
+**Variable name**: socenv_percentage_widowed_2006   
+**Variable description**: Percentage of widowed residents in residential area in 2006.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2008     
-**Variable name**: socenv_proportion_widowed_2008   
-**Variable description**: Proportion of widowed residents in residential area in 2008.  
+### **Variable label**: Percentage of widowed residents in 2008     
+**Variable name**: socenv_percentage_widowed_2008   
+**Variable description**: Percentage of widowed residents in residential area in 2008.  
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of widowed residents in 2011    
-**Variable name**: socenv_proportion_widowed_2011   
-**Variable description**: Proportion of widowed residents in residential area in 2011.  
+### **Variable label**: Percentage of widowed residents in 2011    
+**Variable name**: socenv_percentage_widowed_1   
+**Variable description**: Percentage of widowed residents in residential area in 2011.  
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  complete
 **Harmonization comment**:  
-**R script**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
+socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_WIDOWED_2011) 
 
 ```    
 
 ### **Variable label**: Average household size in 2006   
 **Variable name**: socenv_average_hh_size_2006   
 **Variable description**: Average household size in residential area in 2006.  
-**Variable type**: integer   
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average household size in 2009   
 **Variable name**: socenv_average_hh_size_2009   
 **Variable description**: Average household size in residential area in 2009.  
-**Variable type**: integer   
+**Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average household size in 2011   
 **Variable name**: socenv_average_hh_size_2011   
 **Variable description**: Average household size in residential area in 2011.  
-**Variable type**: integer   
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average household size in 2014   
-**Variable name**: socenv_average_hh_size_2014   
+**Variable name**: socenv_average_hh_size_1   
 **Variable description**: Average household size in residential area in 2014.  
-**Variable type**: integer   
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  complete
+**Harmonization comment**: 
+For HAPIEE-CZ, these data are available for regions (this is not a very detailed spatial level) in 2014-2016. This variable was already available in the original data source. References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
 
+socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014))) 
+
+ 
 ```    
 
 ### **Variable label**: Average household size in 2015      
 **Variable name**: socenv_average_hh_size_2015     
 **Variable description**: Average household size in residential area in 2015.    
-**Variable type**: integer   
+**Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, information about average household size in regions is available for 2014, 2015 and 2016. The 2014-data have been linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average household size in 2016      
 **Variable name**: socenv_average_hh_size_2016      
 **Variable description**: Average household size in residential area in 2016.    
-**Variable type**: integer   
+**Variable type**: integer       
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, information about average household size in regions is available for 2014, 2015 and 2016. The 2014-data have been linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -499,11 +522,11 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -514,56 +537,59 @@ opal.logout(erasmus_opal)
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2007 (dwellings)    
 **Variable name**: socenv_avv_dwelling_m2_2007  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007.    
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2007. 
 **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2011 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2011  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011.    
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2011. 
 **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2013 (dwellings)  
-**Variable name**: socenv_avv_dwelling_m2_2013  
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013.    
+**Variable name**: socenv_avv_dwelling_m2_1  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2013. 
 **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete 
 **Harmonization comment**:  
+For HAPIEE-CZ, information on average value of a plot (m2) in euros in districts (this is not a very detailed spatial level) is available for 2013, 2014 and 2015. To express the variable in the original data source in euros, we used the following ECB currency conversion in 2013: 1CZK=€0.03851. References of all data sources are listed in the WP7 deliverable report. Here, the 2013-data have been linked to HAPIEE-CZ participants at wave 2006. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE_DWELLINGS_M2_2013) 
+
 
 ```    
 
@@ -573,72 +599,71 @@ opal.logout(erasmus_opal)
 **Variable type**: integer   
 **Variable unit**: euros   
 **Category coding**:   
-
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:  For HAPIEE-CZ, information on average value of a plot (m2) in euros in districts is available for 2013, 2014 and 2015. The 2013-data have been linked to HAPIEE-CZ participants at wave 2006. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average value of a plot (m2) in euros in 2015 (dwellings)  
 **Variable name**: socenv_avv_dwelling_m2_2015   
-**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.    
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area in 2015.
 **Variable type**: integer   
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:  For HAPIEE-CZ, information on average value of a plot (m2) in euros in districts is available for 2013, 2014 and 2015. The 2013-data have been linked to HAPIEE-CZ participants at wave 2006. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2011   
-**Variable name**: socenv_prop_unocc_dwellings_2011
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2011.    
+### **Variable label**: Percentage of unoccupied dwellings in 2011   
+**Variable name**: socenv_perc_unocc_dwellings_2011
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2011.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2012   
-**Variable name**: socenv_prop_unocc_dwellings_2012
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+### **Variable label**: Percentage of unoccupied dwellings in 2012   
+**Variable name**: socenv_perc_unocc_dwellings_2012
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2012.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible  
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of unoccupied dwellings in 2014   
-**Variable name**: socenv_prop_unocc_dwellings_2012
-**Variable description**: Proportion of unoccupied dwellings in residential area in 2012.    
+### **Variable label**: Percentage of unoccupied dwellings in 2014   
+**Variable name**: socenv_perc_unocc_dwellings_1
+**Variable description**: Percentage of unoccupied dwellings in residential area in 2014.    
 **Variable type**: decimal   
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -647,728 +672,1311 @@ opal.logout(erasmus_opal)
 ### **Variable label**: Average income in 1000 euros in 2005  
 **Variable name**: socenv_av_inc1000_2005  
 **Variable description**: Average income in 1000 euros of residents in residential area in 2005.    
-**Variable type**: integer     
+**Variable type**: integer       
 **Variable unit**: 1000 euros   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2006  
 **Variable name**: socenv_av_inc1000_2006 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2006.    
-**Variable type**: integer     
+**Variable type**: integer       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in 1000 euros in 2011   
 **Variable name**: socenv_av_inc1000_2011 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011.    
-**Variable type**: integer     
+**Variable type**: integer       
 **Variable unit**: 1000 euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in euros in 2006  
 **Variable name**: socenv_av_inc_2006  
 **Variable description**: Average income in euros of residents in residential area in 2006.    
-**Variable type**: integer     
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in euros in 2007  
 **Variable name**: socenv_av_inc_2007
 **Variable description**: Average income in euros of residents in residential area in 2007.    
-**Variable type**: integer     
+**Variable type**: integer        
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in euros in 2011  
 **Variable name**: socenv_av_inc_2011  
 **Variable description**: Average income in euros of residents in residential area in 2011.    
-**Variable type**: integer     
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in euros in 2013  
-**Variable name**: socenv_av_inc_2013  
+**Variable name**: socenv_av_inc_1  
 **Variable description**: Average income in euros of residents in residential area in 2013.    
-**Variable type**: integer     
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**:  complete
 **Harmonization comment**:  
-**R script**:  
+For HAPIEE-CZ, these data are available for regions (this is not a very detailed spatial level) in 2013-2015. This variable includes the average net year income in euros. The following ECB currency conversion in 2013 was used: 1.00CZK=€0.03851. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
 
+socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013))) 
+                                                 
 ```    
 
 ### **Variable label**: Average income in euros in 2014  
 **Variable name**: socenv_av_inc_2014  
 **Variable description**: Average income in euros of residents in residential area in 2014.    
-**Variable type**: integer     
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**:  For HAPIEE-CZ, data on average income in euros of residents in regions (this is not a very detailed spatial level) are available for 2013-2015. The 2013-data have been linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in euros in 2015  
 **Variable name**: socenv_av_inc_2015  
 **Variable description**: Average income in euros of residents in residential area in 2015.    
-**Variable type**: integer     
+**Variable type**: integer          
 **Variable unit**: euros     
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**:  For HAPIEE-CZ, data on average income in euros of residents in regions (this is not a very detailed spatial level) are available for 2013-2015. The 2013-data have been linked to HAPIEE-CZ participants at wave 2006.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Average income in euros in 2016  
 **Variable name**: socenv_av_inc_2016  
 **Variable description**: Average income in euros of residents in residential area in 2016.    
-**Variable type**: integer     
+**Variable type**: integer         
 **Variable unit**: euros    
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of income recipients in 2005
-**Variable name**: socenv_av_inc_recipients_2005  
-**Variable description**: Proportion of income recipients in residential area in 2005.    
+### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
+**Variable name**: socenv_av_inc1000dich_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**: 
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
+**Variable name**: socenv_av_inc1000dich_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
+**Variable name**: socenv_av_inc1000dich_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in euros in 2006 (dichotomized)  
+**Variable name**: socenv_av_incdich_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
+**R script**: 
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in euros in 2007 (dichotomized) 
+**Variable name**: socenv_av_incdich_2007
+**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in euros in 2011 (dichotomized)  
+**Variable name**: socenv_av_incdich_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:      
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in euros in 2013 (dichotomized)  
+**Variable name**: socenv_av_incdich_1
+**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  complete
+**Harmonization comment**:  
+We dichotomized average net year income of residents in the region (this is not a very detailed spatial level) in 2013 by multiplying with average household size in the region in 2014, and comparing it with the country-specific net mean household income (OECD-data) in 2013 (€9750,00). The net mean household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851. Here, this variable is linked to HAPIEE-CZ participants at wave 2006.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_HAPIEE_CZ_1$socenv_av_inc1000dich_1 <- ifelse(as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013*HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014) > 9750, 1, 0)
+
+```    
+
+### **Variable label**: Average income in euros in 2014 (dichotomized) 
+**Variable name**: socenv_av_incdich_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable type**: integer     
+**Variable unit**:  
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**: 
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in euros in 2015 (dichotomized) 
+**Variable name**: socenv_av_incdich_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average income in euros in 2016 (dichotomized)  
+**Variable name**: socenv_av_incdich_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable type**: integer     
+**Variable unit**:     
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```   
+
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_500m_0  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006. 
+**Variable type**: integer     
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}
+  
+
+```     
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_1000m_0  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006. 
+**Variable type**: integer       
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}
+  
+
+```     
+
+### **Variable label**: Average household income in euros in 2006
+**Variable name**: socenv_av_hhinc_2000m_0  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006. 
+**Variable type**: integer       
+**Variable unit**: euros   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}
+  
+
+```     
+
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_0  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:   
+```{r, echo=TRUE}  
+  
+
+```  
+
+
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_0  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:   
+```{r, echo=TRUE}  
+  
+
+```     
+
+### **Variable label**: Average household income in euros in 2006 (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_0  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific net mean household income
+1 | Greater than country-specific net mean household income   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:   
+```{r, echo=TRUE}  
+  
+
+```    
+
+
+### **Variable label**: Average income in 1000 euros in 2005 (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_2005  
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+  
+
+```       
+
+### **Variable label**: Average income in 1000 euros in 2006 (Z standardized)  
+**Variable name**: socenv_av_inc1000Z_2006 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (standardized: mean=0 and sd=1).      
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+  
+
+```    
+
+### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
+**Variable name**: socenv_av_inc1000Z_2011 
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).   
+**Variable type**: integer       
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+  
+
+```      
+
+
+
+### **Variable label**: Average income in euros in 2006 (Z standardized)  
+**Variable name**: socenv_av_incZ_2006  
+**Variable description**: Average income in euros of residents in residential area in 2006 (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+  
+
+```     
+
+### **Variable label**: Average income in euros in 2007 (Z standardized) 
+**Variable name**: socenv_av_incZ_2007
+**Variable description**: Average income in euros of residents in residential area in 2007 (standardized: mean=0 and sd=1).        
+**Variable type**: integer       
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+  
+
+```       
+
+### **Variable label**: Average income in euros in 2011 (Z standardized)  
+**Variable name**: socenv_av_incZ_2011  
+**Variable description**: Average income in euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).        
+**Variable type**: integer       
+**Variable unit**:     
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+
+
+```     
+
+### **Variable label**: Average income in euros in 2013 (Z standardized)  
+**Variable name**: socenv_av_incZ_1
+**Variable description**: Average income in euros of residents in residential area in 2013 (standardized: mean=0 and sd=1).      
+**Variable type**: integer       
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: complete  
+**Harmonization comment**: 
+We standardized average net year income in euros of residents in the region (this is not a very detailed spatial level) by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on region-level data from Czech Statistics, we calculated y and o in 2013 in Czech Republic: y=€5762.54 and o=€683.79. Here, this variable is linked to HAPIEE-CZ participants at wave 2006.
+
+**R script**:  
+```{r, echo=TRUE} 
+
+socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)-5762.54)/683.79
+
+```    
+
+### **Variable label**: Average income in euros in 2014 (Z standardized) 
+**Variable name**: socenv_av_incZ_2014  
+**Variable description**: Average income in euros of residents in residential area in 2014 (standardized: mean=0 and sd=1).       
+**Variable type**: integer       
+**Variable unit**:  
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+
+
+```     
+
+### **Variable label**: Average income in euros in 2015 (Z standardized) 
+**Variable name**: socenv_av_incZ_2015  
+**Variable description**: Average income in euros of residents in residential area in 2015 (standardized: mean=0 and sd=1).    
+**Variable type**: integer       
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+
+
+```     
+
+### **Variable label**: Average income in euros in 2016 (Z standardized)  
+**Variable name**: socenv_av_incZ_2016  
+**Variable description**: Average income in euros of residents in residential area in 2016 (standardized: mean=0 and sd=1).    
+**Variable type**: integer       
+**Variable unit**:     
+**Category coding**:   
+
+**Harmonization status**: impossible  
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE} 
+
+
+```   
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_500m_2006  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).    .       
+**Variable type**: integer       
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```    
+
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_1000m_2006  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable type**: integer       
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```    
+
+### **Variable label**: Average household income in euros in 2006 (Z standardized)
+**Variable name**: socenv_av_hhincZ_2000m_2006  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (standardized: mean=0 and sd=1).       
+**Variable type**: integer       
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.
+**R script**:  
+```{r, echo=TRUE}  
+  
+
+```  
+
+
+
+### **Variable label**: Percentage of income recipients in 2005
+**Variable name**: socenv_perc_inc_recipients_2005  
+**Variable description**: Percentage of income recipients in residential area in 2005.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of income recipients in 2011  
-**Variable name**: socenv_av_inc_recipients_2011  
-**Variable description**: Proportion of income recipients in residential area in 2011.    
+### **Variable label**: Percentage of income recipients in 2011  
+**Variable name**: socenv_perc_inc_recipients_2011  
+**Variable description**: Percentage of income recipients in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 # Unemployment
 
-### **Variable label**: Proportion of unemployed residents in 2006  
-**Variable name**: socenv_prop_unemployment_2006  
-**Variable description**: Proportion of unemployed residents in residential area in 2006.    
+### **Variable label**: Percentage of unemployed residents in 2006  
+**Variable name**: socenv_perc_unemployment_2006  
+**Variable description**: Percentage of unemployed residents in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2007    
-**Variable name**: socenv_prop_unemployment_2007    
-**Variable description**: Proportion of unemployed residents in residential area in 2007.    
+### **Variable label**: Percentage of unemployed residents in 2007    
+**Variable name**: socenv_perc_unemployment_2007    
+**Variable description**: Percentage of unemployed residents in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2011    
-**Variable name**: socenv_prop_unemployment_2011    
-**Variable description**: Proportion of unemployed residents in residential area in 2011.    
+### **Variable label**: Percentage of unemployed residents in 2011    
+**Variable name**: socenv_perc_unemployment_1    
+**Variable description**: Percentage of unemployed residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete
 **Harmonization comment**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable represents the percentage of unemployed residents aged 15 years or older in the neighbourhood in 2011. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT_RATE_2011)   
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2014  
-**Variable name**: socenv_prop_unemployment_2014  
-**Variable description**: Proportion of unemployed residents in residential area in 2014.    
+### **Variable label**: Percentage of unemployed residents in 2014  
+**Variable name**: socenv_perc_unemployment_1  
+**Variable description**: Percentage of unemployed residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**:  impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```    
 
-### **Variable label**: Proportion of unemployed residents in 2015  
-**Variable name**: socenv_prop_unemployment_2015  
-**Variable description**: Proportion of unemployed residents in residential area in 2015.    
+### **Variable label**: Percentage of unemployed residents in 2015  
+**Variable name**: socenv_perc_unemployment_2015  
+**Variable description**: Percentage of unemployed residents in residential area in 2015.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 # Social security
 
-### **Variable label**: Proportion of social security beneficiaries in 2006  
-**Variable name**: socenv_proportion_socsecben_2006   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2006.    
+### **Variable label**: Percentage of social security beneficiaries in 2006  
+**Variable name**: socenv_percentage_socsecben_2006   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2007    
-**Variable name**: socenv_proportion_socsecben_2007   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2007.    
+### **Variable label**: Percentage of social security beneficiaries in 2007    
+**Variable name**: socenv_percentage_socsecben_2007   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2007.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2010  
-**Variable name**: socenv_proportion_socsecben_2010   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2010.    
+### **Variable label**: Percentage of social security beneficiaries in 2010  
+**Variable name**: socenv_percentage_socsecben_2010   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2010.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2011  
-**Variable name**: socenv_proportion_socsecben_2011   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2011.    
+### **Variable label**: Percentage of social security beneficiaries in 2011  
+**Variable name**: socenv_percentage_socsecben_2011   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2015  
-**Variable name**: socenv_proportion_socsecben_2015   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2015.    
+### **Variable label**: Percentage of social security beneficiaries in 2015  
+**Variable name**: socenv_percentage_socsecben_2015   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2015.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
+
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of social security beneficiaries in 2016  
-**Variable name**: socenv_proportion_socsecben_2016   
-**Variable description**: Proportion of social security beneficiaries in residential area in 2016.    
+### **Variable label**: Percentage of social security beneficiaries in 2016  
+**Variable name**: socenv_percentage_socsecben_2016   
+**Variable description**: Percentage of social security beneficiaries in residential area in 2016.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of residents with disability benefit in 2010  
-**Variable name**: socenv_proportion_disben_2010   
-**Variable description**: Proportion of residents with a disability benefit in residential area in 2010.    
+### **Variable label**: Percentage of residents with disability benefit in 2006  
+**Variable name**: socenv_percentage_disben_2006   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
+
+```  
+
+
+### **Variable label**: Percentage of residents with disability benefit in 2010  
+**Variable name**: socenv_percentage_disben_2010   
+**Variable description**: Percentage of residents with a disability benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+
+**R script**:  
+```{r, echo=TRUE}  
+  
 
 ```    
 
-### **Variable label**: Proportion of residents with unemployment benefit in 2010  
-**Variable name**: socenv_proportion_unemplben_2010   
-**Variable description**: Proportion of residents with a unemployment benefit in residential area in 2010.    
+
+### **Variable label**: Percentage of residents with unemployment benefit in 2006  
+**Variable name**: socenv_percentage_unemplben_2006   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
+
+```    
+
+
+### **Variable label**: Percentage of residents with unemployment benefit in 2010  
+**Variable name**: socenv_percentage_unemplben_2010   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area in 2010.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+
+**R script**: 
+```{r, echo=TRUE}  
+  
 
 ```    
 
 # Educational level  
 
-### **Variable label**: Proportion of low educated residents in 2011  
-**Variable name**: socenv_prop_low_education_2011  
-**Variable description**: Proportion of low educated residents in residential area in 2011.    
+### **Variable label**: Percentage of low educated residents in 2011  
+**Variable name**: socenv_perc_low_education_1  
+**Variable description**: Percentage of low educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete
 **Harmonization comment**:  
-**R script**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable represents the percentage of residents aged 15 years or older in the neighbourhood in 2011 with low educational level (i.e., without any education, elementary school, or elementary school but unfinished). This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
+socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_LOW_EDUCATION_2011) 
 
 ```    
 
-### **Variable label**: Proportion of low educated residents in 2014 
-**Variable name**: socenv_prop_low_education_2014  
-**Variable description**: Proportion of low educated residents in residential area in 2014.    
+### **Variable label**: Percentage of low educated residents in 2014 
+**Variable name**: socenv_perc_low_education_2014  
+**Variable description**: Percentage of low educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available.  
+
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of intermediate educated residents in 2011  
-**Variable name**: socenv_prop_itm_education_2011  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2011.    
+### **Variable label**: Percentage of intermediate educated residents in 2011  
+**Variable name**: socenv_perc_itm_education_1  
+**Variable description**: Percentage of intermediate educated residents in residential area in 2011.
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete
 **Harmonization comment**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable represents the percentage of residents aged 15 years or older in the neighbourhood in 2011 with intermediate educational level (i.e., medium education, full secondary education, and further education). This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_INTERMEDIATE_EDUCATION_2011) 
 
 ```    
 
-### **Variable label**: Proportion of intermediate educated residents in 2014  
-**Variable name**: socenv_prop_itm_education_2014  
-**Variable description**: Proportion of intermediate educated residents in residential area in 2014.    
+### **Variable label**: Percentage of intermediate educated residents in 2014  
+**Variable name**: socenv_perc_itm_education_2014  
+**Variable description**: Percentage of intermediate educated residents in residential area in 2014.  
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
+
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of high educated residents in 2011  
-**Variable name**: socenv_prop_high_education_2011  
-**Variable description**: Proportion of high educated residents in residential area in 2011.    
+### **Variable label**: Percentage of high educated residents in 2011  
+**Variable name**: socenv_perc_high_education_1  
+**Variable description**: Percentage of high educated residents in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
+**Harmonization status**: complete
 **Harmonization comment**:  
+For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable represents the percentage of residents aged 15 years or older in the neighbourhood in 2011 with high educational level (i.e., high vocational education, college and university education). This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
+socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_HIGH_EDUCATION_2011) 
 
 ```    
 
-### **Variable label**: Proportion of high educated residents in 2014  
-**Variable name**: socenv_prop_high_education_2014  
-**Variable description**: Proportion of high educated residents in residential area in 2014.    
+### **Variable label**: Percentage of high educated residents in 2014  
+**Variable name**: socenv_perc_high_education_2014  
+**Variable description**: Percentage of high educated residents in residential area in 2014.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.    
+
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 # Immigrants and ethnic minority groups
 
-### **Variable label**: Proportion of immigrants in 2011  
-**Variable name**: socenv_prop_immigrants_2011
-**Variable description**: Proportion of immigrants in residential area in 2011.      
+### **Variable label**: Percentage of immigrants in 2011  
+**Variable name**: socenv_perc_immigrants_2011
+**Variable description**: Percentage of immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of western immigrants in 2006  
-**Variable name**: socenv_prop_west_imgs_2006  
-**Variable description**: Proportion of western immigrants in residential area in 2006.      
+### **Variable label**: Percentage of western immigrants in 2006  
+**Variable name**: socenv_perc_west_imgs_2006  
+**Variable description**: Percentage of western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of western immigrants in 2011  
-**Variable name**: socenv_prop_west_imgs_2011  
-**Variable description**: Proportion of western immigrants in residential area in 2011.      
+### **Variable label**: Percentage of western immigrants in 2011  
+**Variable name**: socenv_perc_west_imgs_2011  
+**Variable description**: Percentage of western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of non-western immigrants in 2006  
-**Variable name**: socenv_prop_nonwest_imgs_2006  
-**Variable description**: Proportion of non-western immigrants in residential area in 2006.      
+### **Variable label**: Percentage of non-western immigrants in 2006  
+**Variable name**: socenv_perc_nonwest_imgs_2006  
+**Variable description**: Percentage of non-western immigrants in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of non-western immigrants in 2011  
-**Variable name**: socenv_prop_nonwest_imgs_2011  
-**Variable description**: Proportion of non-western immigrants in residential area in 2011.      
+### **Variable label**: Percentage of non-western immigrants in 2011  
+**Variable name**: socenv_perc_nonwest_imgs_2011  
+**Variable description**: Percentage of non-western immigrants in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Moroccan origin in 2006  
-**Variable name**: socenv_prop_moroccan_2006  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2006  
+**Variable name**: socenv_perc_moroccan_2006  
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2006.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Moroccan origin in 2011  
-**Variable name**: socenv_prop_moroccan_2011  
-**Variable description**: Proportion of immigrants of Moroccan origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Moroccan origin in 2011  
+**Variable name**: socenv_perc_moroccan_2011  
+**Variable description**: Percentage of immigrants of Moroccan origin in residential area in 2011.    
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2006  
-**Variable name**: socenv_prop_antaru_2006  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2006  
+**Variable name**: socenv_perc_antaru_2006  
+**Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Antillian and Aruban origin in 2011  
-**Variable name**: socenv_prop_antaru_2011  
-**Variable description**: Proportion of immigrants of Antillian and Aruban origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Antillian and Aruban origin in 2011  
+**Variable name**: socenv_perc_antaru_2011  
+**Variable description**: Percentage of immigrants of Antillian and Aruban origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Surinamese origin in 2006  
-**Variable name**: socenv_prop_surinamese_2006  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2006  
+**Variable name**: socenv_perc_surinamese_2006  
+**Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2006.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Surinamese origin in 2011  
-**Variable name**: socenv_prop_surinamese_2011  
-**Variable description**: Proportion of immigrants of Surinamese origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Surinamese origin in 2011  
+**Variable name**: socenv_perc_surinamese_2011  
+**Variable description**: Percentage of immigrants of Surinamese origin in residential area in 2011.   
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Turkish origin in 2006  
-**Variable name**: socenv_prop_turkey_2006  
-**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of Turkish origin in 2006  
+**Variable name**: socenv_perc_turkey_2006  
+**Variable description**: Percentage of immigrants of Turkish origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of Turkish origin in 2011  
-**Variable name**: socenv_prop_turkey_2011  
-**Variable description**: Proportion of immigrants of Turkish origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of Turkish origin in 2011  
+**Variable name**: socenv_perc_turkey_2011  
+**Variable description**: Percentage of immigrants of Turkish origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of other origin in 2006  
-**Variable name**: socenv_prop_other_2006  
-**Variable description**: Proportion of immigrants of other origin in residential area in 2006.      
+### **Variable label**: Percentage of immigrants of other origin in 2006  
+**Variable name**: socenv_perc_other_2006  
+**Variable description**: Percentage of immigrants of other origin in residential area in 2006.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of immigrants of other origin in 2011  
-**Variable name**: socenv_prop_other_2011  
-**Variable description**: Proportion of immigrants of other origin in residential area in 2011.      
+### **Variable label**: Percentage of immigrants of other origin in 2011  
+**Variable name**: socenv_perc_other_2011  
+**Variable description**: Percentage of immigrants of other origin in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of foreigners in 2007  
-**Variable name**: socenv_prop_foreigners_2007  
-**Variable description**: Proportion of foreigners in residential area in 2007.      
+### **Variable label**: Percentage of foreigners in 2007  
+**Variable name**: socenv_perc_foreigners_2007  
+**Variable description**: Percentage of foreigners in residential area in 2007.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
-### **Variable label**: Proportion of foreigners in 2011  
-**Variable name**: socenv_prop_foreigners_2011  
-**Variable description**: Proportion of foreigners in residential area in 2011.      
+### **Variable label**: Percentage of foreigners in 2011  
+**Variable name**: socenv_perc_foreigners_2011  
+**Variable description**: Percentage of foreigners in residential area in 2011.      
 **Variable type**: decimal     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible 
+**Harmonization comment**: 
+Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1376,121 +1984,123 @@ opal.logout(erasmus_opal)
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2007  
 **Variable name**: socenv_crimoff_2007    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.       
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2007.  
 **Variable type**: integer    
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2011  
 **Variable name**: socenv_crimoff_2011    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011.       
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2011. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2014    
 **Variable name**: socenv_crimoff_2014    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2014.  
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2015    
 **Variable name**: socenv_crimoff_2015    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015.        
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2015. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of criminal offenses per 1000 residents in 2016    
-**Variable name**: socenv_crimoff_2016    
-**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016.        
+**Variable name**: socenv_crimoff_1    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area in 2016. 
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: complete
+**Harmonization comment**: 
+For HAPIEE-CZ, these data are available for districts (this is not a very detailed spatial level) in 2016. This variable was already available in the original data source. References of all data sources are listed in the WP7 deliverable report. Here, the 2016-data are linked to HAPIEE-CZ participants at wave 2006.
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
+socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2016)
 
 ```    
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2007  
 **Variable name**: socenv_violentcrim_2007    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.       
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2007.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2011    
 **Variable name**: socenv_violentcrim_2011    
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.        
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2011.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of violent crimes per 1000 residents in 2016    
 **Variable name**: socenv_violentcrim_2016   
-**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.        
+**Variable description**: Number of violent crimes per 1000 residents in residential area in 2016.    
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1501,11 +2111,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1516,11 +2126,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1531,11 +2141,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1546,11 +2156,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1561,11 +2171,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1576,11 +2186,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1591,11 +2201,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1606,11 +2216,11 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
@@ -1621,41 +2231,491 @@ opal.logout(erasmus_opal)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2011    
 **Variable name**: socenv_po_2011    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.        
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2011.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
-**R script**:  
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+
+**R script**: 
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
 ### **Variable label**: Number of public disorder per 1000 residents in 2016    
 **Variable name**: socenv_po_2016    
-**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.        
+**Variable description**: Number of public disorder per 1000 residents in residential area in 2016.   
 **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**:  
-**Harmonization comment**:  
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+  
 
 ```    
 
+#Area indicators
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2004   
+**Variable description**: City indicator in 2004.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_1   
+**Variable description**: City indicator in 2006.       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**: For HAPIEE-CZ, the indicator variables start with 55.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006) 
+
+```  
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2007  
+**Variable description**: City indicator in 2007.       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2009   
+**Variable description**: City indicator in 2009.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2011   
+**Variable description**: City indicator in 2011.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: city  
+**Variable name**: socenv_city_2014   
+**Variable description**: City indicator in 2014.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2004   
+**Variable description**: Municipality indicator in 2004.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**:  
+```{r, echo=TRUE}  
+
+``` 
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_1   
+**Variable description**: Municipality indicator in 2006.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: complete
+**Harmonization comment**:  For HAPIEE-CZ, the indicator variables start with 55.
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006) 
+
+```  
+
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2007   
+**Variable description**: Municipality indicator in 2007.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2011   
+**Variable description**: Municipality indicator in 2011.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2014   
+**Variable description**: Municipality indicator in 2014.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.   
+**R script**:  
+```{r, echo=TRUE}  
+
+``` 
+
+### **Variable label**: Area indicator: municipality  
+**Variable name**: socenv_municipality_2016   
+**Variable description**: Municipality indicator in 2016.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2004
+**Variable description**: Neighbourhood indicator in 2004.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+```  
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_1
+**Variable description**: Neighbourhood indicator in 2006.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: complete
+**Harmonization comment**: For HAPIEE-CZ, the indicator variables start with 55. 
+**R script**:  
+```{r, echo=TRUE}  
+
+socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_2006) 
+
+
+``` 
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2007
+**Variable description**: Neighbourhood indicator in 2007.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+### **Variable label**: Area indicator: neighbourhood  
+**Variable name**: socenv_neighbourhood_2009   
+**Variable description**: Neighbourhood indicator in 2009.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2011
+**Variable description**: Neighbourhood indicator in 2011.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: neighbourhood 
+**Variable name**: socenv_neighbourhood_2014
+**Variable description**: Neighbourhood indicator in 2014.       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2004
+**Variable description**: 4-digit postal code (PC4) indicator in 2004.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2006
+**Variable description**: 4-digit postal code (PC4) indicator in 2006.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2011
+**Variable description**: 4-digit postal code (PC4) indicator in 2011.      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code 
+**Variable name**: socenv_PC4_2011
+**Variable description**: 4-digit postal code (PC4) indicator in 2014.     
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2004
+**Variable description**: 6-digit postal code (PC6) indicator in 2004.       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2006
+**Variable description**: 6-digit postal code (PC6) indicator in 2006.       
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2011
+**Variable description**: 6-digit postal code (PC6) indicator in 2011.      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_PC6_2014
+**Variable description**: 6-digit postal code (PC6) indicator in 2014.      
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:     
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+### **Variable label**: Area indicator: 5-digit postal code 
+**Variable name**: socenv_PC5_0 
+**Variable description**: 5-digit postal code (PC5) indicator in 2007.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**:  For HAPIEE-CZ, this variable is not available. 
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code 
+**Variable name**: socenv_PC5_1 
+**Variable description**: 5-digit postal code (PC5) indicator in 2011.        
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**: impossible
+**Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
