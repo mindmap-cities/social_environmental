@@ -10,7 +10,6 @@ output: html_document
 library(opal)
 library(dplyr)
 library(epiDisplay)
-library(data.table)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the GLOBE table(s) to your RStudio environment
