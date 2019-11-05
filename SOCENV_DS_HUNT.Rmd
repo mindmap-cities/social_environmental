@@ -19,7 +19,7 @@ opal.assign.table.tibble(erasmus_opal, 'HUNT2', 'HUNT.HUNT2', variables=list('')
 HUNT2<- opal.execute(erasmus_opal,'HUNT2')
 
 # HUNT3
-opal.assign.table.tibble(erasmus_opal, 'HUNT3_socioenviro_april2019', 'HUNT.HUNT3_socioenviro_april2019',variables = list("URBANIZATON_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_MARRIED_2006","PROPORTION_DIVORCED_2006","PROPORTION_WIDOWED_2006","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_INCOME_2006","UNEMPLOYMENT_RATE_2006","PROPORTION_SOCSECBEN_2006","PROPORTION_UNOCCUPIED_DWELLINGS_2011","PROPORTION_LOW_EDUCATION_2011","PROPORTION_INTERMEDIATE_EDUCATION_2011","PROPORTION_HIGH_EDUCATION_2011","municipality"))
+opal.assign.table.tibble(erasmus_opal, 'HUNT3_socioenviro_april2019', 'HUNT.HUNT3_socioenviro_april2019',variables = list("URBANIZATON_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_MARIED_2006","PROPORTION_DIVORCED_2006","PROPORTION_WIDOWED_2006","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_INCOME_2006","UNEMPLOYMENT_RATE_2006","PROPORTION_SOCSECBEN_2006","PROPORTION_UNOCCUPIED_DWELLINGS_2011","PROPORTION_LOW_EDUCATION_2011","PROPORTION_INTERMEDIATE_EDUCATION_2011","PROPORTION_HIGH_EDUCATION_2011","municipality"))
 HUNT3 <- opal.execute(erasmus_opal,'HUNT3_socioenviro_april2019')
 
 ```
@@ -42,7 +42,7 @@ opal.logout(erasmus_opal)
 7. [Educational level](#Educational level)  
 8. [Immigrants and ethnic minority groups](#Immigrants and ethnic minority groups)
 9. [Crime](#Crime)
-10. [indicators] (#Area indicators)
+10. [Area indicators] (#Area indicators)
   
 
 # Urbanization grade
@@ -272,7 +272,7 @@ socenv_HUNT_2$socenv_percentage_65_older_2<-as.numeric(HUNT3$PROPORTION_65_OLDER
 For HUNT, these data are available for municipalties in 2006. This variable was calculated by: number of married residents in the area / total number of residents in area * 100. This variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2$socenv_percentage_married_2<-as.numeric(HUNT3$PROPORTION_MARRIED_2006) 
+socenv_HUNT_2$socenv_percentage_married_2<-as.numeric(HUNT3$PROPORTION_MARIED_2006) 
 ```    
 
 ### **Variable label**: Percentage of married residents in 2008   
@@ -828,7 +828,7 @@ The original variable on average gross year income was calculated using an incor
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse(as.numeric((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 39.936, 1, 0)
+socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((as.numeric((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)) > 39.936, 1, 0)
 
 ```   
 
@@ -870,7 +870,7 @@ The original variable on average gross year income was calculated using an incor
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_HUNT_2$socenv_av_incdich_2 <- ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 39936, 1, 0)
+socenv_HUNT_2$socenv_av_incdich_2 <- ifelse((as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)) > 39936, 1, 0)
 
 ```     
 
