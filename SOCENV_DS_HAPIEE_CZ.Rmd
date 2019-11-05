@@ -5,7 +5,6 @@ output: html_document
 ```{r, echo=FALSE}
 library(epiDisplay)
 library(dplyr)
-library(data.table)
 # Connecting with Opal data server
 ## Login to server and assign study data
 #Load Opal R library
