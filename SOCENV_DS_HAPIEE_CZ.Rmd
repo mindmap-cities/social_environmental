@@ -959,7 +959,7 @@ We dichotomized average net year income of residents in the region (this is not 
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_HAPIEE_CZ_1$socenv_av_inc1000dich_1 <- ifelse(as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013*HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014) > 9750, 1, 0)
+socenv_HAPIEE_CZ_1$socenv_av_inc1000dich_1 <- ifelse((as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)*as.numeric(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014)) > 9750, 1, 0)
 
 ```    
 
