@@ -20,7 +20,7 @@ LASA1D <- opal.execute(erasmus_opal,'LASA1D')
 opal.assign.table.tibble(erasmus_opal, 'LASA1E', 'LASA.LASA1E',variables = list(''))
 LASA1E <- opal.execute(erasmus_opal,'LASA1E')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA1F_socioenviro', 'LASA.LASA1F_socioenviro',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARRIED_2008","PROPORTION_MARRIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
+opal.assign.table.tibble(erasmus_opal, 'LASA1F_socioenviro', 'LASA.LASA1F_socioenviro',variables = list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
 LASA1Fa <- opal.execute(erasmus_opal,'LASA1F_socioenviro')
 opal.assign.table.tibble(erasmus_opal, 'LASA1_Fwave_Area_Identifiers', 'LASA.LASA1_Fwave_Area_Identifiers', variables = list("municipality", "city", "neighbourhood", "PC4", "PC6"))
 LASA1Fb <- opal.execute(erasmus_opal, 'LASA1_Fwave_Area_Identifiers')
@@ -28,7 +28,7 @@ LASA1Fb <- opal.execute(erasmus_opal, 'LASA1_Fwave_Area_Identifiers')
 opal.assign.table.tibble(erasmus_opal, 'LASA1G', 'LASA.LASA1G',variables = list(''))
 LASA1G <- opal.execute(erasmus_opal,'LASA1G')
 
-opal.assign.table.tibble(erasmus_opal, 'LASA1H_socioenviro', 'LASA.LASA1H_socioenviro',variables = list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARRIED_2011","PROPORTION_MARRIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011",
+opal.assign.table.tibble(erasmus_opal, 'LASA1H_socioenviro', 'LASA.LASA1H_socioenviro',variables = list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011",
 "NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011"))
 LASA1Ha <- opal.execute(erasmus_opal,'LASA1H_socioenviro')
 opal.assign.table.tibble(erasmus_opal, 'LASA1_Hwave_Area_Identifiers', 'LASA.LASA1_Hwave_Area_Identifiers', variables = list("municipality", "city", "neighbourhood", "PC4", "PC6"))
@@ -275,7 +275,7 @@ socenv_LASA1_6$socenv_percentage_65_older_6<-as.numeric(LASA1H$PROPORTION_65_OLD
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_percentage_unmarried_4<-as.numeric(LASA1F$PROPORTION_UNMARRIED_2008) 
+socenv_LASA1_4$socenv_percentage_unmarried_4<-as.numeric(LASA1F$PROPORTION_UNMARIED_2008) 
 
 ```    
 
@@ -291,7 +291,7 @@ socenv_LASA1_4$socenv_percentage_unmarried_4<-as.numeric(LASA1F$PROPORTION_UNMAR
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_percentage_unmarried_6<-as.numeric(LASA1H$PROPORTION_UNMARRIED_2011) 
+socenv_LASA1_6$socenv_percentage_unmarried_6<-as.numeric(LASA1H$PROPORTION_UNMARIED_2011) 
 ```    
 
 ### **Variable label**: Percentage of married residents in 2006   
@@ -322,7 +322,7 @@ For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to LASA respondents at wave 2005/06.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_4$socenv_percentage_married_4<-as.numeric(LASA1F$PROPORTION_MARRIED_2008) 
+socenv_LASA1_4$socenv_percentage_married_4<-as.numeric(LASA1F$PROPORTION_MARIED_2008) 
 
 ```    
 
@@ -338,7 +338,7 @@ socenv_LASA1_4$socenv_percentage_married_4<-as.numeric(LASA1F$PROPORTION_MARRIED
 For LASA, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_LASA1_6$socenv_percentage_married_6<-as.numeric(LASA1H$PROPORTION_MARRIED_2011) 
+socenv_LASA1_6$socenv_percentage_married_6<-as.numeric(LASA1H$PROPORTION_MARIED_2011) 
 
 ```    
 
@@ -879,7 +879,7 @@ For LASA, these data are not available.
 We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by multiplying with average household size in the neighbourhood, and comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005*LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006) > 23.896, 1, 0)
+socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006)) > 23.896, 1, 0)
 
 ```       
 
@@ -920,7 +920,7 @@ socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse(as.numeric(LASA1F$AVERAGE_INCOM
 We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by multiplying with average household size in the neighbourhood, and comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse(as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011*LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011) > 25.101, 1, 0)
+socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)) > 25.101, 1, 0)
 
 ```       
 
