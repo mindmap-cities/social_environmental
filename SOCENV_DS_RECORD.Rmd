@@ -22,7 +22,7 @@ RECORD_w1_1c <- opal.execute(erasmus_opal,'MINDMAP_Area_identifiers_in_RECORD_W1
 # RECORD wave 2
 opal.assign.table.tibble(erasmus_opal, 'RECORD_W2_SocioEnviro', 'RECORD.RECORD_W2_SocioEnviro', variables = list ("URBANIZATION_GRADE_2009","AVERAGE_HOUSEHOLD_SIZE_2014","PROPORTION_UNOCCUPIED_DWELLINGS_2014","UNEMPLOYMENT_RATE_2014"))
 RECORD_w2a <- opal.execute(erasmus_opal,'RECORD_W2_SocioEnviro')
-opal.assign.table.tibble(erasmus_opal, '190521_MINDMAP_Area_identifiers_in_RECORD_W2', 'RECORD.MINDMAP_Area_identifiers_in_RECORD_W2_190521', variables = list ("neighbourhood", "pc5"))
+opal.assign.table.tibble(erasmus_opal, 'MINDMAP_Area_identifiers_in_RECORD_W2_190521', 'RECORD.MINDMAP_Area_identifiers_in_RECORD_W2_190521', variables = list ("neighbourhood", "pc5"))
 RECORD_w2b <- opal.execute(erasmus_opal,'MINDMAP_Area_identifiers_in_RECORD_W2_190521')
 
 ```
