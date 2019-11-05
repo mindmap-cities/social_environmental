@@ -22,15 +22,15 @@ opal.assign.table.tibble(erasmus_opal, 'GLOBE1997', 'GLOBE.GLOBE1997',variables=
 GLOBE1997 <- opal.execute(erasmus_opal,'GLOBE1997')
 
 # GLOBE2004
-opal.assign.table.tibble(erasmus_opal, 'GLOBE_2004_socialenvironment_2006', 'GLOBE.GLOBE_2004_socialenvironment_2006', variables=list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARRIED_2008","PROPORTION_MARRIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_200","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT", "MUNICIPALITY_CODE_2006", "NEIGHBORHOOD_CODE_2006","PC4_CODE_2006","PC6_CODE_2006"))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE_2004_socialenvironment_2006', 'GLOBE.GLOBE_2004_socialenvironment_2006', variables=list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_200","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT", "MUNICIPALITY_CODE_2006", "NEIGHBORHOOD_CODE_2006","PC4_CODE_2006","PC6_CODE_2006"))
 GLOBE2004 <- opal.execute(erasmus_opal,'GLOBE_2004_socialenvironment_2006')
 
 # GLOBE2011
-opal.assign.table.tibble(erasmus_opal, 'GLOBE_2011_socialenvironment_2011', 'GLOBE.GLOBE_2011_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARRIED_2011","PROPORTION_MARRIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_100","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","MUNICIPALITY_CODE_2011", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE_2011_socialenvironment_2011', 'GLOBE.GLOBE_2011_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_100","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","MUNICIPALITY_CODE_2011", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
 GLOBE2011 <- opal.execute(erasmus_opal,'GLOBE_2011_socialenvironment_2011')
 
 # GLOBE2014
-opal.assign.table.tibble(erasmus_opal, 'GLOBE_2014_socialenvironment_2011', 'GLOBE.GLOBE_2014_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARRIED_2011","PROPORTION_MARRIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_100","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","MUNICIPALITY_CODE_2011", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
+opal.assign.table.tibble(erasmus_opal, 'GLOBE_2014_socialenvironment_2011', 'GLOBE.GLOBE_2014_socialenvironment_2011', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_201","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_20","PROPORTION_UNEMPLOYMENT_BENEFIT","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATIO","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_100","NUMBER_VANDALISM_PUBLIC_ORDER_PE","NUMBER_VIOLENT_CRIMES_SEXUAL_OFF","MUNICIPALITY_CODE_2011", "NEIGHBORHOOD_CODE_2011", "PC4_CODE_2011","PC6_CODE_2011"))
 GLOBE2014 <- opal.execute(erasmus_opal,'GLOBE_2014_socialenvironment_2011')
 ```
 ## Assign participant id as first column of your harmonized dataframes
@@ -341,7 +341,7 @@ socenv_GLOBE_4$socenv_percentage_65_older_4<-as.numeric(GLOBE2014$PROPORTION_65_
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_percentage_unmarried_2<-as.numeric(GLOBE2004$PROPORTION_UNMARRIED_2008) 
+socenv_GLOBE_2$socenv_percentage_unmarried_2<-as.numeric(GLOBE2004$PROPORTION_UNMARIED_2008) 
 
 ```    
 
@@ -357,7 +357,7 @@ socenv_GLOBE_2$socenv_percentage_unmarried_2<-as.numeric(GLOBE2004$PROPORTION_UN
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_percentage_unmarried_3<-as.numeric(GLOBE2011$PROPORTION_UNMARRIED_2011) 
+socenv_GLOBE_3$socenv_percentage_unmarried_3<-as.numeric(GLOBE2011$PROPORTION_UNMARIED_2011) 
 
 ```    
 
@@ -373,7 +373,7 @@ socenv_GLOBE_3$socenv_percentage_unmarried_3<-as.numeric(GLOBE2011$PROPORTION_UN
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_percentage_unmarried_4<-as.numeric(GLOBE2014$PROPORTION_UNMARRIED_2011) 
+socenv_GLOBE_4$socenv_percentage_unmarried_4<-as.numeric(GLOBE2014$PROPORTION_UNMARIED_2011) 
 
 ```   
 
@@ -405,7 +405,7 @@ For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. These 2008-data are here linked to GLOBE respondents at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_2$socenv_percentage_married_2<-as.numeric(GLOBE2004$PROPORTION_MARRIED_2008) 
+socenv_GLOBE_2$socenv_percentage_married_2<-as.numeric(GLOBE2004$PROPORTION_MARIED_2008) 
 
 ```    
 
@@ -421,7 +421,7 @@ socenv_GLOBE_2$socenv_percentage_married_2<-as.numeric(GLOBE2004$PROPORTION_MARR
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_3$socenv_percentage_married_3<-as.numeric(GLOBE2011$PROPORTION_MARRIED_2011) 
+socenv_GLOBE_3$socenv_percentage_married_3<-as.numeric(GLOBE2011$PROPORTION_MARIED_2011) 
 
 ```    
 
@@ -437,7 +437,7 @@ socenv_GLOBE_3$socenv_percentage_married_3<-as.numeric(GLOBE2011$PROPORTION_MARR
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to GLOBE participants at wave 2014. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_GLOBE_4$socenv_percentage_married_4<-as.numeric(GLOBE2014$PROPORTION_MARRIED_2011) 
+socenv_GLOBE_4$socenv_percentage_married_4<-as.numeric(GLOBE2014$PROPORTION_MARIED_2011) 
 
 ``` 
 
@@ -1077,7 +1077,7 @@ We dichotomized average gross year income in 1000 euros of residents in the neig
 Here, this variable is linked to GLOBE participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_GLOBE_2$socenv_av_inc1000dich_2 <- ifelse(as.numeric(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005*GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006) > 23.896, 1, 0)
+socenv_GLOBE_2$socenv_av_inc1000dich_2 <- ifelse((as.numeric(GLOBE2004$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006)) > 23.896, 1, 0)
 
 ```       
 
@@ -1120,7 +1120,7 @@ We dichotomized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_3$socenv_av_inc1000dich_3 <- ifelse(as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011*GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011) > 25.101, 1, 0)
+socenv_GLOBE_3$socenv_av_inc1000dich_3 <- ifelse((as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)) > 25.101, 1, 0)
 
 ```    
 
@@ -1143,7 +1143,7 @@ We dichotomized average gross year income in 1000 euros of residents in the neig
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_GLOBE_4$socenv_av_inc1000dich_4 <- ifelse(as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011*GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011) > 25.101, 1, 0)
+socenv_GLOBE_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011)) > 25.101, 1, 0)
 
 ```    
 
