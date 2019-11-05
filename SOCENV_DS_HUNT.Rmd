@@ -405,7 +405,7 @@ socenv_HUNT_2$socenv_percentage_widowed_2<-as.numeric(HUNT3$PROPORTION_WIDOWED_2
 For HUNT, these data are available for municipalties in 2006. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_HUNT_2006$socenv_average_hh_size_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))) 
+socenv_HUNT_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))) 
 ```    
 
 ### **Variable label**: Average household size in 2009   
