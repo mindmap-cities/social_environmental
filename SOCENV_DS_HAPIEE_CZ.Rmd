@@ -2,13 +2,14 @@
 title: "Social environmental (i.e. geospatial) HAPIEE_CZ"
 output: html_document
 ---
-```{r, echo=FALSE}
-library(epiDisplay)
-library(dplyr)
+
 # Connecting with Opal data server
 ## Login to server and assign study data
+```{r, echo=FALSE}
 #Load Opal R library
 library(opal)
+library(epiDisplay)
+library(dplyr)
 # Create an opal object with the login information
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
@@ -22,11 +23,7 @@ opal.assign.table.tibble(erasmus_opal, 'HAPIEE_CZ_Socioenviro', 'HAPIEE.HAPIEE_C
 "AVERAGE_VALUE_DWELLINGS_M2_2015","AVERAGE_HOUSEHOLD_SIZE_2014","AVERAGE_HOUSEHOLD_SIZE_2015","AVERAGE_HOUSEHOLD_SIZE_2016","AVERAGE_INCOME_2013","AVERAGE_INCOME_2014","AVERAGE_INCOME_2015","neighbourhood_2006","city_2006","municipality_2006"))
 HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_CZ_Socioenviro')
 ```
-## Select country-specific sample
-```{r,echo=FALSE}
-HAPIEE_W1 <- subset(HAPIEE_W1, HAPIEE_W1$country==1)
-HAPIEE_W2 <- subset(HAPIEE_W2, HAPIEE_W2$country==1)
-```
+
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
 socenv_HAPIEE_CZ_0 <- data.frame(id = HAPIEE_W1$id )
@@ -1685,7 +1682,7 @@ For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variabl
 **R script**:  
 ```{r, echo=TRUE}  
   
-socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_HIGH_EDUCATION_2011) 
+socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION_HIGH_EDUCATION_2011) 
 
 ```    
 
