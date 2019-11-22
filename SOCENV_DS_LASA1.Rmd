@@ -144,7 +144,7 @@ socenv_LASA1_6$socenv_urbanization_grade_6<-as.integer(LASA1H$URBANIZATION_GRADE
 For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2014.   
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -244,7 +244,7 @@ socenv_LASA1_4$socenv_percentage_65_older_4<-as.numeric(LASA1F$PROPORTION_65_OLD
 For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -306,7 +306,7 @@ socenv_LASA1_6$socenv_percentage_unmarried_6<-as.numeric(LASA1H$PROPORTION_UNMAR
 For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2006. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -354,7 +354,7 @@ socenv_LASA1_6$socenv_percentage_married_6<-as.numeric(LASA1H$PROPORTION_MARIED_
 For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 
 ```    
@@ -403,7 +403,7 @@ socenv_LASA1_6$socenv_percentage_divorced_6<-as.numeric(LASA1H$PROPORTION_DIVORC
 For LASA, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -467,7 +467,7 @@ socenv_LASA1_4$socenv_average_hh_size_4<-as.integer(round(as.numeric(LASA1F$AVER
 For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2009.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -499,7 +499,7 @@ socenv_LASA1_6$socenv_average_hh_size_6<-as.integer(round(as.numeric(LASA1H$AVER
 For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2014.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -515,7 +515,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2015.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -531,7 +531,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2011, not in 2016. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -582,7 +582,7 @@ socenv_LASA1_6$socenv_avv_dwellings_6<-as.integer(LASA1H$AVERAGE_VALUE_DWELLINGS
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -598,7 +598,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -614,7 +614,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -630,7 +630,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -646,7 +646,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -662,7 +662,7 @@ For LASA, these data are not available.
 For LASA, these data are available for neighbourhoods in 2012, not in 2011.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -693,7 +693,7 @@ socenv_LASA1_6$socenv_perc_unocc_dwellings_6<-as.numeric(LASA1H$PROPORTION_UNOCC
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -727,7 +727,7 @@ socenv_LASA1_4$socenv_av_inc1000_4 <- as.integer(round(as.numeric(LASA1F$AVERAGE
 For LASA, these data are available for neighbourhoods in 2005 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -760,7 +760,7 @@ socenv_LASA1_6$socenv_av_inc1000_6 <- as.integer(round(as.numeric(LASA1H$AVERAGE
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -776,7 +776,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -792,7 +792,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -808,7 +808,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -824,7 +824,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -840,7 +840,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -856,7 +856,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -899,7 +899,7 @@ socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(LASA1F$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -940,7 +940,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -960,7 +960,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -980,7 +980,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```     
 
@@ -1000,7 +1000,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```       
 
@@ -1020,7 +1020,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```      
 
@@ -1040,7 +1040,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```      
 
@@ -1060,7 +1060,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```     
 
@@ -1075,7 +1075,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: These data are not available for LASA  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1090,7 +1090,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: These data are not available for LASA  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1106,7 +1106,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: These data are not available for LASA  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1122,7 +1122,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: These data are not available for LASA  
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1138,7 +1138,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: These data are not available for LASA  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1153,7 +1153,7 @@ socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCO
 **Harmonization comment**: These data are not available for LASA  
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1188,7 +1188,7 @@ socenv_LASA1_4$socenv_av_inc1000Z_4 <- (as.numeric(LASA1F$AVERAGE_INCOME_RESIDEN
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1216,16 +1216,13 @@ socenv_LASA1_6$socenv_av_inc1000Z_6 <- (as.numeric(LASA1H$AVERAGE_INCOME_RESIDEN
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: 
-**Harmonization comment**: 
-
 **Harmonization status**: impossible 
 **Harmonization comment**: 
 For LASA, these data are not available.
 **R script**:  
  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1241,7 +1238,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1257,7 +1254,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:    
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1273,7 +1270,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1289,7 +1286,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1305,7 +1302,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1321,7 +1318,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -1336,7 +1333,7 @@ For LASA, these data are not available.
 **Harmonization comment**: These data are not available for LASA
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1352,7 +1349,7 @@ For LASA, these data are not available.
 **Harmonization comment**: These data are not available for LASA 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1366,7 +1363,7 @@ For LASA, these data are not available.
 **Harmonization comment**: These data are not available for LASA  
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -1416,7 +1413,7 @@ socenv_LASA1_6$socenv_perc_inc_recipients_6<-as.numeric(LASA1H$PROPORTION_INCOME
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1432,7 +1429,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1448,7 +1445,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1464,7 +1461,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1480,7 +1477,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1514,7 +1511,7 @@ socenv_LASA1_4$socenv_percentage_socsecben_4<-as.numeric(LASA1F$PROPORTION_SOCSE
 For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1545,7 +1542,7 @@ socenv_LASA1_6$socenv_percentage_socsecben_6<-as.numeric(LASA1H$PROPORTION_SOCSE
 For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2011. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1561,7 +1558,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2015.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1577,7 +1574,7 @@ For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2
 For LASA, these data are available for neighbourhoods in 2006 and 2010, not in 2016. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1656,7 +1653,7 @@ socenv_LASA1_6$socenv_percentage_unemplben_6<-as.numeric(LASA1H$PROPORTION_UNEMP
 For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1688,7 +1685,7 @@ socenv_LASA1_6$socenv_perc_low_education_6<-as.numeric(LASA1H$PROPORTION_LOW_EDU
 For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1719,7 +1716,7 @@ socenv_LASA1_6$socenv_perc_itm_education_6<-as.numeric(LASA1H$PROPORTION_INTERME
 For LASA, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1752,7 +1749,7 @@ socenv_LASA1_6$socenv_perc_high_education_6<-as.numeric(LASA1H$PROPORTION_HIGH_E
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1768,7 +1765,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1784,7 +1781,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1800,7 +1797,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1816,7 +1813,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1832,7 +1829,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1848,7 +1845,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1864,7 +1861,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1880,7 +1877,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1896,7 +1893,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1912,7 +1909,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1928,7 +1925,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1944,7 +1941,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1960,7 +1957,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1976,7 +1973,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1992,7 +1989,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2008,7 +2005,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2026,7 +2023,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 For LASA, these data are available for neighbourhoods in 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2057,7 +2054,7 @@ socenv_LASA1_6$socenv_crimoff_6<-as.integer(LASA1H$NUMBER_CRIMINAL_OFFENSES_PER_
 For LASA, these data are available for neighbourhoods in 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2073,7 +2070,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2014.
 For LASA, these data are available for neighbourhoods in 2011, not in 2015.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2089,7 +2086,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2015.
 For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2105,7 +2102,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2121,7 +2118,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2137,7 +2134,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2153,7 +2150,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2169,7 +2166,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2185,7 +2182,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2216,7 +2213,7 @@ socenv_LASA1_6$socenv_vandalism_po_6<-as.integer(LASA1H$NUMBER_VANDALISM_PUBLIC_
 For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2247,7 +2244,7 @@ socenv_LASA1_6$socenv_violentcrim_sexoff_6<-as.integer(LASA1H$NUMBER_VIOLENT_CRI
 For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:    
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2263,7 +2260,7 @@ For LASA, these data are available for neighbourhoods in 2011, not in 2016.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2279,7 +2276,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2295,7 +2292,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2311,7 +2308,7 @@ For LASA, these data are not available.
 For LASA, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 

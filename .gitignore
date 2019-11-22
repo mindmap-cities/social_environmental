@@ -4,3 +4,7 @@
 .Ruserdata
 *.Rproj
 validation*.Rmd
+SOCENV_DS_HUNT_validation (1).Rmd
+SOCENV_DS_RECORD_validation.Rmd
+SOCENV_DS_LASA1_validation.Rmd
+
