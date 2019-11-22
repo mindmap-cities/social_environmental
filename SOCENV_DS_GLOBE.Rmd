@@ -291,7 +291,7 @@ socenv_GLOBE_2$socenv_percentage_65_older_2<-as.numeric(GLOBE2004$PROPORTION_65_
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -388,7 +388,7 @@ socenv_GLOBE_4$socenv_percentage_unmarried_4<-as.numeric(GLOBE2014$PROPORTION_UN
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 2006. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -454,7 +454,7 @@ socenv_GLOBE_4$socenv_percentage_married_4<-as.numeric(GLOBE2014$PROPORTION_MARI
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 
 ```    
@@ -519,7 +519,7 @@ socenv_GLOBE_4$socenv_percentage_divorced_4<-as.numeric(GLOBE2014$PROPORTION_DIV
 For GLOBE, these data are available for neighbourhoods in 2008 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -599,7 +599,7 @@ socenv_GLOBE_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(GLOBE2004$A
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2009.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -648,7 +648,7 @@ socenv_GLOBE_4$socenv_average_hh_size_4<-as.integer(round(as.numeric(GLOBE2014$A
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -665,7 +665,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2015.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -681,7 +681,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 
 For GLOBE, these data are available for neighbourhoods in 2006 and 2011, not in 2016.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -748,7 +748,7 @@ socenv_GLOBE_4$socenv_avv_dwellings_4<-as.integer(GLOBE2014$AVERAGE_VALUE_DWELLI
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -764,7 +764,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -780,7 +780,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -796,7 +796,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -812,7 +812,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -828,7 +828,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are available for neighbourhoods in 2012, not in 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -875,7 +875,7 @@ socenv_GLOBE_4$socenv_perc_unocc_dwellings_4<-as.numeric(GLOBE2014$PROPORTION_UN
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -909,7 +909,7 @@ socenv_GLOBE_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(GLOBE2004$AVERAG
 For GLOBE, these data are available for neighbourhoods in 2005 and 2011, not in 2006.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -958,7 +958,7 @@ socenv_GLOBE_4$socenv_av_inc1000_4<-as.integer(round(as.numeric(GLOBE2014$AVERAG
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -974,7 +974,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -990,7 +990,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1006,7 +1006,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1022,7 +1022,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1038,7 +1038,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1054,7 +1054,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1097,7 +1097,7 @@ socenv_GLOBE_2$socenv_av_inc1000dich_2 <- ifelse((as.numeric(GLOBE2004$AVERAGE_I
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1154,9 +1154,6 @@ socenv_GLOBE_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(GLOBE2014$AVERAGE_I
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: 
-**Harmonization comment**: 
-
 **Code** | **Category Label**  
 ------------- | -------------  
 0 | Less than or equal to country-specific net mean household income
@@ -1167,7 +1164,7 @@ socenv_GLOBE_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(GLOBE2014$AVERAGE_I
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1188,7 +1185,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1209,7 +1206,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:    
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1230,7 +1227,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1251,7 +1248,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1272,7 +1269,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1293,7 +1290,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1308,7 +1305,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1323,7 +1320,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1339,7 +1336,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1355,7 +1352,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE 
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1371,7 +1368,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1386,7 +1383,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE  
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -1419,7 +1416,7 @@ socenv_GLOBE_2$socenv_av_inc1000Z_2 <- (as.numeric(GLOBE2004$AVERAGE_INCOME_RESI
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1466,15 +1463,12 @@ socenv_GLOBE_4$socenv_av_inc1000Z_4 <- (as.numeric(GLOBE2014$AVERAGE_INCOME_RESI
 **Variable unit**:    
 **Category coding**:   
 
-**Harmonization status**: 
-**Harmonization comment**: 
-
 **Harmonization status**: impossible 
 **Harmonization comment**: 
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1490,7 +1484,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1506,7 +1500,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:    
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1522,7 +1516,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1538,7 +1532,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1554,7 +1548,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1570,7 +1564,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -1585,7 +1579,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE 
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1601,7 +1595,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1616,7 +1610,7 @@ For GLOBE, these data are not available.
 **Harmonization comment**: These data are not available for GLOBE  
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -1685,7 +1679,7 @@ socenv_GLOBE_4$socenv_av_inc_recipients_4<-as.numeric(GLOBE2014$PROPORTION_INCOM
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1701,7 +1695,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1717,7 +1711,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1733,7 +1727,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1749,7 +1743,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1783,7 +1777,7 @@ socenv_GLOBE_2$socenv_percentage_socsecben_2<-as.numeric(GLOBE2004$PROPORTION_SO
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1833,7 +1827,7 @@ socenv_GLOBE_4$socenv_percentage_socsecben_4<-as.numeric(GLOBE2014$PROPORTION_SO
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2011. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1849,7 +1843,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2015.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1865,7 +1859,7 @@ For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 
 For GLOBE, these data are available for neighbourhoods in 2006 and 2010, not in 2016. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -1979,7 +1973,7 @@ socenv_GLOBE_4$socenv_percentage_unemplben_4<-as.numeric(GLOBE2014$PROPORTION_UN
 For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2030,7 +2024,7 @@ socenv_GLOBE_4$socenv_perc_low_education_4<-as.numeric(GLOBE2014$PROPORTION_LOW_
 For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2082,7 +2076,7 @@ socenv_GLOBE_4$socenv_perc_itm_education_4<-as.numeric(GLOBE2014$PROPORTION_INTE
 For GLOBE, these data are available for neighbourhoods in 2014, not in 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2134,7 +2128,7 @@ socenv_GLOBE_4$socenv_perc_high_education_4<-as.numeric(GLOBE2014$PROPORTION_HIG
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2150,7 +2144,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2166,7 +2160,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2182,7 +2176,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2198,7 +2192,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2214,7 +2208,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2230,7 +2224,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2246,7 +2240,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2262,7 +2256,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2278,7 +2272,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2294,7 +2288,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2310,7 +2304,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2326,7 +2320,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2342,7 +2336,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2358,7 +2352,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2374,7 +2368,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2390,7 +2384,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 Because the collected data on migrants / ethnic minority groups are all related to different groups, these data cannot be harmonized across countries / cohorts.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2408,7 +2402,7 @@ Because the collected data on migrants / ethnic minority groups are all related 
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2007.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2457,7 +2451,7 @@ socenv_GLOBE_4$socenv_crimoff_4<-as.integer(GLOBE2014$NUMBER_CRIMINAL_OFFENSES_P
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2014.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2473,7 +2467,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2014.
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2015.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2489,7 +2483,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2015.
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2505,7 +2499,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2521,7 +2515,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2537,7 +2531,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2553,7 +2547,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2569,7 +2563,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2585,7 +2579,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2634,7 +2628,7 @@ socenv_GLOBE_4$socenv_vandalism_po_4<-as.integer(GLOBE2014$NUMBER_VANDALISM_PUBL
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2684,7 +2678,7 @@ socenv_GLOBE_4$socenv_violentcrim_sexoff_4<-as.integer(GLOBE2014$NUMBER_VIOLENT_
 For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 **R script**:    
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2700,7 +2694,7 @@ For GLOBE, these data are available for neighbourhoods in 2011, not in 2016.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2716,7 +2710,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:   
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2732,7 +2726,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
@@ -2748,7 +2742,7 @@ For GLOBE, these data are not available.
 For GLOBE, these data are not available.
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```    
 
