@@ -823,12 +823,13 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by multiplying it with average household size in the municipality, and comparing it with the country-specific net mean household income (OECD-data) in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197). 
-The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). The final variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report. 
+We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific net mean household income (OECD-data) in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). 
+Furthermore, we multiply average area-level income with average area-level household size, and make an adjustment for average area-level household size. This adjustment is needed because OECD uses a square root scale which is a scale that divides household income by the square root of household size. Hereafter, we compare the income variable with the OECD value. 
+The final variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((as.numeric((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)) > 39.936, 1, 0)
+socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((as.numeric((((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)/as.numeric(sqrt(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))) > 39.936, 1, 0)
 
 ```   
 
@@ -864,13 +865,14 @@ socenv_HUNT_2$socenv_av_inc1000dich_2 <- ifelse((as.numeric((((HUNT3$AVERAGE_INC
 1 | Greater than country-specific net mean household income   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-We dichotomized average gross year income of residents aged 17 years or older in the municipality in 2006 by multiplying it with average household size in the municipality, and comparing it with the country-specific net mean household income (OECD-data in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197).
-The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been correted here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). The final variable has been linked to cohort respondents in 2006 using their municipality code.
+**Harmonization comment**:
+We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific net mean household income (OECD-data) in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). 
+Furthermore, we multiply average area-level income with average area-level household size, and make an adjustment for average area-level household size. This adjustment is needed because OECD uses a square root scale which is a scale that divides household income by the square root of household size. Hereafter, we compare the income variable with the OECD value. 
+The final variable has been linked to cohort respondents in 2006 using their municipality code. For harmonization purposes, this variable has been made integer and has been rounded. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
 
-socenv_HUNT_2$socenv_av_incdich_2 <- ifelse((as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)) > 39936, 1, 0)
+socenv_HUNT_2$socenv_av_incdich_2 <- ifelse((as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)/as.numeric(sqrt(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))) > 39936, 1, 0)
 
 ```     
 
