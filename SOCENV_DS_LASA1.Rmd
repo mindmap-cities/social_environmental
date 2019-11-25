@@ -875,11 +875,11 @@ For LASA, these data are not available.
 
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by multiplying with average household size in the neighbourhood, and comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895).
+**Harmonization comment**:
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895). First, we multiply average area-level income with average area-level household size, and make an adjustment for average area-level household size. This adjustment is needed because OECD uses a square root scale which is a scale that divides household income by the square root of household size. Hereafter, we compare the income variable with the OECD value. 
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006)) > 23.896, 1, 0)
+socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(LASA1F$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006)/as.numeric(sqrt(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006))) > 23.896, 1, 0)
 
 ```       
 
@@ -916,11 +916,11 @@ socenv_LASA1_4$socenv_av_inc1000dich_4 <- ifelse((as.numeric(LASA1F$AVERAGE_INCO
 1 | Greater than country-specific net mean household income   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by multiplying with average household size in the neighbourhood, and comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100).
+**Harmonization comment**:
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2011 (€25.100). First, we multiply average area-level income with average area-level household size, and make an adjustment for average area-level household size. This adjustment is needed because OECD uses a square root scale which is a scale that divides household income by the square root of household size. Hereafter, we compare the income variable with the OECD value. 
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)) > 25.101, 1, 0)
+socenv_LASA1_6$socenv_av_inc1000dich_6 <- ifelse((as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)/as.numeric(sqrt(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011))) > 25.101, 1, 0)
 
 ```       
 
