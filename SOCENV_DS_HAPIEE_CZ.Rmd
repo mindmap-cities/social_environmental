@@ -951,11 +951,12 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Harmonization status**:  complete
 **Harmonization comment**:  
-We dichotomized average net year income of residents in the region (this is not a very detailed spatial level) in 2013 by multiplying with average household size in the region in 2014, and comparing it with the country-specific net mean household income (OECD-data) in 2013 (€9750,00). The net mean household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851. Here, this variable is linked to HAPIEE-CZ participants at wave 2006.
+We dichotomized average net year income of residents in the region (this is not a very detailed spatial level) in 2013 by comparing it with the country-specific net mean household income (OECD-data) in 2013 (€9750). The net mean household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851.
+First, we multiply average area-level income in 2013 with average area-level household size in 2014, and make an adjustment for average area-level household size. This adjustment is needed because OECD uses a square root scale which is a scale that divides household income by the square root of household size. Hereafter, we compare the income variable with the OECD value. Here, this income variable is linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_HAPIEE_CZ_1$socenv_av_inc1000dich_1 <- ifelse((as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)*as.numeric(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014)) > 9750, 1, 0)
+socenv_HAPIEE_CZ_1$socenv_av_inc1000dich_1 <- ifelse((as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)*as.numeric(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014)/as.numeric(sqrt(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014))) > 9750, 1, 0)
 
 ```    
 
