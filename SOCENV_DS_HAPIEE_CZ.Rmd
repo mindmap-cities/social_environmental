@@ -956,7 +956,7 @@ First, we multiply average area-level income in 2013 with average area-level hou
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_HAPIEE_CZ_1$socenv_av_inc1000dich_1 <- ifelse((as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)*as.numeric(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014)/as.numeric(sqrt(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014))) > 9750, 1, 0)
+socenv_HAPIEE_CZ_1$socenv_av_incdich_1 <- ifelse((as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)*as.numeric(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014)/as.numeric(sqrt(HAPIEE_W2$AVERAGE_HOUSEHOLD_SIZE_2014))) > 9750, 1, 0)
 
 ```    
 
