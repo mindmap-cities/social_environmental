@@ -31,7 +31,7 @@ RECORD_w2b <- opal.execute(erasmus_opal,'MINDMAP_Area_identifiers_in_RECORD_W2_1
 RECORD_w1_1<-merge(RECORD_w1_1a, RECORD_w1_1b, by="id")
 RECORD_w1_1<-merge(RECORD_w1_1, RECORD_w1_1c, by="id")
 
-RECORD_w2<-merge(RECORD_w2a, RECORD_w2b, by="id")
+RECORD_w2<-merge(RECORD_w2a, RECORD_w2b, by="id", all=TRUE)
 
 socenv_RECORD_0 <- data.frame(id = RECORD_w1_1$id)
 socenv_RECORD_1 <- data.frame(id = RECORD_w2$id)
