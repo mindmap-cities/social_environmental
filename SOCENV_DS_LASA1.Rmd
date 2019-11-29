@@ -926,7 +926,7 @@ ifelse(as.numeric(socenv_LASA1_4$socenv_av_inc1000dich_4) > 23.896, 1, 0)
 
 **Harmonization status**: complete  
 **Harmonization comment**:
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific gross mean household income (data from Statistics Netherlands) in 2011 (€60400). We first calculate income * hh_size and, subsequently, we compare it with the gross mean household income value from Statistics Netherlands.
+We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific mean grosshousehold income (data from Statistics Netherlands) in 2011 (€60400). We first calculate income * hh_size and, subsequently, we compare it with the mean gross household income value from Statistics Netherlands.
 ```{r, echo=TRUE} 
 socenv_LASA1_6$socenv_av_inc1000dich_6 <-
 ifelse(as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011) > 60.401, 1, 0)
