@@ -1085,7 +1085,7 @@ ifelse((as.numeric(GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006))<2, as.numeric(GLOBE20
 
 socenv_GLOBE_2$socenv_av_inc1000dich_2 <-
 ifelse(as.numeric(socenv_GLOBE_2$socenv_av_inc1000dich_2) > 23.896, 1, 0)
-
+tab1(socenv_GLOBE_2$socenv_av_inc1000dich_2)
 ```       
 
 ### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
@@ -1132,12 +1132,7 @@ Here, the final variable is linked to GLOBE participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}
 socenv_GLOBE_3$socenv_av_inc1000dich_3 <-
-ifelse((as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011))<2, as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)/sqrt(as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)), as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011)*2/sqrt(as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011)))  
-
-socenv_GLOBE_3$socenv_av_inc1000dich_3 <-
-ifelse(as.numeric(socenv_GLOBE_3$socenv_av_inc1000dich_3) > 25.101, 1, 0)
-
-
+ifelse(as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2011$AVERAGE_HOUSEHOLD_SIZE_2011) > 60.401, 1, 0)
 
 ```    
 
@@ -1165,12 +1160,7 @@ Here, the final variable is linked to GLOBE participants at wave 2014.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_GLOBE_4$socenv_av_inc1000dich_4 <-
-ifelse((as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011))<2, as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011)/sqrt(as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011)), as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011)*2/sqrt(as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011))) 
-
-socenv_GLOBE_4$socenv_av_inc1000dich_4 <-
-ifelse(as.numeric(socenv_GLOBE_4$socenv_av_inc1000dich_4) > 25.101, 1, 0)
-
-
+ifelse(as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2014$AVERAGE_HOUSEHOLD_SIZE_2011) > 60.401, 1, 0)
 
 ```    
 
