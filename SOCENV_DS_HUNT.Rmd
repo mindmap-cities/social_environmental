@@ -798,8 +798,8 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -818,8 +818,8 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
@@ -841,8 +841,8 @@ ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numer
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -860,8 +860,8 @@ ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numer
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: complete  
 **Harmonization comment**:
@@ -883,8 +883,8 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**:
@@ -903,8 +903,8 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -922,8 +922,8 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -942,8 +942,8 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -962,8 +962,8 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -982,8 +982,8 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -1047,7 +1047,11 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
-**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income  
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -1063,7 +1067,11 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
-**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income  
 
 **Harmonization status**: impossible
 **Harmonization comment**: 
@@ -1078,7 +1086,11 @@ ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
-**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income  
 
 **Harmonization status**: impossible
 **Harmonization comment**:  
