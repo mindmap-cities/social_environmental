@@ -791,7 +791,7 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 ### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
 **Variable name**: socenv_av_inc1000dich_2005  
-**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:
@@ -811,7 +811,7 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 ### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_inc1000dich_2
-**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**: 
@@ -823,29 +823,18 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific net mean household income (OECD-data) in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). 
-OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and assume that when the average household size is 2 or above, there are 2 income earners in the household.
-The income variable has been calculated as follows: 
-if hh_size<2, income_correction= income*hh_size/sqrt(hh_size)
-if hh_size>=2, income_correction= income*2/sqrt(hh_size)
-Subsequently, the corrected income variable has been compared with the OECD value.
-The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
+We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. After this correction, we first calculate income * hh_size and, subsequently, we compare it with the mean gross household income value from Statistics Norway. The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
 
 socenv_HUNT_2$socenv_av_inc1000dich_2 <-
-ifelse((as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))<2,
-as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)/sqrt(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)),
-as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*2/sqrt(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)))
-
-socenv_HUNT_2$socenv_av_inc1000dich_2 <-
-ifelse(as.numeric(socenv_HUNT_2$socenv_av_inc1000dich_2) > 39.936, 1, 0)
+ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 65.609, 1, 0)
 
 ```   
 
 ### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
 **Variable name**: socenv_av_inc1000dich_2011 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -864,7 +853,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_inc1000dich_2) > 39.936, 1, 0)
 
 ### **Variable label**: Average income in euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_incdich_2  
-**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).
+**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific mean household income).
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -876,28 +865,18 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_inc1000dich_2) > 39.936, 1, 0)
 
 **Harmonization status**: complete  
 **Harmonization comment**:
-We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific net mean household income (OECD-data) in 2008 (closest year to 2006 with available data). The country-specific net mean household income in 2008 was €39936 (327423 NOK; ECB currency conversion in 2008: 1.00NOK=€0.12197). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here (The ECB currency conversion in 2006 was 1.00NOK=€0.12433). 
-OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and assume that when the average household size is 2 or above, there are 2 income earners in the household.
-The income variable has been calculated as follows: 
-if hh_size<2, income_correction= income*hh_size/sqrt(hh_size)
-if hh_size>=2, income_correction= income*2/sqrt(hh_size)
-Subsequently, the corrected income variable has been compared with the OECD value.
-The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
+We dichotomized average gross year income in euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. After this correction, we first calculate income * hh_size and, subsequently, we compare it with the mean gross household income value from Statistics Norway. The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_HUNT_2$socenv_av_incdich_2 <-
-ifelse((as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))<2,
-as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)/sqrt(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)),
-as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*2/sqrt(as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006)))
 
 socenv_HUNT_2$socenv_av_incdich_2 <-
-ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
-
+ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 65609, 1, 0)
+  
 ```     
 
 ### **Variable label**: Average income in euros in 2007 (dichotomized)
 **Variable name**: socenv_av_incdich_2007
-**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).
+**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific mean household income).
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -917,7 +896,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average income in euros in 2011 (dichotomized)  
 **Variable name**: socenv_av_incdich_2011  
-**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)). 
+**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific mean household income). 
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -936,7 +915,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average income in euros in 2013 (dichotomized)  
 **Variable name**: socenv_av_incdich_2013
-**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).   
+**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific mean household income).   
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -956,7 +935,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average income in euros in 2014 (dichotomized) 
 **Variable name**: socenv_av_incdich_2014  
-**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)). 
+**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific mean household income). 
 **Variable type**: integer     
 **Variable unit**:  
 **Category coding**:   
@@ -976,7 +955,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average income in euros in 2015 (dichotomized) 
 **Variable name**: socenv_av_incdich_2015  
-**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific mean household income).     
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -996,7 +975,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average income in euros in 2016 (dichotomized)  
 **Variable name**: socenv_av_incdich_2016  
-**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific mean household income).     
 **Variable type**: integer     
 **Variable unit**:     
 **Category coding**:   
@@ -1065,7 +1044,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_500m_2006  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -1081,7 +1060,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_1000m_2006  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -1096,7 +1075,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 39936, 1, 0)
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_2000m_2006  
-**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
