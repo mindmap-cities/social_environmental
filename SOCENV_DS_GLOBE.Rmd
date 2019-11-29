@@ -1085,7 +1085,7 @@ ifelse((as.numeric(GLOBE2004$AVERAGE_HOUSEHOLD_SIZE_2006))<2, as.numeric(GLOBE20
 
 socenv_GLOBE_2$socenv_av_inc1000dich_2 <-
 ifelse(as.numeric(socenv_GLOBE_2$socenv_av_inc1000dich_2) > 23.896, 1, 0)
-tab1(socenv_GLOBE_2$socenv_av_inc1000dich_2)
+
 ```       
 
 ### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
