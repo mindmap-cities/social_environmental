@@ -823,12 +823,22 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. After this correction, we first calculate income * hh_size and, subsequently, we compare it with the mean gross household income value from Statistics Norway. The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
+We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. 
+Furthermore, it is assumed that when the average household size is 2 or above, there are 2 income earners in the household. The income variable has been calculated as follows: 
+if hh_size<2, income_correction= income*hh_size
+if hh_size>=2, income_correction= income*2
+Subsequently, the income variable has been compared with the country-specific mean gross household income.
+The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
 
 socenv_HUNT_2$socenv_av_inc1000dich_2 <-
-ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 65.609, 1, 0)
+ifelse((as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))<2,
+as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006),
+as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*2)
+
+socenv_HUNT_2$socenv_av_inc1000dich_2 <-
+ifelse(as.numeric(socenv_HUNT_2$socenv_av_inc1000dich_2) > 65.509, 1, 0)
 
 ```   
 
@@ -865,12 +875,22 @@ ifelse(as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numer
 
 **Harmonization status**: complete  
 **Harmonization comment**:
-We dichotomized average gross year income in euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. After this correction, we first calculate income * hh_size and, subsequently, we compare it with the mean gross household income value from Statistics Norway. The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
+We dichotomized average gross year income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. 
+Furthermore, it is assumed that when the average household size is 2 or above, there are 2 income earners in the household. The income variable has been calculated as follows: 
+if hh_size<2, income_correction= income*hh_size
+if hh_size>=2, income_correction= income*2
+Subsequently, the income variable has been compared with the country-specific mean gross household income.
+The final variable has been linked to cohort respondents in 2006 using their municipality code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE} 
 
 socenv_HUNT_2$socenv_av_incdich_2 <-
-ifelse(as.numeric((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006) > 65609, 1, 0)
+ifelse((as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006))<2,
+as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*as.numeric(HUNT3$AVERAGE_HOUSEHOLD_SIZE_2006),
+as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433))*2)
+
+socenv_HUNT_2$socenv_av_incdich_2 <-
+ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich_2) > 65509, 1, 0)
   
 ```     
 
