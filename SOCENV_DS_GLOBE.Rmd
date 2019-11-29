@@ -1067,8 +1067,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
@@ -1097,8 +1097,8 @@ ifelse(as.numeric(socenv_GLOBE_2$socenv_av_inc1000dich_2) > 23.896, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1118,8 +1118,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
@@ -1141,8 +1141,8 @@ ifelse(as.numeric(GLOBE2011$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2011$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
@@ -1164,8 +1164,8 @@ ifelse(as.numeric(GLOBE2014$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(GLOBE2014$
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1185,8 +1185,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1206,8 +1206,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1227,8 +1227,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1248,8 +1248,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1269,8 +1269,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1290,8 +1290,8 @@ For GLOBE, these data are not available.
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible 
 **Harmonization comment**: 
@@ -1353,8 +1353,12 @@ For GLOBE, these data are not available.
 **Variable name**: socenv_av_hhincdich_500m_2006  
 **Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income.       
 **Variable type**: integer     
-**Variable unit**:   
-**Category coding**:   
+**Variable unit**:
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income  
 
 **Harmonization status**: impossible
 **Harmonization comment**: These data are not available for GLOBE 
@@ -1370,7 +1374,12 @@ For GLOBE, these data are not available.
 **Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
-**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income  
+
 
 **Harmonization status**: impossible
 **Harmonization comment**: These data are not available for GLOBE  
@@ -1385,8 +1394,12 @@ For GLOBE, these data are not available.
 **Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
-**Category coding**:   
 
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income  
+ 
 **Harmonization status**: impossible
 **Harmonization comment**: These data are not available for GLOBE  
 **R script**:   
