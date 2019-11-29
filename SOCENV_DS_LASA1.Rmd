@@ -889,6 +889,8 @@ ifelse((as.numeric(LASA1F$AVERAGE_HOUSEHOLD_SIZE_2006))<2, as.numeric(LASA1F$AVE
 socenv_LASA1_4$socenv_av_inc1000dich_4 <-
 ifelse(as.numeric(socenv_LASA1_4$socenv_av_inc1000dich_4) > 23.896, 1, 0)
 
+tab1(socenv_LASA1_4$socenv_av_inc1000dich_4)
+
 
 ```       
 
@@ -934,10 +936,8 @@ Subsequently, the corrected income variable has been compared with the OECD valu
 **R script**:  
 ```{r, echo=TRUE} 
 socenv_LASA1_6$socenv_av_inc1000dich_6 <-
-ifelse((as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011))<2, as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)/sqrt(as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011)), as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*2/sqrt(as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011))) 
+ifelse(as.numeric(LASA1H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA1H$AVERAGE_HOUSEHOLD_SIZE_2011) > 60.401, 1, 0)
 
-socenv_LASA1_6$socenv_av_inc1000dich_6 <-
-ifelse(as.numeric(socenv_LASA1_6$socenv_av_inc1000dich_6) > 25.101, 1, 0)
 
 ```       
 
