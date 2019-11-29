@@ -819,7 +819,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in 1000 euros in 2005 (dichotomized)  
 **Variable name**: socenv_av_inc1000dich_2005  
-**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2005 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**: 
@@ -839,7 +839,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in 1000 euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_inc1000dich_2006 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average income in 1000 euros of residents in residential area in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:
@@ -859,7 +859,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in 1000 euros in 2011 (dichotomized)   
 **Variable name**: socenv_av_inc1000dich_2011 
-**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in 1000 euros of residents in residential area in 2011 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -879,7 +879,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in euros in 2006 (dichotomized)  
 **Variable name**: socenv_av_incdich_2006  
-**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in euros of residents in residential area in 2006 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -899,7 +899,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in euros in 2007 (dichotomized) 
 **Variable name**: socenv_av_incdich_2007
-**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average income in euros of residents in residential area in 2007 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -919,7 +919,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in euros in 2011 (dichotomized)  
 **Variable name**: socenv_av_incdich_2011  
-**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average income in euros of residents in residential area in 2011 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:      
 **Category coding**:   
@@ -939,7 +939,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 ### **Variable label**: Average income in euros in 2013 (dichotomized)  
 **Variable name**: socenv_av_incdich_1
-**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in euros of residents in residential area in 2013 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -951,7 +951,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Harmonization status**:  complete
 **Harmonization comment**:
-We dichotomized average net year income of residents in the region (this is not a very detailed spatial level) in 2013 by comparing it with the country-specific net mean household income (OECD-data) in 2013 (€9750). The net mean household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851.
+We dichotomized average net year income of residents in the region (this is not a very detailed spatial level) in 2013 by comparing it with the country-specific mean net household income (OECD-data) in 2013 (€9750). The mean net household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851.
 OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and assume that when the average household size is 2 or above, there are 2 income earners in the household.
 The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size/sqrt(hh_size)
@@ -971,7 +971,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 ### **Variable label**: Average income in euros in 2014 (dichotomized) 
 **Variable name**: socenv_av_incdich_2014  
-**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific net mean household income (OECD)).      
+**Variable description**: Average income in euros of residents in residential area in 2014 (dichotomized: below/above country-specific mean household income).      
 **Variable type**: integer     
 **Variable unit**:  
 **Category coding**:   
@@ -991,7 +991,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 ### **Variable label**: Average income in euros in 2015 (dichotomized) 
 **Variable name**: socenv_av_incdich_2015  
-**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable description**: Average income in euros of residents in residential area in 2015 (dichotomized: below/above country-specific mean household income).     
 **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
@@ -1011,7 +1011,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 ### **Variable label**: Average income in euros in 2016 (dichotomized)  
 **Variable name**: socenv_av_incdich_2016  
-**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific net mean household income (OECD)).     
+**Variable description**: Average income in euros of residents in residential area in 2016 (dichotomized: below/above country-specific mean household income).     
 **Variable type**: integer     
 **Variable unit**:     
 **Category coding**:   
@@ -1078,7 +1078,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_500m_0  
-**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -1100,7 +1100,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_1000m_0  
-**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
@@ -1120,7 +1120,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 ### **Variable label**: Average household income in euros in 2006 (dichotomized)
 **Variable name**: socenv_av_hhincdich_2000m_0  
-**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific net mean household income (OECD)).       
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address in 2006 (dichotomized: below/above country-specific mean household income).       
 **Variable type**: integer     
 **Variable unit**:   
 **Category coding**:   
