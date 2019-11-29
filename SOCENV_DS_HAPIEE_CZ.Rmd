@@ -826,8 +826,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
@@ -846,8 +846,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
@@ -866,8 +866,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
@@ -886,8 +886,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available. 
@@ -906,8 +906,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
@@ -926,8 +926,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.  
@@ -946,8 +946,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  complete
 **Harmonization comment**:
@@ -978,8 +978,8 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.
@@ -998,8 +998,8 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.
@@ -1018,8 +1018,8 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**:  impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.
@@ -1085,8 +1085,8 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.
@@ -1107,8 +1107,8 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.
@@ -1127,8 +1127,8 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 
 **Code** | **Category Label**  
 ------------- | -------------  
-0 | Less than or equal to country-specific net mean household income
-1 | Greater than country-specific net mean household income   
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
 
 **Harmonization status**: impossible
 **Harmonization comment**: For HAPIEE-CZ, this variable is not available.
