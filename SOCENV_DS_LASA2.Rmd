@@ -864,7 +864,7 @@ For LASA, these data are not available.
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average net year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895). OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and assume that when the average household size is 2 or above, there are 2 income earners in the household.
+We dichotomized average net yearly income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895). OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and we also make the assumption that when the average household size is 2 or above, there are 2 income earners in the household.
 The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size/sqrt(hh_size)
 if hh_size>=2, income_correction= income*2/sqrt(hh_size)
@@ -875,7 +875,7 @@ socenv_LASA2_1$socenv_av_inc1000dich_1 <-
 ifelse((as.numeric(LASA2F$AVERAGE_HOUSEHOLD_SIZE_2006))<2, as.numeric(LASA2F$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(LASA2F$AVERAGE_HOUSEHOLD_SIZE_2006)/sqrt(as.numeric(LASA2F$AVERAGE_HOUSEHOLD_SIZE_2006)), as.numeric(LASA2F$AVERAGE_INCOME_RESIDENTS_2005)*2/sqrt(as.numeric(LASA2F$AVERAGE_HOUSEHOLD_SIZE_2006))) 
  
 socenv_LASA2_1$socenv_av_inc1000dich_1 <-
-ifelse(as.numeric(socenv_LASA2_1$socenv_av_inc1000dich_1) > 23.896, 1, 0)
+ifelse(as.numeric(socenv_LASA2_1$socenv_av_inc1000dich_1) > 23.895, 1, 0)
 
 
 ```    
@@ -914,8 +914,8 @@ ifelse(as.numeric(socenv_LASA2_1$socenv_av_inc1000dich_1) > 23.896, 1, 0)
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross year income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific mean gross household income (data from Statistics Netherlands) in 2011 (€60400). 
-It is assumed that when the average household size is 2 or above, there are 2 income earners in the household.
+We dichotomized average gross yearly income in 1000 euros of residents in the neighbourhood by comparing it with the country-specific mean gross household income (data from Statistics Netherlands) in 2011 (€60400). 
+We make the assumption that when the average household size is 2 or above, there are 2 income earners in the household.
 The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size
 if hh_size>=2, income_correction= income*2
@@ -926,7 +926,7 @@ socenv_LASA2_3$socenv_av_inc1000dich_3 <-
 ifelse((as.numeric(LASA2H$AVERAGE_HOUSEHOLD_SIZE_2011))<2, as.numeric(LASA2H$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(LASA2H$AVERAGE_HOUSEHOLD_SIZE_2011), as.numeric(LASA2H$AVERAGE_INCOME_RESIDENTS_2011)*2)
 
 socenv_LASA2_3$socenv_av_inc1000dich_3 <-
-ifelse(as.numeric(socenv_LASA2_3$socenv_av_inc1000dich_3) > 60.401, 1, 0)
+ifelse(as.numeric(socenv_LASA2_3$socenv_av_inc1000dich_3) > 60.400, 1, 0)
 
 ```        
 
