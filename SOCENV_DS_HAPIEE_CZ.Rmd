@@ -951,8 +951,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 
 **Harmonization status**:  complete
 **Harmonization comment**:
-We dichotomized average net year income of residents in the region (this is not a very detailed spatial level) in 2013 by comparing it with the country-specific mean net household income (OECD-data) in 2013 (€9750). The mean net household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851.
-OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and assume that when the average household size is 2 or above, there are 2 income earners in the household.
+We dichotomized average net yearly income of residents in the region (this is not a very detailed spatial level) in 2013 by comparing it with the country-specific mean net household income (OECD-data) in 2013 (€9750). The mean net household income in Czech Republic in 2013 was CZK 253181. The ECB currency conversion in 2013 was 1CZK=€0.03851.
+OECD uses a square root scale which is a scale that divides household income by the square root of household size. We take this correction into account and make the assumption that when the average household size is 2 or above, there are 2 income earners in the household.
 The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size/sqrt(hh_size)
 if hh_size>=2, income_correction= income*2/sqrt(hh_size)
