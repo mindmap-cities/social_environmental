@@ -823,7 +823,7 @@ socenv_HUNT_2$socenv_av_inc_2<-as.integer(round(as.numeric(HUNT3$AVERAGE_INCOME_
 
 **Harmonization status**: complete  
 **Harmonization comment**: 
-We dichotomized average gross yearly income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. 
+We dichotomized average gross yearly income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross yearly income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. 
 Furthermore, we make the assumption that when the average household size is 2 or above, there are 2 income earners in the household. The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size
 if hh_size>=2, income_correction= income*2
@@ -875,7 +875,7 @@ ifelse(as.numeric(socenv_HUNT_2$socenv_av_inc1000dich_2) > 65.508, 1, 0)
 
 **Harmonization status**: complete  
 **Harmonization comment**:
-We dichotomized average gross yearly income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross year income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. 
+We dichotomized average gross yearly income in 1000 euros of residents aged 17 years or older in the municipality in 2006 by comparing it with the country-specific gross mean household income (data from Norway Statistics) in 2006. The country-specific mean gross household income in 2006 was €65608 (527700 NOK; ECB currency conversion in 2006: 1.00NOK=€0.12433). The original variable on average gross yearly income was calculated using an incorrect exchange rate (1NOK=€0.0961356). This has been corrected here. 
 Furthermore, we make the assumption that when the average household size is 2 or above, there are 2 income earners in the household. The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size
 if hh_size>=2, income_correction= income*2
