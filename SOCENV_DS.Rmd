@@ -5912,8 +5912,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_0    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -5929,8 +5928,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_1    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -5946,8 +5944,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_2    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -5963,8 +5960,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_3    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -5980,8 +5976,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_4    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -5997,8 +5992,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_5    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6014,8 +6008,7 @@ output: html_document
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_6    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
