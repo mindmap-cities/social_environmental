@@ -1803,7 +1803,7 @@ as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*as.numeric(HUNT
 as.numeric(((HUNT3$AVERAGE_INCOME_2006/0.0961356)*0.12433)/1000)*2)
 
 socenv_HUNT_2$socenv_av_incdich1000_2 <-
-ifelse(as.numeric(socenv_HUNT_2$socenv_av_inc1000dich_2) > 65.508, 1, 0)
+ifelse(as.numeric(socenv_HUNT_2$socenv_av_incdich1000_2) > 65.508, 1, 0)
 
 ```   
 
