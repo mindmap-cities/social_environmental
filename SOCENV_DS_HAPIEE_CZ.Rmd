@@ -3628,6 +3628,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Variable unit**:   
 **Category coding**:   
 
+**Harmonization status**: complete 
 **Harmonization comment**:  
 For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable represents the percentage of unemployed residents aged 15 years or older in the neighbourhood in 2011. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
 **R script**:  
@@ -5999,8 +6000,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_0    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6016,8 +6016,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_1    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6033,8 +6032,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_2    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6050,8 +6048,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_3    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6067,8 +6064,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_4    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6084,8 +6080,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_5    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6101,8 +6096,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_6    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.         
-**Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
