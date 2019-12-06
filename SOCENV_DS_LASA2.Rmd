@@ -2962,14 +2962,6 @@ socenv_LASA2_1$socenv_av_inc1000Z_1 <- (as.numeric(LASA2F$AVERAGE_INCOME_RESIDEN
 ```
 
 
-
-### **Variable label**: Average income in 1000 euros (Z standardised)  
-**Variable name**: socenv_av_inc1000Z_3  
-**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
-**Variable type**: integer     
-**Variable unit**:   
-**Category coding**:   
-
 ### **Variable label**: Average income in 1000 euros in 2011 (Z standardized)   
 **Variable name**: socenv_av_inc1000Z_3 
 **Variable description**: Average income in 1000 euros of residents in residential area in 2011 (standardized: mean=0 and sd=1).   
