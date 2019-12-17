@@ -68,7 +68,7 @@ opal.logout(erasmus_opal)
 
 **Harmonization status**: complete 
 **Harmonization comment**:  
-For RECORD, this variable is available for neighbourhoods in 2009. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents at wave 2007 and 2011 using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
+For RECORD, this variable is available for municipalities in 2009. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents at wave 2007 and 2011 using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -88,7 +88,7 @@ socenv_RECORD_0$socenv_urbanization_grade_0 <-as.integer(round(RECORD_w1_1$URBAN
 
 **Harmonization status**: complete
 **Harmonization comment**: 
-For RECORD, this variable is available for neighbourhoods in 2009. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents at wave 2007 and 2011 using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
+For RECORD, this variable is available for municipalities in 2009. This variable was calculated by: number of residents in area / area size. This variable has been linked to cohort respondents at wave 2007 and 2011 using their 5-digit postal code. References to the original data sources are listed in the WP7 deliverable report. 
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1044,7 +1044,7 @@ socenv_RECORD_1$socenv_urbanization_grade_1 <-as.integer(round(RECORD_w2$URBANIZ
 
 **Harmonization status**:  complete
 **Harmonization comment**: 
-For RECORD, these data are available for neighbourhoods in 2014. This variable was calculated by: total number of residents in area / total number of households in area * 100. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked cohort respondents using their 5-digit postal code.References of all data sources are listed in the WP7 deliverable report.
+For RECORD, these data are available for municipalities in 2014. This variable was calculated by: total number of residents in area / total number of households in area * 100. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked cohort respondents using their 5-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -1404,7 +1404,7 @@ socenv_RECORD_1$socenv_average_hh_size_1 <-as.integer(round(as.numeric(RECORD_w2
 
 **Harmonization status**: complete 
 **Harmonization comment**:  
-For RECORD, these data are available for neighbourhoods in 2014. This variable was caluclated by: total number of unoccupied dwellings in the area / total number of dwellings in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of all data sources are listed in the WP7 deliverable report.
+For RECORD, these data are available for municipalities in 2014. This variable was caluclated by: total number of unoccupied dwellings in the area / total number of dwellings in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of all data sources are listed in the WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE}
 
@@ -3611,7 +3611,7 @@ socenv_RECORD_0$socenv_av_hhincdich_2000m_0 <- ifelse(as.numeric(RECORD_w1_1$Inc
 
 **Harmonization status**:  complete
 **Harmonization comment**:
-For RECORD, these data are available for neighbourhoods in 2014. This variable includes the percentage of unemployed residents aged 15-64 years in the neighbourhood. This variable was calculated by: total number of unemployed residents aged 15-64 years old in the area / total number of residents aged 15-64 years old in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of the original data sources are listed in WP7 deliverable report.
+For RECORD, these data are available for municipalities in 2014. This variable includes the percentage of unemployed residents aged 15-64 years in municipalties. This variable was calculated by: total number of unemployed residents aged 15-64 years old in the area / total number of residents aged 15-64 years old in the area * 100. This variable has been linked to cohort respondents at wave 2011 using their 5-digit postal code. References of the original data sources are listed in WP7 deliverable report.
 **R script**:  
 ```{r, echo=TRUE} 
 
@@ -6454,13 +6454,14 @@ socenv_RECORD_0$socenv_city_0 <-as.integer(RECORD_w1_1$city)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible 
-**Harmonization comment**:  
+**Harmonization status**: complete
+**Harmonization comment**:  For RECORD, the indicator variables start with 33. The raw variable 'neighbourhood' is related to municipality. 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
 
-```
+socenv_RECORD_0$socenv_municipality_0 <-as.integer(RECORD_w1_1$neighbourhood) 
+
+``` 
 
 
 
@@ -6471,13 +6472,14 @@ socenv_RECORD_0$socenv_city_0 <-as.integer(RECORD_w1_1$city)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: impossible 
-**Harmonization comment**:  
+**Harmonization status**: complete
+**Harmonization comment**:  For RECORD, the indicator variables start with 33. The raw variable 'neighbourhood' is related to municipality.  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
 
-```
+socenv_RECORD_1$socenv_municipality_1 <-as.integer(RECORD_w2$neighbourhood) 
+
+``` 
 
 
 
@@ -6573,14 +6575,13 @@ socenv_RECORD_0$socenv_city_0 <-as.integer(RECORD_w1_1$city)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
-**Harmonization comment**: For RECORD, the indicator variables start with 33.  
+**Harmonization status**: impossible
+**Harmonization comment**:
 **R script**:  
 ```{r, echo=TRUE}  
+#This is where the R-script will be written  
 
-socenv_RECORD_0$socenv_neighbourhood_0 <-as.integer(RECORD_w1_1$neighbourhood) 
-
-``` 
+```
 
 
 
@@ -6591,14 +6592,13 @@ socenv_RECORD_0$socenv_neighbourhood_0 <-as.integer(RECORD_w1_1$neighbourhood)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
-**Harmonization comment**: For RECORD, the indicator variables start with 33.  
+**Harmonization status**: impossible
+**Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
+#This is where the R-script will be written  
 
-socenv_RECORD_1$socenv_neighbourhood_1 <-as.integer(RECORD_w2$neighbourhood) 
-
-``` 
+```
 
 
 
