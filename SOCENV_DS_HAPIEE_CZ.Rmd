@@ -14,14 +14,29 @@ library(dplyr)
 erasmus_opal <- opal.login()
 #Login to Opal server and assign the content of the HAPIEE table(s) to your RStudio environment
 #HAPIEE_W1 
-opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list(''))
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W1', 'HAPIEE.HAPIEE_W1',variables = list('country'))
 HAPIEE_W1<- opal.execute(erasmus_opal,'HAPIEE_W1')
+
 #HAPIEE_W2 
 opal.assign.table.tibble(erasmus_opal, 'HAPIEE_CZ_Socioenviro', 'HAPIEE.HAPIEE_CZ_Socioenviro',variables = list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011",
 "PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","UNEMPLOYMENT_RATE_2011","PROPORTION_LOW_EDUCATION_2011","PROPORTION_INTERMEDIATE_EDUCATION_2011",
 "PROPORTION_HIGH_EDUCATION_2011","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2016","AVERAGE_VALUE_DWELLINGS_M2_2013","AVERAGE_VALUE_DWELLINGS_M2_2014",
 "AVERAGE_VALUE_DWELLINGS_M2_2015","AVERAGE_HOUSEHOLD_SIZE_2014","AVERAGE_HOUSEHOLD_SIZE_2015","AVERAGE_HOUSEHOLD_SIZE_2016","AVERAGE_INCOME_2013","AVERAGE_INCOME_2014","AVERAGE_INCOME_2015","neighbourhood_2006","city_2006","municipality_2006"))
-HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_CZ_Socioenviro')
+
+HAPIEE_W2_socenv<- opal.execute(erasmus_opal,'HAPIEE_CZ_Socioenviro')
+
+opal.assign.table.tibble(erasmus_opal, 'HAPIEE_W2', 'HAPIEE.HAPIEE_W2', variable = list('country'))
+
+HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_W2')
+
+
+```
+
+## Select country-specific sample
+```{r,echo=FALSE}
+HAPIEE_W2 <- merge(HAPIEE_W2, HAPIEE_W2_socenv, by="id")
+HAPIEE_W1 <- subset(HAPIEE_W1, HAPIEE_W1$country==1)
+HAPIEE_W2 <- subset(HAPIEE_W2, HAPIEE_W2$country==1)
 ```
 
 ## Assign participant id as first column of your harmonized dataframes
