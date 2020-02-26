@@ -34,7 +34,7 @@ HAPIEE_W2<- opal.execute(erasmus_opal,'HAPIEE_W2')
 
 ## Select country-specific sample
 ```{r,echo=FALSE}
-HAPIEE_W2 <- merge(HAPIEE_W2, HAPIEE_W2_socenv, by="id")
+HAPIEE_W2 <- merge(HAPIEE_W2, HAPIEE_W2_socenv, by="id", all=TRUE)
 HAPIEE_W1 <- subset(HAPIEE_W1, HAPIEE_W1$country==1)
 HAPIEE_W2 <- subset(HAPIEE_W2, HAPIEE_W2$country==1)
 ```
@@ -77,7 +77,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -114,7 +114,7 @@ socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -131,7 +131,7 @@ socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -148,7 +148,7 @@ socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -165,7 +165,7 @@ socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -182,7 +182,7 @@ socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -201,7 +201,7 @@ socenv_HAPIEE_CZ_1$socenv_urbanization_grade_1<-as.integer(HAPIEE_W2$URBANIZATIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -238,7 +238,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -255,7 +255,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -272,7 +272,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -289,7 +289,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -306,7 +306,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -323,7 +323,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_men_1<-as.numeric(HAPIEE_W2$PROPORTION_MEN_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```  
 
@@ -357,7 +357,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -374,7 +374,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -391,7 +391,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -408,7 +408,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -425,7 +425,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -442,7 +442,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_women_1<-as.numeric(HAPIEE_W2$PROPORTION_WO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -478,7 +478,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -495,7 +495,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -512,7 +512,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -529,7 +529,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -546,7 +546,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -563,7 +563,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_65_older_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -599,7 +599,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -616,7 +616,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -633,7 +633,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -650,7 +650,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -667,7 +667,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -684,7 +684,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_unmarried_1<-as.numeric(HAPIEE_W2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -721,7 +721,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -738,7 +738,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -750,12 +750,11 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -767,12 +766,11 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -784,12 +782,11 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -806,7 +803,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -818,7 +815,6 @@ socenv_HAPIEE_CZ_1$socenv_percentage_married_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
-
 **Harmonization status**:  complete
 **Harmonization comment**: 
 For HAPIEE-CZ, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to HAPIEE-CZ participants at wave 2006.
@@ -838,12 +834,11 @@ socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -855,12 +850,11 @@ socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Variable type**: decimal  
 **Variable unit**:   
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -877,7 +871,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -894,7 +888,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -911,7 +905,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -928,7 +922,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_divorced_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -964,7 +958,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -981,7 +975,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -998,7 +992,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1015,7 +1009,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1032,7 +1026,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1049,7 +1043,7 @@ socenv_HAPIEE_CZ_1$socenv_percentage_widowed_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1086,7 +1080,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1103,7 +1097,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1120,7 +1114,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1137,7 +1131,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1154,7 +1148,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1173,7 +1167,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1190,7 +1184,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1207,7 +1201,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1224,7 +1218,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1241,7 +1235,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1258,7 +1252,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1275,7 +1269,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1292,7 +1286,7 @@ socenv_HAPIEE_CZ_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(HAPIEE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1311,7 +1305,7 @@ For HAPIEE-CZ, information on average value of a plot (m2) in euros in districts
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE_DWELLINGS_M2_2013) 
+socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(round(HAPIEE_W2$AVERAGE_VALUE_DWELLINGS_M2_2013))
 
 ```    
 
@@ -1329,7 +1323,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1346,7 +1340,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1363,7 +1357,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1380,7 +1374,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1397,7 +1391,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1414,7 +1408,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1431,7 +1425,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1448,7 +1442,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1465,7 +1459,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1482,7 +1476,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1499,7 +1493,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1516,7 +1510,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1535,7 +1529,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1552,7 +1546,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1569,7 +1563,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1586,7 +1580,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1603,7 +1597,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1620,7 +1614,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1637,7 +1631,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1654,7 +1648,7 @@ socenv_HAPIEE_CZ_1$socenv_avv_dwelling_m2_1 <-as.integer(HAPIEE_W2$AVERAGE_VALUE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1690,7 +1684,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1707,7 +1701,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1724,7 +1718,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1741,7 +1735,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1758,7 +1752,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1780,7 +1774,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1802,7 +1796,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1824,7 +1818,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1846,7 +1840,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1868,7 +1862,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1890,7 +1884,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1912,7 +1906,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1934,7 +1928,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inc_1<-as.integer(round(as.numeric(HAPIEE_W2$AVERAG
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -1989,7 +1983,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2011,7 +2005,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2033,7 +2027,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2055,7 +2049,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2077,7 +2071,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2094,7 +2088,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2106,12 +2100,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2123,12 +2116,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2140,12 +2132,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2162,7 +2153,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2174,12 +2165,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2196,7 +2186,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2208,12 +2198,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2230,7 +2219,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2242,12 +2231,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2259,12 +2247,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2276,12 +2263,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2293,12 +2279,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2310,12 +2295,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2327,12 +2311,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2344,12 +2327,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2366,7 +2348,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2378,12 +2360,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2395,12 +2376,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2417,7 +2397,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2429,12 +2409,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable type**: integer     
 **Variable unit**: euros  
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2456,7 +2435,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2478,7 +2457,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2500,7 +2479,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2522,7 +2501,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2544,7 +2523,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2566,7 +2545,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2588,7 +2567,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2610,7 +2589,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2632,7 +2611,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2654,7 +2633,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2676,7 +2655,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2698,7 +2677,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2720,7 +2699,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2742,7 +2721,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2764,7 +2743,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2786,7 +2765,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2808,7 +2787,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2830,7 +2809,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2852,7 +2831,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2874,7 +2853,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2896,7 +2875,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2913,7 +2892,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2930,7 +2909,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2947,7 +2926,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2964,7 +2943,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2981,7 +2960,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -2998,7 +2977,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3015,7 +2994,7 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3026,12 +3005,11 @@ ifelse(as.numeric(socenv_HAPIEE_CZ_1$socenv_av_incdich_1) > 9750, 1, 0)
 **Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
-
 **Harmonization status**: impossible 
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```   
 
@@ -3067,7 +3045,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3075,7 +3053,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_3  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3083,7 +3062,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3091,7 +3070,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_4  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3099,7 +3079,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3107,7 +3087,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_5  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3115,7 +3096,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3123,7 +3104,8 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_6  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3131,7 +3113,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3149,7 +3131,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3167,7 +3149,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3185,7 +3167,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3203,7 +3185,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3221,7 +3203,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3239,7 +3221,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3256,7 +3238,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3273,7 +3255,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3290,7 +3272,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3307,7 +3289,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3324,7 +3306,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3341,7 +3323,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3358,7 +3340,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3375,7 +3357,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3392,7 +3374,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3409,7 +3391,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3426,7 +3408,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3443,7 +3425,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3460,7 +3442,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3477,7 +3459,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3494,7 +3476,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3511,7 +3493,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3526,7 +3508,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3543,7 +3525,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3560,7 +3542,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3577,7 +3559,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3594,7 +3576,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3611,7 +3593,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3630,7 +3612,7 @@ socenv_HAPIEE_CZ_1$socenv_av_inZ_1 <- (as.numeric(HAPIEE_W2$AVERAGE_INCOME_2013)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3667,7 +3649,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3684,7 +3666,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3701,7 +3683,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3718,7 +3700,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3735,7 +3717,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3754,7 +3736,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3771,7 +3753,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3788,7 +3770,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3805,7 +3787,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3822,7 +3804,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3839,7 +3821,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3856,7 +3838,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3873,7 +3855,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ``` 
 
@@ -3890,7 +3872,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3907,7 +3889,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3924,7 +3906,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3941,7 +3923,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3958,7 +3940,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3975,7 +3957,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -3992,7 +3974,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4009,7 +3991,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4026,7 +4008,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4043,7 +4025,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4060,7 +4042,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4077,7 +4059,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4094,7 +4076,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4113,7 +4095,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_unemployment_1<-as.numeric(HAPIEE_W2$UNEMPLOYMENT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4149,7 +4131,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4166,7 +4148,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4183,7 +4165,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4200,7 +4182,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4217,7 +4199,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4234,7 +4216,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_low_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4270,7 +4252,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4287,7 +4269,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4304,7 +4286,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4321,7 +4303,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4338,7 +4320,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4355,7 +4337,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_itm_education_1<-as.numeric(HAPIEE_W2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4393,7 +4375,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4410,7 +4392,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4427,7 +4409,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4444,7 +4426,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4461,7 +4443,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4480,7 +4462,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4497,7 +4479,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4514,7 +4496,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4531,7 +4513,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4548,7 +4530,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4565,7 +4547,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4582,7 +4564,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4599,7 +4581,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4616,7 +4598,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4633,7 +4615,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4650,7 +4632,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4667,7 +4649,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4684,7 +4666,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4701,7 +4683,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4718,7 +4700,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4735,7 +4717,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4752,7 +4734,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4769,7 +4751,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4786,7 +4768,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4803,7 +4785,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4820,7 +4802,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4837,7 +4819,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4854,7 +4836,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4871,7 +4853,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4888,7 +4870,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4905,7 +4887,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4922,7 +4904,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4939,7 +4921,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4955,7 +4937,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4971,7 +4953,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -4987,7 +4969,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5003,7 +4985,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5019,7 +5001,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5035,7 +5017,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5051,7 +5033,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5068,7 +5050,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5085,7 +5067,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5102,7 +5084,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5119,7 +5101,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5136,7 +5118,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5153,7 +5135,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5170,7 +5152,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5187,7 +5169,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5204,7 +5186,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5221,7 +5203,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5238,7 +5220,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5255,7 +5237,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5272,7 +5254,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5289,7 +5271,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5306,7 +5288,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5323,7 +5305,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5340,7 +5322,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5357,7 +5339,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5374,7 +5356,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5391,7 +5373,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5408,7 +5390,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5425,7 +5407,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5442,7 +5424,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5459,7 +5441,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5476,7 +5458,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5493,7 +5475,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5510,7 +5492,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5527,7 +5509,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5546,7 +5528,7 @@ socenv_HAPIEE_CZ_1$socenv_perc_high_education_1<-as.numeric(HAPIEE_W2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5582,7 +5564,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5599,7 +5581,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5616,7 +5598,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5633,7 +5615,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5650,7 +5632,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5667,7 +5649,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5684,7 +5666,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5701,7 +5683,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5718,7 +5700,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5735,7 +5717,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5752,7 +5734,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5769,7 +5751,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5786,7 +5768,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5803,7 +5785,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5820,7 +5802,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5837,7 +5819,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5854,7 +5836,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5871,7 +5853,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5888,7 +5870,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5905,7 +5887,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5922,7 +5904,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5939,7 +5921,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5956,7 +5938,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5973,7 +5955,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -5990,7 +5972,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6007,7 +5989,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6015,7 +5997,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_0    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6023,7 +6006,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6031,7 +6014,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_1    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.   
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6039,7 +6023,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6047,7 +6031,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_2    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6055,7 +6040,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6063,7 +6048,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_3    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6071,7 +6057,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6079,7 +6065,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_4    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6087,7 +6074,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6095,7 +6082,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_5    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6103,7 +6091,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6111,7 +6099,8 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 
 ### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
 **Variable name**: socenv_violentcrim_sexoff_6    
-**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    
+**Variable type**: integer      
 **Variable unit**:   
 **Category coding**:   
 
@@ -6119,7 +6108,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6136,7 +6125,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6153,7 +6142,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6170,7 +6159,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6187,7 +6176,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6204,7 +6193,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6221,7 +6210,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6238,7 +6227,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6255,7 +6244,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6272,7 +6261,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6289,7 +6278,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6306,7 +6295,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6323,7 +6312,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6340,7 +6329,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6357,7 +6346,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6376,7 +6365,7 @@ socenv_HAPIEE_CZ_1$socenv_crimoff_1<-as.integer(HAPIEE_W2$NUMBER_CRIMINAL_OFFENS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6411,7 +6400,7 @@ socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6428,7 +6417,7 @@ socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6445,7 +6434,7 @@ socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6462,7 +6451,7 @@ socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6479,7 +6468,7 @@ socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6496,7 +6485,7 @@ socenv_HAPIEE_CZ_1$socenv_city_1<- as.integer(HAPIEE_W2$city_2006)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6532,7 +6521,7 @@ socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6549,7 +6538,7 @@ socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6566,7 +6555,7 @@ socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6583,7 +6572,7 @@ socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6600,7 +6589,7 @@ socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6617,7 +6606,7 @@ socenv_HAPIEE_CZ_1$socenv_municipality_1<-as.integer(HAPIEE_W2$municipality_2006
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6654,7 +6643,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6671,7 +6660,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6688,7 +6677,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6705,7 +6694,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6722,7 +6711,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6739,7 +6728,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6756,7 +6745,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6773,7 +6762,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6790,7 +6779,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6807,7 +6796,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6824,7 +6813,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6841,7 +6830,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6858,7 +6847,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6875,7 +6864,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6892,7 +6881,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6909,7 +6898,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6926,7 +6915,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6943,7 +6932,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6960,7 +6949,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6977,7 +6966,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -6994,7 +6983,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -7011,7 +7000,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -7028,7 +7017,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -7045,7 +7034,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -7062,7 +7051,7 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
 
@@ -7079,6 +7068,6 @@ socenv_HAPIEE_CZ_1$socenv_neighbourhood_1<-as.integer(HAPIEE_W2$neighbourhood_20
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+ 
 
 ```
