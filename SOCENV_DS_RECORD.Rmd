@@ -6933,13 +6933,11 @@ socenv_RECORD_1$socenv_municipality_1 <-as.integer(RECORD_w2$neighbourhood)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
-For RECORD, the indicator variables start with 33.
 **R script**:  
 ```{r, echo=TRUE}  
 
-socenv_RECORD_0$socenv_pc5_0 <-as.integer(RECORD_w1_1$pc5)
 
 ```
 
@@ -6952,12 +6950,10 @@ socenv_RECORD_0$socenv_pc5_0 <-as.integer(RECORD_w1_1$pc5)
 **Variable unit**:   
 **Category coding**:   
 
-**Harmonization status**: complete
+**Harmonization status**: impossible
 **Harmonization comment**:  
-For RECORD, the indicator variables start with 33.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_RECORD_1$socenv_pc5_1 <-as.integer(RECORD_w2$pc5) 
 
 ```
 
