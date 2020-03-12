@@ -1,0 +1,5061 @@
+
+---
+title: "Social environmental (i.e. geospatial) DataSchema"
+output: html_document
+---
+# Table of Contents
+1. [Urbanization grade](#Urbanzation grade)  
+2. [Demographics](#Demographics)  
+3. [Housing](#Housing)  
+4. [Income](#Income)  
+5. [Unemployment](#Unemployment)  
+6. [Social security](#Social security)  
+7. [Educational level](#Educational level)  
+8. [Crime](#Crime)
+9. [Area indicators] (#Area indicators)
+  
+
+# Urbanization grade
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_0    
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_1   
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_2    
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_3    
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_4    
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_5    
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Urbanization grade  
+**Variable name**: socenv_urbanization_grade_6    
+**Variable description**: Population density of the residential area (number of residents per km2). 
+**Variable type**: integer
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+# Demographics
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_0    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_1    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_2    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_3    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_4    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_5    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of men 
+**Variable name**: socenv_percentage_men_6    
+**Variable description**: Percentage of men in the residential area.  
+**Variable type**: decimal
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_0    
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_1   
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```  
+
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_2   
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_3   
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_4   
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_5   
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of women  
+**Variable name**: socenv_percentage_women_6   
+**Variable description**: Percentage of women in the residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_0   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_1   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_2   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_3   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_4   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_5   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents aged 65 or older   
+**Variable name**: socenv_percentage_65_older_6   
+**Variable description**: Percentage of residents aged 65 or older in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_0   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_1   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_2   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_3   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_4   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_5   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unmarried residents  
+**Variable name**: socenv_percentage_unmarried_6   
+**Variable description**: Percentage of unmarried residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_0   
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_1    
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_2   
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_3   
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_4   
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_5   
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of married residents  
+**Variable name**: socenv_percentage_married_6   
+**Variable description**: Percentage of married residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_0   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_1   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_2   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_3   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_4   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_5   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of divorced residents   
+**Variable name**: socenv_percentage_divorced_6   
+**Variable description**: Percentage of divorced residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_0   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_1   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_2   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_3   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_4   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_5   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of widowed residents   
+**Variable name**: socenv_percentage_widowed_6   
+**Variable description**: Percentage of widowed residents in residential area.  
+**Variable type**: decimal  
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_0
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_1
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_2
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_3
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_4
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_5
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household size  
+**Variable name**: socenv_average_hh_size_6
+**Variable description**: Average household size in residential area.  
+**Variable type**: integer   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+# Housing
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_0 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_1 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_2 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_3 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_4 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_5 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of dwellings in 1000 euros    
+**Variable name**: socenv_avv_dwellings_6 
+**Variable description**: Average value of dwellings in 1000 euros in residential area.    
+**Variable type**: integer   
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_0  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_1  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_2  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_3  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_4  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_5  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average value of a plot (m2) in euros (dwellings)    
+**Variable name**: socenv_avv_dwelling_m2_6  
+**Variable description**: Average value of a plot in euros (dwellings) in the residential area.    
+**Variable type**: integer   
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_0
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_1
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_2
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_3
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_4
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_5
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of unoccupied dwellings   
+**Variable name**: socenv_perc_unocc_dwellings_6
+**Variable description**: Percentage of unoccupied dwellings in residential area.    
+**Variable type**: decimal   
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+# Income
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_0  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_1  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_2  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_3  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_4  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_5  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros 
+**Variable name**: socenv_av_inc1000_6  
+**Variable description**: Average income in 1000 euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: 1000 euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_0  
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_1  
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_2  
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_3  
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_4 
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_5  
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros 
+**Variable name**: socenv_av_inc_6  
+**Variable description**: Average income in euros of residents in residential area.    
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_0 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_1 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_2 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_3 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_4 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_5 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (dichotomized)  
+**Variable name**: socenv_av_incdich1000_6 
+**Variable description**: Average income in 1000 euros of residents in residential area (dichotomized: below/above country-specific mean household income).    
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_0  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_1  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_2  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_3  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_4  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_5  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (dichotomized) 
+**Variable name**: socenv_av_incdich_6  
+**Variable description**: Average income in euros of residents in residential area (dichotomized: below/above country-specific  mean household income).     
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_0  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_1  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_2  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_3  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_4  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_5  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_500m_6  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_0  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_1  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_2  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_3  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_4  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_5  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_1000m_6  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_0  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_1  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address.
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_2  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_3  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_4  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address.
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_5  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros
+**Variable name**: socenv_av_hhinc_2000m_6  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address. 
+**Variable type**: integer     
+**Variable unit**: euros  
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_0  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_1  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_2  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_3  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_4  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_5  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_500m_6  
+**Variable description**: Average household income in euros in 500 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_0  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_1  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_2  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_3  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_4  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_5  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_1000m_6  
+**Variable description**: Average household income in euros in 1000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_0  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_1  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_2  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_3  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_4  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_5  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average household income in euros (dichotomized)
+**Variable name**: socenv_av_hhincdich_2000m_6  
+**Variable description**: Average household income in euros in 2000 meter street network buffer zone around participants address (dichotomized: below/above country-specific mean household income).       
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:  
+
+**Code** | **Category Label**  
+------------- | -------------  
+0 | Less than or equal to country-specific mean household income
+1 | Greater than country-specific mean household income   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_0  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_1  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_2  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_3  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_4  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_5  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in 1000 euros (Z standardised)  
+**Variable name**: socenv_av_inc1000Z_6  
+**Variable description**: Average income in 1000 euros of residents in residential area (standardized: mean=0 and sd=1).
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_0  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```   
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_1  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```   
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_2  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_3  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_4  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_5  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Average income in euros (Z standardized)  
+**Variable name**: socenv_av_incZ_6  
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable unit**:    
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_0  
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_1  
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_2 
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_3  
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_4  
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_5  
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of income recipients
+**Variable name**: socenv_perc_inc_recipients_6  
+**Variable description**: Percentage of income recipients in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+# Unemployment
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_0  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_1  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_2  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_3  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_4  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_5  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of unemployed residents  
+**Variable name**: socenv_perc_unemployment_6  
+**Variable description**: Percentage of unemployed residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+# Social security
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_0  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_1  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_2  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_3  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_4  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_5  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of social security beneficiaries  
+**Variable name**: socenv_percentage_socsecben_6  
+**Variable description**: Percentage of social security beneficiaries in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_0   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+``` 
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_1   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_2   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_3   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_4   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_5   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with disability benefit  
+**Variable name**: socenv_percentage_disben_6   
+**Variable description**: Percentage of residents with a disability benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_0   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_1   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_2   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_3   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_4   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_5   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of residents with unemployment benefit  
+**Variable name**: socenv_percentage_unemplben_6   
+**Variable description**: Percentage of residents with a unemployment benefit in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+# Educational level  
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_0  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_1  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_2  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_3  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_4  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_5  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of low educated residents  
+**Variable name**: socenv_perc_low_education_6  
+**Variable description**: Percentage of low educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_0  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_1  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_2  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_3  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_4  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_5  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of intermediate educated residents  
+**Variable name**: socenv_perc_itm_education_6  
+**Variable description**: Percentage of intermediate educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_0  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_1  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_2  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_3  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_4  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_5  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Percentage of high educated residents  
+**Variable name**: socenv_perc_high_education_6  
+**Variable description**: Percentage of high educated residents in residential area.    
+**Variable type**: decimal     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+# Crime  
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_0    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_1    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_2    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_3    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_4    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_5    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of criminal offenses per 1000 residents  
+**Variable name**: socenv_crimoff_6    
+**Variable description**: Number of criminal offenses per 1000 residents in residential area.       
+**Variable type**: integer    
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_0   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_1   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_2   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_3   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_4   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_5   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of vandalism and public disorder per 1000 residents  
+**Variable name**: socenv_vandalism_po_6   
+**Variable description**: Number of vandalism and public disorder per 1000 residents in residential area.        
+**Variable type**: integer     
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_0    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_1    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_2    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_3    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_4    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_5    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Number of violent crimes and sexual offenses per 1000 residents   
+**Variable name**: socenv_violentcrim_sexoff_6    
+**Variable description**: Number of violent crimes and sexual offenses per 1000 residents in residential area.    **Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+#Area indicators
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_0    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_1    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_2    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_3    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_4    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_5    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: city 
+**Variable name**: socenv_city_6    
+**Variable description**: City indicator.    
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_0    
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_1    
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_2    
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_3    
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_4     
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_5    
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: municipality
+**Variable name**: socenv_municipality_6    
+**Variable description**: Municipality indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_0    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_1    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_2    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_3    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_4    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_5    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: neighbourhood
+**Variable name**: socenv_neighbourhood_6    
+**Variable description**: Neighbourhood indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_0    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_1    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_2    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_3    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_4    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_5    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 4-digit postal code
+**Variable name**: socenv_pc4_6    
+**Variable description**:  4-digit postal code (PC4) indicator. 
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_0    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_1    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_2    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_3    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_4    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_5    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 6-digit postal code
+**Variable name**: socenv_pc6_6    
+**Variable description**:  6-digit postal code (PC6) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_0    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_1    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_2    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_3    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_4    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_5    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
+
+
+
+### **Variable label**: Area indicator: 5-digit postal code
+**Variable name**: socenv_pc5_6    
+**Variable description**:  5-digit postal code (PC5) indicator.   
+**Variable type**: integer      
+**Variable unit**:   
+**Category coding**:   
+
+**Harmonization status**:  impossible  
+**Harmonization comment**:  
+**R script**:  
+```{r, echo=TRUE}  
+
+
+```
