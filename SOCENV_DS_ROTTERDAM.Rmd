@@ -23,7 +23,7 @@ ROTTERDAM_1 <- opal.execute(erasmus_opal,'RSII_MINDMAP_13082019_visit1')
 opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_18102019_visit2','ROTTERDAM.RSII_MINDMAP_18102019_visit2', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011","NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011"))
 ROTTERDAM_2 <- opal.execute(erasmus_opal,'RSII_MINDMAP_18102019_visit2')
 
-opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_18102019_visit3','ROTTERDAM.RSII_MINDMAP_18102019_visit3', variables ==list(""))
+opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_18102019_visit3','ROTTERDAM.RSII_MINDMAP_18102019_visit3')
 ROTTERDAM_3 <- opal.execute(erasmus_opal,'RSII_MINDMAP_18102019_visit3')
 ```
 
@@ -65,7 +65,7 @@ opal.logout(erasmus_opal)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -116,7 +116,7 @@ socenv_ROTTERDAM_2$socenv_urbanization_grade_2<-as.integer(ROTTERDAM_2$URBANIZAT
 **Harmonization comment**:
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -133,7 +133,7 @@ socenv_ROTTERDAM_2$socenv_urbanization_grade_2<-as.integer(ROTTERDAM_2$URBANIZAT
 **Harmonization comment**:
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
  
@@ -150,7 +150,7 @@ socenv_ROTTERDAM_2$socenv_urbanization_grade_2<-as.integer(ROTTERDAM_2$URBANIZAT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -167,7 +167,7 @@ socenv_ROTTERDAM_2$socenv_urbanization_grade_2<-as.integer(ROTTERDAM_2$URBANIZAT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -186,7 +186,7 @@ socenv_ROTTERDAM_2$socenv_urbanization_grade_2<-as.integer(ROTTERDAM_2$URBANIZAT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -240,7 +240,7 @@ socenv_ROTTERDAM_2$socenv_percentage_men_2<-as.numeric(ROTTERDAM_2$PROPORTION_ME
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -257,7 +257,7 @@ socenv_ROTTERDAM_2$socenv_percentage_men_2<-as.numeric(ROTTERDAM_2$PROPORTION_ME
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -275,7 +275,7 @@ socenv_ROTTERDAM_2$socenv_percentage_men_2<-as.numeric(ROTTERDAM_2$PROPORTION_ME
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -292,7 +292,7 @@ socenv_ROTTERDAM_2$socenv_percentage_men_2<-as.numeric(ROTTERDAM_2$PROPORTION_ME
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -309,7 +309,7 @@ socenv_ROTTERDAM_2$socenv_percentage_men_2<-as.numeric(ROTTERDAM_2$PROPORTION_ME
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -361,7 +361,7 @@ socenv_ROTTERDAM_2$socenv_percentage_women_2<-as.numeric(ROTTERDAM_2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```    
 
@@ -379,7 +379,7 @@ socenv_ROTTERDAM_2$socenv_percentage_women_2<-as.numeric(ROTTERDAM_2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -396,7 +396,7 @@ socenv_ROTTERDAM_2$socenv_percentage_women_2<-as.numeric(ROTTERDAM_2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -413,7 +413,7 @@ socenv_ROTTERDAM_2$socenv_percentage_women_2<-as.numeric(ROTTERDAM_2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -430,7 +430,7 @@ socenv_ROTTERDAM_2$socenv_percentage_women_2<-as.numeric(ROTTERDAM_2$PROPORTION_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -482,7 +482,7 @@ socenv_ROTTERDAM_2$socenv_percentage_65_older_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
    
@@ -500,7 +500,7 @@ socenv_ROTTERDAM_2$socenv_percentage_65_older_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -518,7 +518,7 @@ socenv_ROTTERDAM_2$socenv_percentage_65_older_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -535,7 +535,7 @@ socenv_ROTTERDAM_2$socenv_percentage_65_older_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -552,7 +552,7 @@ socenv_ROTTERDAM_2$socenv_percentage_65_older_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -605,7 +605,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unmarried_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -622,7 +622,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unmarried_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -640,7 +640,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unmarried_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -657,7 +657,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unmarried_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -674,7 +674,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unmarried_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -727,7 +727,7 @@ socenv_ROTTERDAM_2$socenv_percentage_married_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -745,7 +745,7 @@ socenv_ROTTERDAM_2$socenv_percentage_married_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -762,7 +762,7 @@ socenv_ROTTERDAM_2$socenv_percentage_married_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -779,7 +779,7 @@ socenv_ROTTERDAM_2$socenv_percentage_married_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -796,7 +796,7 @@ socenv_ROTTERDAM_2$socenv_percentage_married_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -850,7 +850,7 @@ socenv_ROTTERDAM_2$socenv_percentage_divorced_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -867,7 +867,7 @@ socenv_ROTTERDAM_2$socenv_percentage_divorced_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -884,7 +884,7 @@ socenv_ROTTERDAM_2$socenv_percentage_divorced_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -901,7 +901,7 @@ socenv_ROTTERDAM_2$socenv_percentage_divorced_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -918,7 +918,7 @@ socenv_ROTTERDAM_2$socenv_percentage_divorced_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -971,7 +971,7 @@ socenv_ROTTERDAM_2$socenv_percentage_widowed_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -988,7 +988,7 @@ socenv_ROTTERDAM_2$socenv_percentage_widowed_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -1005,7 +1005,7 @@ socenv_ROTTERDAM_2$socenv_percentage_widowed_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1022,7 +1022,7 @@ socenv_ROTTERDAM_2$socenv_percentage_widowed_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1039,7 +1039,7 @@ socenv_ROTTERDAM_2$socenv_percentage_widowed_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1053,8 +1053,7 @@ socenv_ROTTERDAM_2$socenv_percentage_widowed_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**:  
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**:  For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2011. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_1$socenv_average_hh_size_1<-as.integer(round(as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)))
@@ -1092,7 +1091,7 @@ socenv_ROTTERDAM_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(ROTTERD
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -1109,7 +1108,7 @@ socenv_ROTTERDAM_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(ROTTERD
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1126,7 +1125,7 @@ socenv_ROTTERDAM_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(ROTTERD
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1143,7 +1142,7 @@ socenv_ROTTERDAM_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(ROTTERD
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1162,7 +1161,7 @@ socenv_ROTTERDAM_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(ROTTERD
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1176,8 +1175,7 @@ socenv_ROTTERDAM_2$socenv_average_hh_size_2<-as.integer(round(as.numeric(ROTTERD
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**:  
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**:  For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_1$socenv_avv_dwellings_1<-as.integer(ROTTERDAM_1$AVERAGE_VALUE_DWELLINGS_2006) 
@@ -1217,7 +1215,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -1235,7 +1233,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1252,7 +1250,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1269,7 +1267,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1286,7 +1284,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1303,7 +1301,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1320,7 +1318,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1337,7 +1335,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1354,7 +1352,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1371,7 +1369,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1388,7 +1386,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1405,7 +1403,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1422,7 +1420,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1436,8 +1434,7 @@ socenv_ROTTERDAM_2$socenv_avv_dwellings_2<-as.integer(ROTTERDAM_2$AVERAGE_VALUE_
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**:  
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**:  For ROTTERDAM STUDY, these data are available for neighbourhoods in 2012. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here we link these 2012-data to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORTION_UNOCCUPIED_DWELLINGS_2012)  
@@ -1457,7 +1454,7 @@ socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -1474,7 +1471,7 @@ socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1491,7 +1488,7 @@ socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1508,7 +1505,7 @@ socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1527,7 +1524,7 @@ socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1541,8 +1538,7 @@ socenv_ROTTERDAM_2$socenv_perc_unocc_dwellings_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average net year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average net year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_1$socenv_av_inc1000_1<-as.integer(round(as.numeric(ROTTERDAM_1$AVERAGE_INCOME_RESIDENTS_2005)))
@@ -1559,11 +1555,10 @@ socenv_ROTTERDAM_1$socenv_av_inc1000_1<-as.integer(round(as.numeric(ROTTERDAM_1$
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable includes the average gross year income in 1000 euros of residents in the neighbourhood. For harmonization purposes, this variable has been made integer and has been rounded. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
-socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$AVERAGE_INCOME_RESIDENTS_2011)))
+socenv_ROTTERDAM_2$socenv_av_inc1000_2 <-as.integer(round(as.numeric(ROTTERDAM_2$AVERAGE_INCOME_RESIDENTS_2011)))
 
 ```    
 
@@ -1580,7 +1575,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -1597,7 +1592,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1614,7 +1609,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1631,7 +1626,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1648,7 +1643,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1665,7 +1660,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1682,7 +1677,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1699,7 +1694,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1716,7 +1711,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1733,7 +1728,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1750,7 +1745,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1772,7 +1767,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1791,8 +1786,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000_2<-as.integer(round(as.numeric(ROTTERDAM_2$
 1 | Greater than country-specific mean household income   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-We dichotomized average net yearly income in 1000 euros of residents in 2005 in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895). OECD uses a square root scale which is a scale that adjusts the household income for household size by dividing the total household income by the square root of household size. We take this correction into account and we also make the assumption that when the average household size is 2 or above, there are 2 income earners in the household.
+**Harmonization comment**: We dichotomized average net yearly income in 1000 euros of residents in 2005 in the neighbourhood by comparing it with the country-specific net mean household income (OECD-data) in 2005 (€23.895). OECD uses a square root scale which is a scale that adjusts the household income for household size by dividing the total household income by the square root of household size. We take this correction into account and we also make the assumption that when the average household size is 2 or above, there are 2 income earners in the household.
 The income variable has been calculated as follows: 
 if hh_size<2, income_correction= income*hh_size/sqrt(hh_size)
 if hh_size>=2, income_correction= income*2/sqrt(hh_size)
@@ -1800,11 +1794,11 @@ Subsequently, the corrected income variable has been compared with the OECD valu
 Here, the final variable is linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
-socenv_ROTTERDAM_1$socenv_av_incdich1000_1 <-
-ifelse((as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006))<2, as.numeric(ROTTERDAM_1$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)/sqrt(as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)), as.numeric(ROTTERDAM_1$AVERAGE_INCOME_RESIDENTS_2005)*2/sqrt(as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)))
+socenv_ROTTERDAM_1$socenv_av_incdich1000_1 <- ifelse((as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006))<2,
+       as.numeric(ROTTERDAM_1$AVERAGE_INCOME_RESIDENTS_2005)*as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)/sqrt(as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)), 
+       as.numeric(ROTTERDAM_1$AVERAGE_INCOME_RESIDENTS_2005)*2/sqrt(as.numeric(ROTTERDAM_1$AVERAGE_HOUSEHOLD_SIZE_2006)))
 
-socenv_ROTTERDAM_1$socenv_av_incdich1000_1 <-
-ifelse(as.numeric(socenv_ROTTERDAM_1$socenv_av_incdich1000_1) > 23.895, 1, 0)
+socenv_ROTTERDAM_1$socenv_av_incdich1000_1 <-ifelse(as.numeric(socenv_ROTTERDAM_1$socenv_av_incdich1000_1) > 23.895, 1, 0)
 
 ``` 
 
@@ -1839,6 +1833,14 @@ ifelse((as.numeric(ROTTERDAM_2$AVERAGE_HOUSEHOLD_SIZE_2011))<2, as.numeric(ROTTE
 socenv_ROTTERDAM_2$socenv_av_incdich1000_2 <-
 ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 
+# socenv_ROTTERDAM_2$socenv_av_incdich1000_2 <-ifelse((as.numeric(ROTTERDAM_2$AVERAGE_HOUSEHOLD_SIZE_2011))<2,
+#        as.numeric(ROTTERDAM_2$AVERAGE_INCOME_RESIDENTS_2011)*as.numeric(ROTTERDAM_2$AVERAGE_HOUSEHOLD_SIZE_2011)/sqrt(as.numeric(ROTTERDAM_2$AVERAGE_HOUSEHOLD_SIZE_2011)),
+#        as.numeric(ROTTERDAM_2$AVERAGE_INCOME_RESIDENTS_2011)*2/sqrt(as.numeric(ROTTERDAM_2$AVERAGE_INCOME_RESIDENTS_2011)))
+# 
+# 
+# socenv_ROTTERDAM_2$socenv_av_incdich1000_2 <-
+# ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 26.600, 1, 0)
+
 ```     
 
 
@@ -1859,7 +1861,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -1881,7 +1883,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -1904,7 +1906,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1926,7 +1928,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1948,7 +1950,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1970,7 +1972,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -1992,7 +1994,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2014,7 +2016,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2036,7 +2038,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2058,7 +2060,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2080,7 +2082,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2097,7 +2099,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2114,7 +2116,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2131,7 +2133,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2148,7 +2150,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2165,7 +2167,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2182,7 +2184,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2199,7 +2201,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2216,7 +2218,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2233,7 +2235,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2250,7 +2252,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2267,7 +2269,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2284,7 +2286,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2301,7 +2303,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2318,7 +2320,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2335,7 +2337,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2352,7 +2354,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2369,7 +2371,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2386,7 +2388,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2403,7 +2405,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2420,7 +2422,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2437,7 +2439,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2459,7 +2461,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2481,7 +2483,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2503,7 +2505,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2525,7 +2527,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2547,7 +2549,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2569,7 +2571,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2591,7 +2593,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2613,7 +2615,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2635,7 +2637,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2657,7 +2659,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2679,7 +2681,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2701,7 +2703,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2723,7 +2725,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2745,7 +2747,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2767,7 +2769,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2789,7 +2791,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2811,7 +2813,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2833,7 +2835,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2855,7 +2857,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2877,7 +2879,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2899,7 +2901,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2916,7 +2918,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -2930,8 +2932,7 @@ ifelse(as.numeric(socenv_ROTTERDAM_2$socenv_av_incdich1000_2) > 60.400, 1, 0)
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-We standardized average net year income in 1000 euros of residents in 2005 in the neighbourhood by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2005 in the Netherlands: y=12.3206 and o=2.42953. Here, this variable is linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**: We standardized average net year income in 1000 euros of residents in 2005 in the neighbourhood by using the formula: Z=(x-y)/o (Z=standardized income variable with mean=0, sd=1; x=area-level average income from respondent; y=area-level average income in entire country; o=standard deviation of area-level income in entire country). Based on neighbourhood-level data from Statistics Netherlands, we calculated y and o in 2005 in the Netherlands: y=12.3206 and o=2.42953. Here, this variable is linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE} 
 socenv_ROTTERDAM_1$socenv_av_inc1000Z_1 <- (as.numeric(ROTTERDAM_1$AVERAGE_INCOME_RESIDENTS_2005)-12.3206)/2.42953
@@ -2970,7 +2971,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -2987,7 +2988,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3004,7 +3005,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3021,7 +3022,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3029,7 +3030,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_0  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3037,7 +3039,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -3045,7 +3047,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_1  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3053,7 +3056,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -3061,7 +3064,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_2  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3069,7 +3073,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3077,7 +3081,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_3  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3085,7 +3090,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3093,7 +3098,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_4  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3101,7 +3107,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3109,7 +3115,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_5  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3117,7 +3124,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3125,7 +3132,8 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 
 ### **Variable label**: Average income in euros (Z standardized)  
 **Variable name**: socenv_av_incZ_6  
-**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). **Variable type**: integer     
+**Variable description**: Average income in euros of residents in residential area (standardized: mean=0 and sd=1). 
+**Variable type**: integer     
 **Variable unit**:    
 **Category coding**:   
 
@@ -3133,7 +3141,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3148,7 +3156,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3160,8 +3168,7 @@ socenv_ROTTERDAM_2$socenv_av_inc1000Z_2 <- (as.numeric(ROTTERDAM_2$AVERAGE_INCOM
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, the 2005-data are linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_1$socenv_perc_inc_recipients_1<-as.numeric(ROTTERDAM_1$PROPORTION_INCOME_RECIPIENTS_2005) 
@@ -3177,8 +3184,7 @@ socenv_ROTTERDAM_1$socenv_perc_inc_recipients_1<-as.numeric(ROTTERDAM_1$PROPORTI
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2005 and 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their 6-digit postal code. References of all data sources are listed in the WP7 deliverable report. Here, we link these 2011-data to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTION_INCOME_RECIPIENTS_2011) 
@@ -3197,7 +3203,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -3214,7 +3220,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
  
@@ -3232,7 +3238,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3249,7 +3255,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3268,7 +3274,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3285,7 +3291,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3302,7 +3308,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3319,7 +3325,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3336,7 +3342,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3353,7 +3359,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3370,7 +3376,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3389,7 +3395,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3403,8 +3409,7 @@ socenv_ROTTERDAM_2$socenv_perc_inc_recipients_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_1$socenv_percentage_socsecben_1<-as.numeric(ROTTERDAM_1$PROPORTION_SOCSECBEN_2006)  
@@ -3421,8 +3426,7 @@ socenv_ROTTERDAM_1$socenv_percentage_socsecben_1<-as.numeric(ROTTERDAM_1$PROPORT
 **Category coding**:   
 
 **Harmonization status**: complete  
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of social beneficiaries (general social assisitance/ABW and WWB) in the area / total number of residents in the area * 100. These data can be linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_percentage_socsecben_2<-as.numeric(ROTTERDAM_2$PROPORTION_SOCSECBEN_2010) 
@@ -3442,7 +3446,7 @@ socenv_ROTTERDAM_2$socenv_percentage_socsecben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3459,7 +3463,7 @@ socenv_ROTTERDAM_2$socenv_percentage_socsecben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3476,7 +3480,7 @@ socenv_ROTTERDAM_2$socenv_percentage_socsecben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3493,7 +3497,7 @@ socenv_ROTTERDAM_2$socenv_percentage_socsecben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3510,7 +3514,7 @@ socenv_ROTTERDAM_2$socenv_percentage_socsecben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3562,7 +3566,6 @@ socenv_ROTTERDAM_2$socenv_percentage_disben_2<-as.numeric(ROTTERDAM_2$PROPORTION
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written
 
 ```      
 
@@ -3579,7 +3582,7 @@ socenv_ROTTERDAM_2$socenv_percentage_disben_2<-as.numeric(ROTTERDAM_2$PROPORTION
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3596,7 +3599,7 @@ socenv_ROTTERDAM_2$socenv_percentage_disben_2<-as.numeric(ROTTERDAM_2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3613,7 +3616,7 @@ socenv_ROTTERDAM_2$socenv_percentage_disben_2<-as.numeric(ROTTERDAM_2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3630,7 +3633,7 @@ socenv_ROTTERDAM_2$socenv_percentage_disben_2<-as.numeric(ROTTERDAM_2$PROPORTION
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3644,8 +3647,7 @@ socenv_ROTTERDAM_2$socenv_percentage_disben_2<-as.numeric(ROTTERDAM_2$PROPORTION
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2006 and 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2006-data are linked to ROTTERDAM STUDY participants at wave 2004.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_1$socenv_percentage_unemplben_1<-as.numeric(ROTTERDAM_1$PROPORTION_UNEMPLOYMENT_BENEFIT_2006)  
@@ -3661,8 +3663,7 @@ socenv_ROTTERDAM_1$socenv_percentage_unemplben_1<-as.numeric(ROTTERDAM_1$PROPORT
 **Category coding**:   
 
 **Harmonization status**:  complete
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2010. This variable was calculated by: number of recipients of unemployment benefits (WW)  in the area / total number of residents in the area * 100. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2010-data are linked to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORTION_UNEMPLOYMENT_BENEFIT_2010)  
@@ -3682,7 +3683,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -3699,7 +3700,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3716,7 +3717,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3733,7 +3734,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3752,7 +3753,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3769,7 +3770,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3783,8 +3784,7 @@ socenv_ROTTERDAM_2$socenv_percentage_unemplben_2<-as.numeric(ROTTERDAM_2$PROPORT
 **Category coding**:   
 
 **Harmonization status**: complete 
-**Harmonization comment**:
-For ROTTERDAM STUDY, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**:For ROTTERDAM STUDY, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with low educational level (primary education + lower secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTION_LOW_EDUCATION_2014) 
@@ -3804,7 +3804,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3821,7 +3821,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3838,7 +3838,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3855,7 +3855,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3872,7 +3872,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3889,7 +3889,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3903,8 +3903,7 @@ socenv_ROTTERDAM_2$socenv_perc_low_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Category coding**:   
 
 **Harmonization status**: complete 
-**Harmonization comment**:  
-For ROTTERDAM STUDY, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**:  For ROTTERDAM STUDY, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with intermediate educational level (upper secondary education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTION_INTERMEDIATE_EDUCATION_2014)
@@ -3924,7 +3923,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```    
 
@@ -3941,7 +3940,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -3958,7 +3957,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3975,7 +3974,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -3992,7 +3991,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4009,7 +4008,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4023,8 +4022,7 @@ socenv_ROTTERDAM_2$socenv_perc_itm_education_2<-as.numeric(ROTTERDAM_2$PROPORTIO
 **Category coding**:   
 
 **Harmonization status**: complete 
-**Harmonization comment**:  
-For ROTTERDAM STUDY, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**:  For ROTTERDAM STUDY, these data are available for 4-digit postal codes in 2014. This variable includes the percentage of residents with high educational level (tertiary educational level + high vocational education + university education) in the 4-digit postal code area.  This variable has been linked to cohort respondents using their 4-digit postal codes.  References of all data sources are listed in the WP7 deliverable report. Here, the 2014-data are linked to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTION_HIGH_EDUCATION_2014)
@@ -4044,7 +4042,7 @@ socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -4061,7 +4059,7 @@ socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4078,7 +4076,7 @@ socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4095,7 +4093,7 @@ socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4112,7 +4110,7 @@ socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4129,7 +4127,7 @@ socenv_ROTTERDAM_2$socenv_perc_high_education_2<-as.numeric(ROTTERDAM_2$PROPORTI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4164,7 +4162,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ``` 
 
@@ -4181,7 +4179,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4198,7 +4196,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4215,7 +4213,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4230,7 +4228,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4247,7 +4245,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4261,8 +4259,7 @@ socenv_ROTTERDAM_2$socenv_crimoff_2<-as.integer(ROTTERDAM_2$NUMBER_CRIMINAL_OFFE
 **Category coding**:   
 
 **Harmonization status**: complete 
-**Harmonization comment**: 
-For ROTTERDAM STUDY, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to ROTTERDAM STUDY participants at wave 2011.
+**Harmonization comment**: For ROTTERDAM STUDY, these data are available for neighbourhoods in 2011. This variable was already available in the original data source. This variable has been linked to cohort respondents using their neighbourhood code. References of all data sources are listed in the WP7 deliverable report. Here, the 2011-data are linked to ROTTERDAM STUDY participants at wave 2011.
 **R script**:  
 ```{r, echo=TRUE}  
 socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011)
@@ -4283,7 +4280,7 @@ socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALIS
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```      
 
@@ -4300,7 +4297,7 @@ socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALIS
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```   
 
@@ -4317,7 +4314,7 @@ socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALIS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4334,7 +4331,7 @@ socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALIS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4351,7 +4348,7 @@ socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALIS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4368,7 +4365,7 @@ socenv_ROTTERDAM_2$socenv_vandalism_po_2<-as.integer(ROTTERDAM_2$NUMBER_VANDALIS
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4404,7 +4401,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```  
 
@@ -4421,7 +4418,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4438,7 +4435,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4455,7 +4452,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4472,7 +4469,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4489,7 +4486,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4506,7 +4503,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4523,7 +4520,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4540,7 +4537,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4557,7 +4554,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4574,7 +4571,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4591,7 +4588,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4608,7 +4605,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4657,7 +4654,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**: 
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4674,7 +4671,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4691,7 +4688,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4708,7 +4705,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4725,7 +4722,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4793,7 +4790,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4810,7 +4807,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4827,7 +4824,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4844,7 +4841,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4895,7 +4892,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4913,7 +4910,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4930,7 +4927,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4947,7 +4944,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -4964,7 +4961,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5016,7 +5013,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5034,7 +5031,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5051,7 +5048,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5068,7 +5065,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5085,7 +5082,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5102,7 +5099,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5119,7 +5116,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5136,7 +5133,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5153,7 +5150,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
@@ -5170,7 +5167,7 @@ socenv_ROTTERDAM_2$socenv_violentcrim_sexoff_2<-as.integer(ROTTERDAM_2$NUMBER_VI
 **Harmonization comment**:  
 **R script**:  
 ```{r, echo=TRUE}  
-#This is where the R-script will be written  
+
 
 ```
 
