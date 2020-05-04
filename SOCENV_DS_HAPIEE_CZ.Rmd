@@ -41,8 +41,8 @@ HAPIEE_W2 <- subset(HAPIEE_W2, HAPIEE_W2$country==1)
 
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
-socenv_HAPIEE_CZ_0 <- data.frame(id = HAPIEE_W1$id )
-socenv_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id )
+socenv_HAPIEE_CZ_0 <- data.frame(id = HAPIEE_W1$id) %>% as_tibble %>% arrange(id)
+socenv_HAPIEE_CZ_1 <- data.frame(id = HAPIEE_W2$id) %>% as_tibble %>% arrange(id)
 ```
 ## When you are done with your work, logout of Opal server
 ```{r, echo=FALSE}
