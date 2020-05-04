@@ -31,13 +31,13 @@ LASA2Hb <- opal.execute(erasmus_opal, 'LASA2_Hwave_Area_Identifiers')
 ```
 ## Assign participant id as first column of your harmonized dataframes
 ```{r, echo=FALSE}
-LASA2F<-merge(LASA2Fa, LASA2Fb, by="id", all=TRUE)
-LASA2H<-merge(LASA2Ha, LASA2Hb, by="id", all=TRUE)
+LASA2F <- merge(LASA2Fa, LASA2Fb, by="id", all=TRUE)
+LASA2H <- merge(LASA2Ha, LASA2Hb, by="id", all=TRUE)
 
-socenv_LASA2_0 <- data.frame(id = LASA2B$id)
-socenv_LASA2_1 <- data.frame(id = LASA2F$id)
-socenv_LASA2_2 <- data.frame(id = LASA2G$id)
-socenv_LASA2_3 <- data.frame(id = LASA2H$id)
+socenv_LASA2_0 <- data.frame(id = LASA2B$id) %>% as_tibble %>% arrange(id)
+socenv_LASA2_1 <- data.frame(id = LASA2F$id) %>% as_tibble %>% arrange(id)
+socenv_LASA2_2 <- data.frame(id = LASA2G$id) %>% as_tibble %>% arrange(id)
+socenv_LASA2_3 <- data.frame(id = LASA2H$id) %>% as_tibble %>% arrange(id)
 ```
 ## When you are done with your work, logout of Opal server
 ```{r, echo=FALSE}
