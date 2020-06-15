@@ -19,13 +19,13 @@ ROTTERDAM_0 <- opal.execute(erasmus_opal,'RSII_MINDMAP_13082019_visit0')
 
 opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_13082019_visit1','ROTTERDAM.RSII_MINDMAP_13082019_visit1', variables =list("URBANIZATION_GRADE_2006","PROPORTION_MEN_2006","PROPORTION_WOMEN_2006","PROPORTION_65_OLDER_2006","PROPORTION_UNMARIED_2008","PROPORTION_MARIED_2008","PROPORTION_DIVORCED_2008","PROPORTION_WIDOWED_2008","AVERAGE_HOUSEHOLD_SIZE_2006","AVERAGE_VALUE_DWELLINGS_2006","AVERAGE_INCOME_RESIDENTS_2005","PROPORTION_INCOME_RECIPIENTS_2005","PROPORTION_SOCSECBEN_2006","PROPORTION_DISABILITY_BENEFIT_2006","PROPORTION_UNEMPLOYMENT_BENEFIT_2006"))
 ROTTERDAM_1a <- opal.execute(erasmus_opal,'RSII_MINDMAP_13082019_visit1')
-opal.assign.table.tibble(erasmus_opal, 'RS-II_postcode_identifier_(13-may-2020)', 'ROTTERDAM.RS-II_postcode_identifier_(13-may-2020)', variables = list("ident_buurt1", "ident_PC4.1", "ident_PC6.1"))
-ROTTERDAM_1b <- opal.execute(erasmus_opal, 'RS-II_postcode_identifier_(13-may-2020)')
+opal.assign.table.tibble(erasmus_opal, 'RS_II_postcode_identifier_11062020', 'ROTTERDAM.RS_II_postcode_identifier_11062020', variables = list("ident_buurt1", "ident_PC4.1", "ident_PC6.1"))
+ROTTERDAM_1b <- opal.execute(erasmus_opal, 'RS_II_postcode_identifier_11062020')
 
 opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_18102019_visit2','ROTTERDAM.RSII_MINDMAP_18102019_visit2', variables =list("URBANIZATION_GRADE_2011","PROPORTION_MEN_2011","PROPORTION_WOMEN_2011","PROPORTION_65_OLDER_2011","PROPORTION_UNMARIED_2011","PROPORTION_MARIED_2011","PROPORTION_DIVORCED_2011","PROPORTION_WIDOWED_2011","AVERAGE_HOUSEHOLD_SIZE_2011","AVERAGE_VALUE_DWELLINGS_2011","PROPORTION_UNOCCUPIED_DWELLINGS_2012","AVERAGE_INCOME_RESIDENTS_2011","PROPORTION_INCOME_RECIPIENTS_2011","PROPORTION_SOCSECBEN_2010","PROPORTION_DISABILITY_BENEFIT_2010","PROPORTION_UNEMPLOYMENT_BENEFIT_2010","PROPORTION_LOW_EDUCATION_2014","PROPORTION_INTERMEDIATE_EDUCATION_2014","PROPORTION_HIGH_EDUCATION_2014","NUMBER_CRIMINAL_OFFENSES_PER_1000_RESIDENTS_2011","NUMBER_VANDALISM_PUBLIC_ORDER_PER_1000_RESIDENTS_2011","NUMBER_VIOLENT_CRIMES_SEXUAL_OFFENSES_PER_1000_RESIDENTS_2011"))
 ROTTERDAM_2a <- opal.execute(erasmus_opal,'RSII_MINDMAP_18102019_visit2')
-opal.assign.table.tibble(erasmus_opal, 'RS-II_postcode_identifier_(13-may-2020)', 'ROTTERDAM.RS-II_postcode_identifier_(13-may-2020)', variables = list("ident_buurt2", "ident_PC4.2", "ident_PC6.2"))
-ROTTERDAM_2b <- opal.execute(erasmus_opal, 'RS-II_postcode_identifier_(13-may-2020)') 
+opal.assign.table.tibble(erasmus_opal, 'RS_II_postcode_identifier_11062020', 'ROTTERDAM.RS_II_postcode_identifier_11062020', variables = list("ident_buurt2", "ident_PC4.2", "ident_PC6.2"))
+ROTTERDAM_2b <- opal.execute(erasmus_opal, 'RS_II_postcode_identifier_11062020')
 
 
 opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_18102019_visit3','ROTTERDAM.RSII_MINDMAP_18102019_visit3', variables ==list(""))
