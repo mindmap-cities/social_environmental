@@ -28,7 +28,7 @@ opal.assign.table.tibble(erasmus_opal, 'RS_II_postcode_identifier_11062020', 'RO
 ROTTERDAM_2b <- opal.execute(erasmus_opal, 'RS_II_postcode_identifier_11062020')
 
 
-opal.assign.table.tibble(erasmus_opal, 'RSII_MINDMAP_18102019_visit3','ROTTERDAM.RSII_MINDMAP_18102019_visit3', variables ==list(""))
+opal.assign.table.tibble(erasmus_opal,'RSII_MINDMAP_18102019_visit3','ROTTERDAM.RSII_MINDMAP_18102019_visit3')
 ROTTERDAM_3 <- opal.execute(erasmus_opal,'RSII_MINDMAP_18102019_visit3')
 ```
 
